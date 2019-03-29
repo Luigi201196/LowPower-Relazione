@@ -1,0 +1,81 @@
+\documentclass[11pt]{report}
+\usepackage[british]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{units}
+\usepackage{verbatim}
+\usepackage{color}
+%\usepackage{subfigure}
+%\usepackage{subcaption}
+\usepackage{pdflscape}
+\usepackage{bm}
+%\usepackage{tabularx}
+\usepackage{array}
+%\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{booktabs}
+%\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{hyperref}
+%\usepackage{tablefootnote}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage[british]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{units}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{pdflscape}
+\usepackage{listings}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage{lipsum}
+
+
+
+
+%\pagestyle{fancy}
+%\fancyhf{}
+
+\titleformat{\chapter}{\normalfont\huge}{\thechapter.}{15pt}{\huge\bf}
+
+\begin{document}
+	\include{capitoli/0-frontespizio}
+	\thispagestyle{empty}
+	
+	\onehalfspace % interlinea 1.5
+	\begingroup 
+	\makeatletter\let\ps@plain\ps@empty\makeatother 
+	\tableofcontents
+	\thispagestyle{empty} % elimino il numero di pagina nell'indice
+	\cleardoublepage 
+	\thispagestyle{empty} % elimino il numero di pagina nell'indice
+	\endgroup
+	
+	\pagestyle{fancy}
+	\fancyhf{} % azzeriamo i campi
+	
+	\fancyhead[LO]{\nouppercase{\rightmark}}	
+	\pagenumbering{arabic}
+	\fancyfoot[C]{\thepage}
+	
+	\pagenumbering{arabic}
+	%qui vanno i capitoli nel formato \include {capitoli/nome cap}
+	\include {capitoli/lab1}
+
+\end{document}

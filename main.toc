@@ -1,0 +1,4 @@
+\babel@toc {british}{}
+\contentsline {chapter}{\numberline {1}Laboratorio 1: \\Power Estimation: probabilistic techniques}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Probability and Activity Calculation: Simple Logic Gates}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Probability and Activity Calculation: Simple Logic Gates}{3}{section.1.2}
