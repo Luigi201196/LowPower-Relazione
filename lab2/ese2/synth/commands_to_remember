@@ -1,0 +1,2 @@
+write -hierarchy -format ddc -output /home/lp19.12/repository/lab2/ese2/synth/FSM-ADDER-simple.ddc
+write -hierarchy -format vhdl -output /home/lp19.12/repository/lab2/ese2/synth/netlist.vhdl
