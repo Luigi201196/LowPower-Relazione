@@ -1,0 +1,223 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(7): near ";": expecting "IDENTIFIER"
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(14): near "end": expecting "IDENTIFIER"
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(16): near "component": syntax error
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(37): near "datapath_adder": expecting "COMPONENT"
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(41): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(42): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): Illegal target for signal assignment.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): (vcom-1136) Unknown identifier "currentstate".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(39): near "TYPE": expecting "IDENTIFIER"
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(41): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(42): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): Illegal target for signal assignment.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): (vcom-1136) Unknown identifier "currentstate".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(39): near "TYPE": expecting "IDENTIFIER"
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(41): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(42): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): Illegal target for signal assignment.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): (vcom-1136) Unknown identifier "currentstate".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(39): near "000": expecting "CHARACTER" or "IDENTIFIER"
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(41): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(42): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): Illegal target for signal assignment.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): (vcom-1136) Unknown identifier "currentstate".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(39): near "000": expecting "CHARACTER" or "IDENTIFIER"
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(41): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(42): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): Illegal target for signal assignment.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(52): (vcom-1136) Unknown identifier "currentstate".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(55): near "?": expecting ')'
+# Window cannot be closed because the modal window "Question" is still open.
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(45): near "000": expecting "CHARACTER" or "IDENTIFIER"
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(47): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(48): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(58): Illegal target for signal assignment.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(58): (vcom-1136) Unknown identifier "currentstate".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(45): near "000": expecting "CHARACTER" or "IDENTIFIER"
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(47): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(48): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(58): Illegal target for signal assignment.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(58): (vcom-1136) Unknown identifier "currentstate".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(50): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(51): near "TYPE": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): Illegal target for signal assignment.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): (vcom-1136) Unknown identifier "currentstate".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): String literal found where non-array type state was expected.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(61): Integer literal 0 is not of type state.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): near "?": expecting ')'
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): No feasible entries for infix operator "=".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): Bad expression in left operand of infix expression "and".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(64): Type error resolving infix expression "and" as type std.standard.boolean.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(91): Illegal sequential statement.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(110): near "behaviour": expecting "PROCESS"
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(91): Illegal sequential statement.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(110): near "behaviour": expecting "PROCESS"
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(47): (vcom-1138) Attribute "enum_encodingdatapath_adder" has not been declared.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(60): near "begindatapath_adder": syntax error
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(116): near "sum": syntax error
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(115): (vcom-1136) Unknown identifier "e".
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(115): (vcom-1035) Formal port "clock" has OPEN or no actual associated with it.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(115): (vcom-1035) Formal port "reset" has OPEN or no actual associated with it.
+# ** Error: /home/lp19.12/repository/lab2/fsm.vhd(118): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/lp19.12/repository/lab2/fsm.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity enumtype
+# -- Compiling architecture behaviour of enumtype

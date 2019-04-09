@@ -1,0 +1,51 @@
+gui_start
+analyze -library WORK -format vhdl {/home/lp19.12/repository/lab2/ese2/synth/fsm-adder.vhd /home/lp19.12/repository/lab2/ese2/synth/fsm.vhd /home/lp19.12/repository/lab2/ese2/synth/dpadder.vhd}
+analyze -library WORK -format vhdl {/home/lp19.12/repository/lab2/ese2/synth/fsm-adder.vhd /home/lp19.12/repository/lab2/ese2/synth/fsm.vhd /home/lp19.12/repository/lab2/ese2/synth/dpadder.vhd}
+analyze -library WORK -format vhdl {/home/lp19.12/repository/lab2/ese2/synth/fsm-adder.vhd /home/lp19.12/repository/lab2/ese2/synth/fsm.vhd /home/lp19.12/repository/lab2/ese2/synth/dpadder.vhd}
+clear
+analyze -library WORK -format vhdl {/home/lp19.12/repository/lab2/ese2/synth/fsm-adder.vhd /home/lp19.12/repository/lab2/ese2/synth/fsm.vhd /home/lp19.12/repository/lab2/ese2/synth/dpadder.vhd}
+analyze -library WORK -format vhdl {/home/lp19.12/repository/lab2/ese2/synth/fsm-adder.vhd /home/lp19.12/repository/lab2/ese2/synth/fsm.vhd /home/lp19.12/repository/lab2/ese2/synth/dpadder.vhd}
+analyze -library WORK -format vhdl {/home/lp19.12/repository/lab2/ese2/synth/fsm-adder.vhd /home/lp19.12/repository/lab2/ese2/synth/fsm.vhd /home/lp19.12/repository/lab2/ese2/synth/dpadder.vhd}
+elaborate FSM_ADDER -architecture BEHAVIOUR -library WORK
+change_selection -name __slctBus6 -type {cell design} _sel270
+change_selection -name __slctBus157 -type {cell design} _sel391
+change_selection -name __slctBus302 -type {cell design} _sel688
+create_clock -name "CLK" -period 10 {clock}
+create_clock -name "CLK" -period 10 {Clock}
+report_clock
+report_clock -file clock_report.txt
+report_clock > clock_report.txt
+gui_show_man_page report_clock
+compile -exact_map
+compile -exact_map > compile_report.txt
+write -hierarchy -format ddc -output /home/lp19.12/repository/lab2/ese2/synth/FSM-ADDER-simple.ddc
+write -hierarchy -format vhdl -output /home/lp19.12/repository/lab2/ese2/synth/netlist.vhdl
+uplevel #0 { report_area -nosplit }
+current_instance FSM
+current_instance fsm_adder
+current_instance fsm_pin
+report_fsm
+report_fsm > encoding.txt
+report_timing > timing.txt
+report_timing -nworst 10 > timing_worst10.txt
+report_power -hier > report_hier.txt
+uplevel #0 { report_power -cell -analysis_effort low }
+report_power -net > power_net.txt
+list_designs
+current_instance fsm
+current_instance fsm_pin
+current_instance fsm_pin/fsm
+list_designs
+current_design fsm
+report_power -cell > fsm_power_cell.txt
+current_design fsm_adder
+create_clock -name "CLK" -period 2 {Clock}
+#report_power
+#report_power > power2ns.txt
+set_max_dynamic_power 200.0uW 
+compile -exact_map
+report_power > powercambiata.txt
+report_constraints > constraints.txt
+write -hierarchy -format vhdl -output /home/lp19.12/repository/lab2/ese2/synth/FSM-ADDER-low.ddc.vhdl
+write -hierarchy -format vhdl -output /home/lp19.12/repository/lab2/ese2/synth/FSM-ADDER-low.vhdl
+write -hierarchy -format ddc -output /home/lp19.12/repository/lab2/ese2/synth/FSM_ADDER-low.sdf.ddc

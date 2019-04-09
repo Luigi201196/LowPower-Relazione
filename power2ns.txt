@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : fsm_adder
+Version: F-2011.09-SP3
+Date   : Tue Apr  9 12:43:56 2019
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mg.lowpower/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fsm_adder              5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 141.4894 uW   (71%)
+  Net Switching Power  =  58.8064 uW   (29%)
+                         ---------
+Total Dynamic Power    = 200.2958 uW  (100%)
+
+Cell Leakage Power     =   5.5273 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          89.8464            6.7138        1.6243e+03           98.1846  (  47.70%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     51.6430           52.0926        3.9029e+03          107.6385  (  52.30%)
+--------------------------------------------------------------------------------------------------
+Total            141.4894 uW        58.8064 uW     5.5273e+03 nW       205.8231 uW
+1
