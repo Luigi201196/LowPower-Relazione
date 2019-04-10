@@ -99,8 +99,17 @@ Nella seguente sezione dell'esercitazione è stata analizzata la potenza del som
 Un primo report di potenza, riportato in Figura \ref{report_power1}, descrive i contributi di potenza relativi alle 8 istanze dei Full-Adder che compongono il somamtore RCA. \\
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=1]{immagini/report_power1}
+	\includegraphics[scale=0.7]{immagini/report_power1}
 	\caption{\textit{Power report}}
 	\label{report_power1}
 \end{figure}
-Come ci si aspettava, i contributi dei vari Full Adder sono tutti simili tra di loro, ad eccezione dell'istanza \textit{FAI\_8}
+Come ci si aspettava, i contributi dei vari Full Adder sono tutti simili tra di loro, ad eccezione dell'istanza \textit{FAI\_8}: il motivo consiste nel fatto che il Carry Out dell'ultimo Full Adder non è connesso a nessun altra porta, dunque il carico da pilotare è decisamente minore.\\
+Diventa ora interessante andare ad analizzare la singola istanza, per andare a valutare l'origine dei singoli contributi di potenza. Tramite il comando \textit{current\_instance FAI\_1} vado ad analizzare l'istanza relativa al primo Full Adder. Viene riportato il report in Figura \ref{reportFA1}.\\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.6]{immagini/reportFA1}
+	\caption{\textit{Power report}}
+	\label{reportFA1}
+\end{figure}
+Come ci si aspettava i valori di potenza risultano assolutamente identici al report trovato in precendenza e riportato in Figura \ref{report_power1}.
+Il passo finale è comprendere come avvenga la stima della potenza dinamica (\textit{switching power}) dei singoli nodi del FA
