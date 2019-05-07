@@ -35,4 +35,266 @@ Dopo varie ottimizzazioni, si è arrivati ad avere un'attività totale pari a 8 
 \end{table} \\
 \section{VHDL synthesis}
 Il secondo punto del laboratorio prevede di sintetizzare l’FSM tramite synopsys e studiarne le caratteristiche in termini di area, potenza e timing in modo da ricercare possibili ottimizzazioni. Si è utilizzata la libreria a 45 nm, definito un segnale di clock di periodo corrispondente a 10 ns, si è verificato il corretto inserimento tramite il comando \emph{$report\_clock$} e si è sintetizzato il circuito.\\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{clock} & \textbf{period} & \textbf{waveform}\\
+		\hline
+		CLK & 10.00 ns & \{0 5\} V\\
+		\hline
+	\end{tabular}
+\end{table} \\
+Di seguito è riportato lo schema generato da synopsys:
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.6]{immagini/schemlab2_2}
+	\caption{\textit{Schematico del circuito sintetizzato}}
+	\label{datapath}
+\end{figure} \\
+\\
+\\
+\\
+\\
+Dal report sull area si sono ottenute informazioni riguardanti la quantità di componenti, le connessioni, l’area relativa occupata dalla logica combinatoria, circa il doppio rispetto a quella non combinatoria e quindi dell’area totale.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{type} & \textbf{number}\\
+		\hline
+		ports & 114\\
+		\hline
+		nets & 118\\
+		\hline
+		cells & 2\\
+		\hline
+		references & 2\\
+		\hline
+	\end{tabular}
+\end{table} \\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{area type} & \textbf{value}\\
+		\hline
+		combinational & 195.244003\\
+		\hline
+		noncombinational & 101.08003\\
+		\hline
+		total cell & 296.324006\\
+		\hline
+	\end{tabular}
+\end{table} \\
+Successivamente, dopo aver verificato la corretta codifica degli stati della FSM  si è analizzato il timing del circuito, dal quale si sono ottenute importanti informazioni riguardo ai ritardi delle varie porte e allo Slack time nel caso del percorso peggiore che è di 8.03 ns, parametro che consente di ottimizzare frequenza di funzionamento del circuito, visto che la condizione necessaria è che lo slack time sia positivo. Inoltre si è eseguito il timing per  i peggiori 10 percorsi e si sono ricavati i valori di slack.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Slack (MET)} & \textbf{value [ns]}\\
+		\hline
+		1 & 8.04\\
+		\hline
+		2 & 8.04\\
+		\hline
+		3 & 8.04\\
+		\hline
+		4 & 8.04\\
+		\hline
+		5 & 8.04\\
+		\hline
+		6 & 8.05\\
+		\hline
+		7 & 8.05\\
+		\hline
+		8 & 8.05\\
+		\hline
+		9 & 8.05\\
+		\hline
+		10 & 8.05\\
+		\hline
+	\end{tabular}
+\end{table} \\
+\\
+Non si evidenziano rilevanti differenze tra i diversi slack, ciò è dovuto alla simmetria dei percorsi critici che presentano la stessa struttura. 
+Ecco come sono distribuiti i peggiori slack:
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.6]{immagini/slacks}
+	\caption{\textit{Grafico distribuzione slacks}}
+	\label{datapath}
+\end{figure} \\
+Dunque si è analizzata la potenza dissipata sia dall’intera logica che da ogni singola cella.
+Il report sulla potenza distingue la potenza dissipata dinamicamente, staticamente e quella dovuta alle correnti di leakage, fornendo la percentuale rispetto alla potenza dissipata totale e analizzando il circuito a livello gerarchico. In questo modo è possibile capire quanto influiscono i diversi contributi di potenza dissipata e se necessario intervenire opportunamente per consumare meno. 
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{hierarchy} & \textbf{switch} & \textbf{int} & \textbf{leak}& \textbf{tot}& \textbf{\%}\\
+		\hline
+		m\_adder & 11.943 & 28.443 & 5.46e+3 & 45.844 & 100\\
+		\hline
+		datapath\_adder & 10.930 & 25.532 & 5.03e+3 & 41.495 & 90.5\\
+		\hline
+		add\_78 & 1.765 & 4.921  & 1.19e+3 & 7.879 & 17.2\\
+		\hline
+		fsm & 1.012 & 2.911 & 425.171 & 4.349 & 9.5\\
+		\hline
+	\end{tabular}
+\end{table} \\
+\\
+\\
+\\
+\\
+Inoltre si è  analizzata l’attività delle singole celle in modo da studiare i consumi di ogni singola cella. Da quest’ultimo report si è ricavato che le celle corrispondenti ai registri hanno dei consumi più elevati di potenza statica e consumano più del doppio della corrente di leakage rispetto alle altre celle del circuito.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{cell} & \textbf{cell internal} & \textbf{driven net switching} & \textbf{tot dynamic [\% cell/tot]}& \textbf{cell leakage}\\
+		\hline
+		REG[0] & 1.0163 & 0.0584 & 1.075 (95\%) & 87.1072\\
+		\hline
+		REG[1] & 0.8660 & 0.1134 & 0.979 (88\%) & 81.4649\\
+		\hline
+		REG[2] & 0.7468 & 0.1083 & 0.855 (87\%) & 84.7325\\
+		\hline
+		U8 & 0.0465 & 0.0297 & 7.62e-2 (61\%) & 33.6813\\
+		\hline
+		U9 & 0.0386 & 0.1368 & 0.175 (22\%) & 31.6341\\
+		\hline
+		U6 & 0.0375 & 0.1356 & 0.173 (22\%) & 18.0848\\
+		\hline
+		U5 & 0.0314 & 0.0193 & 5.07e-2 (62\%) & 19.3118\\
+		\hline
+		U4 & 0.0304 & 0.0174 & 4.77e-2 (64\%) & 17.9767\\
+		\hline
+		U10 & 0.0285 & 0.0746 & 0.103 (28\%) & 12.9020\\
+		\hline
+		U7 & 0.0233 & 0.1282 & 0.151 (15\%) & 15.8344\\
+		\hline
+		U3 & 0.0190 & 0.1236 & 0.143 (13\%) & 17.0242\\
+		\hline
+		U11 & 9.993e-3 & 0.0392 & 4.92e-2 (20\%) & 14.3532\\
+		\hline
+		\hline
+		tot (12 cells) & 2.894 uW & 984.349 nW & 3.878 uW (75\%) & 434.107 nW\\
+		\hline 
+	\end{tabular}
+\end{table} \\
+E’ utile inoltre valutare il numero di commutazioni delle singole uscite valutando sia la capacità del carico che il tasso di commutazioni. In accordo con i risultati precedenti si denota un’attività più intensa per i registri per hanno un carico capacitivo molto più alto delle altre uscite anche se il toggle rate è praticamente equivalente per tutte le uscite e la probabilità statistica è comunque minore. 
+\\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{hierarchy} & \textbf{switch} & \textbf{int} & \textbf{leak}& \textbf{tot}& \textbf{\%}\\
+		\hline
+		m\_adder & 11.943 & 28.443 & 5.46e+3 & 45.844 & 100\\
+		\hline
+		datapath\_adder & 10.930 & 25.532 & 5.03e+3 & 41.495 & 90.5\\
+		\hline
+		add\_78 & 1.765 & 4.921  & 1.19e+3 & 7.879 & 17.2\\
+		\hline
+		fsm & 1.012 & 2.911 & 425.171 & 4.349 & 9.5\\
+		\hline
+	\end{tabular}
+\end{table} \\
+\\
+\\
+\\
+\\
+Inoltre si è  analizzata l’attività delle singole celle in modo da studiare i consumi di ogni singola cella. Da quest’ultimo report si è ricavato che le celle corrispondenti ai registri hanno dei consumi più elevati di potenza statica e consumano più del doppio della corrente di leakage rispetto alle altre celle del circuito.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{net} & \textbf{total net load} & \textbf{static prob.} & \textbf{toggle rate}& \textbf{switching power}\\
+		\hline
+		S[2] & 11.104 & 0.326 & 0.0244 & 0.1641\\
+		\hline
+		S[0] & 9.304 & 0.228 & 0.0244 & 0.1375\\
+		\hline
+		S[1] & 10.166 & 0.295 & 0.0221 & 0.1360\\
+		\hline
+		S[3] & 9.541 & 0.186 & 0.0200 & 0.1153\\
+		\hline
+		n21 & 10.518 & 0.088 & 0.0181 & 0.1153\\
+		\hline
+		n5 & 6.169 & 0.814 & 0.0200 & 0.0746\\
+		\hline
+		n6 & 3.949 & 0.772 & 0.0244 & 0.0584\\
+		\hline
+		n8 & 4.078 & 0.706 & 0.0222 & 0.0546\\
+		\hline
+		n25 & 3.843 & 0.500 & 0.0221 & 0.0514\\
+		\hline
+		n28 & 6.482 & 0.772 & 0.0100 & 0.0392\\
+		\hline
+		n27 & 1.980 & 0.706 & 0.0244 & 0.0293\\
+		\hline
+		N8 & 1.438 & 0.098 & 0.0221 & 0.0193\\
+		\hline
+		n7 & 1.438 & 0.0392 & 0.0200 & 0.0174\\
+		\hline
+		\hline
+		tot (13 nets) &  &  &  & 1.0125 uW\\
+		\hline 
+	\end{tabular}
+\end{table} \\
+Si è adesso focalizzata l’attenzione sui consumi della Macchina a Stati. La FSM è caratterizzata da una leakage current di 418 nW a fronte dei 434 nW totali e anche per gli altri contributi di consumo di potenza dinamica i dati tendono ad evidenziare il ruolo preponderante del componente sul totale consumo del circuito. 
+\\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.6]{immagini/fsm_power_cell}
+	\caption{\textit{Potenza dissipata dalla FSM}}
+	\label{datapath}
+\end{figure} \\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+Dopodiché si è provato a variare la frequenza di lavoro del circuito, provando a sintetizzare il circuito in modo da lavorare alla massima frequenza di funzionamento consentita dal percorso critico. Dall’analisi sul timing si è trovato lo slack peggiore di circa 8.02 ns  lavorando a 10 ns di periodo di clock. Si può allora decrementare il periodo di clock fino a 10-8.02=1.98 ns. Difatti si è scelto un periodo di clock di 2 ns.
+\\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		cell internal power & 141.4894 uW (71\%)\\
+		\hline
+		net switching power & 58.8064 uW (29\%)\\
+		\hline
+		\hline
+		total dynamic power & 200.2958 uW (100\%)\\
+		\hline
+		cell leakage power & 5.5273 uW\\
+		\hline
+	\end{tabular}
+\end{table} \\
+ Si nota come sia aumentata la Total Dynamic Power, questo poiché aumentando la frequenza operativa aumentano anche il numero di commutazioni interne e quindi viene dissipata maggiore potenza dinamica. Resta invece invariata la corrente di leakage che infatti dipende solo dalla tecnologia usata.
+
+Infine è stato posto al sintetizzatore un ulteriore vincolo sulla massima potenza dinamica dissipabile a 200 uW, considerando che nell’ultimo report la potenza totale dissipata ammonta a 200.2958 uW.
+\\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		cell internal power & 140.3547 uW (70\%)\\
+		\hline
+		net switching power & 59.0397 uW (30\%)\\
+		\hline
+		\hline
+		total dynamic power & 199.3944 uW (100\%)\\
+		\hline
+		cell leakage power & 5.5832 uW\\
+		\hline
+	\end{tabular}
+\end{table} \\
+Adesso la potenza dinamica totale dissipata è di 199.3944 uW e rispetta il vincolo.
+Inoltre, si nota che stavolta il parametro della leakage power è leggermente variato, questo poichè stavolta per rispettare il vincolo sul consumo di potenza è stata variata la topologia del circuito usando differenti porte logiche.
+\\
 
