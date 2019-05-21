@@ -1,0 +1,354 @@
+\chapter{Laboratorio 5: \\Leakage: using spice for characterizing cells and pen\&paper for memory organization}
+In questo laboratorio viene richiesto di analizzare i contributi di potenza, prestando particolare attenzione particolarmente alla potenza di leakage.
+
+\section{Characterizing a library gate}
+In questa prima parte dell'esercitazione viene richiesto di analizzare le performance di una \textit{NAND} a due ingressi, ottimizzata per essere \textit{High-Speed} per avere esattamente un punto di riferimento quando si analizzerà il caso con basso leakage. La porta NAND in questione si compone di due pMOS in parallelo, collegati alla Vdd e due nMOS in serie collegati al GND, come si può osservare in Figura \ref{nand_circuit}. \\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.3]{immagini/nand_circuit}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{nand_circuit}
+\end{figure}
+La definizione del pMOS e dell'nMOS avviene tramite una piccola libreria \textit{'CMOS2013'}, all'interno della quale sono definiti i modelli che verranno analizzati (nel nostro caso si tratta del \textbf{EPHSGP\_BS2JU} per il pMOS e \textbf{ENHSGP\_BS2JU} per l'nMOS). All'interno di questa libreria ogni transistore viene identificato tramite alcuni parametri, quali la lunghezza e la larghezza del MOS e perimetri e aree di draine source.
+L'analisi avviene tramite uno script \textit{'nandHS.sp'} che contiene una netlist dove vengono fissati i valori dei parametri di larghezza e lunghezza dei transitori.\\
+Inoltre lo script contiene il alcuni comandi .measure tramite il quale vengono stimati i tempi di salita, di discesa e di propagazione della porta in questione. Viene richiesto di completare questi comandi andando a scrivere un comando per la misura tel tempo di propagazione basso-alto. Il comando aggiunto in questione è il seguente:
+\begin{center}
+\textit{.measure tran nanddelayHL TRIG V(inB) VAL='alim*0.5' RISE=1 
++ TARG V(out) VAL='alim*0.5' FALL=1}
+\end{center}
+Settando l'ambiente di simulazione \textbf{ELDO}, si può procedere con la simulazione della NAND in questione andando a riportare i parametri richiesti dalla traccia. Tra tutti i parametri viene richiesto ai annatore la potenza totale dissipata, che risulta essere pari a 6.7908 nW. I risultati temporali invece sono riportati in Tabella \ref{Tab5_1}.\\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Tempo} & \textbf{Misura}\\
+		\hline
+		$t_{rise}$ & 89.303 ps\\
+		$t_{fall}$ & 74.319 ps\\
+		$t_{pdHL}$ & 48.993 ps\\
+		$t_{pdLH}$ & 56.490 ps\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati tempi NAND simulazione ELDO}}
+	\label{Tab5_1}
+\end{table}
+\\
+Si possono confrontare questi valori andando ad avviare una simulazione grafica tramite \textbf{ezwave}. Le onde risultati sono riportate in Figura \ref{onde_5_1}, dove sono riportati i valori della due tensioni di ingresso che, come visto dalla netlist, risultano essere:
+\begin{itemize}
+	\item INA: costante al valore 1.2 V, assimilato come '1' logico
+	\item INB: 0 V fino ad 1 ns, 1.2 V fino a 2 ns, 0 V fino al termine della simulazione
+\end{itemize}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.35]{immagini/onde_5_1}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_1}
+\end{figure}
+Tramite gli appositi cursori del programma sono stati ricavati i tempi calcolati in precedenza con ELDO. Tutti i tempo sono riportati i Tabella \ref{Tab5_2}. 
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Tempo} & \textbf{Misura}\\
+		\hline
+		$t_{rise}$ & 84.64 ps\\
+		$t_{fall}$ & 74.01 ps\\
+		$t_{pdHL}$ & 47.24 ps\\
+		$t_{pdLH}$ & 56.71 ps\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati tempi NAND simulazione ezwave}}
+	\label{Tab5_2}
+\end{table}
+\\
+Si può ben notare come i risultati siano assolutamente confrontabili.\\
+In seguito viene chiesto di fare un analisi i continua, andando a decommentare alcune linee dello script, per andare a valutare le tensioni di soglia dei diversi MOS. I risultati sono riportati in Tabella \ref{Tab5_3}. 
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Transistore} & \textbf{Tensione di Soglia $V_{TH}$}\\
+		\hline
+		VT(XNAND.XMN0.M1) & 0.31371 V\\
+		VT(XNAND.XMN1.M1) & 0.27241 V\\
+		VT(XNAND.XMP0.M1) & -0.24712 V\\
+		VT(XNAND.XMP1.M1) & -0.24712 V\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_3}
+\end{table}.
+\\
+Ovviamente, come ci si aspettava, le tensioni di soglia dei pMOS sono negative, mentre quelle degli nMOS sono positive. Le due tensioni di soglia dei pMOS risultano identiche; non vale lo stesso nel caso degli nMOS, in quanto si ha che la tensione di soglia del MOS0 è superiore alla tensione di soglia del MOS1. Questo genera di conseguenza una corrente di leakage più alta nel caso del MOS1 rispetto al MOS0.
+
+\section{Characterizing a gate for output load}
+L'obiettivo di questa seconda sezione dell'esercitazione è di analizzare il funzionamento della porta NAND andando a variare il carico in uscita. Si analizzano i casi con carico pari a:
+\begin{itemize}
+	\item 0.005 fF
+	\item 0.05 fF
+	\item 0.5 fF
+	\item 5 fF
+	\item 50 fF	
+\end{itemize}
+A tale scopo si analizzata, sempre tramite l'ambiente di simulazione \textit{ELDO}, il file \textit{nandHScharLoad.sp}. Rispetto al file precedente viene inserita una misura per valutare i picchi di corrente che scorrono nel GND e nella capacità di carico. I risultati della simulazione sono contenuti nella Tabella \ref{Tab5_4} per i tempi e nella Tabella \ref{Tab5_5} per i risultati legati alla corrente.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{$C_{Load}$} & \textbf{0.005 fF} & \textbf{0.05 fF} & \textbf{0.5 fF} & \textbf{5 fF} & \textbf{50 fF}\\
+		\hline
+		$t_{rise}$ &67.226 ps &67.604 ps &71.228 ps &102.81 ps &363.91 ps \\
+		
+		$t_{fall}$ &68.551 ps &68.830 ps &72.112 ps &98.194 ps &296.52 ps \\
+		
+		$t_{pdHL}$&20.524 ps &20.851 ps &23.980 ps &48.550 ps &180.16 ps \\
+		
+		$t_{pdLH}$ &37.948 ps&38.286 ps &41.521 ps &66.657 ps &209.00 ps \\
+		
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_4}
+\end{table}.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{$C_{Load}$} & \textbf{0.005 fF} & \textbf{0.05 fF} & \textbf{0.5 fF} & \textbf{5 fF} & \textbf{50 fF}\\
+		\hline
+		$I_{GND, f}^{max}$ &76.530 $\mu$A &77.056 $\mu$A &81.964 $\mu$A &116.64 $\mu$A &240.77 $\mu$A \\
+		
+		$I_{Vdd, r}^{max}$ &-70.006$\mu$A &-70.423 $\mu$A &-74.383 $\mu$A &-102.77 $\mu$A &-209.19 $\mu$A \\
+		
+		$I_{GND, r}^{max}$&45.879 $\mu$A &45.692 $\mu$A &44.055 $\mu$A &34.693 $\mu$A &12.571 $\mu$A\\
+		
+		$I_{Vdd, f}^{max}$& -47.912 $\mu$A&-47.680 $\mu$A &-45.637 $\mu$A &-34.365 $\mu$A &-11.039 $\mu$A \\
+		
+		$I_{Load, f}^{max}$ &8.2877 nA &8.2877 nA &8.2877 nA &8.2893 nA &372.90 nA \\
+		
+		$I_{Load, r}^{max}$ &-5.6590 nA &-5.690 nA &-5.6590 nA &-5.6734 nA &-12.547 nA \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_5}
+\end{table}.
+\\
+Analogamente al punto precedente, si è sfruttato \textit{ezwave} per andare a plottare gli andamenti delle tensioni e delle correnti al variare del carico. I risultati sono riportati in Figura \ref{onde_5_2current} per il caso delle correnti e in Figura \ref{onde_5_2voltage} per il caso delle tensioni.\\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.09]{immagini/onde_5_2current}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_2current}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.09]{immagini/onde_5_2voltage}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_2voltage}
+\end{figure}
+MANCANO I COMMENTI RELATIVI A QUESTI RISULTATI\\
+In modo analogo al caso precedente, si sono andate a calcolare le varie Tensioni di Soglia dei MOS. I risultati sono riportati nella Tabella \ref{Tab5_6}. \\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{TRANSISTOR/$C_{Load}$} & \textbf{0.005 fF} & \textbf{0.05 fF} & \textbf{0.5 fF} & \textbf{5 fF} & \textbf{50 fF}\\
+		\hline
+		\textbf{XMN0.M1} &0.31371&0.31371&0.31371&0.31371&0.31371\\
+		
+		\textbf{XMN1.M1} &0.27241&0.27241&0.27241&0.27241&0.27241 \\
+		
+		\textbf{XMP0.M1}&-0.24712&-0.24712&-0.24712&-0.24712&-0.24712 \\
+		
+		\textbf{XMP1.M1}&-0.24712&-0.24712&-0.24712&-0.24712&-0.24712\\
+			
+			\hline
+		\end{tabular}
+		\caption{\textit{Tensioni di soglia}}
+		\label{Tab5_6}
+	\end{table}
+\\
+Esattamente come ci si aspettava, i valori delle tensioni di soglia sono identici rispetto al caso ottenuto nel paragrafo 5.1. Questo è dovuto al fatto che la $V_{TH}$ dipende esclusivamente dai parametri tecnologici con la quale viene realizzato il transistore e non ha alcuna dipendenza dal carico in uscita. 
+
+\section{Comparing different gate sizing}
+Le porte NAND analizzate fino ad ora erano ottimizzate per supportare carichi capicitivi che non superassero i 0.16 fF. Per avere dei gate ottimizzati per pilotare carichi superiori, bisgona utilizzare porte logiche differenti, comunque presenti nella libreria. \\
+Viene chiesto di analizzare ora due porte NAND, di dimensioni differenti: una prima porta X1 ed una seconda porta, più grande della prima, denominata X8. Queste porte sono ottimizzate per pilotare carichi capacitivi fino ad un massimo di 1.28 fF. \\
+Le due netlist contenenti le due diverse porte NAND sono: \textit{nandHScharMax\_Load.sp} e \textit{nandHSX8charMax\_Load.sp}. \\
+Tutte le simulazioni vengono ora fatte utilizzando due carichi capacitivi diversi: 0.06 fF e 60.0 fF. I risultati nel caso della NAND X1 sono riportati nelle Tabelle \ref{Tab5_7} per i tempi e \ref{Tab5_8} per le correnti; mentre i risultati nel caso della NAND X8 sono riportati nelle Tabelle \ref{Tab5_9} per i tempi e \ref{Tab5_10} per le correnti.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND X1} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$t_{rise}$ &67.692 ps &425.04 ps  \\
+		
+		$t_{fall}$ &68.978 ps &341.77 ps  \\
+		
+		$t_{pdHL}$&20.923 ps &203.71 ps  \\
+		
+		$t_{pdLH}$ &38.361 ps&236.61 ps  \\
+		
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_7}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+\textbf{NAND X8} & &\\
+\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+\hline
+		$I_{GND, f}^{max}$ &77.172 $\mu$A &245.47 $\mu$A\\
+		
+		$I_{Vdd, r}^{max}$ &-70.514$\mu$A &-213.72 $\mu$A \\
+		
+		$I_{GND, r}^{max}$&45.653 $\mu$A &10.965 $\mu$A\\
+		
+		$I_{Vdd, f}^{max}$& -47.631 $\mu$A&-9.4773 $\mu$A \\
+		
+		$I_{Load, f}^{max}$ &8.2877 nA &1201.6 nA  \\
+		
+		$I_{Load, r}^{max}$ &-5.6590 nA &-19.994 nA  \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_8}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND X1} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$t_{rise}$ &67.692 ps &425.04 ps  \\
+		
+		$t_{fall}$ &68.978 ps &341.77 ps  \\
+		
+		$t_{pdHL}$&20.923 ps &203.71 ps  \\
+		
+		$t_{pdLH}$ &38.361 ps&236.61 ps  \\
+		
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_9}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND X8} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$I_{GND, f}^{max}$ &637.45 $\mu$A &1069.0 $\mu$A\\
+		
+		$I_{Vdd, r}^{max}$ &-552.88$\mu$A &-928.61 $\mu$A \\
+		
+		$I_{GND, r}^{max}$&378.92 $\mu$A &264.86 $\mu$A\\
+		
+		$I_{Vdd, f}^{max}$&-410.35 $\mu$A&-258.52 $\mu$A \\
+		
+		$I_{Load, f}^{max}$ &79.078 nA &79.133 nA \\
+		
+		$I_{Load, r}^{max}$ &-41.224 nA &-41.503 nA  \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_10}
+\end{table}
+\newpage
+\noindent Allo stesso modo del caso precedente vengono plottati i risultati delle onde con \textit{ezwave}. Nei seguenti grafici vengono confrontate tensioni e correnti tra il caso X1 e il caso X8. Il grafico risultato delle due tensioni di uscita è riportato in Figura \ref{onde_5_3_voltage1}; mentre nelle Figure \ref{onde_5_3_current1}, \ref{onde_5_3_current2} e \ref{onde_5_3_current3} sono riportati i grafici risultati rispettivamente per le correnti sul carico, sul GND e sull'alimentazione.\\
+\noindent Analizzando i risultati ottenuti, si può notare come i vari tempi siano superiori nel caso della porta X1 rispetto alla porta X8. La porta X8 quindi comporta una maggiore velocità, che però viene pagata con un'area superiore rispetto alla porta X1.\\
+Andando poi ad analizzare il consumo complessivo di potenza risulta che:
+\begin{center}
+	$Total Power Dissipation X8 = 49.469 nW $ \\
+	$Total Power Dissipation X1 = 6.7908 nW $
+\end{center}
+Come ci si aspettava, la NAND X1 consuma circa l'86\% in meno della NAND X8. Questo è sicuramente dovuto alle correnti di leakage superiori, che si posso anche apprezzare nella Tabella precedente. (FRASE DA CONTROLLARE).\\
+\newpage
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.09]{immagini/onde_5_3_voltage1}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_3_voltage1}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.12]{immagini/onde_5_3_current1}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_3_current1}
+\end{figure}
+\newpage
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.12]{immagini/onde_5_3_current2}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_3_current2}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.12]{immagini/onde_5_3_current3}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_3_current3}
+\end{figure}
+\newpage
+\noindent Infine si riportano nelle Tabelle \ref{Tab5_11} e \ref{Tab5_12} i risultati delle tensioni di soglia, rispettivamente della NAND X1 e della NAND X8, ottenuti attraverso la simulazione dc.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND X1} &&\\
+		
+		\textbf{Transistor/$C_{Load}$}&0.06 pF & 60 pF\\
+		\hline
+		\textbf{XMN0.M1} &0.31371&0.31371\\
+		
+		\textbf{XMN1.M1} &0.27241&0.27241 \\
+		
+		\textbf{XMP0.M1}&-0.24712&-0.24712 \\
+		
+		\textbf{XMP1.M1}&-0.24712&-0.247122\\
+		
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_11}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND X8} &&\\
+		
+		\textbf{Transistor/$C_{Load}$}&0.06 pF & 60 pF\\
+		\hline
+		\textbf{XMN0.M1} &0.31893&0.31893\\
+		
+		\textbf{XMN1.M1} &0.27763&0.27763 \\
+		
+		\textbf{XMN2.M1} &0.31893&0.31893\\
+		
+		\textbf{XMN3.M1} &0.27763&0.27763 \\
+		\textbf{XMN4.M1} &0.27763&0.27763 \\
+		\textbf{XMN5.M1} &0.31893&0.31893\\
+		
+		\textbf{XMN6.M1} &0.27763&0.27763 \\
+		\textbf{XMN7.M1} &0.31893&0.31893\\
+		
+		\textbf{XMP0.M1}&-0.24712&-0.24712 \\
+		
+		\textbf{XMP1.M1}&-0.24712&-0.24712\\
+				\textbf{XMP6.M1}&-0.24712&-0.24712 \\
+		
+		\textbf{XMP7.M1}&-0.24712&-0.24712\\
+		
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_12}
+\end{table}
