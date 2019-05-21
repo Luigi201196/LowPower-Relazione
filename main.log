@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  14 MAY 2019 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  18 MAY 2019 12:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -902,12 +902,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout2 = `capitoli/0-frontespizio.aux'.
 
  (capitoli/0-frontespizio.tex
-<immagini/polito.jpg, id=71, 284.5029pt x 127.9179pt>
+<immagini/polito.jpg, id=75, 284.5029pt x 127.9179pt>
 File: immagini/polito.jpg Graphic file (type jpg)
 <use immagini/polito.jpg>
 Package pdftex.def Info: immagini/polito.jpg  used on input line 10.
 (pdftex.def)             Requested size: 253.13298pt x 113.81102pt.
-<immagini/battery.jpg, id=72, 402.50375pt x 295.1025pt>
+<immagini/battery.jpg, id=76, 402.50375pt x 295.1025pt>
 File: immagini/battery.jpg Graphic file (type jpg)
 <use immagini/battery.jpg>
 Package pdftex.def Info: immagini/battery.jpg  used on input line 26.
@@ -917,7 +917,7 @@ Package pdftex.def Info: immagini/battery.jpg  used on input line 26.
 
 {C:/Users/Luigi Massari/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./i
 mmagini/polito.jpg> <./immagini/battery.jpg>]) (main.toc
-Overfull \hbox (3.79906pt too wide) in paragraph at lines 15--15
+Overfull \hbox (3.79906pt too wide) in paragraph at lines 16--16
  [][] [][]\OT1/cmr/m/n/10.95 Bus-invert tech-nique, Trans-ition based tech-niqu
 e, Gray 
  []
@@ -934,7 +934,7 @@ l.66 	\cleardoublepage
                        [1
 
 
-]
+] [2]
 \openout2 = `capitoli/lab1.aux'.
 
  (capitoli/lab1.tex
@@ -948,12 +948,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<immagini/gate.png, id=111, 368.27588pt x 103.587pt>
+<immagini/gate.png, id=120, 368.27588pt x 103.587pt>
 File: immagini/gate.png Graphic file (type png)
 <use immagini/gate.png>
 Package pdftex.def Info: immagini/gate.png  used on input line 6.
 (pdftex.def)             Requested size: 294.6211pt x 82.8697pt.
-<immagini/fig1_2.png, id=113, 205.66838pt x 111.41624pt>
+<immagini/fig1_2.png, id=122, 205.66838pt x 111.41624pt>
 File: immagini/fig1_2.png Graphic file (type png)
 <use immagini/fig1_2.png>
 Package pdftex.def Info: immagini/fig1_2.png  used on input line 19.
@@ -974,7 +974,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <./immagini/fig1_2.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 
+      [2 <./immagini/fig1_2.png>]
 Overfull \hbox (1.63278pt too wide) in paragraph at lines 48--48
 |[]\OT1/cmr/bx/n/14.4 Probability and Activ-ity Cal-cu-la-tion: Half and
  []
@@ -1007,17 +1012,17 @@ Overfull \hbox (8.27498pt too wide) in paragraph at lines 85--86
  []
 
 [4]
-<immagini/report_power1.png, id=145, 304.13625pt x 322.806pt>
+<immagini/report_power1.png, id=154, 304.13625pt x 322.806pt>
 File: immagini/report_power1.png Graphic file (type png)
 <use immagini/report_power1.png>
 Package pdftex.def Info: immagini/report_power1.png  used on input line 102.
 (pdftex.def)             Requested size: 212.8939pt x 225.96265pt.
-<immagini/reportFA1.png, id=147, 456.5055pt x 244.21237pt>
+<immagini/reportFA1.png, id=156, 456.5055pt x 244.21237pt>
 File: immagini/reportFA1.png Graphic file (type png)
 <use immagini/reportFA1.png>
 Package pdftex.def Info: immagini/reportFA1.png  used on input line 111.
 (pdftex.def)             Requested size: 273.90541pt x 146.52853pt.
-<immagini/verbose1.png, id=150, 472.76625pt x 231.11343pt>
+<immagini/verbose1.png, id=159, 472.76625pt x 231.11343pt>
 File: immagini/verbose1.png Graphic file (type png)
 <use immagini/verbose1.png>
 Package pdftex.def Info: immagini/verbose1.png  used on input line 119.
@@ -1032,12 +1037,12 @@ Overfull \hbox (1.8295pt too wide) in paragraph at lines 133--133
 |[]\OT1/cmr/bx/n/14.4 A simple MUX: glitch gen-er-a-tion and propaga-
  []
 
-<immagini/mux.png, id=170, 240.9pt x 161.85469pt>
+<immagini/mux.png, id=178, 240.9pt x 161.85469pt>
 File: immagini/mux.png Graphic file (type png)
 <use immagini/mux.png>
 Package pdftex.def Info: immagini/mux.png  used on input line 136.
 (pdftex.def)             Requested size: 192.72025pt x 129.4839pt.
-<immagini/model_mux.png, id=173, 1570.36688pt x 481.8pt>
+<immagini/model_mux.png, id=181, 1570.36688pt x 481.8pt>
 File: immagini/model_mux.png Graphic file (type png)
 <use immagini/model_mux.png>
 Package pdftex.def Info: immagini/model_mux.png  used on input line 143.
@@ -1052,7 +1057,7 @@ Overfull \hbox (23.12277pt too wide) in paragraph at lines 154--154
 |[]\OT1/cmr/bx/n/14.4 Probability and Activ-ity Cal-cu-la-tion: Syn-cronous
  []
 
-<immagini/counter.png, id=182, 114.4275pt x 171.64125pt>
+<immagini/counter.png, id=190, 114.4275pt x 171.64125pt>
 File: immagini/counter.png Graphic file (type png)
 <use immagini/counter.png>
 Package pdftex.def Info: immagini/counter.png  used on input line 157.
@@ -1061,7 +1066,7 @@ Package pdftex.def Info: immagini/counter.png  used on input line 157.
 LaTeX Warning: Reference `timing_counter1' on page 9 undefined on input line 16
 1.
 
-<immagini/counter2.png, id=184, 529.22719pt x 128.73094pt>
+<immagini/counter2.png, id=192, 529.22719pt x 128.73094pt>
 File: immagini/counter2.png Graphic file (type png)
 <use immagini/counter2.png>
 Package pdftex.def Info: immagini/counter2.png  used on input line 166.
@@ -1080,7 +1085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--193
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [10 <./immagini/counter.png> <./immagini/counter2.png>]
-<immagini/report_counter.png, id=200, 538.26094pt x 472.76625pt>
+<immagini/report_counter.png, id=209, 538.26094pt x 472.76625pt>
 File: immagini/report_counter.png Graphic file (type png)
 <use immagini/report_counter.png>
 Package pdftex.def Info: immagini/report_counter.png  used on input line 202.
@@ -1102,7 +1107,7 @@ Overfull \hbox (16.93297pt too wide) in paragraph at lines 1--1
 
 LaTeX Warning: Reference `fsm' on page 13 undefined on input line 8.
 
-<immagini/circuito.png, id=215, 230.96288pt x 185.493pt>
+<immagini/circuito.png, id=223, 230.96288pt x 185.493pt>
 File: immagini/circuito.png Graphic file (type png)
 <use immagini/circuito.png>
 Package pdftex.def Info: immagini/circuito.png  used on input line 11.
@@ -1128,12 +1133,12 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
-<immagini/schemlab2_2.jpg, id=217, 409.53pt x 227.6505pt>
+<immagini/schemlab2_2.jpg, id=225, 409.53pt x 227.6505pt>
 File: immagini/schemlab2_2.jpg Graphic file (type jpg)
 <use immagini/schemlab2_2.jpg>
 Package pdftex.def Info: immagini/schemlab2_2.jpg  used on input line 51.
 (pdftex.def)             Requested size: 245.7199pt x 136.59134pt.
-<immagini/slacks.jpg, id=218, 365.56575pt x 201.1515pt>
+<immagini/slacks.jpg, id=226, 365.56575pt x 201.1515pt>
 File: immagini/slacks.jpg Graphic file (type jpg)
 <use immagini/slacks.jpg>
 Package pdftex.def Info: immagini/slacks.jpg  used on input line 124.
@@ -1143,7 +1148,7 @@ Overfull \hbox (69.36026pt too wide) in paragraph at lines 153--185
  [][] 
  []
 
-<immagini/fsm_power_cell.jpg, id=219, 611.28375pt x 272.81924pt>
+<immagini/fsm_power_cell.jpg, id=227, 611.28375pt x 272.81924pt>
 File: immagini/fsm_power_cell.jpg Graphic file (type jpg)
 <use immagini/fsm_power_cell.jpg>
 Package pdftex.def Info: immagini/fsm_power_cell.jpg  used on input line 250.
@@ -1279,14 +1284,70 @@ Chapter 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-) [21
+<immagini/clock_gating.png, id=279, 208.67963pt x 214.401pt>
+File: immagini/clock_gating.png Graphic file (type png)
+<use immagini/clock_gating.png>
+Package pdftex.def Info: immagini/clock_gating.png  used on input line 7.
+(pdftex.def)             Requested size: 125.20872pt x 128.64159pt.
+
+Overfull \hbox (38.24593pt too wide) in paragraph at lines 4--11
+\OT1/cmr/m/n/10.95 Un prima tec-nica utilizzata per ridurre i con-sumi an-dando
+ a la-vor-are sull'architettura
+ []
+
+[21
 
 
 
-]
+ <./immagini/clock_gating.png>]
+<immagini/clock_gating1.png, id=286, 521.84962pt x 155.3805pt>
+File: immagini/clock_gating1.png Graphic file (type png)
+<use immagini/clock_gating1.png>
+Package pdftex.def Info: immagini/clock_gating1.png  used on input line 17.
+(pdftex.def)             Requested size: 417.48026pt x 124.30455pt.
+
+Overfull \hbox (57.48026pt too wide) in paragraph at lines 17--18
+ [][] 
+ []
+
+
+Overfull \hbox (7.0493pt too wide) in paragraph at lines 12--23
+\OT1/cmr/m/n/10.95 (D1 e D2) si-ano rispet-tiva-mente \OT1/cmr/m/it/10.95 std[]
+logic[]vector (7 downto 0) \OT1/cmr/m/n/10.95 e \OT1/cmr/m/it/10.95 std[]logic[
+]vector
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--23
+
+ []
+
+[22 <./immagini/clock_gating1.png>]
+<immagini/clock_gating2.png, id=295, 525.162pt x 156.585pt>
+File: immagini/clock_gating2.png Graphic file (type png)
+<use immagini/clock_gating2.png>
+Package pdftex.def Info: immagini/clock_gating2.png  used on input line 26.
+(pdftex.def)             Requested size: 420.13017pt x 125.26816pt.
+
+Overfull \hbox (60.13017pt too wide) in paragraph at lines 26--27
+ [][] 
+ []
+
+<immagini/clock_gating3.png, id=297, 528.17325pt x 160.1985pt>
+File: immagini/clock_gating3.png Graphic file (type png)
+<use immagini/clock_gating3.png>
+Package pdftex.def Info: immagini/clock_gating3.png  used on input line 33.
+(pdftex.def)             Requested size: 422.53917pt x 128.15897pt.
+
+Overfull \hbox (62.53917pt too wide) in paragraph at lines 33--34
+ [][] 
+ []
+
+) [23 <./immagini/clock_gating2.png> <./immagini/clock_gating3.png>]
 \openout2 = `capitoli/lab4.aux'.
 
- (capitoli/lab4.tex
+
+(capitoli/lab4.tex
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1294,17 +1355,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
-<immagini/4_1_data_report.png, id=278, 479.08987pt x 366.46913pt>
+<immagini/4_1_data_report.png, id=307, 479.08987pt x 366.46913pt>
 File: immagini/4_1_data_report.png Graphic file (type png)
 <use immagini/4_1_data_report.png>
 Package pdftex.def Info: immagini/4_1_data_report.png  used on input line 15.
 (pdftex.def)             Requested size: 311.40471pt x 238.2021pt.
-[22
+[24
 
 
 
-] [23 <./immagini/4_1_data_report.png>]
-<immagini/4_1_addres_report.png, id=292, 422.17725pt x 329.12962pt>
+] [25 <./immagini/4_1_data_report.png>]
+<immagini/4_1_addres_report.png, id=320, 422.17725pt x 329.12962pt>
 File: immagini/4_1_addres_report.png Graphic file (type png)
 <use immagini/4_1_addres_report.png>
 Package pdftex.def Info: immagini/4_1_addres_report.png  used on input line 41.
@@ -1315,20 +1376,20 @@ Overfull \hbox (1.60973pt too wide) in paragraph at lines 64--64
 |[]\OT1/cmr/bx/n/12 Bus-invert tech-nique, Trans-ition based tech-nique, Gray
  []
 
-[24 <./immagini/4_1_addres_report.png>]
-<immagini/transition.png, id=299, 285.16537pt x 46.67438pt>
+[26 <./immagini/4_1_addres_report.png>]
+<immagini/transition.png, id=327, 285.16537pt x 46.67438pt>
 File: immagini/transition.png Graphic file (type png)
 <use immagini/transition.png>
 Package pdftex.def Info: immagini/transition.png  used on input line 109.
 (pdftex.def)             Requested size: 342.19673pt x 56.00894pt.
-<immagini/gray.png, id=303, 292.39238pt x 121.05225pt>
+<immagini/gray.png, id=331, 292.39238pt x 121.05225pt>
 File: immagini/gray.png Graphic file (type png)
 <use immagini/gray.png>
 Package pdftex.def Info: immagini/gray.png  used on input line 154.
 (pdftex.def)             Requested size: 292.39165pt x 121.05194pt.
- [25 <./immagini/transition.png>]
-[26 <./immagini/gray.png>] [27]
-<immagini/address_report_tecniche.png, id=329, 361.04887pt x 344.78813pt>
+ [27 <./immagini/transition.png>]
+[28 <./immagini/gray.png>] [29]
+<immagini/address_report_tecniche.png, id=358, 361.04887pt x 344.78813pt>
 File: immagini/address_report_tecniche.png Graphic file (type png)
 <use immagini/address_report_tecniche.png>
 Package pdftex.def Info: immagini/address_report_tecniche.png  used on input li
@@ -1344,19 +1405,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--208
 
  []
 
-[28 <./immagini/address_report_tecniche.png>]
-<immagini/data_report_tecniche.png, id=336, 365.56575pt x 354.72525pt>
+[30 <./immagini/address_report_tecniche.png>]
+<immagini/data_report_tecniche.png, id=365, 365.56575pt x 354.72525pt>
 File: immagini/data_report_tecniche.png Graphic file (type png)
 <use immagini/data_report_tecniche.png>
 Package pdftex.def Info: immagini/data_report_tecniche.png  used on input line 
 211.
 (pdftex.def)             Requested size: 292.45299pt x 283.78058pt.
-<immagini/formula_t0.png, id=338, 315.88013pt x 77.088pt>
+<immagini/formula_t0.png, id=367, 315.88013pt x 77.088pt>
 File: immagini/formula_t0.png Graphic file (type png)
 <use immagini/formula_t0.png>
 Package pdftex.def Info: immagini/formula_t0.png  used on input line 219.
 (pdftex.def)             Requested size: 252.70444pt x 61.67047pt.
- [29 <./immagini/data_report_tecniche.png> <./immagini/formula_t0.png>]) [30]
+ [31 <./immagini/data_report_tecniche.png> <./immagini/formula_t0.png>]) [32]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 40.
 See the caption package documentation for explanation.
@@ -1368,7 +1429,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6D6E52A95CE48C5A2A5A611F941B633D;1399.
+(rerunfilecheck)             Checksum: C9CDAA1381CAA2200EAC8465706BD03B;1479.
 
 
 LaTeX Warning: There were undefined references.
@@ -1383,13 +1444,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
 ### semi simple group (level 1) entered at line 61 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 23453 strings out of 492970
- 429700 string characters out of 3123041
+ 23485 strings out of 492970
+ 430411 string characters out of 3123041
  683329 words of memory out of 3000000
- 26895 multiletter control sequences out of 15000+200000
+ 26916 multiletter control sequences out of 15000+200000
  550594 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,63p,763b,950s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,63p,763b,956s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Luigi Massari/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Luigi Massa
@@ -1415,9 +1476,9 @@ fb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Luigi
  Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb>
-Output written on main.pdf (32 pages, 1791283 bytes).
+Output written on main.pdf (35 pages, 1902503 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 460 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
