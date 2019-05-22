@@ -222,7 +222,7 @@ Tutte le simulazioni vengono ora fatte utilizzando due carichi capacitivi divers
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\textbf{NAND X1} & &\\
+		\textbf{NAND X8} & &\\
 		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
 		\hline
 		$t_{rise}$ &67.692 ps &425.04 ps  \\
@@ -343,7 +343,7 @@ Come ci si aspettava, la NAND X1 consuma circa l'86\% in meno della NAND X8. Que
 		\textbf{XMP0.M1}&-0.24712&-0.24712 \\
 		
 		\textbf{XMP1.M1}&-0.24712&-0.24712\\
-				\textbf{XMP6.M1}&-0.24712&-0.24712 \\
+		\textbf{XMP6.M1}&-0.24712&-0.24712 \\
 		
 		\textbf{XMP7.M1}&-0.24712&-0.24712\\
 		
@@ -352,3 +352,330 @@ Come ci si aspettava, la NAND X1 consuma circa l'86\% in meno della NAND X8. Que
 	\caption{\textit{Tensioni di soglia}}
 	\label{Tab5_12}
 \end{table}
+
+\section{Comparing high speed and low leakage optimization}
+Viene ora richiesto di fare le medesime analisi svolte nei punti precedenti, ma utilizzando delle tipologie di gate ottimizzati per una bassa corrente sottosoglia. I modelli utilizzati sono precisamente: \textbf{ND2LL} e \textbf{ND2LLX8}. \\
+I dati raccolti dalla simulazione ELDO sono riportati:
+\begin{itemize}
+	\item per quanto riguarda il transistore X1, nella Tabella \ref{Tab5_13} per i tempi, mentre nella Tabella \ref{Tab5_14} per le correnti.
+	\item per quanto riguarda il transistore X8, nella Tabella \ref{Tab5_15} per i tempi, mentre nella Tabella \ref{Tab5_16} per le correnti.
+\end{itemize}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND LL X1} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$t_{rise}$ &71.556 ps&592.23 ps  \\
+		
+		$t_{fall}$ &63.464 ps &406.23 ps  \\
+		
+		$t_{pdHL}$&31.612 ps &257.67 ps  \\
+		
+		$t_{pdLH}$ &52.657 ps&331.22 ps  \\
+		
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_13}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND LL X1} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$I_{GND, f}^{max}$ &404.32$\mu$A &867.10 $\mu$A\\
+		
+		$I_{Vdd, r}^{max}$ &-303.01$\mu$A &-683.65 $\mu$A \\
+		
+		$I_{GND, r}^{max}$&132.79 $\mu$A &68.306 $\mu$A\\
+		
+		$I_{Vdd, f}^{max}$&-165.52 $\mu$A&-70.310 $\mu$A \\
+		
+		$I_{Load, f}^{max}$ &3.2194 nA &3.3727 nA \\
+		
+		$I_{Load, r}^{max}$ &-2.4740 nA &-3.2278 nA  \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_14}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND LL X8} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$t_{rise}$ &63.480 ps&137.67 ps  \\
+		
+		$t_{fall}$ &57.371 ps &112.39 ps  \\
+		
+		$t_{pdHL}$&26.768 ps &78.324 ps  \\
+		
+		$t_{pdLH}$ &44.524 ps&102.77 ps  \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_15}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND LL X8} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$I_{GND, f}^{max}$ &51.878 $\mu$A &194.22 $\mu$A\\
+		
+		$I_{Vdd, r}^{max}$ &-42.315$\mu$A &-151.76 $\mu$A \\
+		
+		$I_{GND, r}^{max}$&16.961 $\mu$A &3.6258 $\mu$A\\
+		
+		$I_{Vdd, f}^{max}$&-19.758 $\mu$A&-2.4801 $\mu$A \\
+		
+		$I_{Load, f}^{max}$ &0.39863 nA &1923.7 nA \\
+		
+		$I_{Load, r}^{max}$ &-0.37117 nA &-36.882 nA  \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_16}
+\end{table}
+Si può ben notare come, tutti i tempi si siano dilatati per le porte \textit{Low Leakage} rispetto a quelle \textit{High Speed}. Si può analizzare l'incremento percentuale del caso LL rispetto al caso HS nella Tabella \ref{Tab5_17} per il gate X1 e nella Tabella \ref{Tab5_18} per il gate X8.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Confronto LL-HS} & &\\
+		\textbf{NAND X1} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$t_{rise}$ &5.71\% &39.33\%  \\
+		
+		$t_{fall}$ &\% & 18.86\%  \\
+		
+		$t_{pdHL}$&51.1\% & 26.49\%  \\
+		
+		$t_{pdLH}$&37.27\%& 39.98\% \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Aumento percentuale dei tempi LL/HS NAND X1}}
+	\label{Tab5_17}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Confronto LL-HS} & &\\
+		\textbf{NAND X8} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$t_{rise}$ &16.43\% &21.76\%  \\
+		
+		$t_{fall}$ &\% & 5.16\%  \\
+		
+		$t_{pdHL}$&53.27\% &36.36\%  \\
+		
+		$t_{pdLH}$&41.99\%& 42.23\% \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Aumento percentuale dei tempi LL/HS NAND X8}}
+	\label{Tab5_18}
+\end{table}
+\\
+Al contrario, si può ben notare come le varie correnti si riducano dal caso LL rispetto al caso HS, arrivando anche a diminuire di un ordine di grandezza. In Tabella \ref{Tab5_19} e in Tabella \ref{Tab5_20} si può notare quanto valga la riduzione percentuale della corrente dal caso HS al caso LL, rispettivamente per il gate X1 e il gate X8.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND LL X1} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$I_{GND, f}^{max}$ &32.78\%  &20.88\% \\
+		
+		$I_{Vdd, r}^{max}$ &39.99\% &29.32\% \\
+		
+		$I_{GND, r}^{max}$&62.85\% &66.93\%\\
+		
+		$I_{Vdd, f}^{max}$&58.52\% &73.83\% \\
+		
+		$I_{Load, f}^{max}$ &95.19\% &?????\\
+		
+		$I_{Load, r}^{max}$ &93.44\% &????  \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Riduzione percentuale delle correnti NAND X1}}
+	\label{Tab5_19}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND LL X8} & &\\
+		\textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
+		\hline
+		$I_{GND, f}^{max}$ &32.78\%  &20.88\% \\
+		
+		$I_{Vdd, r}^{max}$ &39.99\% &29.32\% \\
+		
+		$I_{GND, r}^{max}$&62.85\% &66.93\%\\
+		
+		$I_{Vdd, f}^{max}$&58.52\% &73.83\% \\
+		
+		$I_{Load, f}^{max}$ &95.19\% &?????\\
+		
+		$I_{Load, r}^{max}$ &93.44\% &????  \\
+		\hline
+	\end{tabular}
+	\caption{\textit{Riduzione percentuale delle correnti NAND X8}}
+	\label{Tab5_20}
+\end{table}
+\newpage
+\noindent In seguito, nelle Tabelle \ref{Tab5_21} e \ref{Tab5_22}, sono riportati rispettivamente i valori delle Tensioni di Soglia dei gate \textit{Low Leakage} rispettivamente nel caso del gate X1 ed il gate X8. Si può notare come i valori siano superiori rispetto a quelli del caso \textit{High Speed}: questo fenomeno è assolutamente concorde con quanto appreso in teoria, in quanto un transistor a basso leakage deve avere delle tensioni di soglia più elevate.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND X1} &&\\
+		\textbf{Transistor/$C_{Load}$}&0.06 pF & 60 pF\\
+		\hline
+		\textbf{XMN0.M1} &0.41333&0.41333\\
+		\textbf{XMN1.M1} &0.38062&0.38062 \\
+		\textbf{XMP0.M1}&-0.36712&-0.36712 \\
+		\textbf{XMP1.M1}&-0.36712&-0.36712\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_21}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{NAND X8} &&\\
+		
+		\textbf{Transistor/$C_{Load}$}&0.06 pF & 60 pF\\
+		\hline
+		\textbf{XMN0.M1} &0.41333&0.41333\\	
+		\textbf{XMN1.M1} &0.38062&0.38062 \\
+		\textbf{XMN2.M1} &0.41333&0.41333\\
+		\textbf{XMN3.M1} &0.38062&0.38062 \\
+		\textbf{XMN4.M1} &0.38062&0.38062 \\
+		\textbf{XMN5.M1} &0.41333&0.41333\\
+		\textbf{XMN6.M1} &0.38062&0.38062 \\
+		\textbf{XMN7.M1} &0.41333&0.41333\\
+		\textbf{XMP0.M1}&?????&?????? \\
+		\textbf{XMP1.M1}&?????&??????\\
+		\textbf{XMP6.M1}&-0.36764&-0.36764 \\
+		\textbf{XMP7.M1}&-0.36764&-0.36764\\
+		
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_22}
+\end{table}
+\\
+Vengono confrontate, tramite \textit{ezwave}, le tensioni e le correnti nei casi \textit{High Speed} e \textit{Low Leakage}. Tutti i grafici risultanti sono riportati nelle Figure \ref{onde_5_4_voltage1},\ref{onde_5_4_voltage2},\ref{onde_5_4_current1},\ref{onde_5_4_current2} ,\ref{onde_5_4_current3}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.1]{immagini/onde_5_4_voltage1}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_4_voltage1}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.1]{immagini/onde_5_4_voltage2}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_4_voltage2}
+\end{figure}
+\newpage
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.12]{immagini/onde_5_4_current1}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_4_current1}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.12]{immagini/onde_5_4_current2}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_4_current2}
+\end{figure}
+\newpage
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.12]{immagini/onde_5_4_current3}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{onde_5_4_current3}
+\end{figure}
+\noindent Infine, sempre tramite la simulazione ELDO, si è andata a stimare la potenza totale dissipata che è risultata essere pari a:
+\begin{center}
+	$Total Power Dissipation X8 = 2.9686 nW $ \\
+	$Total Power Dissipation X1 = 445.09 pW $
+\end{center}
+Andando a confrontare questi valori con quelli ottenuti nel punto precedente, si può notare come la potenza si sia ridotta drasticamente. Precisamente si è ottenuta una riduzione del 93.99\% nel caso del gate X8 e del 93.44\% nel caso del gate X1.
+
+\section{Temperature dependency}
+In questa sezione si è andato a studiare l'andamento della potenza e della tensione di soglia, al variare della temperatura. Andando a modificare leggermente lo script, commentando il valore di capacità di 0.06 pF e inserendo un particolare comando \textit{.temp -40 0 40 80 120 150 180}, si ottiene una simulazione ELDO dove posso andare a vedere come varia la potenza in funzione della temperatura. I dati sono stati raccolti nella Tabella \ref{Tab5_23}.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Temperatura}&\textbf{Potenza}\\
+		\hline
+		-40°C&0.011197 nW\\
+		0°C&0.12121 nW\\
+		40°C&0.76913 nW\\
+		80°C&3.2020 nW\\
+		120°C&9.8880 nW\\
+		150°C&19.907 nW\\
+		180°C&36.351 nW\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_23}
+\end{table}
+\\
+Infine, tramite il programma \textbf{gnuplot} ed uno script appositamente realizzato, si ottiene un preciso plot che mostra l'andamento della potenza in funzione della temperatura. Il grafico è riportato in Figura \ref{TEMP}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.55]{immagini/TEMP}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{TEMP}
+\end{figure}
+\\
+Allo stesso modo si è andato a simulare il comportamento della Tensione di Soglia al variare della Temperatura. I dati sono raccolti nella Tabella \ref{Tab5_24} e il grafico è presente in Figura \ref{TEMPVT}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|cccc|}
+		\hline
+		&\textbf{Tensione di Soglia} \textbf{$V_{TH}$}&&&\\
+		\hline
+		\textbf{Temperatura}&\textbf{XMN0.M1}&\textbf{XMN1.M1}&\textbf{XMP0.M1}&\textbf{XMP1.M1}\\
+		\hline
+		-40°C&0.45753&0.42482&-0.41556&-0.41556\\
+		0°C&0.43114&0.39843&-0.38664&-0.38664\\
+		40°C&0.40476&0.37204&-0.35772&-0.35772\\
+		80°C&0.37837&0.34566&-0.32880&-0.32880\\
+		120°C&0.35199&0.31927&-0.29988&-0.29988\\
+		150°C&0.33220&0.29949&-0.27819&-0.27819\\
+		180°C&0.31241&0.27970&-0.25650&-0.25650\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Tensioni di soglia}}
+	\label{Tab5_24}
+\end{table}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.55]{immagini/TEMPVT}
+	\caption{\textit{Schema circuitale porta NAND}}
+	\label{TEMPVT}
+\end{figure}
+
+SERVONO DEI COMMENTI??????? PORCA TROIA I COMMENTI
+
+

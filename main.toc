@@ -22,3 +22,5 @@
 \contentsline {section}{\numberline {5.1}Characterizing a library gate}{34}{section.5.1}
 \contentsline {section}{\numberline {5.2}Characterizing a gate for output load}{37}{section.5.2}
 \contentsline {section}{\numberline {5.3}Comparing different gate sizing}{39}{section.5.3}
+\contentsline {section}{\numberline {5.4}Comparing high speed and low leakage optimization}{44}{section.5.4}
+\contentsline {section}{\numberline {5.5}Temperature dependency}{50}{section.5.5}
