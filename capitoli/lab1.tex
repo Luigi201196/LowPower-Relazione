@@ -142,45 +142,41 @@ I risultati sono sintetizzati nella Tabella \ref{Tab1_4}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		& \textbf{}& \textbf{FA6}& \textbf{FA5} &\textbf{FA4}\\
+		& $P(S=1)$&$P(C_{OUT}=1)$& $E_{SW}(S=1)$&$E_{SW}(C_{OUT}=1)$\\
 		\hline
-		Half-Adder & 0.1  & 0.5& 0.4&0.4\\
+		\textbf{Half-Adder} & 1/2  & 1/4&1/2&3/8\\
 		\hline
-		Full-Adder &  0.43 &0.40&0.42& 0.44\\
+		\textbf{Full-Adder} &  1/2 &1/2&1/2& 1/2\\
 		\hline
 	\end{tabular}
 	\caption{\textit{Risultati simulazione}}
 	\label{Tab1_4}
 \end{table}\\
 
-In seguito, si sono calcolate, sempre manualmente, le probabilità di uscita con le rispettive switching activity del Ripple Carry Adder, riportato in Figura \ref{ripple}, utilizzando i dati calcolati in precedenza per il singolo Full-Adder. Anche per questo calcolo iniziale gli ingressi sono stati considerati scorrelati ed equiprobabili.
+\noindent In seguito si sono calcolate, sempre analiticamente, le probabilità di uscita con le rispettive switching activity del Ripple Carry Adder, riportato in Figura \ref{ripple}, utilizzando i dati calcolati in precedenza per il singolo Full-Adder. Anche per questo calcolo iniziale gli ingressi sono stati considerati scorrelati ed equiprobabili.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.9]{immagini/ripple}
 	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
 	\label{ripple}
 \end{figure} \\
-I risultati sono riportati nella Tabella \ref{Tab1_3}
+I risultati sono riportati nella Tabella \ref{Tab1_3}.\\
 \begin{table}[!h]\footnotesize
 	\centering
-	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 		\hline
-		\textbf{FA7}& \textbf{FA6}& \textbf{FA5} &\textbf{FA4}&\textbf{FA3}&\textbf{FA2}&\textbf{FA1}&\textbf{FA0}\\
+		&\textbf{FA7}& \textbf{FA6}& \textbf{FA5} &\textbf{FA4}&\textbf{FA3}&\textbf{FA2}&\textbf{FA1}&\textbf{FA0}\\
 		\hline
-		10 & 0.1  & 0.5& 0.4&0.4\\
+		$P(S=1)$&1/2 &1/2&1/2&1/2&1/2&1/2&1/2&1/2\\
 		\hline
-		100 &  0.43 &0.40&0.42& 0.44\\
-		\hline
-		1000& 0.533& 0.418&0.352&0.470\\
-		\hline
-		10000& 0.492& 0.36&0.378&0.487\\
+		$E_{SW}$&1/2&1/2&1/2&1/2&1/2&1/2&1/2&1/2\\
 		\hline
 	\end{tabular}
 	\caption{\textit{Risultati simulazione}}
 	\label{Tab1_3}
-\end{table}\\
-
-Nel secondo caso, invece, gli ingressi sono stati considerati sempre scorrelati ma con probabilità diverse, infatti si ha che:
+\end{table}
+\\
+\noindent Nel secondo caso, invece, gli ingressi sono stati considerati sempre scorrelati ma con probabilità diverse, infatti si ha che:
 \begin{center}
 	$ P(A='1')=0.4 e P(B='1')=0.6 $
 \end{center}
