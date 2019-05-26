@@ -1,6 +1,6 @@
 \chapter{Laboratorio 1: \\Power Estimation: probabilistic techniques}
 \section{Probability and Activity Calculation: Simple Logic Gates}
-Durante la prima parte dell'esercitazione è stata calcolata la probabilità di avere '1' logico in uscita di alcuni gate elementari, con la relativa Switching Activity.
+Durante la prima parte dell'esercitazione è stato richiesto di calcolare la probabilità di avere '1' logico in uscita di alcuni gate elementari, con la relativa Switching Activity.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/gate}
@@ -9,9 +9,40 @@ Durante la prima parte dell'esercitazione è stata calcolata la probabilità di 
 \end{figure} \\
 La probabilità di '1' logico è stata stimata semplicemente andando a valutare il rapporto fra il numero di possibili combinazioni con '1' logico diviso il numero di combinazioni totali. Invece per il calcolo della Switching Activity è stata utilizzata la formula vista a lezione:
 \begin{center}
-	$ A=P_{1}P_{0}+P_{1}P_{0}=2P_{1}(1-P_{1}) $
+	$ A=E_{SW}=P_{1}P_{0}+P_{1}P_{0}=2P_{1}(1-P_{1}) $
 \end{center}
 Dove $P_{1}$ e $P_{0}$ sono le probabilità di avere '1' e '0' logici in uscita dalla mia porta. \\
+Di seguito si riportano i procedimenti matematici per ottenere le probabilità e le Switching Activity dei gate elementari visti in Figura \ref{fig1_1}.\\
+\begin{itemize}
+	\item \textit{Inverter} \\
+	$P_{1}(Y)=P_{0}(A)=\frac{1}{2}$ \\
+	$P_{0}(Y)=P_{1}(A)=\frac{1}{2}$ \\
+	$E_{SW}=2P_{1}(Y)(1-P_{1}(Y))=2\frac{1}{2}\frac{1}{2}=\frac{1}{2}$\\
+	\item \textit{AND} \\
+	$P_{1}(Y)=P_{1}(A)P_{1}(B)=\frac{1}{2}\frac{1}{2}=\frac{1}{4}$ \\
+	$E_{SW}=2P_{1}(Y)(1-P_{1}(Y))=2\frac{1}{4}\frac{3}{4}=\frac{3}{8}$\\
+	\item \textit{OR} \\
+	$P_{1}(Y)=P_{1}(A)P_{1}(B)+P_{0}(A)P_{1}(B)+P_{1}(A)P_{0}(B)=\frac{1}{2}\frac{1}{2}+\frac{1}{2}\frac{1}{2}+\frac{1}{2}\frac{1}{2}=\frac{3}{4}$ \\
+	$E_{SW}=2P_{1}(Y)(1-P_{1}(Y))=2\frac{3}{4}\frac{1}{4}=\frac{3}{8}$\\
+	\item \textit{XOR} \\
+	$P_{1}(Y)=P_{1}(A)P_{0}(B)+P_{0}(A)P_{1}(B)=\frac{1}{2}\frac{1}{2}+\frac{1}{2}\frac{1}{2}=\frac{1}{2}$ \\
+	$E_{SW}=2P_{1}(Y)(1-P_{1}(Y))=2\frac{1}{2}\frac{1}{2}=\frac{1}{2}$\\
+\end{itemize}
+Per maggiore chiarezza, i risultati sono raccolti nella Tabella \ref{Tab1_1}. \\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		 & \textbf{INVERTER}& \textbf{AND}& \textbf{OR} &\textbf{XOR}\\
+		\hline
+		$P_{1}(Y)$ & $1/2$  & $1/4$& $3/4$&$1/2$\\
+		\hline
+		$E_{SW}$& $1/2$ &$3/8$&$3/8$& $1/2$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati simulazione}}
+	\label{Tab1_1}
+\end{table}\\
 In seguito, tramite il programma \textit{ModelSim} è stato analizzato il numero di toogle delle varie porte utilizzando un testbench sviluppato appositamente dai docenti. Si è andato a variare il numero di colpi di clock, come richiesto dalla traccia ed in seguito si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente.\\
 Tramite appositi comandi di Modelsim (\textbf{-power report}), sono stati stilati dei report relativi ad una stima delle commutazioni delle varie porte, della quale se ne riporta un esempio in Figura \ref{fig1_2}. Questi report consentono di stimare l'attività delle porte come verrà descritto in seguito.\\
 \begin{figure}[!htb]
@@ -27,7 +58,7 @@ Si riportano nella tabella \ref{tab1}, i risultati ottenuti dalle varie simulazi
 		\hline
 		\textbf{Tc(CK)} & \textbf{Tc(INV)}& \textbf{Tc(AND)}& \textbf{Tc(OR)} &\textbf{Tc(XOR)}\\
 		\hline
-		20 & 1  & ?& 4&4\\
+		20 & 1  & 5& 4&4\\
 		\hline
 		200 &  43 &40&42& 44\\
 		\hline
@@ -41,37 +72,120 @@ Si riportano nella tabella \ref{tab1}, i risultati ottenuti dalle varie simulazi
 \end{table}\\
 Dai seguenti valori è facile ricavare i valori di Switching Activity simualte, in quanto si possono stimare da:
 \begin{center}
-	$ A=\frac{Tc(PORT)}{T_{CLK}} $
+	$ A=E_{SW}=\frac{Tc(PORT)}{T_{CLK}} $
 \end{center}
-Come ci si aspettava, essendo la Switching Activity il numero di toogle avvenuti in un periodo, i valori delle simulazioni vengono molto simili ai valori calcolati analiticamente. Aumentando il tempo di simulazione, i valori di Switching Activity diventano sempre più precisi, arrivando ad avere un errore tra 0,01-0,5.
+Come ci si aspettava, essendo la Switching Activity il numero di toogle avvenuti in un periodo, i valori delle simulazioni vengono molto simili ai valori calcolati analiticamente. Aumentando il tempo di simulazione, i valori di Switching Activity diventano sempre più precisi, arrivando ad avere un errore tra 0.01-0.5. I vari valori sono stati calcolati e raccolti nella Tabella \ref{Tab1_2}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{$N_{CLOCK}$} & \textbf{$E_{SW}(INV)$}& \textbf{$E_{SW}(AND)$}& \textbf{$E_{SW}(OR)$} &\textbf{$E_{SW}(XOR)$}\\
+		\hline
+		10 & 0.1  & 0.5& 0.4&0.4\\
+		\hline
+		100 &  0.43 &0.40&0.42& 0.44\\
+		\hline
+		1000& 0.533& 0.418&0.352&0.470\\
+		\hline
+		10000& 0.492& 0.36&0.378&0.487\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati simulazione}}
+	\label{Tab1_2}
+\end{table}\\
 
-\section{Probability and Activity Calculation: Half and full adder}
-Per prima cosa sono state calcolate le probabilità di avere un '1' logico sull'uscita sia dell'half adder e sia del full adder e le probabilità di avere un '1' logico come carry out degli stessi blocchi. Una volta eseguiti questi calcoli sono state calcolate anche le corrispettive switching activity.
+\section{Probability and Activity Calculation: Half and Full adder}
+Nella seconda parte dell'esercitazione viene richiesto di analizzare le probabilità e la Switching Activity di un Half Adder e di un Full Adder, sia per quanto riguarda l'uscita $S$ sia per quanto riguarda il carry out $C_{OUT}$, di cui se ne riporta lo schema circuitale rispettivamente in Figura \ref{half_adder} e \ref{full_adder}.
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.8]{immagini/gate}
+	\includegraphics[scale=0.4]{immagini/half_adder}
 	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
-	\label{fig2_1}
+	\label{half_adder}
 \end{figure} \\
-La probabilità di '1' logico è stata stimata semplicemente andando a valutare il rapporto fra il numero di possibili combinazioni con '1' logico diviso il numero di combinazioni totali. Invece per il calcolo della Switching Activity è stata utilizzata la formula vista a lezione:
-\begin{center}
-	$ A=P_{1}P_{0}+P_{1}P_{0}=2P_{1}(1-P_{1}) $
-\end{center}
-$\alpha$
-Dove $P_{1}$ e $P_{0}$ sono le probabilità di avere '1' e '0' logici in uscita dalla mia porta. \\
-In seguito, si sono calcolate sempre manualmente le probabilità di uscita con le rispettive switching activity del Ripple carry adder, valutando la probabilità per ogni singolo Half adder come riportato in figura. Per questo calcolo iniziale gli ingressi sono stati considerati scorrelati ed equiprobabili.
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.8]{immagini/gate}
-	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
-	\label{fig2_2}
+	\includegraphics[scale=0.2]{immagini/full_adder}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
+	\label{full_adder}
 \end{figure} \\
+Il calcolo è stato effettuato in entrambi in casi, analizzando il blocco come un unico gate e andando a studiare la rispettiva Tavola di Verità. Anche in questa sezione, si considerano gli ingressi equiprobabili, con probabilità $P('input')=0.5$ Il risultato è stato il seguente:\\
+\begin{itemize}
+	\item \textit{Half-Adder} \\
+	$P_{1}(S)=P_{1}(A)P_{0}(B)+P_{0}(A)P_{1}(B)=\frac{1}{2}\frac{1}{2}+\frac{1}{2}\frac{1}{2}=\frac{1}{2}$ \\
+	$E_{SW}(S)=2P_{1}(S)(1-P_{1}(S))=2\frac{1}{2}\frac{1}{2}=\frac{1}{2}$\\
+	$P_{1}(C_{OUT})=P_{1}(A)P_{1}(B)=\frac{1}{2}\frac{1}{2}=\frac{1}{4}$ \\
+	$E_{SW}(C_{OUT})=2P_{1}(C_{OUT})(1-P_{1}(C_{OUT}))=2\frac{1}{4}\frac{3}{4}=\frac{3}{8}$\\
+	\item \textit{Full-Adder} \\
+	$P_{1}(S)=
+	P_{0}(A)P_{0}(B)P_{1}(C_{IN})+
+	P_{0}(A)P_{1}(B)P_{0}(C_{IN})+
+	P_{1}(A)P_{0}(B)P_{0}(C_{IN})++
+	P_{1}(A)P_{1}(B)P_{1}(C_{IN})
+	=\frac{1}{2}\frac{1}{2}\frac{1}{2}+
+	\frac{1}{2}\frac{1}{2}\frac{1}{2}+
+	\frac{1}{2}\frac{1}{2}\frac{1}{2}+
+	\frac{1}{2}\frac{1}{2}\frac{1}{2}=\frac{1}{2}$ \\
+	$E_{SW}(S)=2P_{1}(S)(1-P_{1}(S))=2\frac{1}{2}\frac{1}{2}=\frac{1}{2}$\\
+	$P_{1}(C_{OUT})=
+	P_{0}(A)P_{1}(B)P_{1}(C_{IN})+
+	P_{1}(A)P_{0}(B)P_{1}(C_{IN})+
+	P_{1}(A)P_{1}(B)P_{0}(C_{IN})++
+	P_{1}(A)P_{1}(B)P_{1}(C_{IN})+
+	=\frac{1}{2}\frac{1}{2}\frac{1}{2}+
+	\frac{1}{2}\frac{1}{2}\frac{1}{2}+
+	\frac{1}{2}\frac{1}{2}\frac{1}{2}+
+	\frac{1}{2}\frac{1}{2}\frac{1}{2}=\frac{1}{2}$ \\
+	$E_{SW}(C_{OUT})=2P_{1}(C_{OUT})(1-P_{1}(C_{OUT}))=2\frac{1}{2}\frac{1}{2}=\frac{1}{2}$\\
+\end{itemize}
+I risultati sono sintetizzati nella Tabella \ref{Tab1_4}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		& \textbf{}& \textbf{FA6}& \textbf{FA5} &\textbf{FA4}\\
+		\hline
+		Half-Adder & 0.1  & 0.5& 0.4&0.4\\
+		\hline
+		Full-Adder &  0.43 &0.40&0.42& 0.44\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati simulazione}}
+	\label{Tab1_4}
+\end{table}\\
+
+In seguito, si sono calcolate, sempre manualmente, le probabilità di uscita con le rispettive switching activity del Ripple Carry Adder, riportato in Figura \ref{ripple}, utilizzando i dati calcolati in precedenza per il singolo Full-Adder. Anche per questo calcolo iniziale gli ingressi sono stati considerati scorrelati ed equiprobabili.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.9]{immagini/ripple}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
+	\label{ripple}
+\end{figure} \\
+I risultati sono riportati nella Tabella \ref{Tab1_3}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		\textbf{FA7}& \textbf{FA6}& \textbf{FA5} &\textbf{FA4}&\textbf{FA3}&\textbf{FA2}&\textbf{FA1}&\textbf{FA0}\\
+		\hline
+		10 & 0.1  & 0.5& 0.4&0.4\\
+		\hline
+		100 &  0.43 &0.40&0.42& 0.44\\
+		\hline
+		1000& 0.533& 0.418&0.352&0.470\\
+		\hline
+		10000& 0.492& 0.36&0.378&0.487\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati simulazione}}
+	\label{Tab1_3}
+\end{table}\\
+
 Nel secondo caso, invece, gli ingressi sono stati considerati sempre scorrelati ma con probabilità diverse, infatti si ha che:
 \begin{center}
 	$ P(A='1')=0.4 e P(B='1')=0.6 $
 \end{center}
 I risultati ottenuti risultano uguali ai precedenti, per quanto riguarda la probabilità dell'uscita e del carry out.
-In seguito, tramite il programma \textit{ModelSim} è stato simulato il Ripple carry adder (giusto?) utilizzando un testbench sviluppato appositamente dai docenti.Il testbench è stato costruito appositamente per assegnare ritardi diversi al bit di somma, DRCAS, e al bit di carry, DRCAC. Inoltre per garantire una simulazione generale si è utilizzato l'LFSR per generare ingressi randomici.Per una corretta visualizzazione dei risultati si è impostata una risoluzione di 1ps.Dopo aver visualizzato il power report, come fatto già in precedenza, si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente, seguendo lo stesso ragionamento del punto precedente.\\
+In seguito, tramite il programma \textit{ModelSim} è stato simulato il Ripple carry adder (giusto?) utilizzando un testbench sviluppato appositamente dai docenti.Il testbench è stato costruito appositamente per assegnare ritardi diversi al bit di somma, DRCAS, e al bit di carry, DRCAC. Inoltre per garantire una simulazione generale si è utilizzato l'LFSR per generare ingressi randomici.Per una corretta visualizzazione dei risultati si è impostata una risoluzione di 1ps. Dopo aver visualizzato il power report, come fatto già in precedenza, si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente, seguendo lo stesso ragionamento del punto precedente.\\
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[scale=1]{immagini/gate}
