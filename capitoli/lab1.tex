@@ -108,7 +108,7 @@ Nella seconda parte dell'esercitazione viene richiesto di analizzare le probabil
 	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
 	\label{full_adder}
 \end{figure} \\
-Il calcolo è stato effettuato in entrambi in casi, analizzando il blocco come un unico gate e andando a studiare la rispettiva Tavola di Verità. Anche in questa sezione, si considerano gli ingressi equiprobabili, con probabilità $P('input')=0.5$ Il risultato è stato il seguente:\\
+Il calcolo è stato effettuato in entrambi in casi, analizzando il blocco come un unico gate e andando a studiare la rispettiva Tavola di Verità. Anche in questa sezione, si considerano gli ingressi equiprobabili e scorrelati, con probabilità $P('input')=0.5$ Il risultato è stato il seguente:\\
 \begin{itemize}
 	\item \textit{Half-Adder} \\
 	$P_{1}(S)=P_{1}(A)P_{0}(B)+P_{0}(A)P_{1}(B)=\frac{1}{2}\frac{1}{2}+\frac{1}{2}\frac{1}{2}=\frac{1}{2}$ \\
@@ -176,12 +176,11 @@ I risultati sono riportati nella Tabella \ref{Tab1_3}.\\
 	\label{Tab1_3}
 \end{table}
 \\
-\noindent Nel secondo caso, invece, gli ingressi sono stati considerati sempre scorrelati ma con probabilità diverse, infatti si ha che:
-\begin{center}
-	$ P(A='1')=0.4 e P(B='1')=0.6 $
-\end{center}
-I risultati ottenuti risultano uguali ai precedenti, per quanto riguarda la probabilità dell'uscita e del carry out.
-In seguito, tramite il programma \textit{ModelSim} è stato simulato il Ripple carry adder (giusto?) utilizzando un testbench sviluppato appositamente dai docenti.Il testbench è stato costruito appositamente per assegnare ritardi diversi al bit di somma, DRCAS, e al bit di carry, DRCAC. Inoltre per garantire una simulazione generale si è utilizzato l'LFSR per generare ingressi randomici.Per una corretta visualizzazione dei risultati si è impostata una risoluzione di 1ps. Dopo aver visualizzato il power report, come fatto già in precedenza, si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente, seguendo lo stesso ragionamento del punto precedente.\\
+\noindent Se invece si considerano gli ingressi non equiprobabili, ma comunque scorrelati, con probabilità rispettivamente $P(A='1')=0.4$ e $P(B='1')=0.6 $, DA CAPIRE SE I RISULTATI SONO UGUALI O MENO!\\
+In seguito, tramite il programma \textit{ModelSim} è stato simulato il Ripple Carry Adder utilizzando un testbench sviluppato appositamente dai docenti e utilizzando le procedure viste nel paragrafo 1.1.\\
+La simulazione viene fatta andando ad inserire dei ritardi sulle uscite $S$ e $C_{OUT}$ dei singoli Full-Adder. Inizialmente si setta esclusivamente un ritardo di 25 ps esclusivamente sul segnale $S$, mentre in secondo luogo si introduce un ritardo uguale anche sul segnale di $C_{OUT}$
+
+Il testbench è stato costruito appositamente per assegnare ritardi diversi al bit di somma, DRCAS, e al bit di carry, DRCAC. Inoltre per garantire una simulazione generale si è utilizzato l'LFSR per generare ingressi randomici.Per una corretta visualizzazione dei risultati si è impostata una risoluzione di 1ps. Dopo aver visualizzato il power report, come fatto già in precedenza, si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente, seguendo lo stesso ragionamento del punto precedente.\\
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[scale=1]{immagini/gate}

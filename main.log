@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  26 MAY 2019 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  27 MAY 2019 08:52
 entering extended mode
 **./main.tex
 (main.tex
@@ -1094,78 +1094,78 @@ Package pdftex.def Info: immagini/ripple.png  used on input line 159.
 [5]
 File: immagini/gate.png Graphic file (type png)
 <use immagini/gate.png>
-Package pdftex.def Info: immagini/gate.png  used on input line 187.
+Package pdftex.def Info: immagini/gate.png  used on input line 186.
 (pdftex.def)             Requested size: 304.1355pt x 40.35065pt.
 File: immagini/gate.png Graphic file (type png)
 <use immagini/gate.png>
-Package pdftex.def Info: immagini/gate.png  used on input line 195.
+Package pdftex.def Info: immagini/gate.png  used on input line 194.
 (pdftex.def)             Requested size: 304.1355pt x 40.35065pt.
  [6 <./immagini/ripple.png>]
 <immagini/report_power1.png, id=220, 304.13625pt x 322.806pt>
 File: immagini/report_power1.png Graphic file (type png)
 <use immagini/report_power1.png>
-Package pdftex.def Info: immagini/report_power1.png  used on input line 212.
+Package pdftex.def Info: immagini/report_power1.png  used on input line 211.
 (pdftex.def)             Requested size: 212.8939pt x 225.96265pt.
 <immagini/reportFA1.png, id=222, 456.5055pt x 244.21237pt>
 File: immagini/reportFA1.png Graphic file (type png)
 <use immagini/reportFA1.png>
-Package pdftex.def Info: immagini/reportFA1.png  used on input line 221.
+Package pdftex.def Info: immagini/reportFA1.png  used on input line 220.
 (pdftex.def)             Requested size: 273.90541pt x 146.52853pt.
 <immagini/verbose1.png, id=225, 472.76625pt x 231.11343pt>
 File: immagini/verbose1.png Graphic file (type png)
 <use immagini/verbose1.png>
-Package pdftex.def Info: immagini/verbose1.png  used on input line 229.
+Package pdftex.def Info: immagini/verbose1.png  used on input line 228.
 (pdftex.def)             Requested size: 283.66193pt x 138.66913pt.
 File: immagini/verbose1.png Graphic file (type png)
 <use immagini/verbose1.png>
-Package pdftex.def Info: immagini/verbose1.png  used on input line 238.
+Package pdftex.def Info: immagini/verbose1.png  used on input line 237.
 (pdftex.def)             Requested size: 283.66193pt x 138.66913pt.
- [7] [8 <./immagini/report_power1.png>]
-Overfull \hbox (1.8295pt too wide) in paragraph at lines 243--243
+ [7] [8 <./immagini/report_power1.png>] [9 <./immagini/reportFA1.png> <./immagi
+ni/verbose1.png>]
+Overfull \hbox (1.8295pt too wide) in paragraph at lines 242--242
 |[]\OT1/cmr/bx/n/14.4 A simple MUX: glitch gen-er-a-tion and propaga-
  []
 
-<immagini/mux.png, id=241, 240.9pt x 161.85469pt>
+<immagini/mux.png, id=245, 240.9pt x 161.85469pt>
 File: immagini/mux.png Graphic file (type png)
 <use immagini/mux.png>
-Package pdftex.def Info: immagini/mux.png  used on input line 246.
+Package pdftex.def Info: immagini/mux.png  used on input line 245.
 (pdftex.def)             Requested size: 192.72025pt x 129.4839pt.
-[9 <./immagini/reportFA1.png> <./immagini/verbose1.png>]
-<immagini/model_mux.png, id=249, 1570.36688pt x 481.8pt>
+<immagini/model_mux.png, id=248, 1570.36688pt x 481.8pt>
 File: immagini/model_mux.png Graphic file (type png)
 <use immagini/model_mux.png>
-Package pdftex.def Info: immagini/model_mux.png  used on input line 253.
+Package pdftex.def Info: immagini/model_mux.png  used on input line 252.
 (pdftex.def)             Requested size: 392.59076pt x 120.44969pt.
 
-Overfull \hbox (32.59076pt too wide) in paragraph at lines 253--254
+Overfull \hbox (32.59076pt too wide) in paragraph at lines 252--253
  [][] 
  []
 
 [10 <./immagini/mux.png>]
-Overfull \hbox (23.12277pt too wide) in paragraph at lines 264--264
+Overfull \hbox (23.12277pt too wide) in paragraph at lines 263--263
 |[]\OT1/cmr/bx/n/14.4 Probability and Activ-ity Cal-cu-la-tion: Syn-cronous
  []
 
 <immagini/counter.png, id=257, 114.4275pt x 171.64125pt>
 File: immagini/counter.png Graphic file (type png)
 <use immagini/counter.png>
-Package pdftex.def Info: immagini/counter.png  used on input line 267.
+Package pdftex.def Info: immagini/counter.png  used on input line 266.
 (pdftex.def)             Requested size: 68.65701pt x 102.98552pt.
 
 LaTeX Warning: Reference `timing_counter1' on page 11 undefined on input line 2
-71.
+70.
 
 <immagini/counter2.png, id=259, 529.22719pt x 128.73094pt>
 File: immagini/counter2.png Graphic file (type png)
 <use immagini/counter2.png>
-Package pdftex.def Info: immagini/counter2.png  used on input line 276.
+Package pdftex.def Info: immagini/counter2.png  used on input line 275.
 (pdftex.def)             Requested size: 317.53876pt x 77.23914pt.
 
 LaTeX Warning: Reference `timing_counter2' on page 11 undefined on input line 2
-80.
+79.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--303
+Underfull \hbox (badness 10000) in paragraph at lines 270--302
 
  []
 
@@ -1177,7 +1177,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <immagini/report_counter.png, id=275, 538.26094pt x 472.76625pt>
 File: immagini/report_counter.png Graphic file (type png)
 <use immagini/report_counter.png>
-Package pdftex.def Info: immagini/report_counter.png  used on input line 312.
+Package pdftex.def Info: immagini/report_counter.png  used on input line 311.
 (pdftex.def)             Requested size: 322.95906pt x 283.66193pt.
 ) [13] [14 <./immagini/report_counter.png>]
 \openout2 = `capitoli/lab2.aux'.
@@ -1744,7 +1744,7 @@ Here is how much of TeX's memory you used:
  27046 multiletter control sequences out of 15000+200000
  550594 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,63p,764b,1087s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,63p,614b,1087s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Luigi Massari/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Luigi Massa
@@ -1771,7 +1771,7 @@ l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Luigi
 Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
 .pfb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (57 pages, 8124179 bytes).
+Output written on main.pdf (57 pages, 8124567 bytes).
 PDF statistics:
  727 PDF objects out of 1000 (max. 8388607)
  177 named destinations out of 1000 (max. 500000)
