@@ -231,4 +231,51 @@ Per quanto concerne la tramissione di indirizzi, le codifiche più perfomanti ri
 Si può notare come la tecnica che risulta meno performante è la \textbf{Transition Based}, che porta ad un incremento del 93\% nel caso di dati e ad un incremento circa del 0,1\% nel caso di indirizzi. Ovviamente questo è concorde con quanto ci si aspettava, in quanto, come già detto prima, questa tipologia di decofica funziona efficentemente solo nel caso in cui le probabilità di '1' e di '0' logico non risultino sbilanciate.
 
 \section{Synthesis}
-
+Una volta aver stimato il consumo di potenza per la tecnica di bus non-encoded si può adesso calcolare i consumi per le quattro diverse tecniche di bus encoding, in presenza di due ingressi con diversa probabilità statistica: Address e Data.  
+Per rendere più comoda e veloce la procedura sono stati utilizzati degli script, organizzati in modo da:
+sintetizzare le architetture e salvarne il design (i file SDF e la netlist) tramite Synopsys;
+leggere i file SDF e simularli salvando i risultati in file VCD, poi convertiti in file SAIF
+per la backannotation, tramite il programma Modelsim.
+calcolare a partire dai file SAIF la sintesi del design e il consumo di potenza, tramite Synopsys;
+Inoltre sono presenti dei file di configurazione contenenti variabili e opzioni per impostare lo script in base al tipo di simulazione richiesta.
+Per entrambi i bus sono stati calcolati i consumi in  base a diversi carichi capacitivi alle linee di bus.
+\\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{uW} & \textbf{1fF} & \textbf{10fF} & \textbf{50fF} & \textbf{100fF}\\
+		\hline
+		normal & 10.158 & 11.387 & 16.220 & 23.236\\
+		invert & 26.500 & 28.121 & 32.539  & 38.893\\
+		transbased & 27.684 & 30.211 & 39.619 & 53.373\\
+		gray & 9.440 & 10.059 & 12.496 & 16.012\\              
+		t0 & 0.138 & 0.154 & 0. 220 & 0.316\\
+		\hline
+	\end{tabular}
+	\caption{\textit{potenza dinamica dissipata nella trasmissione di indirizzi per le diverse codifiche in base al carico della linea.}}
+\label{Tab9}
+\end{table}
+\\
+Nel caso degli ADDRESS si può notare come la tecnica del T0 permette di ridurre i consumi di potenza dinamica di circa 10 volte, mentre la trans-based e la invert sono le peggiori.
+\\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{uW} & \textbf{1fF} & \textbf{10fF} & \textbf{50fF} & \textbf{100fF}\\
+		\hline
+		normal & 14.561 & 17.029 & 26.736 & 40.870\\
+		invert & 36.643 & 38.460 & 46.385  & 57.812\\
+		transbased & 26.628 & 29.114 & 38.929 & 53.082\\
+		gray & 21.370 & 23.840 & 33.564 & 47.719\\              
+		t0 & 17.298 & 20.106 & 29.503 & 44.776\\
+		\hline
+	\end{tabular}
+	\caption{\textit{potenza dinamica dissipata nella trasmissione di dati per le diverse codifiche in base al carico della linea.}}
+	\label{Tab10}
+\end{table}
+\\
+Per quanto riguarda la trasmissione dei DATA invece, la codifica migliore dal punto di vista dei consumi si rivela essere la normal.
+Chiaramente per entrambi gli ingressi e per qualsiasi codifica, è sempre valido il fatto che all'aumentare della capacità effettiva del bus i consumi di potenza dinamica aumentano, come dimostrano i risultati ottenuti.
+\\
