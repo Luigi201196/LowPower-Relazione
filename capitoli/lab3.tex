@@ -34,12 +34,83 @@ La traccia suggerisce che si può risolvere questo inconveniente andando ad aggi
 	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
 	\label{clock_gat3}
 \end{figure}
-
+\newpage
 \section{Clock Gating for a complex circuit}
-Nella seguente sezione viene chiesto di analizzare il funzionamento e in seguito il consumo di potenza, applicando il concetto del clock gating, nel circuito illustrato in Figura \ref{circuito_3_2}
+Nella seguente sezione viene chiesto di analizzare il funzionamento e in seguito il consumo di potenza, applicando il concetto del clock gating, nel circuito illustrato in Figura \ref{circuito_3_2}.\\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/circuito_3_2}
 	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
 	\label{circuito_3_2}
 \end{figure}
+\\
+Si prova, esclusivamente a livello cartaceo ad applicare la tecnica del Clock Gating al circuito in figura, ottenendo il circuito in Figura \ref{circuito_3_3}.\\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/circuito_3_2}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{circuito_3_3}
+\end{figure}
+\\
+Si è proceduto dunque alla sintesi del circuito, sempre tramite \textit{Synopsis}, creando un clock con periodo pari a 5 s. Tramite il comando \textit{report\_power -include\_input\_nets} si è potuto ricavare un resoconto dei contributi di potenza dissipata, che vengono riportati in Figura \ref{3_1}. \\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/3_1}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_1}
+\end{figure}
+\\
+Si è poi andato ad eseguire un'analisi più dettagliata dei contributi tramite il comando \textit{report\_power -net -include\_input\_nets}, che viene riportato in Figura \ref{3_2}. \\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/3_2}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_2}
+\end{figure}
+\\
+Come si può ben notare dalla quarta colonna, il toogle rate dei vari ingressi presenta una \textit{static probability} pari a 0.5, che non risulta essere un valore sempre ragionevole. \\
+Questo valore viene assegnato di default dal software, che però, tramite degli appositi comandi, permette di settare valori diversi di Toogle Rate a determinati segnali. Si è allora modificato il toogle rate del clock e del reset portandoli rispettivamente a 2 e a 0. Queste modifiche portano ad un risparmio di potenza del XX\% rispetto al caso precedente. Il report di potenza risultant3 viene raffigurato in Figura \ref{3_3}. \\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/3_3}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_3}
+\end{figure}
+\\
+Si va ora a modificare anche la probabilità degli input, portando sia INCA che INCB ad un Toogle Rate pari a 0.12. Si ottiene allora un risparmio ulteriore di potenza, come testimoniato da Power Report riportati in Figura \ref{3_4} e \ref{3_5}. \\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/3_4}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_4}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/3_5}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_5}
+\end{figure}
+\newpage
+\noindent Infine, tramite il comando \textit{report cell}, si riesce ad ottenere il numero di celle impiegate con la relativa dimensione. Viene riportato in Figura \ref{3_6}. Si può ben notare come nel caso analizzato le celle siano 74 e l'area utilizzata sia $229.292007 \mu m^{2}$ \\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/3_6}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_6}
+\end{figure}
+\\
+Ora si ri-eseguono le medesime simulazioni, ma utilizzando il circuito dove è stato applicata la tecnica del Clock Gating. Inizialmente si sono lasciati tutti i parametri esattamente come la prima analisi, quindi tutti i Toogle Rate pari a 0.5, e si è ottenuto comunque una potenza inferiore del XX\% rispetto al caso senza la tecnica del Clock Gating. Il tutto viene riportato in Figura \ref{3_7} e \ref{3_8}. \\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/3_7}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_7}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/3_8}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_8}
+\end{figure}
+\\
+Esattamente come prima è stata cambiata la probabilità di reset, clock e input per vedere come cambiano i valori di potenza.
