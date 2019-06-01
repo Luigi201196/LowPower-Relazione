@@ -69,7 +69,7 @@ Si è poi andato ad eseguire un'analisi più dettagliata dei contributi tramite 
 \end{figure}
 \\
 Come si può ben notare dalla quarta colonna, il toogle rate dei vari ingressi presenta una \textit{static probability} pari a 0.5, che non risulta essere un valore sempre ragionevole. \\
-Questo valore viene assegnato di default dal software, che però, tramite degli appositi comandi, permette di settare valori diversi di Toogle Rate a determinati segnali. Si è allora modificato il toogle rate del clock e del reset portandoli rispettivamente a 2 e a 0. Queste modifiche portano ad un risparmio di potenza del XX\% rispetto al caso precedente. Il report di potenza risultant3 viene raffigurato in Figura \ref{3_3}. \\
+Questo valore viene assegnato di default dal software, che però, tramite degli appositi comandi, permette di settare valori diversi di Toogle Rate a determinati segnali. Si è allora modificato il toogle rate del clock e del reset portandoli rispettivamente a 2 e a 0. Queste modifiche portano ad un risparmio di potenza del 20\% rispetto al caso precedente. Il report di potenza risultante viene raffigurato in Figura \ref{3_3}. \\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/3_3}
@@ -98,8 +98,8 @@ Si va ora a modificare anche la probabilità degli input, portando sia INCA che 
 	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
 	\label{3_6}
 \end{figure}
-\\
-Ora si ri-eseguono le medesime simulazioni, ma utilizzando il circuito dove è stato applicata la tecnica del Clock Gating. Inizialmente si sono lasciati tutti i parametri esattamente come la prima analisi, quindi tutti i Toogle Rate pari a 0.5, e si è ottenuto comunque una potenza inferiore del XX\% rispetto al caso senza la tecnica del Clock Gating. Il tutto viene riportato in Figura \ref{3_7} e \ref{3_8}. \\
+\newpage
+Ora si ri-eseguono le medesime simulazioni, ma utilizzando il circuito dove è stato applicata la tecnica del Clock Gating. Inizialmente si sono lasciati tutti i parametri esattamente come la prima analisi, quindi tutte le probabilità pari a 0.5, e si è ottenuto comunque una potenza inferiore del 16\% rispetto al caso senza la tecnica del Clock Gating. Il tutto viene riportato in Figura \ref{3_7} e \ref{3_8}. \\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.65]{immagini/3_7}
@@ -112,5 +112,61 @@ Ora si ri-eseguono le medesime simulazioni, ma utilizzando il circuito dove è s
 	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
 	\label{3_8}
 \end{figure}
-\\
-Esattamente come prima è stata cambiata la probabilità di reset, clock e input per vedere come cambiano i valori di potenza.
+\newpage
+Esattamente come prima è stata cambiata la probabilità di reset, clock e input per vedere come cambiano i valori di potenza, portandole rispettivamente a 0, 0.5, 0.12.
+Si è eseguito il comando \textit{report\_power -include\_input\_nets} e si sono analizzati i report di potenza che sono riportati in Figura \ref{3_9} e \ref{3_10}.\\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/3_9}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_9}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/3_10}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_10}
+\end{figure}
+\newpage
+
+Si può notare come si è ottenuto un risparmio del 41\% rispetto al caso senza Clock Gating. \\
+Infine si ri-esegue l'analisi tramite il report cell, raffigurato in Figura \ref{3_11}. Si può notare come ora il numero di celle sia aumentato e con esso anche l'area.\\
+Rispetto al caso senza Clock Gating ho ora un'area pari a $238.0700005 \mu m^{2}$ e un numero di celle pari a 78. L'aumento dell'area è uno degli svantaggi della tecnica che Clock Gating, ma comunque, in questa situazione, si tratta di un'incremento pari solo al 3.47\%, che risulta assolutamente accettabile visto che comporta un risparmio di potenza pari al 41\%.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/3_11}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_11}
+\end{figure}
+
+\subsection{Some more clock gating?}
+Il codice VHDL fornito è scritto in modo tale che il sintetizzatore non applichi la tecnica del Clock Gating sul registro di uscita: la motivazione risiede nell'utilizzo del costrutto \textit{if-else}, in quando nel codice iniziale non veniva dichiarati tutti i possibili casi tramite \textit{elsif}. Modificando opportunamente il codice VHDL,  riportato per interezza in Figura \ref{3_vhdl}, e inserendo le linee di codice riportate in Figura \ref{3_vhdl_2}, il sintetizzatore inserisce un blocco di clock gating sul regitro di uscita perchè interpreta che potrebbero esserci condizioni in cui non si andrà a scrivere sul registro di uscita.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=1]{immagini/3_vhdl}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_vhdl}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=1.5]{immagini/3_vhdl_2}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_vhdl_2}
+\end{figure}
+
+\noindent Le modifiche al VHDL hanno portato al risultato richiesto, come si può notare in Figura \ref{3_12} che riporta il circuito sintetizzato e in Figura \ref{3_13} che riporta il particolare del blocco di Clock Gating inserito dal sintetizzatore.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.5]{immagini/3_12}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_12}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=1.5]{immagini/3_13}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{3_13}
+\end{figure}
+Si eseguono ora le analisi dei consumi, esattamente come nel punto precedente.
+
+
