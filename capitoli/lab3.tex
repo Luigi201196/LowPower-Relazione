@@ -155,6 +155,7 @@ Il codice VHDL fornito è scritto in modo tale che il sintetizzatore non applich
 \end{figure}
 
 \noindent Le modifiche al VHDL hanno portato al risultato richiesto, come si può notare in Figura \ref{3_12} che riporta il circuito sintetizzato e in Figura \ref{3_13} che riporta il particolare del blocco di Clock Gating inserito dal sintetizzatore.
+\\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.5]{immagini/3_12}
@@ -167,6 +168,37 @@ Il codice VHDL fornito è scritto in modo tale che il sintetizzatore non applich
 	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
 	\label{3_13}
 \end{figure}
-Si eseguono ora le analisi dei consumi, esattamente come nel punto precedente.
+\\
+Si eseguono ora le analisi dei consumi, esattamente come nel punto precedente.\\
+Le prima analisi viene svolta senza la tecnica del Clock Gating e vengono lasciati i valori di Toogle Rate di default, quindi a 0.5. I power report ricavati sono riportati in Figura \ref{elsif1} e \ref{elsif2}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/elsif1}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif1}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/elsif2}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif2}
+\end{figure}
+Si può ben notare come rispetto al caso precedente, la potenza sia leggermente aumentata in quanto, avendo aggiunto un blocco di Clock Gating prima del registro di uscita, sono aumentati i gate totali che quindi portano ad una maggiore dissipazione di potenza. \\
+L'aumento del numero di gate è testimoniato anche dal report \ref{elsif2}, in quanto il tool conta il numero totale di gate che passa da 92 a 112. ?????? --> da confermare\\
+Viene ora modificato il Toogle Rate del clock, del reset e degli ingressi, ottenendo i report in Figura \ref{elsif3} e \ref{elsif4}. L'aggiunta del blocco in uscita porta ad un primo risparmio di potenza pari a XX\% rispetto al caso analizzato al punto precedente
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/elsif1}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif3}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/elsif2}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif4}
+\end{figure}
+
+
 
 
