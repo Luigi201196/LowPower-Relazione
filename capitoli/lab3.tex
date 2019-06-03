@@ -184,8 +184,7 @@ Le prima analisi viene svolta senza la tecnica del Clock Gating e vengono lascia
 	\label{elsif2}
 \end{figure}
 Si può ben notare come rispetto al caso precedente, la potenza sia leggermente aumentata in quanto, avendo aggiunto un blocco di Clock Gating prima del registro di uscita, sono aumentati i gate totali che quindi portano ad una maggiore dissipazione di potenza. \\
-L'aumento del numero di gate è testimoniato anche dal report \ref{elsif2}, in quanto il tool conta il numero totale di gate che passa da 92 a 112. ?????? --> da confermare\\
-Viene ora modificato il Toogle Rate del clock, del reset e degli ingressi, ottenendo i report in Figura \ref{elsif3} e \ref{elsif4}. L'aggiunta del blocco in uscita porta ad un primo risparmio di potenza pari a XX\% rispetto al caso analizzato al punto precedente
+Viene ora modificato il Toogle Rate del clock, del reset e degli ingressi, ottenendo i report in Figura \ref{elsif3} e \ref{elsif4}. L'aggiunta del blocco in uscita porta ad un primo risparmio di potenza pari a XX\% rispetto al caso analizzato al punto precedente. \\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.65]{immagini/elsif1}
@@ -198,6 +197,13 @@ Viene ora modificato il Toogle Rate del clock, del reset e degli ingressi, otten
 	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
 	\label{elsif4}
 \end{figure}
+Si esegue infine il comando \textit{report cell} per ottenere l'area e il numero di celle utilizzate per la sintesi. Il report viene raffigurato i Figura \ref{elsif5}. \\
+Si può ben notare che ora il numero di celle è leggermente aumentato e di conseguenza anche l'area, in quanto si è aggiunta una logica prima del registro di uscita.
+Si analizza allo stesso modo il circuito con l'aggiunta della tecnica del Clock Gating. Tutti i report vengono riportati in Figura \ref{elsif6}, \ref{elsif7}, \ref{elsif8},\ref{elsif9}.\\
+
+
+
+
 
 
 
