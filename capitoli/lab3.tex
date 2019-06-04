@@ -197,12 +197,67 @@ Viene ora modificato il Toogle Rate del clock, del reset e degli ingressi, otten
 	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
 	\label{elsif4}
 \end{figure}
+\\
 Si esegue infine il comando \textit{report cell} per ottenere l'area e il numero di celle utilizzate per la sintesi. Il report viene raffigurato i Figura \ref{elsif5}. \\
-Si può ben notare che ora il numero di celle è leggermente aumentato e di conseguenza anche l'area, in quanto si è aggiunta una logica prima del registro di uscita.
-Si analizza allo stesso modo il circuito con l'aggiunta della tecnica del Clock Gating. Tutti i report vengono riportati in Figura \ref{elsif6}, \ref{elsif7}, \ref{elsif8},\ref{elsif9}.\\
+\newpage
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.28]{immagini/elsif5}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif5}
+\end{figure}
+\noindent Si può ben notare che ora il numero di celle è leggermente aumentato e di conseguenza anche l'area, in quanto si è aggiunta una logica prima del registro di uscita.\\
+Si analizza allo stesso modo il circuito con l'aggiunta della tecnica del Clock Gating. Tutti i report, con lo stesso ordine dei punti precedenti, vengono riportati nelle Figure \ref{elsif6}, \ref{elsif7}, \ref{elsif8},\ref{elsif9}.\\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/elsif6}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif6}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/elsif7}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif7}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/elsif8}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif8}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.65]{immagini/elsif9}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif9}
+\end{figure}
+\newpage
+\noindent Si può ben notare come nell'ultimo caso, quindi con i Toogle Rate modificati rispetto ai valori di default, la potenza sia aumentata del 18\% rispetto al medesimo caso ma senza il blocco di Clock Gating prima del registro di uscita. Ovviamente se invece si confronta l'ultimo risultato con il risultato dell'analisi senza il Clock Gating, ma con il blocco in uscita, si ottiene un risparmio di potenza considerevole.\\
+Come ultima analisi si esegue il \textit{report cell} di quest'ultimo caso, riportato in Figura \ref{elsif10}, che testimonia come l'applicazione di questa tecnica comporti un aumento dell'area occupata a causa dell'inserimeto di una logica di controllo.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.28]{immagini/elsif10}
+	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\label{elsif10}
+\end{figure}
+\\
+Per sintetizzare si confronta la potenza dinamica totale prima e dopo l'introduzione del Clock Gating nel registro di uscita e si riportano i valori nella Tabella \ref{Tab3_1}. Si può ben notare come la potenza nel secondo caso sia leggermente aumentata in quanto si introduce una logica di controllo più complessa che impatta sulla switching activity della macchina.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		& \textbf{Potenza Dinamica Totale}\\
+		\hline
+		Prima & $19.2091 \mu W$\\
+		Dopo & $22.6813 \mu W$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati tempi NAND simulazione ELDO}}
+	\label{Tab3_1}
+\end{table}
 
-
-
+\section{Pipelining and parallelizing}
 
 
 
