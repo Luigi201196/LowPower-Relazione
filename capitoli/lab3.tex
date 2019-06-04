@@ -363,13 +363,63 @@ Il nuovo circuito è rappresentato in Figura \ref{circuito_pipe}.
 	\caption{\textit{Configurazione datapath pipelining}}
 	\label{circuito_pipe}
 \end{figure}
+\\
 Con questa nuova configurazione il percorso critico diventa quello tra il secondo registro e il comparatore.
 \begin{center}
 	$T_{critico}=T_{CK->Q}+T_{COMP}=2 ns + 84 ns = 86 ns$
 \end{center}
 Con questo percorso critico si potrebbe arrivare ad una frequenza di clock pari a $f_{CK}=11.6279 MHz$, ma così facendo si otterrebbero miglioramenti solo nell'ambito della velocità di funzionamento del circuito. L'obiettivo è sfruttare il pipelining per ridurre il consumo senza aumentare le prestazioni: di conseguenza si lascia la frequenza pari a $f_{CK}=7.0422 MHz$. \\
-In questo modo il percorso critico risulterà comunque pari sempre a $142 ns$ e si potrà scalare la tensione di alimentazione $V_{DD}$.
+In questo modo il percorso critico risulterà comunque pari sempre a $142 ns$ e si potrà scalare la tensione di alimentazione $V_{DD}$. \\ Si eseguono dunque gli stessi calcoli fatti per il caso della parallelizzazione.
+\begin{center}
+	$T(u)=T(V_{DD}=V_{DD, NORM})\frac{0.75u}{u-0.25}=142 ns \Longrightarrow$
+\end{center}
+\begin{center}
+	$\Longrightarrow u=\frac{0.25T(u)}{T(u)-0.75T(V_{DD}=V_{DD,NORM})}\Longrightarrow$
+\end{center}
+\begin{center}
+	$\Longrightarrow u=\frac{0.25\times 142}{142-0.75 \times 86}=0.4581$
+\end{center}
+\begin{center}
+	$P(V_{DD,new})=P(V_{DD, NOM})\times u^{2}$
+\end{center}
+\begin{center}
+	$P(V_{DD, NOM})=P(@V_ {DD}=1 V, f_{CK}=5 MHz)\times \frac{7.0422 MHz}{5MHz}$
+\end{center}
 
+\noindent Tutti i nuovi valori di potenza dissipata dei singoli blocchi vengono riportati nella Tabella \ref{Tab33_5}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Cell Type} & \textbf{$P(V_{DD, new})$} \\
+		\hline
+		\textit{REGISTER} & $0.0448 \mu W \times 0.4581^{2}=0.1773 \mu W$\\
+		\textit{INCREMENT} & $3.5910 \mu W \times 0.4581^{2}=0.7536 \mu W$\\
+		\textit{COMPARATOR} & $3.0422 \mu W \times 0.4581^{2}=0.6384 \mu W$\\
+		\textit{MUX} &$2.3521 \mu W \times 0.4581^{2}=0.4936\mu W$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati datapath pipelinato}}
+	\label{Tab33_5}
+\end{table}
+
+Nella Tabella \ref{Tab33_6}, sono riportati ora i risultati riferiti alla tecnica del pipelining applicata al circuito.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Parallel Solution} & \\
+		\hline
+		Delay (critical path) & 142 ns\\
+		Allowed Clock Frequency & 7.0411 MHz\\
+		Power & $4.0576\mu W$\\
+		Area & $3342 \mu m^{2}$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati datapath "parallelizzato"}}
+	\label{Tab33_6}
+\end{table}\\
+Si può ben notare come, grazie alla tecnica del pipelining si ottiene un risparmio del 73\% rispetto al caso "originale".\\ Confrontando le due tecniche si può notare come ci sia all'incirca un fattore 2 di differenza tra le potenze risultanti che rende più efficace il metodo della parallelizzazione rispetto al metodo del pipelining. Per quanto riguarda l'area occupata, le due tecniche risultano all'incirca equivalenti, in quanto portano ad un raddoppio dell'area rispetto al circuito originale.\\
 
 
 
