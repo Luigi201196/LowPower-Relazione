@@ -258,6 +258,50 @@ Per sintetizzare si confronta la potenza dinamica totale prima e dopo l'introduz
 \end{table}
 
 \section{Pipelining and parallelizing}
+Nella terza sezione dell'esercitazione si vede come si riesce a ridurre la potenza utilizzando la parallelizzazione e/o il pipelining. Si considera nuovamente il datapath del punto precedente, in Figura \ref{circuito_3_2}, di cui le caratteristiche di ritardo, potenza e occupazione di area sono riportate nella Tabella \ref{Tab33_1} nel caso in cui $V_{DD}=1 V$ e $f_{CLK}=5 MHz$.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Cell Type}& \textbf{Delay (ns)} & \textbf{Power ($\mu W @1 V, 5 MHz$)} & \textbf{Area ($\mu m^{2}$)} \\
+		\hline
+		\textit{REGISTER}& 2.0 (CK->Q) & 0.6 & 319 \\
+	\textit{INCREMENT}& 40.0 & 2.55 & 256.0 \\
+		\textit{COMPARATOR} & 84.0 & 2.16 & 161.0\\
+		\textit{MUX} & 14.0 & 1.67& 117.0\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati tempi NAND simulazione ELDO}}
+	\label{Tab33_1}
+\end{table}
+\\
+Utilizzando questi dati è possibile ricavare il percorso critico del circuito e da questo la massima frequenza di funzionamento.\\
+Il percorso critico risulta essere causato dalla catena composta da registro di ingresso, incrementatore, comparatore, mux, registro di uscita. Viene allora calcolato il valore esatto del ritardo e la sua conseguente frequenza massima di funzionamento e da ciò si può ricavare anche la potenza totale consumata, in quanto esiste una dipendenza lineare tra potenza e frequenza. Tutti i dati sono raccolti in Tabella \ref{Tab33_2}.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Original Solution} & \\
+		\hline
+		Delay (critical path) & 142 ns\\
+		Allowed Clock Frequency & 7.0422 MHz\\
+		Power & $15.1125 \mu W$\\
+		Area & $1747 \mu m^{2}$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati datapath "originale"}}
+	\label{Tab33_2}
+\end{table}
+\newpage
+\noindent Si prova ora a parallelizzare il circuito per ridurre il consumo di potenza ma avendo lo stesso throughput. Si duplica allora il datapath, raddoppiando dunque le capacità che commutano, ma si riesce a lavorare ad una frequenza dimezzata. Il nuovo circuito è raffigurato in Figura \ref{circuito_parallel}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/circuito_parallel}
+	\caption{\textit{Configurazione datapath con parallelizzazione a due livelli}}
+	\label{circuito_parallel}
+\end{figure}
+\\
+I due datapath lavorano dunque in parallelo, campionando uno sul fronte di salita del clock e l'altro sul fronte di discesa. Di conseguenza la frequenza operativa diventa ora esattamente la metà del caso precedente, dunque $f_{CK}=3.5211 MHz$ a cui corrisponde un periodo di clock pari a $T_{CK}=284 ns$.
 
 
 
