@@ -13,20 +13,20 @@
 \contentsline {section}{\numberline {3.2}Clock Gating for a complex circuit}{26}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Some more clock gating?}{33}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Pipelining and parallelizing}{42}{section.3.3}
-\contentsline {chapter}{\numberline {4}Laboratorio 4: \\Bus Encoding}{46}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simulation}{46}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Non-encoded}{46}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Bus-invert technique, Transition based technique, Gray technique}{48}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}T0 techinque}{53}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Confronto tra le tecniche}{54}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Synthesis}{54}{section.4.2}
-\contentsline {chapter}{\numberline {5}Laboratorio 5: \\Leakage: using spice for characterizing cells and pen\&paper for memory organization}{56}{chapter.5}
-\contentsline {section}{\numberline {5.1}Characterizing a library gate}{56}{section.5.1}
-\contentsline {section}{\numberline {5.2}Characterizing a gate for output load}{59}{section.5.2}
-\contentsline {section}{\numberline {5.3}Comparing different gate sizing}{61}{section.5.3}
-\contentsline {section}{\numberline {5.4}Comparing high speed and low leakage optimization}{66}{section.5.4}
-\contentsline {section}{\numberline {5.5}Temperature dependency}{72}{section.5.5}
-\contentsline {section}{\numberline {5.6}Analysis of a memory power components}{74}{section.5.6}
-\contentsline {chapter}{\numberline {6}Laboratorio 6: \\Functional Verification}{75}{chapter.6}
-\contentsline {section}{\numberline {6.1}VHDL Testing}{75}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}A given RCA}{75}{subsection.6.1.1}
+\contentsline {chapter}{\numberline {4}Laboratorio 4: \\Bus Encoding}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simulation}{47}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Non-encoded}{47}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Bus-invert technique, Transition based technique, Gray technique}{49}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}T0 techinque}{54}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Confronto tra le tecniche}{55}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Synthesis}{55}{section.4.2}
+\contentsline {chapter}{\numberline {5}Laboratorio 5: \\Leakage: using spice for characterizing cells and pen\&paper for memory organization}{57}{chapter.5}
+\contentsline {section}{\numberline {5.1}Characterizing a library gate}{57}{section.5.1}
+\contentsline {section}{\numberline {5.2}Characterizing a gate for output load}{60}{section.5.2}
+\contentsline {section}{\numberline {5.3}Comparing different gate sizing}{62}{section.5.3}
+\contentsline {section}{\numberline {5.4}Comparing high speed and low leakage optimization}{67}{section.5.4}
+\contentsline {section}{\numberline {5.5}Temperature dependency}{73}{section.5.5}
+\contentsline {section}{\numberline {5.6}Analysis of a memory power components}{75}{section.5.6}
+\contentsline {chapter}{\numberline {6}Laboratorio 6: \\Functional Verification}{76}{chapter.6}
+\contentsline {section}{\numberline {6.1}VHDL Testing}{76}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}A given RCA}{76}{subsection.6.1.1}
