@@ -301,7 +301,62 @@ Il percorso critico risulta essere causato dalla catena composta da registro di 
 	\label{circuito_parallel}
 \end{figure}
 \\
-I due datapath lavorano dunque in parallelo, campionando uno sul fronte di salita del clock e l'altro sul fronte di discesa. Di conseguenza la frequenza operativa diventa ora esattamente la metà del caso precedente, dunque $f_{CK}=3.5211 MHz$ a cui corrisponde un periodo di clock pari a $T_{CK}=284 ns$.
+I due datapath lavorano dunque in parallelo, campionando uno sul fronte di salita del clock e l'altro sul fronte di discesa. Di conseguenza la frequenza operativa diventa ora esattamente la metà del caso precedente, dunque $f_{CK}=3.5211 MHz$ a cui corrisponde un periodo di clock pari a $T_{CK}=284 ns$. Ovviamente, nonostante la parallelizzazione, il percorso critico del circuito rimane pari a 140 ns e dunque si può pensare di allungarlo fino al valore del periodo del $T_{CK}$ in modo da poter scalare la tensione di alimentazione $V_{DD}$.\\
+Per il calcolo del nuovo valore di alimentazione, vengono fornite delle formule che legano il periodo di clock alla tensione di alimentazione normalizzata rispetto a quella nominale (contrassegnata dalla variabile $u$). Si riportano in seguito i calcoli sviluppati per ottenere la nuova tensione di alimentazione normalizzata:
+\begin{center}
+	$T(u)=T(V_{DD}=V_{DD, NORM})\frac{0.75u}{u-0.25}=284 ns \Longrightarrow$
+\end{center}
+\begin{center}
+		$\Longrightarrow u=\frac{0.25T(u)}{T(u)-0.75T(V_{DD}=V_{DD,NORM})}\Longrightarrow$
+\end{center}
+\begin{center}
+	$\Longrightarrow u=\frac{0.25\times 284}{284-0.75 \times 142}=0.4$
+\end{center}
+Ottenuto il valore $u=0.4$, si può ricavare la potenza dissipata da ogni componente tramite l'equazione:
+\begin{center}
+   $P(V_{DD,new})=P(V_{DD, NOM})\times u^{2}$
+\end{center}
+Dove per ottenere ottenere i valori di $P(V_{DD, NOM}$ alla frequenza desiderata, ossia $f_{CK}=3.5211 MHz$, si sfrutta la linearità tra potenza e frequenza.
+\begin{center}
+	$P(V_{DD, NOM})=P(@V_ {DD}=1 V, f_{CK}=5MHz)\times \frac{3.5211 MHz}{5MHz}$
+\end{center}
+Si riportano nella Tabella \ref{Tab33_3} i nuovi valori di potenza per ogni singolo blocco.\\
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Cell Type} & \textbf{$P(V_{DD, new})$} \\
+		\hline
+		\textit{REGISTER} & $0.4225 \mu W \times 0.4^{2}=0.0676 \mu W$\\
+		\textit{INCREMENT} & $1.7958 \mu W \times 0.4^{2}=0.2873 \mu W$\\
+		\textit{COMPARATOR} & $1.5211 \mu W \times 0.4^{2}=0.2534 \mu W$\\
+		\textit{MUX} &$1.1760 \mu W \times 0.4^{2}=0.1882 \mu W$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati datapath "originale"}}
+	\label{Tab33_3}
+\end{table}
+\\
+Nella Tabella \ref{Tab33_4}, sono riportati ora i risultati riferiti alla parallelizzazione del circuito.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Parallel Solution} & \\
+		\hline
+		Delay (critical path) & 284 ns\\
+		Allowed Clock Frequency & 3.5211 MHz\\
+		Power & $2.6262\mu W$\\
+		Area & $3611 \mu m^{2}$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati datapath "parallelizzato"}}
+	\label{Tab33_4}
+\end{table}\\
+Si può notare che tramite la tecnica della parallelizzazione si ottiene un risparmio dell'$82\%$ rispetto al caso originale, mentre l'area risulta all'incirca raddoppiata.
+
+
+
 
 
 
