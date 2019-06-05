@@ -693,13 +693,13 @@ dove:
 \\
 - Ides è la corrente che scorre nella cella non selezionata\\
 - Ndes è il numero di celle non selezionate (16-1=15)\\
-- Isw è il valore medio della corrente durante le fasi di scrittura e lettura\\
-- ISBY è la corrente che scorre nella cella quando i segnali di ingresso e di uscita sono stabili\\
-- Cout è il valore della capacità di carico in uscita, scelta uguale per tutte le memorie visto che il valore non è noto a priori (=1pF)\\
-- Val è la tensione di alimentazione per il caso tipico, =1V)\\
-- f è la frequenza operativa (=1 MHz)\\
-- Nb è il numero di bit in uscita (= 16)\\
-- Np è il numero di porte della memoria scelta (=2 ,memoria dual-port)\\
+- $I_{sw}$ è il valore medio della corrente durante le fasi di scrittura e lettura\\
+- $I_{sby}$ è la corrente che scorre nella cella quando i segnali di ingresso e di uscita sono stabili\\
+- $C_{out}$ è il valore della capacità di carico in uscita, scelta uguale per tutte le memorie visto che il valore non è noto a priori (=1pF)\\
+- $V_{al}$ è la tensione di alimentazione per il caso tipico, =1V)\\
+- $f$ è la frequenza operativa (=1 MHz)\\
+- $N_{bits}$ è il numero di bit in uscita (= 16)\\
+- $N_{ports}$ è il numero di porte della memoria scelta (=2 ,memoria dual-port)\\
 Sono quindi state analizzate tutte le memorie con parallelismo a 16 bit così da confrontarne i consumi in termini di corrente totale, trascurando i consumi dei multiplexer di uscita.
 \\
 \begin{table}[!h]\footnotesize
@@ -719,7 +719,7 @@ Sono quindi state analizzate tutte le memorie con parallelismo a 16 bit così da
 		SRAM 4096\_16\_16 & 12.4 & 333 & 5.68 & 16  & 2 & 367\\
 		\hline
 	\end{tabular}
-	\caption{\textit{Caratteristiche delle SRAM analizzate. Correnti in uA, alla tensione di alimentazione di 1V, frequenza di lavoro 1 MHz, memoria Dual Port}}
+	\caption{\textit{Caratteristiche delle SRAM analizzate. Correnti in uA}}
 	\label{Tab5_25}
 \end{table}
 \\
