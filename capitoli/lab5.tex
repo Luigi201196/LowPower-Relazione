@@ -683,8 +683,11 @@ Lo scopo di quest’ultimo punto dell’esercitazione è  analizzare i datasheet
 La memoria da progettare deve avere la stessa capienza di una SRAM\_8192\_16\_16, con varie possibilità di scelta del parallelismo e delle dimensioni.
 Dopo aver scelto un parallelismo a 16 bit, si è andato ad analizzare il consumo delle varie memorie tramite i vari contributi di corrente con la formula fornita nella user guide delle SRAM a 90 nm:
 \\
+\\
 $Itot= Iavg+Ides*Ndes$
+\\
 $Iavg=Isw+Isby+½*(cout*Val*f*Nb*Np)$
+\\
 \\
 dove:
 \\
@@ -719,5 +722,14 @@ Sono quindi state analizzate tutte le memorie con parallelismo a 16 bit così da
 	\caption{\textit{Caratteristiche delle SRAM analizzate. Correnti in uA, alla tensione di alimentazione di 1V, frequenza di lavoro 1 MHz, memoria Dual Port}}
 	\label{Tab5_25}
 \end{table}
-
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
 Dalla tabella si evince che la formula più conveniente con questo parallelismo è una memoria formata da 16 blocchi di  SRAM 512\_16\_4, formata da 512  words  di 16 bit con profondità dei multiplexer uguale a 4, che consuma una corrente totale di circa 184 uA.
