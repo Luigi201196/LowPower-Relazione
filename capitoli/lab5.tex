@@ -680,28 +680,28 @@ SERVONO DEI COMMENTI??????? PORCA TROIA I COMMENTI
 
 \section{Analysis of a memory power components}
 Lo scopo di quest’ultimo punto dell’esercitazione è  analizzare i datasheet delle varie versioni di memoria fornite e scegliere la migliore struttura di memoria che ottimizzi i consumi di potenza. Infatti dal punto di vista dei consumi è molto più conveniente dividere la struttura della memoria in banchi in modo da ridurre il numero di celle coinvolte nell’operazione di accesso alla memoria. 
-La memoria da progettare deve avere la stessa capienza di una SRAM_8192_16_16, con varie possibilità di scelta del parallelismo e delle dimensioni.
+La memoria da progettare deve avere la stessa capienza di una SRAM\_8192\_16\_16, con varie possibilità di scelta del parallelismo e delle dimensioni.
 Dopo aver scelto un parallelismo a 16 bit, si è andato ad analizzare il consumo delle varie memorie tramite i vari contributi di corrente con la formula fornita nella user guide delle SRAM a 90 nm:
-
+\\
 $Itot= Iavg+Ides*Ndes$
 $Iavg=Isw+Isby+½*(cout*Val*f*Nb*Np)$
-
-dove
-- Ides è la corrente che scorre nella cella non selezionata
-- Ndes è il numero di celle non selezionate (16-1=15)
-Isw è il valore medio della corrente durante le fasi di scrittura e lettura
-- ISBY è la corrente che scorre nella cella quando i segnali di ingresso e di uscita sono stabili
-- Cout è il valore della capacità di carico in uscita, scelta uguale per tutte le memorie visto che il valore non è noto a priori (=1pF)
-- Val è la tensione di alimentazione per il caso tipico, =1V);
-- f è la frequenza operativa (=1 MHz)
-- Nb è il numero di bit in uscita (= 16)
-- Np è il numero di porte della memoria scelta (=2 ,memoria dual-port)
-
+\\
+dove:
+\\
+- Ides è la corrente che scorre nella cella non selezionata\\
+- Ndes è il numero di celle non selezionate (16-1=15)\\
+- Isw è il valore medio della corrente durante le fasi di scrittura e lettura\\
+- ISBY è la corrente che scorre nella cella quando i segnali di ingresso e di uscita sono stabili\\
+- Cout è il valore della capacità di carico in uscita, scelta uguale per tutte le memorie visto che il valore non è noto a priori (=1pF)\\
+- Val è la tensione di alimentazione per il caso tipico, =1V)\\
+- f è la frequenza operativa (=1 MHz)\\
+- Nb è il numero di bit in uscita (= 16)\\
+- Np è il numero di porte della memoria scelta (=2 ,memoria dual-port)\\
 Sono quindi state analizzate tutte le memorie con parallelismo a 16 bit così da confrontarne i consumi in termini di corrente totale, trascurando i consumi dei multiplexer di uscita.
-
+\\
 \begin{table}[!h]\footnotesize
 	\centering
-	\begin{tabular}{|c|cccccc|}
+	\begin{tabular}{|cccccc|c|}
 		\hline
 		\textbf{Memory} & \textbf{$I_{sw}$}& \textbf{$I_{sby}$} & \textbf{$I_{des}$} & \textbf{$N_{bits}$} & \textbf{$N_{blocks}$} &
 		\textbf{$I_{tot}$}
