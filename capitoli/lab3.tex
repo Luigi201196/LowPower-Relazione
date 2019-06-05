@@ -257,6 +257,8 @@ Per sintetizzare si confronta la potenza dinamica totale prima e dopo l'introduz
 	\label{Tab3_1}
 \end{table}
 
+\subsection{An automatic way to annotate activities}
+
 \section{Pipelining and parallelizing}
 Nella terza sezione dell'esercitazione si vede come si riesce a ridurre la potenza utilizzando la parallelizzazione e/o il pipelining. Si considera nuovamente il datapath del punto precedente, in Figura \ref{circuito_3_2}, di cui le caratteristiche di ritardo, potenza e occupazione di area sono riportate nella Tabella \ref{Tab33_1} nel caso in cui $V_{DD}=1 V$ e $f_{CLK}=5 MHz$.
 \begin{table}[!h]\footnotesize
@@ -420,8 +422,65 @@ Nella Tabella \ref{Tab33_6}, sono riportati ora i risultati riferiti alla tecnic
 	\label{Tab33_6}
 \end{table}\\
 Si può ben notare come, grazie alla tecnica del pipelining si ottiene un risparmio del 73\% rispetto al caso "originale".\\ Confrontando le due tecniche si può notare come ci sia all'incirca un fattore 2 di differenza tra le potenze risultanti che rende più efficace il metodo della parallelizzazione rispetto al metodo del pipelining. Per quanto riguarda l'area occupata, le due tecniche risultano all'incirca equivalenti, in quanto portano ad un raddoppio dell'area rispetto al circuito originale.\\
-
-
+Si può pensare ora di sfruttare entrambe le tecniche per scalare il percorso critico, facendolo passare da 86 ns a 284 ns in modo da poter ridurre ancora la tensione di alimentazione e di conseguenza la potenza consumata. Il nuovo circuito è rappresentato in Figura \ref{circuito_parallel_pipe}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/circuito_parallel_pipe}
+	\caption{\textit{Configurazione datapath pipelining}}
+	\label{circuito_parallel_pipe}
+\end{figure}\\
+I risultati di questo nuovo approccio, che vengono calcolati mediante i medesimi passaggi fatti in precedenza sono riportati nella Tabella \ref{Tab33_7}.
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Parallel and Pipelining Solution} & \\
+		\hline
+		u &0.3525\\
+		Delay (critical path) & 284 ns\\
+		Allowed Clock Frequency & 3.5211 MHz\\
+		Power & $2.2\mu W$\\
+		Area & $7120 \mu m^{2}$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati datapath "parallelizzato e pipelinato"}}
+	\label{Tab33_7}
+\end{table}\\
+Tuttavia si può notare come questa soluzione non sia ottimale, poiché si ottiene un risparmio di potenza all'incirca pari al caso "parallelizato", ma impiegando un'area due volte superiore.\\
+Infine si è analizzato il caso in cui si parallelizzi il sistema a tre livelli, andando a lavorare su una frequenza pari a $f_{ck}/3$: si scala di conseguenza il percorso critico, portandolo a 426 ns e si può ridurre ulteriormente la tensione di alimentazione $V_{DD}$. Anche in questo caso si riportano esclusivamente i risultati dei calcoli in Tabella \ref{Tab33_8}. 
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Parallel and Pipelining Solution} & \\
+		\hline
+		u &0.3333\\
+		Delay (critical path) & 426 ns\\
+		Allowed Clock Frequency & 2.347 MHz\\
+		Power & $1.76596\mu W$\\
+		Area & $5358 \mu m^{2}$\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Risultati datapath "parallelizzazione a tre livelli"}}
+	\label{Tab33_8}
+\end{table}\\
+Si può concludere affermando che la soluzione che porti al minor consumo di potenza sia la parallelizzazione a tre livelli, che comporta una riduzione della potenza pari a circa 8 volte la potenza del caso "originale". L'unico svantaggio di questa soluzione è che comporta un'area tre volte superiore.\\
+Se si vuole cercare un trade-off tra area e potenza, sicuramente la soluzione migliore è la parallelizzazione a due livelli, che comporta un risparmio di potenza di circa 6 volte rispetto al caso originario, utilizzando "solo" un'area due volte superiore.\\
+\subsection{Are you sure it was correct?}
+Nelle Figura \ref{Timing3_1} e \ref{Timing3_2}, sono riportati i timing diagram rispettivamente del circuito originale e del caso "parallelizzato".
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=2]{immagini/3_timing2}
+	\caption{\textit{Timing datapath "originale"}}
+	\label{Timing3_1}
+\end{figure}\\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=2]{immagini/3_timing2}
+	\caption{\textit{Timing datapath "parallelizzato"}}
+	\label{Timing3_2}
+\end{figure}\\
+Si può ben notare come l'uscita del datapath nel secondo caso non sia corretta. Questo errore è dovuto al fatto che nel circuito siano presenti dei loop: questo implica che l'elaborazione del dato $i+1-esima$ può dipendere dall'elaborazione $i-esima$ e dunque non può essere effettuata su un altro circuito, come nel caso della parallelizzazione.
 
 
 
