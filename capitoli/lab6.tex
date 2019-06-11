@@ -9,3 +9,54 @@ Il Test Bench era diviso sostanzialmente in tre parti:
 	\item \textbf{Assert Instructions}
 \end{itemize}
 All'interno del codice si può notare come una volta generat
+\subsection{A more complex case}
+Nella seconda parte di questo primo esercizio viene richiesto di verificare la correttezza di quattro versioni di un circuito \textit{incrementer$\&$comparator} presente in Figura \ref{pentium}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=1]{immagini/pentium}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
+	\label{pentium}
+\end{figure}
+La struttura presenta 4 blocchi diversi, replicati due volte, e un compatore:
+\begin{itemize}
+	\item  Due multiplexer a due vie che selezionano l'ingresso \textit{A} e \textit{B} oppure l'uscita del rispettivo sommatore con poi un Registro in uscita
+	\item un registro per campionare l'ingresso \textit{INCA} e \textit{INCB} che decide se incrementare o meno l'ingresso A e B.
+	\item due sommatori, realizzati tramite la struttura \textit{Pentium 4 Adder}
+	\item un comparatore che manda in uscita il valore maggiore tra A e B
+\end{itemize}
+Dopo aver letto il funzionamento del Pentium 4 tramite l'appendice si è iniziata la realizzazione del TestBench per scoprire quali fossero i bug presenti. Veniva fornita una versione di riferimento del circuito, priva di bug in modo da avere un'architettura di riferimento con la quale confrontare le 4 versioni del circuito.\\
+Il VHDL implementato per questo scopo è presente in Figura \ref{testbench_vhdl1} e \ref{testbench_vhdl2}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.3]{immagini/testbench_vhdl1}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
+	\label{testbench_vhdl1}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.3]{immagini/testbench_vhdl2}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
+	\label{testbench_vhdl2}
+\end{figure}
+\newpage
+\noindent La struttura del Testbench è simile a quella fornita nell'esercizio precedente.\\
+Ho una prima parte di generazione di numeri casuali, nello specifico genero in modo assolutamente randomico gli ingressi A e B, i selettori dei multiplexer EXTA e EXTB e gli ingressi di incremento INCA e INCB.\\
+In realtà simulando attentamente il circuito ci si è resi conto di come la soluzione con numeri random non sia sempre ottimale per la ricerca di un bug, in quanto, specialmente nel caso di un ingresso con un numero di bit molto elevato, sono necessarie numerose iterazioni per provare tutte le possibili combinazioni. Questo sta alla base della mancato ritrovo del bug nella quarta versione, in quanto tramite un Testbench con numeri random non siamo riusciti a "sollecitare" l'errore: probabilmente si sarebbe dovuto studiare degli ingressi opportuni per sollecitare il sommatore in modo più specifico.\\
+La seconda parte del TestBench prende gli ingressi sviluppati nella parte prima e genera le uscite sia dell'architettura di riferimento che della versione da analizzare.\\
+Infine viene effettuato il confronto tra le due uscite e viene definita una funzione di \textit{assert} che fornisce sul \textit{Transcript} di Modelsim un messaggio di errore nel caso in cui venga rilevato un bug.
+Nella prima versione del circuito risulta un errore all'interno di un multiplexer presente nel selettore di riporto del sommatore, in quanto l'ingresso riferito all' '1' e allo '0' risultavano invertiti. Questa prima versione ha un errore molto "visibile" e facile da trovare, sono state necessarie quindi pochissime iterazioni.\\
+Nella seconda versione del circuito invece, risulta un errore nel selettore del multiplexer del sommatore, in quanto invece di assegnare
+\begin{center}
+	$C\_IN(N\_BIT/CARRY-1)$
+\end{center} 
+assegna 
+\begin{center}
+	$C\_IN(N\_BIT/CARRY-2)$
+\end{center}
+Per trovare quest'errore sono state necessarie 500000000 iterazioni, un numero già ritenuto eccessivo. Si riporta in allegato in Figura \ref{sim1} la simulazione Modelsim contenente l'errore.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.3]{immagini/sim1}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
+	\label{sim1}
+\end{figure}
