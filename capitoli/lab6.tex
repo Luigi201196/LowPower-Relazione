@@ -192,25 +192,25 @@ for i in range(0, NumberOfSteps):\\
 \#sum in's\\
 Sum=Inputs[i][0]+Inputs[i][1]+Inputs[i][2]\\
 \#conversion of the sum in binary\\
-SumBin=('{0:b}'.format(Sum))\\
+SumBin=(\'{0:b}\'.format(Sum))\\
 \#conversion in string \\
 SumStr=str(SumBin)\\
-\#overflow bit preset to '0'\\
+\#overflow bit preset to \'0\'\\
 Py_results[i][1]=0 \\
 if len(SumStr)!=32:\\
 \#management of the overflow\\
 if len(SumStr)>32:    \\
 SumStr=SumStr[1:]\\
-\#overflow bit to '1'\\
+\#overflow bit to \'1\'\\
 Py\_results[i][1]=1\\
 else:\\
 \#adding zeros to get the value on 32 bit\\
 while len(SumStr)<32:  \\
-SumStr='0'+SumStr\\
+SumStr=\'0\'+SumStr\\
 \#re-conversion to successive comparison of the values\\
 Py\_results[i][0]=int(SumStr, 2)\\  
-………..\\
-………..\\
+………\\
+………\\
 \\
 Al momento della generazione, gli ingressi sono stati salvati nella lista \textit{Inputs[][]}, formata da tutti gli ingressi  generati, raggruppati a gruppi di 3, ogni gruppo corrisponde a uno step di ingressi da calcolare. Si sono sommati gli ingressi e si è poi convertita la somma in binario grazie al metodo \textit{format()}. Per gestire gli overflow e mantenere il parallelismo della somma a 32 bit, si è preferito convertire la somma binaria in stringa in modo da gestire più comodamente il dato nel caso in cui il parallelismo sia variato.
 I risultati corretti sono stati salvati nella lista \textit{Py\_results[][]} contenente i gruppi di risultati in intero a coppie di 2 (somma e carry-out), per ogni step di ingressi. I risultati inoltre sono stati salvati nel file \textit{python\_results.txt}\\
