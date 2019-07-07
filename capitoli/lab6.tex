@@ -64,12 +64,11 @@ Prendendo spunto dal punto precedente il test è stato realizzato mediante i seg
 - \textit{counter.vhd}, è il dispositivo da testare, disponibile in 4 versioni, site in diverse cartelle, poi estratte da modelsim volta per volta durante la simulazione
 \\
 - \textit{counter\_tb.do}, è lo script che si occupa di dirigere la compilazione e simulazione dei 4 files da testare su Modelsim, in cui è impostata anche la durata della simulazione e la visualizzazione delle forme d’onda dei segnali rilevanti ai fini della verifica, per consentire una comoda visione dell’andamento temporale dei segnali.
-Di seguito un estratto del file disponibile in appendice.\\
+Di seguito un estratto del file disponibile in appendice fig. \ref.\\
 \\
 \textit{.......\\
 .......\\
 echo "testing v1..."\\
-\\
 vcom -reportprogress 300 -work work\\ /home/lp19.12/repository/lab6/ese6/3/counter\_tb.vhd\\ /home/lp19.12/repository/lab6/ese6/3/vREF/counter\_ref.vhd\\ /home/lp19.12/repository/lab6/ese6/3/v1/counter.vhd\\
 \\
 vsim -t ns -novopt work.counter\_tb\\
@@ -90,13 +89,13 @@ echo "end v1"\\
 \\
 \\
 \\
-\textit{counter\_tb.vhd}, ile di testbench che si occupa di:
+- \textit{counter\_tb.vhd}, il file di testbench che si occupa di:
 \begin{itemize}
 	\item {generare gli ingressi e definire i componenti: il REF, dispositivo di riferimento utilizzato per calcolare le uscite corrette a partire dagli ingressi generati; il DUT (device under test), il contatore da verificare che sarà rappresentato di volta in volta nella simulazione da uno dei quattro circuiti da testare.}
 	\item {generare il segnale di clock e i gli ingressi generati in modo pseudo-casuale.}
 	\item {confrontare le uscite dei due dispositivi per rilevare possibili errori e segnalarli con un apposito messaggio.}
 \end{itemize}
-Di seguito sono riportate le parti più significative del file di testbench, disponibile integralmente in appendice.\\
+Di seguito sono riportate le parti più significative del file di testbench, disponibile integralmente in appendice fig. \ref{counter_tb1} \ref{counter_tb2} \ref{counter_tb3}.\\
 \\
 .......\\
 .......\\
