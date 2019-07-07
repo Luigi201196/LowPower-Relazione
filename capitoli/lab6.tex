@@ -8,13 +8,12 @@ Il Test Bench era diviso sostanzialmente in tre parti:
 	\item{Reference Architecture}
 	\item{Assert Instructions}
 \end{itemize}
-All'interno del codice si può notare come una volta generat
 \subsection{A more complex case}
 Nella seconda parte di questo primo esercizio viene richiesto di verificare la correttezza di quattro versioni di un circuito \textit{incrementer$\&$comparator} presente in Figura \ref{pentium}.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=1]{immagini/pentium}
-	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
+	\caption{\textit{Datapath}}
 	\label{pentium}
 \end{figure}
 La struttura presenta 4 blocchi diversi, replicati due volte, e un compatore:
@@ -25,19 +24,7 @@ La struttura presenta 4 blocchi diversi, replicati due volte, e un compatore:
 	\item un comparatore che manda in uscita il valore maggiore tra A e B
 \end{itemize}
 Dopo aver letto il funzionamento del Pentium 4 tramite l'appendice si è iniziata la realizzazione del TestBench per scoprire quali fossero i bug presenti. Veniva fornita una versione di riferimento del circuito, priva di bug in modo da avere un'architettura di riferimento con la quale confrontare le 4 versioni del circuito.\\
-Il VHDL implementato per questo scopo è presente in Figura \ref{testbench_vhdl1} e \ref{testbench_vhdl2}.
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=0.3]{immagini/testbench_vhdl1}
-	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
-	\label{testbench_vhdl1}
-\end{figure}
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=0.3]{immagini/testbench_vhdl2}
-	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
-	\label{testbench_vhdl2}
-\end{figure}
+Il VHDL implementato per questo scopo è presente in appendice, \ref{testbench_vhdl1} e \ref{testbench_vhdl2}.
 \newpage
 \noindent La struttura del Testbench è simile a quella fornita nell'esercizio precedente.\\
 Ho una prima parte di generazione di numeri casuali, nello specifico genero in modo assolutamente randomico gli ingressi A e B, i selettori dei multiplexer EXTA e EXTB e gli ingressi di incremento INCA e INCB.\\
