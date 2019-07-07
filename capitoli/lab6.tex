@@ -24,7 +24,7 @@ La struttura presenta 4 blocchi diversi, replicati due volte, e un compatore:
 	\item un comparatore che manda in uscita il valore maggiore tra A e B
 \end{itemize}
 Dopo aver letto il funzionamento del Pentium 4 tramite l'appendice si è iniziata la realizzazione del TestBench per scoprire quali fossero i bug presenti. Veniva fornita una versione di riferimento del circuito, priva di bug in modo da avere un'architettura di riferimento con la quale confrontare le 4 versioni del circuito.\\
-Il VHDL implementato per questo scopo è presente in appendice, \ref{testbench_vhdl1} e \ref{testbench_vhdl2}.
+Il VHDL implementato per questo scopo è presente in appendice, fig. \ref{testbench_vhdl1} e \ref{testbench_vhdl2}.
 \newpage
 \noindent La struttura del Testbench è simile a quella fornita nell'esercizio precedente.\\
 Si ha una prima parte di generazione di numeri casuali, nello specifico si generano in modo random gli ingressi A e B, i selettori dei multiplexer EXTA e EXTB e gli ingressi di incremento INCA e INCB.\\
@@ -97,7 +97,7 @@ echo "end v1"\\
 \end{itemize}
 Di seguito sono riportate le parti più significative del file di testbench, disponibile integralmente in appendice fig. \ref{counter_tb1} \ref{counter_tb2} \ref{counter_tb3}.\\
 \\
-.......\\
+\textit{.......\\
 .......\\
 for I in 1 to 50000 loop\\
 -- Random number generation\\
@@ -105,8 +105,8 @@ UNIFORM(seed1, seed2, rand);\\
 \\
 std\_rand:=std\_logic\_vector(to\_unsigned(integer(rand), 2));\\
 \\
-COUNT\_TB    <= std\_rand(0);\\
-RST\_TB    <= std\_rand(1); \\
+COUNT\_TB <= std\_rand(0);\\
+RST\_TB <= std\_rand(1); \\
 \\
 -- Assert\\
 wait for 2 ns;\\
@@ -116,9 +116,9 @@ wait for 10 ns;\\
 end loop;\\
 wait;\\
 ………\\
-………\\
+………}\\
 \\
-E' evidente come testare una macchina a stati sia più complicato e dispendioso dal punto di vista del testing rispetto all'analisi di un circuito combinatorio, visto che si devono tenere in considerazione anche gli stati precedenti.\\ 
+E' evidente come testare una macchina a stati sia più complicato e dispendioso dal punto di vista del testing rispetto all'analisi di un circuito combinatorio, visto che l'uscita dipende dagli stati precendenti\\ 
 \section{Scripting in Python}
 \subsection{Automatic verification through a script}
 Un modo per automatizzare il processo di verificare è realizzare uno script python che consente una verifica più veloce ed efficace. Lo scopo della prima parte è quella di completare il template del file testing\_script.py, per testare il circuito del RCA utilizzato nella prima parte del laboratorio.\\
