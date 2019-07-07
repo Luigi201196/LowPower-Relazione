@@ -262,7 +262,12 @@ Questo produce quindi un glitch in uscita: in generale i glitch sono problematic
 	$ E=C_{L}V_{DD}^{2}$
 \end{center}
 considerando $C_{L}$ come il carico che viene pilotato e $V_{DD}$ la tensione di alimentazione alla quale si lavora. 
-
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.6]{immagini/timing_mux}
+	\caption{\textit{Timing diagram }}
+	\label{timing_mux}
+\end{figure}
 \section{Probability and Activity Calculation: Syncronous Counter}
 \begin{figure}[!htb]
 	\centering
@@ -272,6 +277,12 @@ considerando $C_{L}$ come il carico che viene pilotato e $V_{DD}$ la tensione di
 \end{figure}
 \noindent Si analizza in questa sezione un \textit{Syncronous Counter} ad 1 bit, realizzato con una Half Adder e un D-FlipFlop, riportato in Figura \ref{counter}. Il primo ingresso \textit{A0} dell'Half Adder è l'uscita del D-FlipFlop, mentre il secondo ingresso \textit{B0} viene collegato fisso ad 1. Si riporta il timing diagram del circuito in Figura \ref{timing_counter1}.
 %%MANCA TIMING DA FARE
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.6]{immagini/timing_counter1}
+	\caption{\textit{Timing counter 1 bit}}
+	\label{timing_counter1}
+\end{figure}
 Si può dedurre dal timing, che il segnale \textit{S} ha una transizione per ogni colpo di clock, di conseguenza la sua Switching Activity sarà metà dell'attività del segnale di clock. Nel caso in cui il segnale B0 vada a 0, il valore del nodo S dipenderà esclusivamente dall'ultimo valore presente all'uscita del Flip-Flop, in quanto l'Half Adder sommerà l'ultimo valore presente nel Flip Flop con uno '0'. Quindi non si verificheranno più transizioni sul nodo S e di conseguenza neanche sul nodo $C_{OUT}$.
 \begin{figure}[!htb]
 	\centering
@@ -281,6 +292,12 @@ Si può dedurre dal timing, che il segnale \textit{S} ha una transizione per ogn
 \end{figure}
 In seguito viene chiesto di analizzare la struttura presente in Figura \ref{counter2}. Questo circuito permette di ottenere un contatore sincrono ad 8 bit, utilizzando in cascata 8 celle del circuito precedente. Anche in questo si riporta, in Figura \ref{timing_counter2}, il timing diagram del funzionamento del circuito.
 %MANCA TIMING
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.6]{immagini/timing_counter2}
+	\caption{\textit{Timing counter 8 bit}}
+	\label{timing_counter2}
+\end{figure}
 In Tabella \ref{trans_uscita}, vengono ora riportati il numero di commutazioni di tutti i segnali di uscita ricavati in modo analitico, considerando un intervallo di tempo compreso da quando il circuito parte dal valore '00000000', fino a quando non arriva al valore '11111111'.
 \begin{table}[!h]\footnotesize
 	\centering
