@@ -148,7 +148,7 @@ E' evidente come testare una macchina a stati sia più complicato e dispendioso 
 \section{Scripting in Python}
 \subsection{Automatic verification through a script}
 Un modo per automatizzare il processo di verificare è realizzare uno script python che consente una verifica più veloce ed efficace. Lo scopo della prima parte è quella di completare il template del file testing\_script.py, per testare il circuito del RCA utilizzato nella prima parte del laboratorio.\\
-il file testing\_script.py  si compone di 5 parti:\\
+il file testing\_script.py  si compone di 5 parti:
 \begin{itemize}
 	\item{generazione degli input file in formato .txt da mandare poi al DUT}
 	\item{lancio della simulazione Modelsim tramite comandi bash}
@@ -156,7 +156,6 @@ il file testing\_script.py  si compone di 5 parti:\\
 	\item{prelievo dei risultati della simulazione modelsim salvati su file \textit{output\_data.txt}}
 	\item{comparazione dei risultati ottenuti da modelsim con quelli di riferimento calcolati da python}
 \end{itemize}
-\\
 Per la generazione pseudo-casuale degli input si è utilizzata la struttura, già fornita nel file \textit{generate\_inputs.py}:\\
 \\
 ………\\
