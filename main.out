@@ -36,3 +36,12 @@
 \BOOKMARK [1][-]{section.6.2}{Scripting in Python}{chapter.6}% 36
 \BOOKMARK [2][-]{subsection.6.2.1}{Automatic verification through a script}{section.6.2}% 37
 \BOOKMARK [2][-]{subsection.6.2.2}{Further Generalization}{section.6.2}% 38
+\BOOKMARK [0][-]{chapter.7}{Appendix}{}% 39
+\BOOKMARK [1][-]{section.7.1}{lab2}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.2}{lab3}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.3}{lab6}{chapter.7}% 42
+\BOOKMARK [2][-]{subsection.7.3.1}{Testbench Incomp}{section.7.3}% 43
+\BOOKMARK [2][-]{subsection.7.3.2}{Counter\137tb.vhd}{section.7.3}% 44
+\BOOKMARK [2][-]{subsection.7.3.3}{Counter\137tb.do}{section.7.3}% 45
+\BOOKMARK [2][-]{subsection.7.3.4}{Testing\137script.py}{section.7.3}% 46
+\BOOKMARK [2][-]{subsection.7.3.5}{Tb\137generator.py}{section.7.3}% 47

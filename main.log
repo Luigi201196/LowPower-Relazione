@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.31)  7 JUL 2019 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.31)  8 JUL 2019 00:28
 entering extended mode
 **./main.tex
 (main.tex
@@ -797,27 +797,24 @@ LaTeX Warning: Label `datapath' multiply defined.
 
 LaTeX Warning: Label `datapath' multiply defined.
 
-
-LaTeX Warning: Label `datapath' multiply defined.
-
 ) (capitoli/lab3.aux) (capitoli/lab4.aux) (capitoli/lab5.aux)
-(capitoli/lab6.aux))
+(capitoli/lab6.aux) (capitoli/appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 ("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -851,7 +848,7 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 \c@lstlisting=\count314
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 58.
+Package hyperref Info: Link coloring OFF on input line 57.
 
 ("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -863,33 +860,33 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count315
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 58.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 
 ("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 58.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 ("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \openout2 = `capitoli/0-frontespizio.aux'.
 
 (capitoli/0-frontespizio.tex
-<immagini/polito.jpg, id=155, 284.5029pt x 127.9179pt>
+<immagini/polito.jpg, id=191, 284.5029pt x 127.9179pt>
 File: immagini/polito.jpg Graphic file (type jpg)
 <use immagini/polito.jpg>
 Package pdftex.def Info: immagini/polito.jpg  used on input line 10.
 (pdftex.def)             Requested size: 253.13298pt x 113.81102pt.
-<immagini/battery.jpg, id=156, 402.50375pt x 295.1025pt>
+<immagini/battery.jpg, id=192, 402.50375pt x 295.1025pt>
 File: immagini/battery.jpg Graphic file (type jpg)
 <use immagini/battery.jpg>
 Package pdftex.def Info: immagini/battery.jpg  used on input line 26.
@@ -903,7 +900,7 @@ ion with the same identifier (name{page.1}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.21 ...que, Gray technique}{52}{subsection.4.1.2}
+l.21 ...que, Gray technique}{53}{subsection.4.1.2}
                                                   % [1
 
 
@@ -913,11 +910,11 @@ Overfull \hbox (3.79906pt too wide) in paragraph at lines 21--21
 e, Gray 
  []
 
-)
+[2])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [2]
+ [3]
 \openout2 = `capitoli/lab1.aux'.
 
  (capitoli/lab1.tex
@@ -929,7 +926,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<immagini/gate.png, id=223, 304.13625pt x 40.35075pt>
+<immagini/gate.png, id=272, 304.13625pt x 40.35075pt>
 File: immagini/gate.png Graphic file (type png)
 <use immagini/gate.png>
 Package pdftex.def Info: immagini/gate.png  used on input line 6.
@@ -976,7 +973,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
  []
 
-<immagini/fig1_2.png, id=237, 205.66838pt x 111.41624pt>
+<immagini/fig1_2.png, id=286, 205.66838pt x 111.41624pt>
 File: immagini/fig1_2.png Graphic file (type png)
 <use immagini/fig1_2.png>
 Package pdftex.def Info: immagini/fig1_2.png  used on input line 50.
@@ -1005,12 +1002,12 @@ Overfull \hbox (1.63278pt too wide) in paragraph at lines 97--97
 |[]\OT1/cmr/bx/n/14.4 Probability and Activ-ity Cal-cu-la-tion: Half and
  []
 
-<immagini/half_adder.png, id=251, 381.425pt x 261.97874pt>
+<immagini/half_adder.png, id=300, 381.425pt x 261.97874pt>
 File: immagini/half_adder.png Graphic file (type png)
 <use immagini/half_adder.png>
 Package pdftex.def Info: immagini/half_adder.png  used on input line 101.
 (pdftex.def)             Requested size: 152.56729pt x 104.78964pt.
-<immagini/full_adder.png, id=252, 1284.8pt x 571.13374pt>
+<immagini/full_adder.png, id=301, 1284.8pt x 571.13374pt>
 File: immagini/full_adder.png Graphic file (type png)
 <use immagini/full_adder.png>
 Package pdftex.def Info: immagini/full_adder.png  used on input line 107.
@@ -1020,8 +1017,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--113
 
  []
 
-[3 <./immagini/fig1_2.png>] [4 <./immagini/half_adder.png> <./immagini/full_add
-er.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.113 	\item
+             \textit{Half-Adder} \\ [3 <./immagini/fig1_2.png>] [4 <./immagini/
+half_adder.png> <./immagini/full_adder.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 113--118
 
  []
@@ -1066,103 +1068,174 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--155
 
  []
 
-<immagini/ripple.png, id=271, 371.58826pt x 75.28125pt>
+<immagini/ripple.png, id=319, 371.58826pt x 75.28125pt>
 File: immagini/ripple.png Graphic file (type png)
 <use immagini/ripple.png>
 Package pdftex.def Info: immagini/ripple.png  used on input line 159.
 (pdftex.def)             Requested size: 334.42633pt x 67.75247pt.
-[5]
 File: immagini/gate.png Graphic file (type png)
 <use immagini/gate.png>
-Package pdftex.def Info: immagini/gate.png  used on input line 186.
+Package pdftex.def Info: immagini/gate.png  used on input line 185.
 (pdftex.def)             Requested size: 304.1355pt x 40.35065pt.
 File: immagini/gate.png Graphic file (type png)
 <use immagini/gate.png>
-Package pdftex.def Info: immagini/gate.png  used on input line 194.
+Package pdftex.def Info: immagini/gate.png  used on input line 193.
 (pdftex.def)             Requested size: 304.1355pt x 40.35065pt.
- [6 <./immagini/ripple.png>]
-<immagini/report_power1.png, id=286, 304.13625pt x 322.806pt>
+[5] [6 <./immagini/ripple.png>]
+<immagini/report_power1.png, id=334, 304.13625pt x 322.806pt>
 File: immagini/report_power1.png Graphic file (type png)
 <use immagini/report_power1.png>
-Package pdftex.def Info: immagini/report_power1.png  used on input line 211.
+Package pdftex.def Info: immagini/report_power1.png  used on input line 210.
 (pdftex.def)             Requested size: 212.8939pt x 225.96265pt.
-<immagini/reportFA1.png, id=288, 456.5055pt x 244.21237pt>
+<immagini/reportFA1.png, id=336, 456.5055pt x 244.21237pt>
 File: immagini/reportFA1.png Graphic file (type png)
 <use immagini/reportFA1.png>
-Package pdftex.def Info: immagini/reportFA1.png  used on input line 220.
+Package pdftex.def Info: immagini/reportFA1.png  used on input line 219.
 (pdftex.def)             Requested size: 273.90541pt x 146.52853pt.
-<immagini/verbose1.png, id=291, 472.76625pt x 231.11343pt>
+<immagini/verbose1.png, id=339, 472.76625pt x 231.11343pt>
 File: immagini/verbose1.png Graphic file (type png)
 <use immagini/verbose1.png>
-Package pdftex.def Info: immagini/verbose1.png  used on input line 228.
+Package pdftex.def Info: immagini/verbose1.png  used on input line 230.
 (pdftex.def)             Requested size: 283.66193pt x 138.66913pt.
-File: immagini/verbose1.png Graphic file (type png)
-<use immagini/verbose1.png>
-Package pdftex.def Info: immagini/verbose1.png  used on input line 237.
-(pdftex.def)             Requested size: 283.66193pt x 138.66913pt.
- [7] [8 <./immagini/report_power1.png>] [9 <./immagini/reportFA1.png> <./immagi
-ni/verbose1.png>]
-Overfull \hbox (1.8295pt too wide) in paragraph at lines 242--242
+<immagini/verbose_2.png, id=340, 474.27188pt x 313.9228pt>
+File: immagini/verbose_2.png Graphic file (type png)
+<use immagini/verbose_2.png>
+Package pdftex.def Info: immagini/verbose_2.png  used on input line 240.
+(pdftex.def)             Requested size: 284.56532pt x 188.35512pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--244
+
+ []
+
+[7] [8 <./immagini/report_power1.png>] [9 <./immagini/reportFA1.png> <./immagin
+i/verbose1.png>]
+Overfull \hbox (1.8295pt too wide) in paragraph at lines 245--245
 |[]\OT1/cmr/bx/n/14.4 A simple MUX: glitch gen-er-a-tion and propaga-
  []
 
-<immagini/mux.png, id=311, 240.9pt x 161.85469pt>
+<immagini/mux.png, id=360, 240.9pt x 161.85469pt>
 File: immagini/mux.png Graphic file (type png)
 <use immagini/mux.png>
-Package pdftex.def Info: immagini/mux.png  used on input line 245.
+Package pdftex.def Info: immagini/mux.png  used on input line 248.
 (pdftex.def)             Requested size: 192.72025pt x 129.4839pt.
-<immagini/model_mux.png, id=314, 1570.36688pt x 481.8pt>
+<immagini/model_mux.png, id=363, 1570.36688pt x 481.8pt>
 File: immagini/model_mux.png Graphic file (type png)
 <use immagini/model_mux.png>
-Package pdftex.def Info: immagini/model_mux.png  used on input line 252.
+Package pdftex.def Info: immagini/model_mux.png  used on input line 255.
 (pdftex.def)             Requested size: 392.59076pt x 120.44969pt.
 
-Overfull \hbox (32.59076pt too wide) in paragraph at lines 252--253
+Overfull \hbox (32.59076pt too wide) in paragraph at lines 255--256
  [][] 
  []
 
-[10 <./immagini/mux.png>]
-Overfull \hbox (23.12277pt too wide) in paragraph at lines 263--263
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--265
+
+ []
+
+[10 <./immagini/verbose_2.png>] [11 <./immagini/mux.png> <./immagini/model_mux.
+png>]
+<immagini/timing_mux.png, id=377, 250.536pt x 134.904pt>
+File: immagini/timing_mux.png Graphic file (type png)
+<use immagini/timing_mux.png>
+Package pdftex.def Info: immagini/timing_mux.png  used on input line 271.
+(pdftex.def)             Requested size: 150.32274pt x 80.94302pt.
+
+Overfull \hbox (23.12277pt too wide) in paragraph at lines 275--275
 |[]\OT1/cmr/bx/n/14.4 Probability and Activ-ity Cal-cu-la-tion: Syn-cronous
  []
 
-<immagini/counter.png, id=323, 114.4275pt x 171.64125pt>
+<immagini/counter.png, id=378, 114.4275pt x 171.64125pt>
 File: immagini/counter.png Graphic file (type png)
 <use immagini/counter.png>
-Package pdftex.def Info: immagini/counter.png  used on input line 266.
+Package pdftex.def Info: immagini/counter.png  used on input line 278.
 (pdftex.def)             Requested size: 68.65701pt x 102.98552pt.
-
-LaTeX Warning: Reference `timing_counter1' on page 11 undefined on input line 2
-70.
-
-<immagini/counter2.png, id=325, 529.22719pt x 128.73094pt>
+<immagini/timing_counter1.png, id=381, 264.38776pt x 128.27925pt>
+File: immagini/timing_counter1.png Graphic file (type png)
+<use immagini/timing_counter1.png>
+Package pdftex.def Info: immagini/timing_counter1.png  used on input line 292.
+(pdftex.def)             Requested size: 158.63387pt x 76.96814pt.
+<immagini/counter2.png, id=382, 529.22719pt x 128.73094pt>
 File: immagini/counter2.png Graphic file (type png)
 <use immagini/counter2.png>
-Package pdftex.def Info: immagini/counter2.png  used on input line 275.
+Package pdftex.def Info: immagini/counter2.png  used on input line 300.
 (pdftex.def)             Requested size: 317.53876pt x 77.23914pt.
+<immagini/timing_counter2.png, id=385, 585.387pt x 128.27925pt>
+File: immagini/timing_counter2.png Graphic file (type png)
+<use immagini/timing_counter2.png>
+Package pdftex.def Info: immagini/timing_counter2.png  used on input line 309.
+(pdftex.def)             Requested size: 351.2349pt x 76.96814pt.
 
-LaTeX Warning: Reference `timing_counter2' on page 11 undefined on input line 2
-79.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--302
+Underfull \hbox (badness 10000) in paragraph at lines 282--334
 
  []
 
-[11 <./immagini/model_mux.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--334
+
+ []
+
+
+Overfull \hbox (9.77592pt too wide) in paragraph at lines 282--334
+\OT1/cmr/m/n/10.95 Questo cir-cuito per-mette di ottenere un con-t-atore sin-cr
+ono ad 8 bit, utilizzando
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--334
+
+ []
+
+[12 <./immagini/timing_mux.png> <./immagini/counter.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./immagini/counter.png> <./immagini/counter2.png>]
-<immagini/report_counter.png, id=341, 538.26094pt x 472.76625pt>
+[13 <./immagini/timing_counter1.png> <./immagini/counter2.png>]
+<immagini/report_counter.png, id=402, 538.26094pt x 472.76625pt>
 File: immagini/report_counter.png Graphic file (type png)
 <use immagini/report_counter.png>
-Package pdftex.def Info: immagini/report_counter.png  used on input line 311.
+Package pdftex.def Info: immagini/report_counter.png  used on input line 343.
 (pdftex.def)             Requested size: 322.95906pt x 283.66193pt.
-) [13] [14 <./immagini/report_counter.png>]
+)
+Underfull \hbox (badness 10000) in paragraph at lines 340--79
+
+ []
+
+[14 <./immagini/timing_counter2.png>] [15 <./immagini/report_counter.png>]
 \openout2 = `capitoli/lab2.aux'.
 
- (capitoli/lab2.tex
+
+(capitoli/lab2.tex
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1174,9 +1247,9 @@ Overfull \hbox (16.93297pt too wide) in paragraph at lines 1--1
  []
 
 
-LaTeX Warning: Reference `fsm' on page 15 undefined on input line 8.
+LaTeX Warning: Reference `fsm' on page 16 undefined on input line 8.
 
-<immagini/circuito.png, id=354, 230.96288pt x 185.493pt>
+<immagini/circuito.png, id=416, 230.96288pt x 185.493pt>
 File: immagini/circuito.png Graphic file (type png)
 <use immagini/circuito.png>
 Package pdftex.def Info: immagini/circuito.png  used on input line 11.
@@ -1194,149 +1267,153 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
-<immagini/schemlab2_2.jpg, id=356, 409.53pt x 227.6505pt>
+<immagini/schemlab2_2.jpg, id=418, 409.53pt x 227.6505pt>
 File: immagini/schemlab2_2.jpg Graphic file (type jpg)
 <use immagini/schemlab2_2.jpg>
-Package pdftex.def Info: immagini/schemlab2_2.jpg  used on input line 51.
+Package pdftex.def Info: immagini/schemlab2_2.jpg  used on input line 53.
 (pdftex.def)             Requested size: 245.7199pt x 136.59134pt.
-<immagini/slacks.jpg, id=357, 365.56575pt x 201.1515pt>
+<immagini/slacks.jpg, id=419, 365.56575pt x 201.1515pt>
 File: immagini/slacks.jpg Graphic file (type jpg)
 <use immagini/slacks.jpg>
-Package pdftex.def Info: immagini/slacks.jpg  used on input line 124.
+Package pdftex.def Info: immagini/slacks.jpg  used on input line 126.
 (pdftex.def)             Requested size: 219.34114pt x 120.69182pt.
 
-Overfull \hbox (69.36026pt too wide) in paragraph at lines 153--185
+Overfull \hbox (69.36026pt too wide) in paragraph at lines 155--187
  [][] 
  []
 
-<immagini/fsm_power_cell.jpg, id=358, 611.28375pt x 272.81924pt>
+<immagini/fsm_power_cell.jpg, id=420, 611.28375pt x 272.81924pt>
 File: immagini/fsm_power_cell.jpg Graphic file (type jpg)
 <use immagini/fsm_power_cell.jpg>
-Package pdftex.def Info: immagini/fsm_power_cell.jpg  used on input line 250.
+Package pdftex.def Info: immagini/fsm_power_cell.jpg  used on input line 252.
 (pdftex.def)             Requested size: 366.77307pt x 163.6928pt.
 
-Overfull \hbox (6.77307pt too wide) in paragraph at lines 250--251
+Overfull \hbox (6.77307pt too wide) in paragraph at lines 252--253
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--279
+Underfull \hbox (badness 10000) in paragraph at lines 37--281
 
  []
 
-[15
+[16
 
 
 
-] [16 <./immagini/circuito.png>]
+] [17 <./immagini/circuito.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <./immagini/schemlab2_2.jpg>]
+[18 <./immagini/schemlab2_2.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./immagini/slacks.jpg>] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 280--300
+[19 <./immagini/slacks.jpg>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 282--302
 
  []
 
-[21 <./immagini/fsm_power_cell.jpg>]) [22]
+[22 <./immagini/fsm_power_cell.jpg>]) [23]
 \openout2 = `capitoli/lab3.aux'.
 
  (capitoli/lab3.tex
@@ -1345,7 +1422,7 @@ Chapter 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-<immagini/clock_gating.png, id=410, 208.67963pt x 214.401pt>
+<immagini/clock_gating.png, id=471, 208.67963pt x 214.401pt>
 File: immagini/clock_gating.png Graphic file (type png)
 <use immagini/clock_gating.png>
 Package pdftex.def Info: immagini/clock_gating.png  used on input line 7.
@@ -1356,12 +1433,12 @@ Overfull \hbox (38.24593pt too wide) in paragraph at lines 4--11
  a la-vor-are sull'architettura
  []
 
-[23
+[24
 
 
 
  <./immagini/clock_gating.png>]
-<immagini/clock_gating1.png, id=417, 521.84962pt x 155.3805pt>
+<immagini/clock_gating1.png, id=478, 521.84962pt x 155.3805pt>
 File: immagini/clock_gating1.png Graphic file (type png)
 <use immagini/clock_gating1.png>
 Package pdftex.def Info: immagini/clock_gating1.png  used on input line 17.
@@ -1383,8 +1460,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--23
 
  []
 
-[24 <./immagini/clock_gating1.png>]
-<immagini/clock_gating2.png, id=425, 525.162pt x 156.585pt>
+[25 <./immagini/clock_gating1.png>]
+<immagini/clock_gating2.png, id=486, 525.162pt x 156.585pt>
 File: immagini/clock_gating2.png Graphic file (type png)
 <use immagini/clock_gating2.png>
 Package pdftex.def Info: immagini/clock_gating2.png  used on input line 26.
@@ -1394,7 +1471,7 @@ Overfull \hbox (60.13017pt too wide) in paragraph at lines 26--27
  [][] 
  []
 
-<immagini/clock_gating3.png, id=427, 528.17325pt x 160.1985pt>
+<immagini/clock_gating3.png, id=488, 528.17325pt x 160.1985pt>
 File: immagini/clock_gating3.png Graphic file (type png)
 <use immagini/clock_gating3.png>
 Package pdftex.def Info: immagini/clock_gating3.png  used on input line 33.
@@ -1404,8 +1481,8 @@ Overfull \hbox (62.53917pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
-[25 <./immagini/clock_gating2.png> <./immagini/clock_gating3.png>]
-<immagini/circuito_3_2.png, id=434, 322.50487pt x 163.51088pt>
+[26 <./immagini/clock_gating2.png> <./immagini/clock_gating3.png>]
+<immagini/circuito_3_2.png, id=495, 322.50487pt x 163.51088pt>
 File: immagini/circuito_3_2.png Graphic file (type png)
 <use immagini/circuito_3_2.png>
 Package pdftex.def Info: immagini/circuito_3_2.png  used on input line 42.
@@ -1414,7 +1491,7 @@ File: immagini/circuito_3_2.png Graphic file (type png)
 <use immagini/circuito_3_2.png>
 Package pdftex.def Info: immagini/circuito_3_2.png  used on input line 50.
 (pdftex.def)             Requested size: 258.00424pt x 130.80887pt.
-<immagini/3_1.png, id=437, 513.71925pt x 302.93175pt>
+<immagini/3_1.png, id=498, 513.71925pt x 302.93175pt>
 File: immagini/3_1.png Graphic file (type png)
 <use immagini/3_1.png>
 Package pdftex.def Info: immagini/3_1.png  used on input line 58.
@@ -1424,35 +1501,35 @@ Overfull \hbox (50.97595pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-<immagini/3_2.png, id=439, 367.3725pt x 89.43413pt>
+<immagini/3_2.png, id=500, 367.3725pt x 89.43413pt>
 File: immagini/3_2.png Graphic file (type png)
 <use immagini/3_2.png>
 Package pdftex.def Info: immagini/3_2.png  used on input line 66.
 (pdftex.def)             Requested size: 293.89838pt x 71.54738pt.
-<immagini/3_3.png, id=441, 447.17062pt x 185.79413pt>
+<immagini/3_3.png, id=502, 447.17062pt x 185.79413pt>
 File: immagini/3_3.png Graphic file (type png)
 <use immagini/3_3.png>
 Package pdftex.def Info: immagini/3_3.png  used on input line 75.
 (pdftex.def)             Requested size: 357.73698pt x 148.6355pt.
-<immagini/3_4.png, id=444, 446.26724pt x 187.29974pt>
+<immagini/3_4.png, id=505, 446.26724pt x 187.29974pt>
 File: immagini/3_4.png Graphic file (type png)
 <use immagini/3_4.png>
 Package pdftex.def Info: immagini/3_4.png  used on input line 83.
 (pdftex.def)             Requested size: 357.01427pt x 149.83998pt.
-<immagini/3_5.png, id=445, 360.74776pt x 93.64987pt>
+<immagini/3_5.png, id=506, 360.74776pt x 93.64987pt>
 File: immagini/3_5.png Graphic file (type png)
 <use immagini/3_5.png>
 Package pdftex.def Info: immagini/3_5.png  used on input line 89.
 (pdftex.def)             Requested size: 288.59857pt x 74.91998pt.
-[26 <./immagini/circuito_3_2.png>] [27 <./immagini/3_1.png> <./immagini/3_2.png
->] [28 <./immagini/3_3.png>]
-<immagini/3_6.png, id=467, 532.389pt x 542.62724pt>
+[27 <./immagini/circuito_3_2.png>] [28 <./immagini/3_1.png> <./immagini/3_2.png
+>] [29 <./immagini/3_3.png>]
+<immagini/3_6.png, id=528, 532.389pt x 542.62724pt>
 File: immagini/3_6.png Graphic file (type png)
 <use immagini/3_6.png>
 Package pdftex.def Info: immagini/3_6.png  used on input line 97.
 (pdftex.def)             Requested size: 346.04875pt x 352.70352pt.
- [29 <./immagini/3_4.png> <./immagini/3_5.png>]
-<immagini/3_7.png, id=475, 624.53325pt x 264.38776pt>
+ [30 <./immagini/3_4.png> <./immagini/3_5.png>]
+<immagini/3_7.png, id=536, 624.53325pt x 264.38776pt>
 File: immagini/3_7.png Graphic file (type png)
 <use immagini/3_7.png>
 Package pdftex.def Info: immagini/3_7.png  used on input line 105.
@@ -1462,13 +1539,13 @@ Overfull \hbox (45.9418pt too wide) in paragraph at lines 105--106
  [][] 
  []
 
-<immagini/3_8.png, id=476, 511.61137pt x 131.2905pt>
+<immagini/3_8.png, id=537, 511.61137pt x 131.2905pt>
 File: immagini/3_8.png Graphic file (type png)
 <use immagini/3_8.png>
 Package pdftex.def Info: immagini/3_8.png  used on input line 111.
 (pdftex.def)             Requested size: 332.54346pt x 85.3378pt.
-[30 <./immagini/3_6.png>]
-<immagini/3_9.png, id=485, 564.60938pt x 324.31163pt>
+[31 <./immagini/3_6.png>]
+<immagini/3_9.png, id=546, 564.60938pt x 324.31163pt>
 File: immagini/3_9.png Graphic file (type png)
 <use immagini/3_9.png>
 Package pdftex.def Info: immagini/3_9.png  used on input line 120.
@@ -1478,7 +1555,7 @@ Overfull \hbox (6.99174pt too wide) in paragraph at lines 120--121
  [][] 
  []
 
-<immagini/3_10.png, id=486, 453.49425pt x 115.33087pt>
+<immagini/3_10.png, id=547, 453.49425pt x 115.33087pt>
 File: immagini/3_10.png Graphic file (type png)
 <use immagini/3_10.png>
 Package pdftex.def Info: immagini/3_10.png  used on input line 126.
@@ -1489,24 +1566,24 @@ Overfull \hbox (2.46556pt too wide) in paragraph at lines 116--130
 m/it/10.95 re-port[]power -include[]input[]nets
  []
 
-[31 <./immagini/3_7.png> <./immagini/3_8.png>]
-<immagini/3_11.png, id=494, 540.8205pt x 543.2295pt>
+[32 <./immagini/3_7.png> <./immagini/3_8.png>]
+<immagini/3_11.png, id=555, 540.8205pt x 543.2295pt>
 File: immagini/3_11.png Graphic file (type png)
 <use immagini/3_11.png>
 Package pdftex.def Info: immagini/3_11.png  used on input line 137.
 (pdftex.def)             Requested size: 351.52914pt x 353.09499pt.
-<immagini/3_vhdl.png, id=497, 243.309pt x 340.27126pt>
+<immagini/3_vhdl.png, id=558, 243.309pt x 340.27126pt>
 File: immagini/3_vhdl.png Graphic file (type png)
 <use immagini/3_vhdl.png>
 Package pdftex.def Info: immagini/3_vhdl.png  used on input line 146.
 (pdftex.def)             Requested size: 243.30841pt x 340.27042pt.
-<immagini/3_vhdl_2.png, id=498, 110.814pt x 19.87425pt>
+<immagini/3_vhdl_2.png, id=559, 110.814pt x 19.87425pt>
 File: immagini/3_vhdl_2.png Graphic file (type png)
 <use immagini/3_vhdl_2.png>
 Package pdftex.def Info: immagini/3_vhdl_2.png  used on input line 152.
 (pdftex.def)             Requested size: 166.22055pt x 29.81128pt.
- [32 <./immagini/3_9.png> <./immagini/3_10.png>] [33 <./immagini/3_11.png>]
-<immagini/3_12.jpg, id=514, 794.97pt x 614.295pt>
+ [33 <./immagini/3_9.png> <./immagini/3_10.png>] [34 <./immagini/3_11.png>]
+<immagini/3_12.jpg, id=576, 794.97pt x 614.295pt>
 File: immagini/3_12.jpg Graphic file (type jpg)
 <use immagini/3_12.jpg>
 Package pdftex.def Info: immagini/3_12.jpg  used on input line 161.
@@ -1516,12 +1593,12 @@ Overfull \hbox (37.48402pt too wide) in paragraph at lines 161--162
  [][] 
  []
 
-<immagini/3_13.jpg, id=515, 144.7809pt x 93.951pt>
+<immagini/3_13.jpg, id=577, 144.7809pt x 93.951pt>
 File: immagini/3_13.jpg Graphic file (type jpg)
 <use immagini/3_13.jpg>
 Package pdftex.def Info: immagini/3_13.jpg  used on input line 167.
 (pdftex.def)             Requested size: 217.17079pt x 140.92616pt.
-<immagini/elsif1.png, id=518, 569.42737pt x 326.4195pt>
+<immagini/elsif1.png, id=580, 569.42737pt x 326.4195pt>
 File: immagini/elsif1.png Graphic file (type png)
 <use immagini/elsif1.png>
 Package pdftex.def Info: immagini/elsif1.png  used on input line 176.
@@ -1531,7 +1608,7 @@ Overfull \hbox (10.1234pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
-<immagini/elsif2.png, id=519, 455.301pt x 117.43875pt>
+<immagini/elsif2.png, id=581, 455.301pt x 117.43875pt>
 File: immagini/elsif2.png Graphic file (type png)
 <use immagini/elsif2.png>
 Package pdftex.def Info: immagini/elsif2.png  used on input line 182.
@@ -1554,13 +1631,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--202
 
  []
 
-[34 <./immagini/3_vhdl.png> <./immagini/3_vhdl_2.png>]
+[35 <./immagini/3_vhdl.png> <./immagini/3_vhdl_2.png>]
 
-LaTeX Warning: Text page 35 contains only floats.
+LaTeX Warning: Text page 36 contains only floats.
 
-[35 <./immagini/3_12.jpg> <./immagini/3_13.jpg>] [36 <./immagini/elsif1.png> <.
-/immagini/elsif2.png>] [37]
-<immagini/elsif5.jpg, id=548, 1478.52374pt x 1606.0pt>
+[36 <./immagini/3_12.jpg> <./immagini/3_13.jpg>] [37 <./immagini/elsif1.png> <.
+/immagini/elsif2.png>] [38]
+<immagini/elsif5.jpg, id=609, 1478.52374pt x 1606.0pt>
 File: immagini/elsif5.jpg Graphic file (type jpg)
 <use immagini/elsif5.jpg>
 Package pdftex.def Info: immagini/elsif5.jpg  used on input line 205.
@@ -1570,7 +1647,7 @@ Overfull \hbox (53.98383pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
-<immagini/elsif6.png, id=553, 561.59813pt x 334.851pt>
+<immagini/elsif6.png, id=614, 561.59813pt x 334.851pt>
 File: immagini/elsif6.png Graphic file (type png)
 <use immagini/elsif6.png>
 Package pdftex.def Info: immagini/elsif6.png  used on input line 213.
@@ -1580,12 +1657,12 @@ Overfull \hbox (5.03445pt too wide) in paragraph at lines 213--214
  [][] 
  []
 
-<immagini/elsif7.png, id=554, 514.3215pt x 129.78488pt>
+<immagini/elsif7.png, id=615, 514.3215pt x 129.78488pt>
 File: immagini/elsif7.png Graphic file (type png)
 <use immagini/elsif7.png>
 Package pdftex.def Info: immagini/elsif7.png  used on input line 219.
 (pdftex.def)             Requested size: 334.30502pt x 84.35916pt.
-<immagini/elsif8.png, id=555, 569.7285pt x 336.65775pt>
+<immagini/elsif8.png, id=616, 569.7285pt x 336.65775pt>
 File: immagini/elsif8.png Graphic file (type png)
 <use immagini/elsif8.png>
 Package pdftex.def Info: immagini/elsif8.png  used on input line 225.
@@ -1595,14 +1672,14 @@ Overfull \hbox (10.31914pt too wide) in paragraph at lines 225--226
  [][] 
  []
 
-<immagini/elsif9.png, id=556, 465.53925pt x 120.75113pt>
+<immagini/elsif9.png, id=617, 465.53925pt x 120.75113pt>
 File: immagini/elsif9.png Graphic file (type png)
 <use immagini/elsif9.png>
 Package pdftex.def Info: immagini/elsif9.png  used on input line 231.
 (pdftex.def)             Requested size: 302.59692pt x 78.48727pt.
-[38 <./immagini/elsif5.jpg>] [39 <./immagini/elsif6.png> <./immagini/elsif7.png
+[39 <./immagini/elsif5.jpg>] [40 <./immagini/elsif6.png> <./immagini/elsif7.png
 >]
-<immagini/elsif10.jpg, id=570, 1435.3625pt x 1606.0pt>
+<immagini/elsif10.jpg, id=632, 1435.3625pt x 1606.0pt>
 File: immagini/elsif10.jpg Graphic file (type jpg)
 <use immagini/elsif10.jpg>
 Package pdftex.def Info: immagini/elsif10.jpg  used on input line 240.
@@ -1618,20 +1695,20 @@ Overfull \hbox (27.93462pt too wide) in paragraph at lines 236--259
 ale prima e dopo l'introduzione
  []
 
-[40 <./immagini/elsif8.png> <./immagini/elsif9.png>] [41 <./immagini/elsif10.jp
+[41 <./immagini/elsif8.png> <./immagini/elsif9.png>] [42 <./immagini/elsif10.jp
 g>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42]
-<immagini/circuito_parallel.png, id=594, 410.7345pt x 333.6465pt>
+[43]
+<immagini/circuito_parallel.png, id=655, 410.7345pt x 333.6465pt>
 File: immagini/circuito_parallel.png Graphic file (type png)
 <use immagini/circuito_parallel.png>
 Package pdftex.def Info: immagini/circuito_parallel.png  used on input line 301
 .
 (pdftex.def)             Requested size: 328.58804pt x 266.91756pt.
- [43 <./immagini/circuito_parallel.png>]
-<immagini/circuito_pipe.png, id=604, 411.03563pt x 220.4235pt>
+ [44 <./immagini/circuito_parallel.png>]
+<immagini/circuito_pipe.png, id=665, 411.03563pt x 220.4235pt>
 File: immagini/circuito_pipe.png Graphic file (type png)
 <use immagini/circuito_pipe.png>
 Package pdftex.def Info: immagini/circuito_pipe.png  used on input line 364.
@@ -1640,8 +1717,8 @@ Package pdftex.def Info: immagini/circuito_pipe.png  used on input line 364.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44] [45 <./immagini/circuito_pipe.png>]
-<immagini/circuito_parallel_pipe.png, id=620, 450.18187pt x 418.26262pt>
+[45] [46 <./immagini/circuito_pipe.png>]
+<immagini/circuito_parallel_pipe.png, id=682, 450.18187pt x 418.26262pt>
 File: immagini/circuito_parallel_pipe.png Graphic file (type png)
 <use immagini/circuito_parallel_pipe.png>
 Package pdftex.def Info: immagini/circuito_parallel_pipe.png  used on input lin
@@ -1658,8 +1735,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--469
 
  []
 
-[46] [47 <./immagini/circuito_parallel_pipe.png>]
-<immagini/3_timing2.png, id=638, 120.45pt x 44.26538pt>
+[47] [48 <./immagini/circuito_parallel_pipe.png>]
+<immagini/3_timing2.png, id=699, 120.45pt x 44.26538pt>
 File: immagini/3_timing2.png Graphic file (type png)
 <use immagini/3_timing2.png>
 Package pdftex.def Info: immagini/3_timing2.png  used on input line 473.
@@ -1668,7 +1745,7 @@ File: immagini/3_timing2.png Graphic file (type png)
 <use immagini/3_timing2.png>
 Package pdftex.def Info: immagini/3_timing2.png  used on input line 479.
 (pdftex.def)             Requested size: 240.89938pt x 88.53049pt.
- [48]) [49 <./immagini/3_timing2.png>]
+ [49]) [50 <./immagini/3_timing2.png>]
 \openout2 = `capitoli/lab4.aux'.
 
  (capitoli/lab4.tex
@@ -1677,17 +1754,17 @@ Chapter 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-<immagini/4_1_data_report.png, id=656, 479.08987pt x 366.46913pt>
+<immagini/4_1_data_report.png, id=717, 479.08987pt x 366.46913pt>
 File: immagini/4_1_data_report.png Graphic file (type png)
 <use immagini/4_1_data_report.png>
 Package pdftex.def Info: immagini/4_1_data_report.png  used on input line 15.
 (pdftex.def)             Requested size: 311.40471pt x 238.2021pt.
-[50
+[51
 
 
 
-] [51 <./immagini/4_1_data_report.png>]
-<immagini/4_1_addres_report.png, id=669, 422.17725pt x 329.12962pt>
+] [52 <./immagini/4_1_data_report.png>]
+<immagini/4_1_addres_report.png, id=731, 422.17725pt x 329.12962pt>
 File: immagini/4_1_addres_report.png Graphic file (type png)
 <use immagini/4_1_addres_report.png>
 Package pdftex.def Info: immagini/4_1_addres_report.png  used on input line 41.
@@ -1698,20 +1775,20 @@ Overfull \hbox (1.60973pt too wide) in paragraph at lines 64--64
 |[]\OT1/cmr/bx/n/12 Bus-invert tech-nique, Trans-ition based tech-nique, Gray
  []
 
-[52 <./immagini/4_1_addres_report.png>]
-<immagini/transition.png, id=677, 285.16537pt x 46.67438pt>
+[53 <./immagini/4_1_addres_report.png>]
+<immagini/transition.png, id=738, 285.16537pt x 46.67438pt>
 File: immagini/transition.png Graphic file (type png)
 <use immagini/transition.png>
 Package pdftex.def Info: immagini/transition.png  used on input line 109.
 (pdftex.def)             Requested size: 342.19673pt x 56.00894pt.
-<immagini/gray.png, id=681, 292.39238pt x 121.05225pt>
+<immagini/gray.png, id=742, 292.39238pt x 121.05225pt>
 File: immagini/gray.png Graphic file (type png)
 <use immagini/gray.png>
 Package pdftex.def Info: immagini/gray.png  used on input line 154.
 (pdftex.def)             Requested size: 292.39165pt x 121.05194pt.
- [53 <./immagini/transition.png>]
-[54 <./immagini/gray.png>] [55]
-<immagini/address_report_tecniche.png, id=707, 361.04887pt x 344.78813pt>
+ [54 <./immagini/transition.png>]
+[55 <./immagini/gray.png>] [56]
+<immagini/address_report_tecniche.png, id=768, 361.04887pt x 344.78813pt>
 File: immagini/address_report_tecniche.png Graphic file (type png)
 <use immagini/address_report_tecniche.png>
 Package pdftex.def Info: immagini/address_report_tecniche.png  used on input li
@@ -1727,24 +1804,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--208
 
  []
 
-[56 <./immagini/address_report_tecniche.png>]
-<immagini/data_report_tecniche.png, id=714, 365.56575pt x 354.72525pt>
+[57 <./immagini/address_report_tecniche.png>]
+<immagini/data_report_tecniche.png, id=776, 365.56575pt x 354.72525pt>
 File: immagini/data_report_tecniche.png Graphic file (type png)
 <use immagini/data_report_tecniche.png>
 Package pdftex.def Info: immagini/data_report_tecniche.png  used on input line 
 211.
 (pdftex.def)             Requested size: 292.45299pt x 283.78058pt.
-<immagini/formula_t0.png, id=716, 315.88013pt x 77.088pt>
+<immagini/formula_t0.png, id=778, 315.88013pt x 77.088pt>
 File: immagini/formula_t0.png Graphic file (type png)
 <use immagini/formula_t0.png>
 Package pdftex.def Info: immagini/formula_t0.png  used on input line 219.
 (pdftex.def)             Requested size: 252.70444pt x 61.67047pt.
- [57 <./immagini/data_report_tecniche.png> <./immagini/formula_t0.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 234--83
+ [58 <./immagini/data_report_tecniche.png> <./immagini/formula_t0.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 234--82
 
  []
 
-[58] [59]
+[59] [60]
 \openout2 = `capitoli/lab5.aux'.
 
  (capitoli/lab5.tex
@@ -1753,17 +1830,17 @@ Chapter 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-<immagini/nand_circuit.png, id=734, 311.1625pt x 506.89375pt>
+<immagini/nand_circuit.png, id=795, 311.1625pt x 506.89375pt>
 File: immagini/nand_circuit.png Graphic file (type png)
 <use immagini/nand_circuit.png>
 Package pdftex.def Info: immagini/nand_circuit.png  used on input line 8.
 (pdftex.def)             Requested size: 93.34947pt x 152.06929pt.
-[60
+[61
 
 
 
-] [61 <./immagini/nand_circuit.png>]
-<immagini/onde_5_1.jpg, id=748, 1132.23pt x 572.1375pt>
+] [62 <./immagini/nand_circuit.png>]
+<immagini/onde_5_1.jpg, id=809, 1132.23pt x 572.1375pt>
 File: immagini/onde_5_1.jpg Graphic file (type jpg)
 <use immagini/onde_5_1.jpg>
 Package pdftex.def Info: immagini/onde_5_1.jpg  used on input line 43.
@@ -1773,8 +1850,8 @@ Overfull \hbox (36.28644pt too wide) in paragraph at lines 43--44
  [][] 
  []
 
-[62 <./immagini/onde_5_1.jpg>]
-<immagini/onde_5_2current.jpg, id=761, 4484.755pt x 2276.505pt>
+[63 <./immagini/onde_5_1.jpg>]
+<immagini/onde_5_2current.jpg, id=823, 4484.755pt x 2276.505pt>
 File: immagini/onde_5_2current.jpg Graphic file (type jpg)
 <use immagini/onde_5_2current.jpg>
 Package pdftex.def Info: immagini/onde_5_2current.jpg  used on input line 139.
@@ -1784,7 +1861,7 @@ Overfull \hbox (43.61053pt too wide) in paragraph at lines 139--140
  [][] 
  []
 
-<immagini/onde_5_2voltage.jpg, id=762, 4484.755pt x 2276.505pt>
+<immagini/onde_5_2voltage.jpg, id=824, 4484.755pt x 2276.505pt>
 File: immagini/onde_5_2voltage.jpg Graphic file (type jpg)
 <use immagini/onde_5_2voltage.jpg>
 Package pdftex.def Info: immagini/onde_5_2voltage.jpg  used on input line 145.
@@ -1800,7 +1877,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[63] [64 <./immagini/onde_5_2current.jpg>]
+[64] [65 <./immagini/onde_5_2current.jpg>]
 Overfull \hbox (3.99664pt too wide) in paragraph at lines 174--264
 \OT1/cmr/m/n/10.95 pi-lotare ca-ri-chi su-per-i-ori, bis-gona utiliz-zare porte
  lo-giche dif-fer-enti, comunque
@@ -1812,20 +1889,20 @@ Overfull \hbox (33.74449pt too wide) in paragraph at lines 174--264
 : \OT1/cmr/m/it/10.95 nandH-ScharMax[]Load.sp
  []
 
-[65 <./immagini/onde_5_2voltage.jpg>]
+[66 <./immagini/onde_5_2voltage.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[66]
+[67]
 Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
-[67]
-<immagini/onde_5_3_voltage1.jpg, id=807, 4528.92pt x 2204.235pt>
+[68]
+<immagini/onde_5_3_voltage1.jpg, id=868, 4528.92pt x 2204.235pt>
 File: immagini/onde_5_3_voltage1.jpg Graphic file (type jpg)
 <use immagini/onde_5_3_voltage1.jpg>
 Package pdftex.def Info: immagini/onde_5_3_voltage1.jpg  used on input line 276
@@ -1836,7 +1913,7 @@ Overfull \hbox (47.58522pt too wide) in paragraph at lines 276--277
  [][] 
  []
 
-<immagini/onde_5_3_current1.jpg, id=808, 3517.14pt x 1750.54pt>
+<immagini/onde_5_3_current1.jpg, id=869, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_3_current1.jpg Graphic file (type jpg)
 <use immagini/onde_5_3_current1.jpg>
 Package pdftex.def Info: immagini/onde_5_3_current1.jpg  used on input line 282
@@ -1847,8 +1924,8 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 282--283
  [][] 
  []
 
-[68 <./immagini/onde_5_3_voltage1.jpg> <./immagini/onde_5_3_current1.jpg>]
-<immagini/onde_5_3_current2.jpg, id=813, 3517.14pt x 1750.54pt>
+[69 <./immagini/onde_5_3_voltage1.jpg> <./immagini/onde_5_3_current1.jpg>]
+<immagini/onde_5_3_current2.jpg, id=875, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_3_current2.jpg Graphic file (type jpg)
 <use immagini/onde_5_3_current2.jpg>
 Package pdftex.def Info: immagini/onde_5_3_current2.jpg  used on input line 289
@@ -1859,7 +1936,7 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 289--290
  [][] 
  []
 
-<immagini/onde_5_3_current3.jpg, id=814, 3517.14pt x 1750.54pt>
+<immagini/onde_5_3_current3.jpg, id=876, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_3_current3.jpg Graphic file (type jpg)
 <use immagini/onde_5_3_current3.jpg>
 Package pdftex.def Info: immagini/onde_5_3_current3.jpg  used on input line 295
@@ -1870,27 +1947,27 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 295--296
  [][] 
  []
 
-[69 <./immagini/onde_5_3_current2.jpg> <./immagini/onde_5_3_current3.jpg>]
-[70] [71]
+[70 <./immagini/onde_5_3_current2.jpg> <./immagini/onde_5_3_current3.jpg>]
+[71] [72]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[72]
-<immagini/onde_5_4_voltage1.jpg, id=859, 3517.14pt x 1750.54pt>
+[73]
+<immagini/onde_5_4_voltage1.jpg, id=920, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_voltage1.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_voltage1.jpg>
 Package pdftex.def Info: immagini/onde_5_4_voltage1.jpg  used on input line 585
 .
 (pdftex.def)             Requested size: 351.7346pt x 175.06425pt.
-<immagini/onde_5_4_voltage2.jpg, id=860, 3517.14pt x 1750.54pt>
+<immagini/onde_5_4_voltage2.jpg, id=921, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_voltage2.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_voltage2.jpg>
 Package pdftex.def Info: immagini/onde_5_4_voltage2.jpg  used on input line 591
 .
 (pdftex.def)             Requested size: 351.7346pt x 175.06425pt.
- [73] [74 <./immagini/onde_5_4_voltage1.jpg> <./immagini/onde_5_4_voltage2.jpg>
+ [74] [75 <./immagini/onde_5_4_voltage1.jpg> <./immagini/onde_5_4_voltage2.jpg>
 ]
-<immagini/onde_5_4_current1.jpg, id=876, 3517.14pt x 1750.54pt>
+<immagini/onde_5_4_current1.jpg, id=938, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_current1.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_current1.jpg>
 Package pdftex.def Info: immagini/onde_5_4_current1.jpg  used on input line 598
@@ -1901,7 +1978,7 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 598--599
  [][] 
  []
 
-<immagini/onde_5_4_current2.jpg, id=877, 3517.14pt x 1750.54pt>
+<immagini/onde_5_4_current2.jpg, id=939, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_current2.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_current2.jpg>
 Package pdftex.def Info: immagini/onde_5_4_current2.jpg  used on input line 604
@@ -1912,8 +1989,8 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 604--605
  [][] 
  []
 
-[75 <./immagini/onde_5_4_current1.jpg> <./immagini/onde_5_4_current2.jpg>]
-<immagini/onde_5_4_current3.jpg, id=882, 3517.14pt x 1750.54pt>
+[76 <./immagini/onde_5_4_current1.jpg> <./immagini/onde_5_4_current2.jpg>]
+<immagini/onde_5_4_current3.jpg, id=944, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_current3.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_current3.jpg>
 Package pdftex.def Info: immagini/onde_5_4_current3.jpg  used on input line 611
@@ -1924,7 +2001,7 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 611--612
  [][] 
  []
 
-<immagini/TEMP.png, id=885, 642.4pt x 481.8pt>
+<immagini/TEMP.png, id=947, 642.4pt x 481.8pt>
 File: immagini/TEMP.png Graphic file (type png)
 <use immagini/TEMP.png>
 Package pdftex.def Info: immagini/TEMP.png  used on input line 646.
@@ -1934,7 +2011,7 @@ Overfull \hbox (15.1749pt too wide) in paragraph at lines 654--669
  [][] 
  []
 
-<immagini/TEMPVT.png, id=888, 642.4pt x 481.8pt>
+<immagini/TEMPVT.png, id=950, 642.4pt x 481.8pt>
 File: immagini/TEMPVT.png Graphic file (type png)
 <use immagini/TEMPVT.png>
 Package pdftex.def Info: immagini/TEMPVT.png  used on input line 674.
@@ -1948,11 +2025,11 @@ OT1/cmr/m/n/10.95 ed uno script ap-pos-it-a-mente realizzato,
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[76 <./immagini/onde_5_4_current3.jpg>]
+[77 <./immagini/onde_5_4_current3.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[77 <./immagini/TEMP.png>] [78 <./immagini/TEMPVT.png>]
+[78 <./immagini/TEMP.png>] [79 <./immagini/TEMPVT.png>]
 
 LaTeX Warning: Command \textonehalf invalid in math mode on input line 689.
 
@@ -1962,14 +2039,14 @@ Overfull \hbox (4.39781pt too wide) in paragraph at lines 706--721
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 703--84
+Underfull \hbox (badness 10000) in paragraph at lines 703--83
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[79] [80]
+[80] [81]
 \openout2 = `capitoli/lab6.aux'.
 
  (capitoli/lab6.tex
@@ -1978,322 +2055,357 @@ Chapter 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-<immagini/pentium.png, id=919, 330.033pt x 324.61275pt>
+<immagini/pentium.png, id=981, 330.033pt x 324.61275pt>
 File: immagini/pentium.png Graphic file (type png)
 <use immagini/pentium.png>
-Package pdftex.def Info: immagini/pentium.png  used on input line 16.
+Package pdftex.def Info: immagini/pentium.png  used on input line 15.
 (pdftex.def)             Requested size: 330.03218pt x 324.61194pt.
-[81
+[82
 
 
 
 ]
-<immagini/testbench_vhdl1.jpg, id=927, 1135.24126pt x 1606.0pt>
-File: immagini/testbench_vhdl1.jpg Graphic file (type jpg)
-<use immagini/testbench_vhdl1.jpg>
-Package pdftex.def Info: immagini/testbench_vhdl1.jpg  used on input line 31.
-(pdftex.def)             Requested size: 340.575pt x 481.80373pt.
-<immagini/testbench_vhdl2.jpg, id=928, 1135.24126pt x 1606.0pt>
-File: immagini/testbench_vhdl2.jpg Graphic file (type jpg)
-<use immagini/testbench_vhdl2.jpg>
-Package pdftex.def Info: immagini/testbench_vhdl2.jpg  used on input line 37.
-(pdftex.def)             Requested size: 340.575pt x 481.80373pt.
- [82 <./immagini/pentium.png>] [83 <./immagini/testbench_vhdl1.jpg>]
 
-LaTeX Warning: Text page 84 contains only floats.
-
-[84 <./immagini/testbench_vhdl2.jpg>]
-<immagini/sim1.jpg, id=945, 1325.95375pt x 539.01375pt>
-File: immagini/sim1.jpg Graphic file (type jpg)
-<use immagini/sim1.jpg>
-Package pdftex.def Info: immagini/sim1.jpg  used on input line 59.
-(pdftex.def)             Requested size: 795.5784pt x 323.41074pt.
-
-Overfull \hbox (435.5784pt too wide) in paragraph at lines 59--60
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--73
-
- []
-
-[85]
-<immagini/fsm_lab6.jpg, id=951, 507.69675pt x 280.04625pt>
-File: immagini/fsm_lab6.jpg Graphic file (type jpg)
-<use immagini/fsm_lab6.jpg>
-Package pdftex.def Info: immagini/fsm_lab6.jpg  used on input line 78.
-(pdftex.def)             Requested size: 406.15794pt x 224.0373pt.
-
-Overfull \hbox (46.15794pt too wide) in paragraph at lines 78--79
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--120
-
- []
-
-[86 <./immagini/sim1.jpg>] [87 <./immagini/fsm_lab6.jpg>] [88]
-Underfull \hbox (badness 10000) in paragraph at lines 124--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--148
-
- []
-
-[89]
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Overfull \hbox (103.77884pt too wide) in paragraph at lines 157--247
-\OT1/cmr/m/n/10.95 RandomInputBinary = ('0:0lb'.format((RandomInputInteger),l=G
-enericsAssignedValue[i])) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Overfull \hbox (6.09485pt too wide) in paragraph at lines 157--247
-\OT1/cmr/m/n/10.95 sultati, sono stati con-front-ati in modo or-dinato i valori
- \OT1/cmr/m/it/10.95 Out-puts-Decimal[]
- []
-
-
-Overfull \hbox (18.00249pt too wide) in paragraph at lines 157--247
-\OT1/cmr/m/n/10.95 proveni-enti dalla sim-ulazione con quelli di rifer-i-mento 
-sal-vati in \OT1/cmr/m/it/10.95 Py[]results[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--247
-
- []
-
-[90] [91] [92] [93]
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--279
-
- []
-
-[94]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.283 L
-       e parti 2 e 3 sono già state fornite, il file completo è comunque d...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
-
- []
-
-[95]) [96]
-
-Package caption Warning: Unused \captionsetup[sub] on input line 40.
+Package caption Warning: \label without proper reference on input line 10.
 See the caption package documentation for explanation.
 
 
-! LaTeX Error: \begin{itemize} on input line 152 ended by \end{document}.
+LaTeX Warning: Reference `testbench_vhdl1' on page 83 undefined on input line 2
+7.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+[83 <./immagini/pentium.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 29--37
+
+ []
+
+<immagini/sim1.jpg, id=996, 625.58719pt x 249.93375pt>
+File: immagini/sim1.jpg Graphic file (type jpg)
+<use immagini/sim1.jpg>
+Package pdftex.def Info: immagini/sim1.jpg  used on input line 47.
+(pdftex.def)             Requested size: 375.35521pt x 149.9614pt.
+
+Overfull \hbox (15.35521pt too wide) in paragraph at lines 47--48
+ [][] 
+ []
+
+<immagini/fsm_lab6.jpg, id=998, 507.69675pt x 280.04625pt>
+File: immagini/fsm_lab6.jpg Graphic file (type jpg)
+<use immagini/fsm_lab6.jpg>
+Package pdftex.def Info: immagini/fsm_lab6.jpg  used on input line 56.
+(pdftex.def)             Requested size: 406.15794pt x 224.0373pt.
+
+Overfull \hbox (46.15794pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
+
+[84] [85 <./immagini/sim1.jpg> <./immagini/fsm_lab6.jpg>]
+
+Package caption Warning: \label without proper reference on input line 40.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `counterdo1' on page 86 undefined on input line 67.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--94
+
+ []
+
+[86]
+
+Package caption Warning: \label without proper reference on input line 23.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `counter_tb1' on page 87 undefined on input line 98.
+
+
+Package caption Warning: \label without proper reference on input line 28.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `counter_tb2' on page 87 undefined on input line 98.
+
+
+Package caption Warning: \label without proper reference on input line 33.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `counter_tb3' on page 87 undefined on input line 98.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--122
+
+ []
+
+[87] [88]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+
+
+Package caption Warning: \label without proper reference on input line 53.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `testing1' on page 89 undefined on input line 158.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Overfull \hbox (2.66693pt too wide) in paragraph at lines 133--220
+| \OT1/cmr/m/it/10.95 RandomInputInteger=randint(1,2**GenericsAssignedValue[i]-
+1) 
+ []
+
+
+Overfull \hbox (143.64732pt too wide) in paragraph at lines 133--220
+| \OT1/cmr/m/it/10.95 Ran-dom-In-put-Bin-ary = ('0:0\OMS/cmsy/m/n/10.95 f\OT1/c
+mr/m/it/10.95 l\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/it/10.95 b'.format((RandomInputI
+nteger),l=GenericsAssignedValue[i])) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--220
+
+ []
+
+[89] [90] [91]
+
+Package caption Warning: \label without proper reference on input line 66.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tbgen1' on page 92 undefined on input line 221.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--249
+
+ []
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 252--254
+
+ []
+
+) [93]
+\openout2 = `capitoli/appendix.aux'.
+
+ (capitoli/appendix.tex
+Chapter 7.
+[94
+
+
+
+]
+<immagini/testbench_vhdl1.jpg, id=1063, 1135.24126pt x 1606.0pt>
+File: immagini/testbench_vhdl1.jpg Graphic file (type jpg)
+<use immagini/testbench_vhdl1.jpg>
+Package pdftex.def Info: immagini/testbench_vhdl1.jpg  used on input line 9.
+(pdftex.def)             Requested size: 283.80962pt x 401.49902pt.
+<immagini/testbench_vhdl2.jpg, id=1064, 1135.24126pt x 1606.0pt>
+File: immagini/testbench_vhdl2.jpg Graphic file (type jpg)
+<use immagini/testbench_vhdl2.jpg>
+Package pdftex.def Info: immagini/testbench_vhdl2.jpg  used on input line 14.
+(pdftex.def)             Requested size: 283.80962pt x 401.49902pt.
+ [95 <./immagini/testbench_vhdl1.jpg>]
+<immagini/counter_tb1.jpg, id=1069, 281.853pt x 449.88075pt>
+File: immagini/counter_tb1.jpg Graphic file (type jpg)
+<use immagini/counter_tb1.jpg>
+Package pdftex.def Info: immagini/counter_tb1.jpg  used on input line 22.
+(pdftex.def)             Requested size: 281.85231pt x 449.87965pt.
+<immagini/counter_tb2.jpg, id=1070, 308.352pt x 440.24475pt>
+File: immagini/counter_tb2.jpg Graphic file (type jpg)
+<use immagini/counter_tb2.jpg>
+Package pdftex.def Info: immagini/counter_tb2.jpg  used on input line 27.
+(pdftex.def)             Requested size: 308.35124pt x 440.24368pt.
+<immagini/counter_tb3.jpg, id=1071, 276.43275pt x 46.37325pt>
+File: immagini/counter_tb3.jpg Graphic file (type jpg)
+<use immagini/counter_tb3.jpg>
+Package pdftex.def Info: immagini/counter_tb3.jpg  used on input line 32.
+(pdftex.def)             Requested size: 276.43207pt x 46.37312pt.
+ [96 <./immagini/testbench_vhdl2.jpg>]
+<immagini/counterdo1.jpg, id=1076, 320.99925pt x 455.90324pt>
+File: immagini/counterdo1.jpg Graphic file (type jpg)
+<use immagini/counterdo1.jpg>
+Package pdftex.def Info: immagini/counterdo1.jpg  used on input line 39.
+(pdftex.def)             Requested size: 320.99846pt x 455.90211pt.
+<immagini/counterdo2.jpg, id=1077, 310.15875pt x 144.54pt>
+File: immagini/counterdo2.jpg Graphic file (type jpg)
+<use immagini/counterdo2.jpg>
+Package pdftex.def Info: immagini/counterdo2.jpg  used on input line 44.
+(pdftex.def)             Requested size: 310.15799pt x 144.53963pt.
+ [97 <./immagini/counter_tb1.jpg>]
+
+LaTeX Warning: Text page 98 contains only floats.
+
+[98 <./immagini/counter_tb2.jpg> <./immagini/counter_tb3.jpg>]
+<immagini/testing1.jpg, id=1086, 303.534pt x 442.0515pt>
+File: immagini/testing1.jpg Graphic file (type jpg)
+<use immagini/testing1.jpg>
+Package pdftex.def Info: immagini/testing1.jpg  used on input line 52.
+(pdftex.def)             Requested size: 303.53325pt x 442.05042pt.
+<immagini/testing2.jpg, id=1087, 293.29575pt x 428.19975pt>
+File: immagini/testing2.jpg Graphic file (type jpg)
+<use immagini/testing2.jpg>
+Package pdftex.def Info: immagini/testing2.jpg  used on input line 57.
+(pdftex.def)             Requested size: 293.29501pt x 428.1987pt.
+ [99 <./immagini/counterdo1.jpg>]
+<immagini/tbgen1.jpg, id=1093, 305.943pt x 454.0965pt>
+File: immagini/tbgen1.jpg Graphic file (type jpg)
+<use immagini/tbgen1.jpg>
+Package pdftex.def Info: immagini/tbgen1.jpg  used on input line 65.
+(pdftex.def)             Requested size: 305.94223pt x 454.09538pt.
+<immagini/tbgen2.jpg, id=1094, 293.898pt x 455.90324pt>
+File: immagini/tbgen2.jpg Graphic file (type jpg)
+<use immagini/tbgen2.jpg>
+Package pdftex.def Info: immagini/tbgen2.jpg  used on input line 70.
+(pdftex.def)             Requested size: 293.89726pt x 455.90211pt.
+<immagini/tbgen3.jpg, id=1095, 302.3295pt x 446.8695pt>
+File: immagini/tbgen3.jpg Graphic file (type jpg)
+<use immagini/tbgen3.jpg>
+Package pdftex.def Info: immagini/tbgen3.jpg  used on input line 75.
+(pdftex.def)             Requested size: 302.32875pt x 446.86841pt.
+<immagini/tbgen4.jpg, id=1096, 312.56775pt x 439.04025pt>
+File: immagini/tbgen4.jpg Graphic file (type jpg)
+<use immagini/tbgen4.jpg>
+Package pdftex.def Info: immagini/tbgen4.jpg  used on input line 80.
+(pdftex.def)             Requested size: 312.56697pt x 439.03918pt.
+<immagini/tbgen5.jpg, id=1097, 300.52275pt x 433.01775pt>
+File: immagini/tbgen5.jpg Graphic file (type jpg)
+<use immagini/tbgen5.jpg>
+Package pdftex.def Info: immagini/tbgen5.jpg  used on input line 86.
+(pdftex.def)             Requested size: 300.522pt x 433.01668pt.
+<immagini/tbgen6.jpg, id=1098, 292.6935pt x 450.483pt>
+File: immagini/tbgen6.jpg Graphic file (type jpg)
+<use immagini/tbgen6.jpg>
+Package pdftex.def Info: immagini/tbgen6.jpg  used on input line 91.
+(pdftex.def)             Requested size: 292.69278pt x 450.48189pt.
+<immagini/tbgen7.jpg, id=1099, 290.88675pt x 180.07275pt>
+File: immagini/tbgen7.jpg Graphic file (type jpg)
+<use immagini/tbgen7.jpg>
+Package pdftex.def Info: immagini/tbgen7.jpg  used on input line 96.
+(pdftex.def)             Requested size: 290.88603pt x 180.07231pt.
+) [100 <./immagini/counterdo2.jpg>] [101 <./immagini/testing1.jpg>] [102 <./imm
+agini/testing2.jpg>] [103 <./immagini/tbgen1.jpg>] [104 <./immagini/tbgen2.jpg>
+] [105 <./immagini/tbgen3.jpg>] [106 <./immagini/tbgen4.jpg>]
+[107 <./immagini/tbgen5.jpg>] [108 <./immagini/tbgen6.jpg>] [109 <./immagini/tb
+gen7.jpg>]
+
+Package caption Warning: Unused \captionsetup[sub] on input line 40.
+See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
 (main.aux (capitoli/0-frontespizio.aux) (capitoli/lab1.aux) (capitoli/lab2.aux)
 (capitoli/lab3.aux) (capitoli/lab4.aux) (capitoli/lab5.aux) (capitoli/lab6.aux)
-)
+(capitoli/appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 59DFA397A3233A4C8CFB6A13B247C99F;3111.
+(rerunfilecheck)             Checksum: B73F1C5604A1C9531AB2928D6C787479;3674.
 
 
 LaTeX Warning: There were undefined references.
@@ -2303,19 +2415,18 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  )
-(\end occurred inside a group at level 2)
+(\end occurred inside a group at level 1)
 
-### semi simple group (level 2) entered at line 152 (\begingroup)
-### semi simple group (level 1) entered at line 62 (\begingroup)
+### semi simple group (level 1) entered at line 61 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24490 strings out of 492946
- 447817 string characters out of 3126266
+ 24653 strings out of 492946
+ 451096 string characters out of 3126266
  683977 words of memory out of 3000000
- 27694 multiletter control sequences out of 15000+200000
+ 27794 multiletter control sequences out of 15000+200000
  550939 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,63p,707b,1250s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,63p,707b,1133s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmbx10.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Raffo/AppData/Local/Program
@@ -2341,9 +2452,9 @@ o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C
 cmti10.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmti12.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti9.pfb>
-Output written on main.pdf (99 pages, 11759311 bytes).
+Output written on main.pdf (113 pages, 12672035 bytes).
 PDF statistics:
- 1127 PDF objects out of 1200 (max. 8388607)
- 280 named destinations out of 1000 (max. 500000)
- 695 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1284 PDF objects out of 1440 (max. 8388607)
+ 319 named destinations out of 1000 (max. 500000)
+ 857 words of extra memory for PDF output out of 10000 (max. 10000000)
 
