@@ -245,7 +245,7 @@ print("The number of wrong steps is: "+str(tot\_err))\\
 \\
 \\
 \subsection{Further Generalization}
-L’ultima parte prevede di creare uno script che sia in grado di generare un file di testbench a partire dal file .vhd del device under test. Il file contente il codice di generazione del testbench è \textit{tb\_generation.py} file già in parte fornito, che si occupa di:\\
+L’ultima parte prevede di creare uno script che sia in grado di generare un file di testbench a partire dal file .vhd del device under test. Il file contente il codice di generazione del testbench è \textit{tb\_generation.py} file già in parte fornito, che si occupa di:
 \begin{itemize}
 	\item{leggere il file del dut e salvare tutti i valori utili al testbench, ovvero i generics e gli ingressi e uscite del device. Di seguito un estratto del codice:\\
 	…….\\
@@ -279,7 +279,6 @@ L’ultima parte prevede di creare uno script che sia in grado di generare un fi
 	\item{creare il file di testbench, eliminando eventuali file con lo stesso nome}
 	\item{definire il file di testbench in formato .vhd, utilizzando i dati estratti}
 \end{itemize}
-\\
 Le parti 2 e 3 sono già state fornite, il file completo è comunque disponibile in appendice.
 La generalizzazione della creazione del testbench consente di automatizzare ulteriormente il processo di testing del DUT, rendendo lo script più flessibile e adatto a simulazioni future, che grazie a questo file saranno rese più veloci ed efficienti.\\
 
