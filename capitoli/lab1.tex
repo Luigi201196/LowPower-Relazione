@@ -157,7 +157,7 @@ I risultati sono sintetizzati nella Tabella \ref{Tab1_4}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.9]{immagini/ripple}
-	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
+	\caption{\textit{Ripple Carry Adder}}
 	\label{ripple}
 \end{figure} \\
 I risultati sono riportati nella Tabella \ref{Tab1_3}.\\
@@ -172,11 +172,11 @@ I risultati sono riportati nella Tabella \ref{Tab1_3}.\\
 		$E_{SW}$&1/2&1/2&1/2&1/2&1/2&1/2&1/2&1/2\\
 		\hline
 	\end{tabular}
-	\caption{\textit{Risultati simulazione}}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
 	\label{Tab1_3}
 \end{table}
 \\
-\noindent Se invece si considerano gli ingressi non equiprobabili, ma comunque scorrelati, con probabilità rispettivamente $P(A='1')=0.4$ e $P(B='1')=0.6 $, DA CAPIRE SE I RISULTATI SONO UGUALI O MENO!\\
+\noindent Se invece si considerano gli ingressi non equiprobabili, ma comunque scorrelati, con probabilità rispettivamente $P(A='1')=0.4$ e $P(B='1')=0.6 $, si ottiene che $P(S ='1')=0.52$ e $P(Co ='1')=0.24$. Siccome il carry-out dell’i-esimo FA sarà il carry-in del FA i+1-esimo, in questa situazione i Full Adder che compongono il circuito non possono più essere trattati come oggetti indipendenti l’uno dall’altro, poichè saranno soggetti a correlazione.\\
 In seguito, tramite il programma \textit{ModelSim} è stato simulato il Ripple Carry Adder utilizzando un testbench sviluppato appositamente dai docenti e utilizzando le procedure viste nel paragrafo 1.1.\\
 La simulazione viene fatta andando ad inserire dei ritardi sulle uscite $S$ e $C_{OUT}$ dei singoli Full-Adder. Inizialmente si setta esclusivamente un ritardo di 25 ps esclusivamente sul segnale $S$, mentre in secondo luogo si introduce un ritardo uguale anche sul segnale di $C_{OUT}$
 
