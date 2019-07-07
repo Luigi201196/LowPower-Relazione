@@ -206,10 +206,10 @@ tot\_err=0\\
 \#for each results’ step\\
 for i in range(0, NumberOfSteps):\\
 \hspace*{1cm}\#comparison the outputs\\
-\hspace*{1cm}if str(InputsDecimal[i])!=str(Py\_results[i]):\\
+\hspace*{1cm}if str(OutputsDecimal[i])!=str(Py\_results[i]):\\
 \hspace*{2cm}\#error message for step “i”    \\
 \hspace*{2cm}print("found an error in step "+str(i)+"\\n")\\
-\hspace*{2cm}print(str(InputsDecimal[i]), str(Py\_results[i]))\\
+\hspace*{2cm}print(str(OutputsDecimal[i]), str(Py\_results[i]))\\
 \\
 \hspace*{2cm}tot\_err=tot\_err+1\\
 \#message for total number of errors\\
@@ -218,35 +218,32 @@ print("The number of wrong steps is: "+str(tot\_err))\\
 …………}\\
 \\
 \subsection{Further Generalization}
-L’ultima parte prevede di creare uno script che sia in grado di generare un file di testbench a partire dal file .vhd del device under test. Il file contente il codice di generazione del testbench è \textit{tb\_generation.py} file già in parte fornito, che si occupa di:
+L’ultima parte prevede di creare uno script che sia in grado di generare un file di testbench a partire dal file .vhd del device under test. Il file contente il codice di generazione del testbench è \textit{tb\_generation.py} file già in parte fornito, che è possibile trovare in appendice fig. \ref{tbgen1} , che si occupa di:
 \begin{itemize}
 	\item{leggere il file del dut e salvare tutti i valori utili al testbench, ovvero i generics e gli ingressi e uscite del device. Di seguito un estratto del codice:\\
 	\textit{…….\\
 	…...\\    
 	with open(FileName, "r") as fp:\\
-	\#save rows\\
-	for line in fp:\\
-	\#divide the line in words\\
-	words=line.strip().split()\\
-	\#save words in a list\\
-	for w in words:\\
-	word.append(w)\\
+	\hspace*{1cm}\#save rows\\
+	\hspace*{1cm}for line in fp:\\
+	\hspace*{2cm}\#divide the line in words\\
+	\hspace*{2cm}words=line.strip().split()\\
+	\hspace*{2cm}\#save words in a list\\
+	\hspace*{2cm}for w in words:\\
+	\hspace*{3cm}word.append(w)\\
 	\#scanning words to take datas for testbench\\
 	while word[i]!="architecture":\\
-	if word[i]=="entity":\\
-	EntityName=word[i+1]\\
-	print EntityName\\
-	i=i+3\\
-	if word[i]=="generic":\\
-	GenericFlag=1\\
-	print GenericFlag\\
-	i=i+2\\
-	while word[i]!=");":\\
-	GenericsList.append(word[i])\\
-	print GenericsList\\
-	i=i+2\\
-	GenericsType.append(word[i])\\
-	i=i+2\\
+	\hspace*{1cm}if word[i]=="entity":\\
+	\hspace*{2cm}EntityName=word[i+1]\\
+	\hspace*{2cm}i=i+3\\
+	\hspace*{1cm}if word[i]=="generic":\\
+	\hspace*{2cm}GenericFlag=1\\
+	\hspace*{2cm}i=i+2\\
+	\hspace*{2cm}while word[i]!=");":\\
+	\hspace*{3cm}GenericsList.append(word[i])\\
+	\hspace*{3cm}i=i+2\\
+	\hspace*{1cm}GenericsType.append(word[i])\\
+	\hspace*{1cm}i=i+2\\
 	………\\
 	……\\}}
 	\item{creare il file di testbench, eliminando eventuali file con lo stesso nome}
