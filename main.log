@@ -1,16 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  11 JUN 2019 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.31)  7 JUL 2019 15:11
 entering extended mode
 **./main.tex
 (main.tex
-LaTeX2e <2018-04-01> patch level 5
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\repor
-t.cls"
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size1
-1.clo"
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2018-12-01>
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
+Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size11.clo"
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -24,131 +20,111 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\ba
-bel.sty"
-Package: babel 2018/09/26 3.24 The Babel package
+) ("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.st
+y"
+Package: babel 2018/11/13 3.27 The Babel package
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\sw
-itch.def"
-File: switch.def 2018/09/26 3.24 Babel switching mechanism
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
+"
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblo
-pts.cfg"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-ital
-ian\italian.ldf"
-Language: italian 2019/01/05 v.1.4.01 Italian support for the babel system
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\brit
+ish.ldf"
+Language: british 2017/06/06 v3.3r English support from the babel system
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\ba
-bel.def"
-File: babel.def 2018/09/26 3.24 Babel common definitions
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engl
+ish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2018/11/13 3.27 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\tx
-tbabel.def")
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef")
 \bbl@dirlevel=\count90
 )
-\it@lettering=\count91
-\it@doublequoteactive=\count92
-\it@ISOcompliance=\count93
-)
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-engl
-ish\british.ldf"
-Language: british 2017/06/06 v3.3r English support from the babel system
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-engl
-ish\english.ldf"
-Language: english 2017/06/06 v3.3r English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\e
-toolbox.sty"
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count94
-)
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\input
-enc.sty"
-Package: inputenc 2018/04/06 v1.3b Input encoding file
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\utf8x.
-def"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucs.st
-y"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucs.sty"
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-gl
-obal.def"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-global.def
+"
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count95
+\uc@secondtry=\count91
 \uc@combtoks=\toks16
 \uc@combtoksb=\toks17
 \uc@temptokena=\toks18
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\am
-smath.sty"
-Package: amsmath 2017/09/02 v2.17a AMS math features
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\am
-stext.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\am
-sgen.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen104
 ))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\am
-sbsy.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\am
-sopn.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count96
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count97
-\leftroot@=\count98
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count99
-\DOTSCASE@=\count100
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count101
-\c@MaxMatrixCols=\count102
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
-\c@parentequation=\count103
-\dspbrk@lvl=\count104
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
 \tag@help=\toks20
-\row@=\count105
-\column@=\count106
-\maxfields@=\count107
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
 \andhelp@=\toks21
 \eqnshift@=\dimen107
 \alignsep@=\dimen108
@@ -160,11 +136,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\ams
-thm.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks24
 \thm@bodyfont=\toks25
@@ -176,68 +151,68 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip48
 \dth@everypar=\toks29
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\a
-mssymb.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\a
-msfonts.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\g
-raphicx.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\k
-eyval.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks30
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\g
-raphics.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\t
-rig.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-c
-fg\graphics.cfg"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-d
-ef\pdftex.def"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\siunitx\si
-unitx.sty"
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\e
-xpl3.sty"
-Package: expl3 2018-12-12 L3 programming layer (loader) 
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx.st
+y"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty
+"
+Package: expl3 2019-03-26 L3 programming layer (loader) 
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\e
-xpl3-code.tex"
-Package: expl3 2018-12-12 L3 programming layer (code)
-\c_max_int=\count108
-\l_tmpa_int=\count109
-\l_tmpb_int=\count110
-\g_tmpa_int=\count111
-\g_tmpb_int=\count112
-\g__kernel_prg_map_int=\count113
-\c_log_iow=\count114
-\l_iow_line_count_int=\count115
-\l__iow_line_target_int=\count116
-\l__iow_one_indent_int=\count117
-\l__iow_indent_int=\count118
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3-cod
+e.tex"
+Package: expl3 2019-03-26 L3 programming layer (code)
+\c_max_int=\count104
+\l_tmpa_int=\count105
+\l_tmpb_int=\count106
+\g_tmpa_int=\count107
+\g_tmpb_int=\count108
+\g__kernel_prg_map_int=\count109
+\c__ior_term_ior=\count110
+\c_log_iow=\count111
+\l_iow_line_count_int=\count112
+\l__iow_line_target_int=\count113
+\l__iow_one_indent_int=\count114
+\l__iow_indent_int=\count115
 \c_zero_dim=\dimen115
 \c_max_dim=\dimen116
 \l_tmpa_dim=\dimen117
@@ -256,83 +231,83 @@ Package: expl3 2018-12-12 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count119
-\l__intarray_loop_int=\count120
+\l_keys_choice_int=\count116
+\l__intarray_loop_int=\count117
 \c__intarray_sp_dim=\dimen121
-\g__intarray_font_int=\count121
-\c__fp_leading_shift_int=\count122
-\c__fp_middle_shift_int=\count123
-\c__fp_trailing_shift_int=\count124
-\c__fp_big_leading_shift_int=\count125
-\c__fp_big_middle_shift_int=\count126
-\c__fp_big_trailing_shift_int=\count127
-\c__fp_Bigg_leading_shift_int=\count128
-\c__fp_Bigg_middle_shift_int=\count129
-\c__fp_Bigg_trailing_shift_int=\count130
-\c__kernel_randint_max_int=\count131
-\g__fp_array_int=\count132
-\l__fp_array_loop_int=\count133
-\l__sort_length_int=\count134
-\l__sort_min_int=\count135
-\l__sort_top_int=\count136
-\l__sort_max_int=\count137
-\l__sort_true_max_int=\count138
-\l__sort_block_int=\count139
-\l__sort_begin_int=\count140
-\l__sort_end_int=\count141
-\l__sort_A_int=\count142
-\l__sort_B_int=\count143
-\l__sort_C_int=\count144
-\l__tl_analysis_normal_int=\count145
-\l__tl_analysis_index_int=\count146
-\l__tl_analysis_nesting_int=\count147
-\l__tl_analysis_type_int=\count148
-\l__regex_internal_a_int=\count149
-\l__regex_internal_b_int=\count150
-\l__regex_internal_c_int=\count151
-\l__regex_balance_int=\count152
-\l__regex_group_level_int=\count153
-\l__regex_mode_int=\count154
-\c__regex_cs_in_class_mode_int=\count155
-\c__regex_cs_mode_int=\count156
-\l__regex_catcodes_int=\count157
-\l__regex_default_catcodes_int=\count158
-\c__regex_catcode_D_int=\count159
-\c__regex_catcode_S_int=\count160
-\c__regex_catcode_L_int=\count161
-\c__regex_catcode_O_int=\count162
-\c__regex_catcode_A_int=\count163
-\c__regex_all_catcodes_int=\count164
-\l__regex_show_lines_int=\count165
-\l__regex_min_state_int=\count166
-\l__regex_max_state_int=\count167
-\l__regex_left_state_int=\count168
-\l__regex_right_state_int=\count169
-\l__regex_capturing_group_int=\count170
-\l__regex_min_pos_int=\count171
-\l__regex_max_pos_int=\count172
-\l__regex_curr_pos_int=\count173
-\l__regex_start_pos_int=\count174
-\l__regex_success_pos_int=\count175
-\l__regex_curr_char_int=\count176
-\l__regex_curr_catcode_int=\count177
-\l__regex_last_char_int=\count178
-\l__regex_case_changed_char_int=\count179
-\l__regex_curr_state_int=\count180
-\l__regex_step_int=\count181
-\l__regex_min_active_int=\count182
-\l__regex_max_active_int=\count183
-\l__regex_replacement_csnames_int=\count184
-\l__regex_match_count_int=\count185
-\l__regex_min_submatch_int=\count186
-\l__regex_submatch_int=\count187
-\l__regex_zeroth_submatch_int=\count188
-\g__regex_trace_regex_int=\count189
-\c_empty_box=\box28
-\l_tmpa_box=\box29
-\l_tmpb_box=\box30
-\g_tmpa_box=\box31
-\g_tmpb_box=\box32
+\g__intarray_font_int=\count118
+\c__fp_leading_shift_int=\count119
+\c__fp_middle_shift_int=\count120
+\c__fp_trailing_shift_int=\count121
+\c__fp_big_leading_shift_int=\count122
+\c__fp_big_middle_shift_int=\count123
+\c__fp_big_trailing_shift_int=\count124
+\c__fp_Bigg_leading_shift_int=\count125
+\c__fp_Bigg_middle_shift_int=\count126
+\c__fp_Bigg_trailing_shift_int=\count127
+\c__kernel_randint_max_int=\count128
+\g__fp_array_int=\count129
+\l__fp_array_loop_int=\count130
+\l__sort_length_int=\count131
+\l__sort_min_int=\count132
+\l__sort_top_int=\count133
+\l__sort_max_int=\count134
+\l__sort_true_max_int=\count135
+\l__sort_block_int=\count136
+\l__sort_begin_int=\count137
+\l__sort_end_int=\count138
+\l__sort_A_int=\count139
+\l__sort_B_int=\count140
+\l__sort_C_int=\count141
+\l__tl_analysis_normal_int=\count142
+\l__tl_analysis_index_int=\count143
+\l__tl_analysis_nesting_int=\count144
+\l__tl_analysis_type_int=\count145
+\l__regex_internal_a_int=\count146
+\l__regex_internal_b_int=\count147
+\l__regex_internal_c_int=\count148
+\l__regex_balance_int=\count149
+\l__regex_group_level_int=\count150
+\l__regex_mode_int=\count151
+\c__regex_cs_in_class_mode_int=\count152
+\c__regex_cs_mode_int=\count153
+\l__regex_catcodes_int=\count154
+\l__regex_default_catcodes_int=\count155
+\c__regex_catcode_D_int=\count156
+\c__regex_catcode_S_int=\count157
+\c__regex_catcode_L_int=\count158
+\c__regex_catcode_O_int=\count159
+\c__regex_catcode_A_int=\count160
+\c__regex_all_catcodes_int=\count161
+\l__regex_show_lines_int=\count162
+\l__regex_min_state_int=\count163
+\l__regex_max_state_int=\count164
+\l__regex_left_state_int=\count165
+\l__regex_right_state_int=\count166
+\l__regex_capturing_group_int=\count167
+\l__regex_min_pos_int=\count168
+\l__regex_max_pos_int=\count169
+\l__regex_curr_pos_int=\count170
+\l__regex_start_pos_int=\count171
+\l__regex_success_pos_int=\count172
+\l__regex_curr_char_int=\count173
+\l__regex_curr_catcode_int=\count174
+\l__regex_last_char_int=\count175
+\l__regex_case_changed_char_int=\count176
+\l__regex_curr_state_int=\count177
+\l__regex_step_int=\count178
+\l__regex_min_active_int=\count179
+\l__regex_max_active_int=\count180
+\l__regex_replacement_csnames_int=\count181
+\l__regex_match_count_int=\count182
+\l__regex_min_submatch_int=\count183
+\l__regex_submatch_int=\count184
+\l__regex_zeroth_submatch_int=\count185
+\g__regex_trace_regex_int=\count186
+\c_empty_box=\box29
+\l_tmpa_box=\box30
+\l_tmpb_box=\box31
+\g_tmpa_box=\box32
+\g_tmpb_box=\box33
 \l__box_top_dim=\dimen122
 \l__box_bottom_dim=\dimen123
 \l__box_left_dim=\dimen124
@@ -341,8 +316,8 @@ Package: expl3 2018-12-12 L3 programming layer (code)
 \l__box_bottom_new_dim=\dimen127
 \l__box_left_new_dim=\dimen128
 \l__box_right_new_dim=\dimen129
-\l__box_internal_box=\box33
-\l__coffin_internal_box=\box34
+\l__box_internal_box=\box34
+\l__coffin_internal_box=\box35
 \l__coffin_internal_dim=\dimen130
 \l__coffin_offset_x_dim=\dimen131
 \l__coffin_offset_y_dim=\dimen132
@@ -350,82 +325,84 @@ Package: expl3 2018-12-12 L3 programming layer (code)
 \l__coffin_y_dim=\dimen134
 \l__coffin_x_prime_dim=\dimen135
 \l__coffin_y_prime_dim=\dimen136
-\c_empty_coffin=\box35
-\l__coffin_aligned_coffin=\box36
-\l__coffin_aligned_internal_coffin=\box37
-\l_tmpa_coffin=\box38
-\l_tmpb_coffin=\box39
-\l__coffin_display_coffin=\box40
-\l__coffin_display_coord_coffin=\box41
-\l__coffin_display_pole_coffin=\box42
-\l__coffin_display_offset_dim=\dimen137
-\l__coffin_display_x_dim=\dimen138
-\l__coffin_display_y_dim=\dimen139
+\c_empty_coffin=\box36
+\l__coffin_aligned_coffin=\box37
+\l__coffin_aligned_internal_coffin=\box38
+\l_tmpa_coffin=\box39
+\l_tmpb_coffin=\box40
+\g_tmpa_coffin=\box41
+\g_tmpb_coffin=\box42
+\l__coffin_bounding_shift_dim=\dimen137
+\l__coffin_left_corner_dim=\dimen138
+\l__coffin_right_corner_dim=\dimen139
+\l__coffin_bottom_corner_dim=\dimen140
+\l__coffin_top_corner_dim=\dimen141
+\l__coffin_scaled_total_height_dim=\dimen142
+\l__coffin_scaled_width_dim=\dimen143
+\c__coffin_empty_coffin=\box43
+\l__coffin_display_coffin=\box44
+\l__coffin_display_coord_coffin=\box45
+\l__coffin_display_pole_coffin=\box46
+\l__coffin_display_offset_dim=\dimen144
+\l__coffin_display_x_dim=\dimen145
+\l__coffin_display_y_dim=\dimen146
 \g__file_internal_ior=\read1
-\l__coffin_bounding_shift_dim=\dimen140
-\l__coffin_left_corner_dim=\dimen141
-\l__coffin_right_corner_dim=\dimen142
-\l__coffin_bottom_corner_dim=\dimen143
-\l__coffin_top_corner_dim=\dimen144
-\l__coffin_scaled_total_height_dim=\dimen145
-\l__coffin_scaled_width_dim=\dimen146
-\l__seq_internal_a_int=\count190
-\l__seq_internal_b_int=\count191
+\l__seq_internal_a_int=\count187
+\l__seq_internal_b_int=\count188
+\c__deprecation_minus_one=\count189
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l
-3pdfmode.def"
-File: l3pdfmode.def 2018-12-12 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count192
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\l3pdfmode
+.def"
+File: l3pdfmode.def 2019-03-26 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count190
 ))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages
-\xparse\xparse.sty"
-Package: xparse 2018-10-17 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count193
-\g__xparse_grabber_int=\count194
-\l__xparse_m_args_int=\count195
-\l__xparse_mandatory_args_int=\count196
-\l__xparse_v_nesting_int=\count197
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\
+xparse.sty"
+Package: xparse 2019-03-05 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count191
+\g__xparse_grabber_int=\count192
+\l__xparse_m_args_int=\count193
+\l__xparse_v_nesting_int=\count194
 )
 Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\arra
-y.sty"
-Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/11/13 v2.4j Tabular extension package (FMi)
 \col@sep=\dimen147
-\ar@mcellbox=\box43
+\ar@mcellbox=\box47
 \extrarowheight=\dimen148
 \NC@list=\toks31
 \extratabsurround=\skip55
 \backup@length=\skip56
-\ar@cellbox=\box44
+\ar@cellbox=\box48
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages
-\l3keys2e\l3keys2e.sty"
-Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/l3keys2
+e\l3keys2e.sty"
+Package: l3keys2e 2019-03-05 LaTeX2e option processing using LaTeX3 keys
 )
-\l__siunitx_tmp_box=\box45
+\l__siunitx_tmp_box=\box49
 \l__siunitx_tmp_dim=\dimen149
-\l__siunitx_tmp_int=\count198
-\l__siunitx_number_mantissa_length_int=\count199
-\l__siunitx_number_uncert_length_int=\count266
-\l__siunitx_round_int=\count267
-\l__siunitx_process_decimal_int=\count268
-\l__siunitx_process_uncertainty_int=\count269
-\l__siunitx_process_fixed_int=\count270
-\l__siunitx_process_integer_min_int=\count271
-\l__siunitx_process_precision_int=\count272
-\l__siunitx_group_min_int=\count273
-\l__siunitx_angle_marker_box=\box46
-\l__siunitx_angle_unit_box=\box47
+\l__siunitx_tmp_int=\count195
+\l__siunitx_number_mantissa_length_int=\count196
+\l__siunitx_number_uncert_length_int=\count197
+\l__siunitx_round_int=\count198
+\l__siunitx_process_decimal_int=\count199
+\l__siunitx_process_uncertainty_int=\count266
+\l__siunitx_process_fixed_int=\count267
+\l__siunitx_process_integer_min_int=\count268
+\l__siunitx_process_precision_int=\count269
+\l__siunitx_group_min_int=\count270
+\l__siunitx_angle_marker_box=\box50
+\l__siunitx_angle_unit_box=\box51
 \l__siunitx_angle_marker_dim=\dimen150
 \l__siunitx_angle_unit_dim=\dimen151
-\l__siunitx_unit_int=\count274
-\l__siunitx_unit_denominator_int=\count275
-\l__siunitx_unit_numerator_int=\count276
-\l__siunitx_unit_prefix_int=\count277
-\l__siunitx_unit_prefix_base_int=\count278
-\l__siunitx_unit_prefix_gram_int=\count279
-\l__siunitx_number_product_int=\count280
+\l__siunitx_unit_int=\count271
+\l__siunitx_unit_denominator_int=\count272
+\l__siunitx_unit_numerator_int=\count273
+\l__siunitx_unit_prefix_int=\count274
+\l__siunitx_unit_prefix_base_int=\count275
+\l__siunitx_unit_prefix_gram_int=\count276
+\l__siunitx_number_product_int=\count277
 \c__siunitx_one_fill_skip=\skip57
 \l__siunitx_table_unit_align_skip=\skip58
 \l__siunitx_table_exponent_dim=\dimen152
@@ -437,34 +414,33 @@ Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_fill_pre_dim=\dimen158
 \l__siunitx_table_fill_post_dim=\dimen159
 \l__siunitx_table_fill_mid_dim=\dimen160
-\l__siunitx_table_pre_box=\box48
-\l__siunitx_table_post_box=\box49
-\l__siunitx_table_mantissa_box=\box50
-\l__siunitx_table_result_box=\box51
+\l__siunitx_table_pre_box=\box52
+\l__siunitx_table_post_box=\box53
+\l__siunitx_table_mantissa_box=\box54
+\l__siunitx_table_result_box=\box55
 \l__siunitx_table_number_align_skip=\skip59
 \l__siunitx_table_text_align_skip=\skip60
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator
-\translator.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transla
+tor.sty"
 Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 ))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xco
-lor.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-c
-fg\color.cfg"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color
+.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\c
-olortbl.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl.
+sty"
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 \everycr=\toks32
 \minrowclearance=\skip61
 )
-\rownum=\count281
+\rownum=\count278
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -475,48 +451,44 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\units\unit
-s.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/units\units.sty"
 Package: units 1998/08/04 v0.9b Typesetting units
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthe
-n.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\units\nice
-frac.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/units\nicefrac.sty
+"
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip62
 \L@UnitsRaiseTextstyle=\skip63
 \L@UnitsRaiseScriptstyle=\skip64
 ))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verb
-atim.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.sty
+"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks33
 \verbatim@line=\toks34
 \verbatim@in@stream=\read2
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\p
-dflscape.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\pdflscape
+.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\l
-scape.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\lscape.st
+y"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\ifpdf.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\
-ifxetex.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
+sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\bm.s
-ty"
+)) ("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\bm.sty"
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -524,54 +496,49 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\e
-pstopdf.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf.
+sty"
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\e
-pstopdf-base.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\infwarerr.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infware
+rr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\g
-rfext.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\kvdefinekeys.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefin
+ekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\ltxcmds.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\k
-voptions.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\kvsetkeys.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetke
+ys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\etexcmds.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmd
+s.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\ifluatex.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
+x.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\pdftexcmds.sty"
+))))
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftexc
+mds.sty"
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -586,44 +553,44 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\l
-istings.sty"
-\lst@mode=\count282
-\lst@gtempboxa=\box52
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+sty"
+\lst@mode=\count279
+\lst@gtempboxa=\box56
 \lst@token=\toks35
-\lst@length=\count283
+\lst@length=\count280
 \lst@currlwidth=\dimen161
-\lst@column=\count284
-\lst@pos=\count285
+\lst@column=\count281
+\lst@pos=\count282
 \lst@lostspace=\dimen162
 \lst@width=\dimen163
-\lst@newlines=\count286
-\lst@lineno=\count287
+\lst@newlines=\count283
+\lst@lineno=\count284
 \lst@maxwidth=\dimen164
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\l
-stmisc.sty"
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-\c@lstnumber=\count288
-\lst@skipnumbers=\count289
-\lst@framebox=\box53
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
+ty"
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count285
+\lst@skipnumbers=\count286
+\lst@framebox=\box57
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\l
-istings.cfg"
-File: listings.cfg 2018/09/02 1.7 listings configuration
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+cfg"
+File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\m
-ultirow.sty"
-Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.
+sty"
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip65
-\multirow@cntb=\count290
+\multirow@cntb=\count287
 \multirow@dima=\skip66
 \bigstrutjot=\dimen165
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\b
-ooktabs.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
+sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen166
 \lightrulewidth=\dimen167
@@ -635,34 +602,35 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen173
 \cmidrulekern=\dimen174
 \defaultaddspace=\dimen175
-\@cmidla=\count291
-\@cmidlb=\count292
+\@cmidla=\count288
+\@cmidlb=\count289
 \@aboverulesep=\dimen176
 \@belowrulesep=\dimen177
-\@thisruleclass=\count293
-\@lastruleclass=\count294
+\@thisruleclass=\count290
+\@lastruleclass=\count291
 \@thisrulewidth=\dimen178
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\e
-numitem.sty"
-Package: enumitem 2018/11/30 v3.6 Customized lists
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem.
+sty"
+Package: enumitem 2019/02/04 v3.8 Customized lists
 \labelindent=\skip67
 \enit@outerparindent=\dimen179
 \enit@toks=\toks36
-\enit@inbox=\box54
-\enitdp@description=\count295
+\enit@inbox=\box58
+\enit@count@id=\count292
+\enitdp@description=\count293
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\h
-yperref.sty"
-Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
+sty"
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\hobsub-hyperref.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
+hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\hobsub-generic.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
+generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -687,84 +655,83 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\a
-uxhook.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.s
+ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen180
-\Hy@linkcounter=\count296
-\Hy@pagecounter=\count297
+\Hy@linkcounter=\count294
+\Hy@pagecounter=\count295
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\p
-d1enc.def"
-File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
+f"
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count298
+\Hy@SavedSpaceFactor=\count296
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\h
-yperref.cfg"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.
+cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4535.
-Package hyperref Info: Link nesting OFF on input line 4540.
-Package hyperref Info: Hyper index ON on input line 4543.
-Package hyperref Info: Plain pages OFF on input line 4550.
-Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count299
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.st
-y"
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count297
+ ("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5141.
+LaTeX Info: Redefining \url on input line 5125.
 \XeTeXLinkMargin=\dimen181
-\Fld@menulength=\count300
+\Fld@menulength=\count298
 \Field@Width=\dimen182
 \Fld@charsize=\dimen183
-Package hyperref Info: Hyper figures OFF on input line 6396.
-Package hyperref Info: Link nesting OFF on input line 6401.
-Package hyperref Info: Hyper index ON on input line 6404.
-Package hyperref Info: backreferencing OFF on input line 6411.
-Package hyperref Info: Link coloring OFF on input line 6416.
-Package hyperref Info: Link coloring with OCG OFF on input line 6421.
-Package hyperref Info: PDF/A mode OFF on input line 6426.
-LaTeX Info: Redefining \ref on input line 6466.
-LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count301
-\c@Item=\count302
-\c@Hfootnote=\count303
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count299
+\c@Item=\count300
+\c@Hfootnote=\count301
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\h
-pdftex.def"
-File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count304
-\c@bookmark@seq@number=\count305
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
+ef"
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count302
+\c@bookmark@seq@number=\count303
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\r
-erunfilecheck.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfile
+check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip68
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\s
-etspace.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspace.
+sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\t
-itlesec.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titlesec.
+sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box55
+\ttl@box=\box59
 \beforetitleunit=\skip69
 \aftertitleunit=\skip70
 \ttl@plus=\dimen184
@@ -774,9 +741,9 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen187
 \titlewidthfirst=\dimen188
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\f
-ancyhdr.sty"
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.
+sty"
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip71
 \f@nch@O@elh=\skip72
@@ -788,16 +755,16 @@ s
 \f@nch@O@olf=\skip78
 \f@nch@O@orf=\skip79
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\su
-bcaption.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption
+.sty"
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ca
-ption.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
+y"
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ca
-ption3.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
+ty"
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen189
@@ -808,18 +775,21 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen194
 \caption@hangindent=\dimen195
 )
-\c@caption@flags=\count306
-\c@ContinuedFloat=\count307
+\c@caption@flags=\count304
+\c@ContinuedFloat=\count305
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
-\c@subfigure=\count308
-\c@subtable=\count309
+\c@subfigure=\count306
+\c@subtable=\count307
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lip
-sum.sty"
-Package: lipsum 2018/11/24 v2.1a 150 paragraphs of Lorem Ipsum dummy text
-) (main.aux (capitoli/0-frontespizio.aux) (capitoli/lab1.aux)
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty"
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.
+tex"
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+)) (main.aux (capitoli/0-frontespizio.aux) (capitoli/lab1.aux)
 (capitoli/lab2.aux
 
 LaTeX Warning: Label `datapath' multiply defined.
@@ -848,62 +818,50 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
-LaTeX Info: Redefining \it@ocap on input line 58.
-LaTeX Info: Redefining \it@ccap on input line 58.
 
-
-File italian.ldf warning: 
-italian.ldf    With OT1 encoding guillemets are poorly faked
-italian.ldf    Use T1 encoding
-italian.ldf    or specify a font with command \CaporaliFrom
-italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 58.
-
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsenc
-s.def"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\sup
-p-pdf.mkii"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
+\scratchcounter=\count308
 \scratchdimen=\dimen196
-\scratchbox=\box56
-\nofMPsegments=\count311
-\nofMParguments=\count312
+\scratchbox=\box60
+\nofMPsegments=\count309
+\nofMParguments=\count310
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count313
+\MPscratchCnt=\count311
 \MPscratchDim=\dimen197
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
 \everyMPtoPDFconversion=\toks39
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator
-\translator-basic-dictionary-English.dict"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transla
+tor-basic-dictionary-English.dict"
 Dictionary: translator-basic-dictionary, Language: English 
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator
-\translator-basic-dictionary-Italian.dict"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transla
+tor-basic-dictionary-Italian.dict"
 Dictionary: translator-basic-dictionary, Language: Italian 
 )
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\siunitx\si
-unitx-abbreviations.cfg"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx-ab
+breviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-\c@lstlisting=\count316
-\AtBeginShipoutBox=\box57
+\c@lstlisting=\count314
+\AtBeginShipoutBox=\box61
 Package hyperref Info: Link coloring OFF on input line 58.
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\n
-ameref.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
+ty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek
-\gettitlestring.sty"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitl
+estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count317
+\c@section@level=\count315
 )
 LaTeX Info: Redefining \ref on input line 58.
 LaTeX Info: Redefining \pageref on input line 58.
@@ -916,25 +874,22 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+msa on input line 58.
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\u
-msa.fd"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 58.
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\u
-msb.fd"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \openout2 = `capitoli/0-frontespizio.aux'.
 
- (capitoli/0-frontespizio.tex
-<immagini/polito.jpg, id=139, 284.5029pt x 127.9179pt>
+(capitoli/0-frontespizio.tex
+<immagini/polito.jpg, id=155, 284.5029pt x 127.9179pt>
 File: immagini/polito.jpg Graphic file (type jpg)
 <use immagini/polito.jpg>
 Package pdftex.def Info: immagini/polito.jpg  used on input line 10.
 (pdftex.def)             Requested size: 253.13298pt x 113.81102pt.
-<immagini/battery.jpg, id=140, 402.50375pt x 295.1025pt>
+<immagini/battery.jpg, id=156, 402.50375pt x 295.1025pt>
 File: immagini/battery.jpg Graphic file (type jpg)
 <use immagini/battery.jpg>
 Package pdftex.def Info: immagini/battery.jpg  used on input line 26.
@@ -942,14 +897,14 @@ Package pdftex.def Info: immagini/battery.jpg  used on input line 26.
  [1
 
 
-{C:/Users/Luigi Massari/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./i
-mmagini/polito.jpg> <./immagini/battery.jpg>]) (main.tocpdfTeX warning (ext4): 
-destination with the same identifier (name{page.1}) has been already used, dupl
-icate ignored
+{C:/Users/Raffo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./immagini/
+polito.jpg> <./immagini/battery.jpg>]) (main.tocpdfTeX warning (ext4): destinat
+ion with the same identifier (name{page.1}) has been already used, duplicate ig
+nored
 <to be read again> 
                    \relax 
 l.21 ...que, Gray technique}{52}{subsection.4.1.2}
-                                                   [1
+                                                  % [1
 
 
 ]
@@ -971,12 +926,10 @@ Chapter 1.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.
-def"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<immagini/gate.png, id=203, 304.13625pt x 40.35075pt>
+<immagini/gate.png, id=223, 304.13625pt x 40.35075pt>
 File: immagini/gate.png Graphic file (type png)
 <use immagini/gate.png>
 Package pdftex.def Info: immagini/gate.png  used on input line 6.
@@ -998,8 +951,7 @@ l.17 	\item \textit
  <./immagini/gate.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
 
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscm
-r.fd"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
@@ -1024,16 +976,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
  []
 
-<immagini/fig1_2.png, id=217, 205.66838pt x 111.41624pt>
+<immagini/fig1_2.png, id=237, 205.66838pt x 111.41624pt>
 File: immagini/fig1_2.png Graphic file (type png)
 <use immagini/fig1_2.png>
 Package pdftex.def Info: immagini/fig1_2.png  used on input line 50.
 (pdftex.def)             Requested size: 205.66788pt x 111.41597pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+Make it at least 13.59999pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
@@ -1053,12 +1005,12 @@ Overfull \hbox (1.63278pt too wide) in paragraph at lines 97--97
 |[]\OT1/cmr/bx/n/14.4 Probability and Activ-ity Cal-cu-la-tion: Half and
  []
 
-<immagini/half_adder.png, id=231, 381.425pt x 261.97874pt>
+<immagini/half_adder.png, id=251, 381.425pt x 261.97874pt>
 File: immagini/half_adder.png Graphic file (type png)
 <use immagini/half_adder.png>
 Package pdftex.def Info: immagini/half_adder.png  used on input line 101.
 (pdftex.def)             Requested size: 152.56729pt x 104.78964pt.
-<immagini/full_adder.png, id=232, 1284.8pt x 571.13374pt>
+<immagini/full_adder.png, id=252, 1284.8pt x 571.13374pt>
 File: immagini/full_adder.png Graphic file (type png)
 <use immagini/full_adder.png>
 Package pdftex.def Info: immagini/full_adder.png  used on input line 107.
@@ -1114,7 +1066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--155
 
  []
 
-<immagini/ripple.png, id=251, 371.58826pt x 75.28125pt>
+<immagini/ripple.png, id=271, 371.58826pt x 75.28125pt>
 File: immagini/ripple.png Graphic file (type png)
 <use immagini/ripple.png>
 Package pdftex.def Info: immagini/ripple.png  used on input line 159.
@@ -1129,17 +1081,17 @@ File: immagini/gate.png Graphic file (type png)
 Package pdftex.def Info: immagini/gate.png  used on input line 194.
 (pdftex.def)             Requested size: 304.1355pt x 40.35065pt.
  [6 <./immagini/ripple.png>]
-<immagini/report_power1.png, id=266, 304.13625pt x 322.806pt>
+<immagini/report_power1.png, id=286, 304.13625pt x 322.806pt>
 File: immagini/report_power1.png Graphic file (type png)
 <use immagini/report_power1.png>
 Package pdftex.def Info: immagini/report_power1.png  used on input line 211.
 (pdftex.def)             Requested size: 212.8939pt x 225.96265pt.
-<immagini/reportFA1.png, id=268, 456.5055pt x 244.21237pt>
+<immagini/reportFA1.png, id=288, 456.5055pt x 244.21237pt>
 File: immagini/reportFA1.png Graphic file (type png)
 <use immagini/reportFA1.png>
 Package pdftex.def Info: immagini/reportFA1.png  used on input line 220.
 (pdftex.def)             Requested size: 273.90541pt x 146.52853pt.
-<immagini/verbose1.png, id=271, 472.76625pt x 231.11343pt>
+<immagini/verbose1.png, id=291, 472.76625pt x 231.11343pt>
 File: immagini/verbose1.png Graphic file (type png)
 <use immagini/verbose1.png>
 Package pdftex.def Info: immagini/verbose1.png  used on input line 228.
@@ -1154,12 +1106,12 @@ Overfull \hbox (1.8295pt too wide) in paragraph at lines 242--242
 |[]\OT1/cmr/bx/n/14.4 A simple MUX: glitch gen-er-a-tion and propaga-
  []
 
-<immagini/mux.png, id=291, 240.9pt x 161.85469pt>
+<immagini/mux.png, id=311, 240.9pt x 161.85469pt>
 File: immagini/mux.png Graphic file (type png)
 <use immagini/mux.png>
 Package pdftex.def Info: immagini/mux.png  used on input line 245.
 (pdftex.def)             Requested size: 192.72025pt x 129.4839pt.
-<immagini/model_mux.png, id=294, 1570.36688pt x 481.8pt>
+<immagini/model_mux.png, id=314, 1570.36688pt x 481.8pt>
 File: immagini/model_mux.png Graphic file (type png)
 <use immagini/model_mux.png>
 Package pdftex.def Info: immagini/model_mux.png  used on input line 252.
@@ -1174,7 +1126,7 @@ Overfull \hbox (23.12277pt too wide) in paragraph at lines 263--263
 |[]\OT1/cmr/bx/n/14.4 Probability and Activ-ity Cal-cu-la-tion: Syn-cronous
  []
 
-<immagini/counter.png, id=303, 114.4275pt x 171.64125pt>
+<immagini/counter.png, id=323, 114.4275pt x 171.64125pt>
 File: immagini/counter.png Graphic file (type png)
 <use immagini/counter.png>
 Package pdftex.def Info: immagini/counter.png  used on input line 266.
@@ -1183,7 +1135,7 @@ Package pdftex.def Info: immagini/counter.png  used on input line 266.
 LaTeX Warning: Reference `timing_counter1' on page 11 undefined on input line 2
 70.
 
-<immagini/counter2.png, id=305, 529.22719pt x 128.73094pt>
+<immagini/counter2.png, id=325, 529.22719pt x 128.73094pt>
 File: immagini/counter2.png Graphic file (type png)
 <use immagini/counter2.png>
 Package pdftex.def Info: immagini/counter2.png  used on input line 275.
@@ -1202,7 +1154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--302
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12 <./immagini/counter.png> <./immagini/counter2.png>]
-<immagini/report_counter.png, id=321, 538.26094pt x 472.76625pt>
+<immagini/report_counter.png, id=341, 538.26094pt x 472.76625pt>
 File: immagini/report_counter.png Graphic file (type png)
 <use immagini/report_counter.png>
 Package pdftex.def Info: immagini/report_counter.png  used on input line 311.
@@ -1224,7 +1176,7 @@ Overfull \hbox (16.93297pt too wide) in paragraph at lines 1--1
 
 LaTeX Warning: Reference `fsm' on page 15 undefined on input line 8.
 
-<immagini/circuito.png, id=334, 230.96288pt x 185.493pt>
+<immagini/circuito.png, id=354, 230.96288pt x 185.493pt>
 File: immagini/circuito.png Graphic file (type png)
 <use immagini/circuito.png>
 Package pdftex.def Info: immagini/circuito.png  used on input line 11.
@@ -1237,19 +1189,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--36
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-("C:\Users\Luigi Massari\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32
-.def"
+("C:\Users\Raffo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
-<immagini/schemlab2_2.jpg, id=336, 409.53pt x 227.6505pt>
+<immagini/schemlab2_2.jpg, id=356, 409.53pt x 227.6505pt>
 File: immagini/schemlab2_2.jpg Graphic file (type jpg)
 <use immagini/schemlab2_2.jpg>
 Package pdftex.def Info: immagini/schemlab2_2.jpg  used on input line 51.
 (pdftex.def)             Requested size: 245.7199pt x 136.59134pt.
-<immagini/slacks.jpg, id=337, 365.56575pt x 201.1515pt>
+<immagini/slacks.jpg, id=357, 365.56575pt x 201.1515pt>
 File: immagini/slacks.jpg Graphic file (type jpg)
 <use immagini/slacks.jpg>
 Package pdftex.def Info: immagini/slacks.jpg  used on input line 124.
@@ -1259,7 +1209,7 @@ Overfull \hbox (69.36026pt too wide) in paragraph at lines 153--185
  [][] 
  []
 
-<immagini/fsm_power_cell.jpg, id=338, 611.28375pt x 272.81924pt>
+<immagini/fsm_power_cell.jpg, id=358, 611.28375pt x 272.81924pt>
 File: immagini/fsm_power_cell.jpg Graphic file (type jpg)
 <use immagini/fsm_power_cell.jpg>
 Package pdftex.def Info: immagini/fsm_power_cell.jpg  used on input line 250.
@@ -1395,7 +1345,7 @@ Chapter 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-<immagini/clock_gating.png, id=390, 208.67963pt x 214.401pt>
+<immagini/clock_gating.png, id=410, 208.67963pt x 214.401pt>
 File: immagini/clock_gating.png Graphic file (type png)
 <use immagini/clock_gating.png>
 Package pdftex.def Info: immagini/clock_gating.png  used on input line 7.
@@ -1411,7 +1361,7 @@ Overfull \hbox (38.24593pt too wide) in paragraph at lines 4--11
 
 
  <./immagini/clock_gating.png>]
-<immagini/clock_gating1.png, id=397, 521.84962pt x 155.3805pt>
+<immagini/clock_gating1.png, id=417, 521.84962pt x 155.3805pt>
 File: immagini/clock_gating1.png Graphic file (type png)
 <use immagini/clock_gating1.png>
 Package pdftex.def Info: immagini/clock_gating1.png  used on input line 17.
@@ -1434,7 +1384,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--23
  []
 
 [24 <./immagini/clock_gating1.png>]
-<immagini/clock_gating2.png, id=405, 525.162pt x 156.585pt>
+<immagini/clock_gating2.png, id=425, 525.162pt x 156.585pt>
 File: immagini/clock_gating2.png Graphic file (type png)
 <use immagini/clock_gating2.png>
 Package pdftex.def Info: immagini/clock_gating2.png  used on input line 26.
@@ -1444,7 +1394,7 @@ Overfull \hbox (60.13017pt too wide) in paragraph at lines 26--27
  [][] 
  []
 
-<immagini/clock_gating3.png, id=407, 528.17325pt x 160.1985pt>
+<immagini/clock_gating3.png, id=427, 528.17325pt x 160.1985pt>
 File: immagini/clock_gating3.png Graphic file (type png)
 <use immagini/clock_gating3.png>
 Package pdftex.def Info: immagini/clock_gating3.png  used on input line 33.
@@ -1455,7 +1405,7 @@ Overfull \hbox (62.53917pt too wide) in paragraph at lines 33--34
  []
 
 [25 <./immagini/clock_gating2.png> <./immagini/clock_gating3.png>]
-<immagini/circuito_3_2.png, id=414, 322.50487pt x 163.51088pt>
+<immagini/circuito_3_2.png, id=434, 322.50487pt x 163.51088pt>
 File: immagini/circuito_3_2.png Graphic file (type png)
 <use immagini/circuito_3_2.png>
 Package pdftex.def Info: immagini/circuito_3_2.png  used on input line 42.
@@ -1464,7 +1414,7 @@ File: immagini/circuito_3_2.png Graphic file (type png)
 <use immagini/circuito_3_2.png>
 Package pdftex.def Info: immagini/circuito_3_2.png  used on input line 50.
 (pdftex.def)             Requested size: 258.00424pt x 130.80887pt.
-<immagini/3_1.png, id=417, 513.71925pt x 302.93175pt>
+<immagini/3_1.png, id=437, 513.71925pt x 302.93175pt>
 File: immagini/3_1.png Graphic file (type png)
 <use immagini/3_1.png>
 Package pdftex.def Info: immagini/3_1.png  used on input line 58.
@@ -1474,35 +1424,35 @@ Overfull \hbox (50.97595pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-<immagini/3_2.png, id=419, 367.3725pt x 89.43413pt>
+<immagini/3_2.png, id=439, 367.3725pt x 89.43413pt>
 File: immagini/3_2.png Graphic file (type png)
 <use immagini/3_2.png>
 Package pdftex.def Info: immagini/3_2.png  used on input line 66.
 (pdftex.def)             Requested size: 293.89838pt x 71.54738pt.
-<immagini/3_3.png, id=421, 447.17062pt x 185.79413pt>
+<immagini/3_3.png, id=441, 447.17062pt x 185.79413pt>
 File: immagini/3_3.png Graphic file (type png)
 <use immagini/3_3.png>
 Package pdftex.def Info: immagini/3_3.png  used on input line 75.
 (pdftex.def)             Requested size: 357.73698pt x 148.6355pt.
-<immagini/3_4.png, id=424, 446.26724pt x 187.29974pt>
+<immagini/3_4.png, id=444, 446.26724pt x 187.29974pt>
 File: immagini/3_4.png Graphic file (type png)
 <use immagini/3_4.png>
 Package pdftex.def Info: immagini/3_4.png  used on input line 83.
 (pdftex.def)             Requested size: 357.01427pt x 149.83998pt.
-<immagini/3_5.png, id=425, 360.74776pt x 93.64987pt>
+<immagini/3_5.png, id=445, 360.74776pt x 93.64987pt>
 File: immagini/3_5.png Graphic file (type png)
 <use immagini/3_5.png>
 Package pdftex.def Info: immagini/3_5.png  used on input line 89.
 (pdftex.def)             Requested size: 288.59857pt x 74.91998pt.
 [26 <./immagini/circuito_3_2.png>] [27 <./immagini/3_1.png> <./immagini/3_2.png
 >] [28 <./immagini/3_3.png>]
-<immagini/3_6.png, id=447, 532.389pt x 542.62724pt>
+<immagini/3_6.png, id=467, 532.389pt x 542.62724pt>
 File: immagini/3_6.png Graphic file (type png)
 <use immagini/3_6.png>
 Package pdftex.def Info: immagini/3_6.png  used on input line 97.
 (pdftex.def)             Requested size: 346.04875pt x 352.70352pt.
  [29 <./immagini/3_4.png> <./immagini/3_5.png>]
-<immagini/3_7.png, id=455, 624.53325pt x 264.38776pt>
+<immagini/3_7.png, id=475, 624.53325pt x 264.38776pt>
 File: immagini/3_7.png Graphic file (type png)
 <use immagini/3_7.png>
 Package pdftex.def Info: immagini/3_7.png  used on input line 105.
@@ -1512,13 +1462,13 @@ Overfull \hbox (45.9418pt too wide) in paragraph at lines 105--106
  [][] 
  []
 
-<immagini/3_8.png, id=456, 511.61137pt x 131.2905pt>
+<immagini/3_8.png, id=476, 511.61137pt x 131.2905pt>
 File: immagini/3_8.png Graphic file (type png)
 <use immagini/3_8.png>
 Package pdftex.def Info: immagini/3_8.png  used on input line 111.
 (pdftex.def)             Requested size: 332.54346pt x 85.3378pt.
 [30 <./immagini/3_6.png>]
-<immagini/3_9.png, id=465, 564.60938pt x 324.31163pt>
+<immagini/3_9.png, id=485, 564.60938pt x 324.31163pt>
 File: immagini/3_9.png Graphic file (type png)
 <use immagini/3_9.png>
 Package pdftex.def Info: immagini/3_9.png  used on input line 120.
@@ -1528,7 +1478,7 @@ Overfull \hbox (6.99174pt too wide) in paragraph at lines 120--121
  [][] 
  []
 
-<immagini/3_10.png, id=466, 453.49425pt x 115.33087pt>
+<immagini/3_10.png, id=486, 453.49425pt x 115.33087pt>
 File: immagini/3_10.png Graphic file (type png)
 <use immagini/3_10.png>
 Package pdftex.def Info: immagini/3_10.png  used on input line 126.
@@ -1540,23 +1490,23 @@ m/it/10.95 re-port[]power -include[]input[]nets
  []
 
 [31 <./immagini/3_7.png> <./immagini/3_8.png>]
-<immagini/3_11.png, id=474, 540.8205pt x 543.2295pt>
+<immagini/3_11.png, id=494, 540.8205pt x 543.2295pt>
 File: immagini/3_11.png Graphic file (type png)
 <use immagini/3_11.png>
 Package pdftex.def Info: immagini/3_11.png  used on input line 137.
 (pdftex.def)             Requested size: 351.52914pt x 353.09499pt.
-<immagini/3_vhdl.png, id=477, 243.309pt x 340.27126pt>
+<immagini/3_vhdl.png, id=497, 243.309pt x 340.27126pt>
 File: immagini/3_vhdl.png Graphic file (type png)
 <use immagini/3_vhdl.png>
 Package pdftex.def Info: immagini/3_vhdl.png  used on input line 146.
 (pdftex.def)             Requested size: 243.30841pt x 340.27042pt.
-<immagini/3_vhdl_2.png, id=478, 110.814pt x 19.87425pt>
+<immagini/3_vhdl_2.png, id=498, 110.814pt x 19.87425pt>
 File: immagini/3_vhdl_2.png Graphic file (type png)
 <use immagini/3_vhdl_2.png>
 Package pdftex.def Info: immagini/3_vhdl_2.png  used on input line 152.
 (pdftex.def)             Requested size: 166.22055pt x 29.81128pt.
  [32 <./immagini/3_9.png> <./immagini/3_10.png>] [33 <./immagini/3_11.png>]
-<immagini/3_12.jpg, id=494, 794.97pt x 614.295pt>
+<immagini/3_12.jpg, id=514, 794.97pt x 614.295pt>
 File: immagini/3_12.jpg Graphic file (type jpg)
 <use immagini/3_12.jpg>
 Package pdftex.def Info: immagini/3_12.jpg  used on input line 161.
@@ -1566,12 +1516,12 @@ Overfull \hbox (37.48402pt too wide) in paragraph at lines 161--162
  [][] 
  []
 
-<immagini/3_13.jpg, id=495, 144.7809pt x 93.951pt>
+<immagini/3_13.jpg, id=515, 144.7809pt x 93.951pt>
 File: immagini/3_13.jpg Graphic file (type jpg)
 <use immagini/3_13.jpg>
 Package pdftex.def Info: immagini/3_13.jpg  used on input line 167.
 (pdftex.def)             Requested size: 217.17079pt x 140.92616pt.
-<immagini/elsif1.png, id=498, 569.42737pt x 326.4195pt>
+<immagini/elsif1.png, id=518, 569.42737pt x 326.4195pt>
 File: immagini/elsif1.png Graphic file (type png)
 <use immagini/elsif1.png>
 Package pdftex.def Info: immagini/elsif1.png  used on input line 176.
@@ -1581,7 +1531,7 @@ Overfull \hbox (10.1234pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
-<immagini/elsif2.png, id=499, 455.301pt x 117.43875pt>
+<immagini/elsif2.png, id=519, 455.301pt x 117.43875pt>
 File: immagini/elsif2.png Graphic file (type png)
 <use immagini/elsif2.png>
 Package pdftex.def Info: immagini/elsif2.png  used on input line 182.
@@ -1610,7 +1560,7 @@ LaTeX Warning: Text page 35 contains only floats.
 
 [35 <./immagini/3_12.jpg> <./immagini/3_13.jpg>] [36 <./immagini/elsif1.png> <.
 /immagini/elsif2.png>] [37]
-<immagini/elsif5.jpg, id=528, 1478.52374pt x 1606.0pt>
+<immagini/elsif5.jpg, id=548, 1478.52374pt x 1606.0pt>
 File: immagini/elsif5.jpg Graphic file (type jpg)
 <use immagini/elsif5.jpg>
 Package pdftex.def Info: immagini/elsif5.jpg  used on input line 205.
@@ -1620,7 +1570,7 @@ Overfull \hbox (53.98383pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
-<immagini/elsif6.png, id=533, 561.59813pt x 334.851pt>
+<immagini/elsif6.png, id=553, 561.59813pt x 334.851pt>
 File: immagini/elsif6.png Graphic file (type png)
 <use immagini/elsif6.png>
 Package pdftex.def Info: immagini/elsif6.png  used on input line 213.
@@ -1630,12 +1580,12 @@ Overfull \hbox (5.03445pt too wide) in paragraph at lines 213--214
  [][] 
  []
 
-<immagini/elsif7.png, id=534, 514.3215pt x 129.78488pt>
+<immagini/elsif7.png, id=554, 514.3215pt x 129.78488pt>
 File: immagini/elsif7.png Graphic file (type png)
 <use immagini/elsif7.png>
 Package pdftex.def Info: immagini/elsif7.png  used on input line 219.
 (pdftex.def)             Requested size: 334.30502pt x 84.35916pt.
-<immagini/elsif8.png, id=535, 569.7285pt x 336.65775pt>
+<immagini/elsif8.png, id=555, 569.7285pt x 336.65775pt>
 File: immagini/elsif8.png Graphic file (type png)
 <use immagini/elsif8.png>
 Package pdftex.def Info: immagini/elsif8.png  used on input line 225.
@@ -1645,14 +1595,14 @@ Overfull \hbox (10.31914pt too wide) in paragraph at lines 225--226
  [][] 
  []
 
-<immagini/elsif9.png, id=536, 465.53925pt x 120.75113pt>
+<immagini/elsif9.png, id=556, 465.53925pt x 120.75113pt>
 File: immagini/elsif9.png Graphic file (type png)
 <use immagini/elsif9.png>
 Package pdftex.def Info: immagini/elsif9.png  used on input line 231.
 (pdftex.def)             Requested size: 302.59692pt x 78.48727pt.
 [38 <./immagini/elsif5.jpg>] [39 <./immagini/elsif6.png> <./immagini/elsif7.png
 >]
-<immagini/elsif10.jpg, id=550, 1435.3625pt x 1606.0pt>
+<immagini/elsif10.jpg, id=570, 1435.3625pt x 1606.0pt>
 File: immagini/elsif10.jpg Graphic file (type jpg)
 <use immagini/elsif10.jpg>
 Package pdftex.def Info: immagini/elsif10.jpg  used on input line 240.
@@ -1674,14 +1624,14 @@ g>]
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [42]
-<immagini/circuito_parallel.png, id=574, 410.7345pt x 333.6465pt>
+<immagini/circuito_parallel.png, id=594, 410.7345pt x 333.6465pt>
 File: immagini/circuito_parallel.png Graphic file (type png)
 <use immagini/circuito_parallel.png>
 Package pdftex.def Info: immagini/circuito_parallel.png  used on input line 301
 .
 (pdftex.def)             Requested size: 328.58804pt x 266.91756pt.
  [43 <./immagini/circuito_parallel.png>]
-<immagini/circuito_pipe.png, id=584, 411.03563pt x 220.4235pt>
+<immagini/circuito_pipe.png, id=604, 411.03563pt x 220.4235pt>
 File: immagini/circuito_pipe.png Graphic file (type png)
 <use immagini/circuito_pipe.png>
 Package pdftex.def Info: immagini/circuito_pipe.png  used on input line 364.
@@ -1691,7 +1641,7 @@ Package pdftex.def Info: immagini/circuito_pipe.png  used on input line 364.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [44] [45 <./immagini/circuito_pipe.png>]
-<immagini/circuito_parallel_pipe.png, id=600, 450.18187pt x 418.26262pt>
+<immagini/circuito_parallel_pipe.png, id=620, 450.18187pt x 418.26262pt>
 File: immagini/circuito_parallel_pipe.png Graphic file (type png)
 <use immagini/circuito_parallel_pipe.png>
 Package pdftex.def Info: immagini/circuito_parallel_pipe.png  used on input lin
@@ -1709,7 +1659,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--469
  []
 
 [46] [47 <./immagini/circuito_parallel_pipe.png>]
-<immagini/3_timing2.png, id=618, 120.45pt x 44.26538pt>
+<immagini/3_timing2.png, id=638, 120.45pt x 44.26538pt>
 File: immagini/3_timing2.png Graphic file (type png)
 <use immagini/3_timing2.png>
 Package pdftex.def Info: immagini/3_timing2.png  used on input line 473.
@@ -1727,7 +1677,7 @@ Chapter 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-<immagini/4_1_data_report.png, id=636, 479.08987pt x 366.46913pt>
+<immagini/4_1_data_report.png, id=656, 479.08987pt x 366.46913pt>
 File: immagini/4_1_data_report.png Graphic file (type png)
 <use immagini/4_1_data_report.png>
 Package pdftex.def Info: immagini/4_1_data_report.png  used on input line 15.
@@ -1737,7 +1687,7 @@ Package pdftex.def Info: immagini/4_1_data_report.png  used on input line 15.
 
 
 ] [51 <./immagini/4_1_data_report.png>]
-<immagini/4_1_addres_report.png, id=649, 422.17725pt x 329.12962pt>
+<immagini/4_1_addres_report.png, id=669, 422.17725pt x 329.12962pt>
 File: immagini/4_1_addres_report.png Graphic file (type png)
 <use immagini/4_1_addres_report.png>
 Package pdftex.def Info: immagini/4_1_addres_report.png  used on input line 41.
@@ -1749,19 +1699,19 @@ Overfull \hbox (1.60973pt too wide) in paragraph at lines 64--64
  []
 
 [52 <./immagini/4_1_addres_report.png>]
-<immagini/transition.png, id=657, 285.16537pt x 46.67438pt>
+<immagini/transition.png, id=677, 285.16537pt x 46.67438pt>
 File: immagini/transition.png Graphic file (type png)
 <use immagini/transition.png>
 Package pdftex.def Info: immagini/transition.png  used on input line 109.
 (pdftex.def)             Requested size: 342.19673pt x 56.00894pt.
-<immagini/gray.png, id=661, 292.39238pt x 121.05225pt>
+<immagini/gray.png, id=681, 292.39238pt x 121.05225pt>
 File: immagini/gray.png Graphic file (type png)
 <use immagini/gray.png>
 Package pdftex.def Info: immagini/gray.png  used on input line 154.
 (pdftex.def)             Requested size: 292.39165pt x 121.05194pt.
  [53 <./immagini/transition.png>]
 [54 <./immagini/gray.png>] [55]
-<immagini/address_report_tecniche.png, id=687, 361.04887pt x 344.78813pt>
+<immagini/address_report_tecniche.png, id=707, 361.04887pt x 344.78813pt>
 File: immagini/address_report_tecniche.png Graphic file (type png)
 <use immagini/address_report_tecniche.png>
 Package pdftex.def Info: immagini/address_report_tecniche.png  used on input li
@@ -1778,13 +1728,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--208
  []
 
 [56 <./immagini/address_report_tecniche.png>]
-<immagini/data_report_tecniche.png, id=694, 365.56575pt x 354.72525pt>
+<immagini/data_report_tecniche.png, id=714, 365.56575pt x 354.72525pt>
 File: immagini/data_report_tecniche.png Graphic file (type png)
 <use immagini/data_report_tecniche.png>
 Package pdftex.def Info: immagini/data_report_tecniche.png  used on input line 
 211.
 (pdftex.def)             Requested size: 292.45299pt x 283.78058pt.
-<immagini/formula_t0.png, id=696, 315.88013pt x 77.088pt>
+<immagini/formula_t0.png, id=716, 315.88013pt x 77.088pt>
 File: immagini/formula_t0.png Graphic file (type png)
 <use immagini/formula_t0.png>
 Package pdftex.def Info: immagini/formula_t0.png  used on input line 219.
@@ -1803,7 +1753,7 @@ Chapter 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-<immagini/nand_circuit.png, id=714, 311.1625pt x 506.89375pt>
+<immagini/nand_circuit.png, id=734, 311.1625pt x 506.89375pt>
 File: immagini/nand_circuit.png Graphic file (type png)
 <use immagini/nand_circuit.png>
 Package pdftex.def Info: immagini/nand_circuit.png  used on input line 8.
@@ -1813,7 +1763,7 @@ Package pdftex.def Info: immagini/nand_circuit.png  used on input line 8.
 
 
 ] [61 <./immagini/nand_circuit.png>]
-<immagini/onde_5_1.jpg, id=728, 1132.23pt x 572.1375pt>
+<immagini/onde_5_1.jpg, id=748, 1132.23pt x 572.1375pt>
 File: immagini/onde_5_1.jpg Graphic file (type jpg)
 <use immagini/onde_5_1.jpg>
 Package pdftex.def Info: immagini/onde_5_1.jpg  used on input line 43.
@@ -1824,7 +1774,7 @@ Overfull \hbox (36.28644pt too wide) in paragraph at lines 43--44
  []
 
 [62 <./immagini/onde_5_1.jpg>]
-<immagini/onde_5_2current.jpg, id=741, 4484.755pt x 2276.505pt>
+<immagini/onde_5_2current.jpg, id=761, 4484.755pt x 2276.505pt>
 File: immagini/onde_5_2current.jpg Graphic file (type jpg)
 <use immagini/onde_5_2current.jpg>
 Package pdftex.def Info: immagini/onde_5_2current.jpg  used on input line 139.
@@ -1834,7 +1784,7 @@ Overfull \hbox (43.61053pt too wide) in paragraph at lines 139--140
  [][] 
  []
 
-<immagini/onde_5_2voltage.jpg, id=742, 4484.755pt x 2276.505pt>
+<immagini/onde_5_2voltage.jpg, id=762, 4484.755pt x 2276.505pt>
 File: immagini/onde_5_2voltage.jpg Graphic file (type jpg)
 <use immagini/onde_5_2voltage.jpg>
 Package pdftex.def Info: immagini/onde_5_2voltage.jpg  used on input line 145.
@@ -1875,7 +1825,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
  []
 
 [67]
-<immagini/onde_5_3_voltage1.jpg, id=787, 4528.92pt x 2204.235pt>
+<immagini/onde_5_3_voltage1.jpg, id=807, 4528.92pt x 2204.235pt>
 File: immagini/onde_5_3_voltage1.jpg Graphic file (type jpg)
 <use immagini/onde_5_3_voltage1.jpg>
 Package pdftex.def Info: immagini/onde_5_3_voltage1.jpg  used on input line 276
@@ -1886,7 +1836,7 @@ Overfull \hbox (47.58522pt too wide) in paragraph at lines 276--277
  [][] 
  []
 
-<immagini/onde_5_3_current1.jpg, id=788, 3517.14pt x 1750.54pt>
+<immagini/onde_5_3_current1.jpg, id=808, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_3_current1.jpg Graphic file (type jpg)
 <use immagini/onde_5_3_current1.jpg>
 Package pdftex.def Info: immagini/onde_5_3_current1.jpg  used on input line 282
@@ -1898,7 +1848,7 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 282--283
  []
 
 [68 <./immagini/onde_5_3_voltage1.jpg> <./immagini/onde_5_3_current1.jpg>]
-<immagini/onde_5_3_current2.jpg, id=793, 3517.14pt x 1750.54pt>
+<immagini/onde_5_3_current2.jpg, id=813, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_3_current2.jpg Graphic file (type jpg)
 <use immagini/onde_5_3_current2.jpg>
 Package pdftex.def Info: immagini/onde_5_3_current2.jpg  used on input line 289
@@ -1909,7 +1859,7 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 289--290
  [][] 
  []
 
-<immagini/onde_5_3_current3.jpg, id=794, 3517.14pt x 1750.54pt>
+<immagini/onde_5_3_current3.jpg, id=814, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_3_current3.jpg Graphic file (type jpg)
 <use immagini/onde_5_3_current3.jpg>
 Package pdftex.def Info: immagini/onde_5_3_current3.jpg  used on input line 295
@@ -1926,13 +1876,13 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 295--296
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [72]
-<immagini/onde_5_4_voltage1.jpg, id=839, 3517.14pt x 1750.54pt>
+<immagini/onde_5_4_voltage1.jpg, id=859, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_voltage1.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_voltage1.jpg>
 Package pdftex.def Info: immagini/onde_5_4_voltage1.jpg  used on input line 585
 .
 (pdftex.def)             Requested size: 351.7346pt x 175.06425pt.
-<immagini/onde_5_4_voltage2.jpg, id=840, 3517.14pt x 1750.54pt>
+<immagini/onde_5_4_voltage2.jpg, id=860, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_voltage2.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_voltage2.jpg>
 Package pdftex.def Info: immagini/onde_5_4_voltage2.jpg  used on input line 591
@@ -1940,7 +1890,7 @@ Package pdftex.def Info: immagini/onde_5_4_voltage2.jpg  used on input line 591
 (pdftex.def)             Requested size: 351.7346pt x 175.06425pt.
  [73] [74 <./immagini/onde_5_4_voltage1.jpg> <./immagini/onde_5_4_voltage2.jpg>
 ]
-<immagini/onde_5_4_current1.jpg, id=856, 3517.14pt x 1750.54pt>
+<immagini/onde_5_4_current1.jpg, id=876, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_current1.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_current1.jpg>
 Package pdftex.def Info: immagini/onde_5_4_current1.jpg  used on input line 598
@@ -1951,7 +1901,7 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 598--599
  [][] 
  []
 
-<immagini/onde_5_4_current2.jpg, id=857, 3517.14pt x 1750.54pt>
+<immagini/onde_5_4_current2.jpg, id=877, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_current2.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_current2.jpg>
 Package pdftex.def Info: immagini/onde_5_4_current2.jpg  used on input line 604
@@ -1963,7 +1913,7 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 604--605
  []
 
 [75 <./immagini/onde_5_4_current1.jpg> <./immagini/onde_5_4_current2.jpg>]
-<immagini/onde_5_4_current3.jpg, id=862, 3517.14pt x 1750.54pt>
+<immagini/onde_5_4_current3.jpg, id=882, 3517.14pt x 1750.54pt>
 File: immagini/onde_5_4_current3.jpg Graphic file (type jpg)
 <use immagini/onde_5_4_current3.jpg>
 Package pdftex.def Info: immagini/onde_5_4_current3.jpg  used on input line 611
@@ -1974,7 +1924,7 @@ Overfull \hbox (62.03859pt too wide) in paragraph at lines 611--612
  [][] 
  []
 
-<immagini/TEMP.png, id=865, 642.4pt x 481.8pt>
+<immagini/TEMP.png, id=885, 642.4pt x 481.8pt>
 File: immagini/TEMP.png Graphic file (type png)
 <use immagini/TEMP.png>
 Package pdftex.def Info: immagini/TEMP.png  used on input line 646.
@@ -1984,7 +1934,7 @@ Overfull \hbox (15.1749pt too wide) in paragraph at lines 654--669
  [][] 
  []
 
-<immagini/TEMPVT.png, id=868, 642.4pt x 481.8pt>
+<immagini/TEMPVT.png, id=888, 642.4pt x 481.8pt>
 File: immagini/TEMPVT.png Graphic file (type png)
 <use immagini/TEMPVT.png>
 Package pdftex.def Info: immagini/TEMPVT.png  used on input line 674.
@@ -2028,7 +1978,7 @@ Chapter 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 1.
 
-<immagini/pentium.png, id=899, 330.033pt x 324.61275pt>
+<immagini/pentium.png, id=919, 330.033pt x 324.61275pt>
 File: immagini/pentium.png Graphic file (type png)
 <use immagini/pentium.png>
 Package pdftex.def Info: immagini/pentium.png  used on input line 16.
@@ -2038,12 +1988,12 @@ Package pdftex.def Info: immagini/pentium.png  used on input line 16.
 
 
 ]
-<immagini/testbench_vhdl1.jpg, id=907, 1135.24126pt x 1606.0pt>
+<immagini/testbench_vhdl1.jpg, id=927, 1135.24126pt x 1606.0pt>
 File: immagini/testbench_vhdl1.jpg Graphic file (type jpg)
 <use immagini/testbench_vhdl1.jpg>
 Package pdftex.def Info: immagini/testbench_vhdl1.jpg  used on input line 31.
 (pdftex.def)             Requested size: 340.575pt x 481.80373pt.
-<immagini/testbench_vhdl2.jpg, id=908, 1135.24126pt x 1606.0pt>
+<immagini/testbench_vhdl2.jpg, id=928, 1135.24126pt x 1606.0pt>
 File: immagini/testbench_vhdl2.jpg Graphic file (type jpg)
 <use immagini/testbench_vhdl2.jpg>
 Package pdftex.def Info: immagini/testbench_vhdl2.jpg  used on input line 37.
@@ -2053,20 +2003,287 @@ Package pdftex.def Info: immagini/testbench_vhdl2.jpg  used on input line 37.
 LaTeX Warning: Text page 84 contains only floats.
 
 [84 <./immagini/testbench_vhdl2.jpg>]
-<immagini/sim1.jpg, id=925, 1325.95375pt x 539.01375pt>
+<immagini/sim1.jpg, id=945, 1325.95375pt x 539.01375pt>
 File: immagini/sim1.jpg Graphic file (type jpg)
 <use immagini/sim1.jpg>
 Package pdftex.def Info: immagini/sim1.jpg  used on input line 59.
-(pdftex.def)             Requested size: 397.7892pt x 161.70537pt.
+(pdftex.def)             Requested size: 795.5784pt x 323.41074pt.
 
-Overfull \hbox (37.7892pt too wide) in paragraph at lines 59--60
+Overfull \hbox (435.5784pt too wide) in paragraph at lines 59--60
  [][] 
  []
 
-) [85] [86 <./immagini/sim1.jpg>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--73
+
+ []
+
+[85]
+<immagini/fsm_lab6.jpg, id=951, 507.69675pt x 280.04625pt>
+File: immagini/fsm_lab6.jpg Graphic file (type jpg)
+<use immagini/fsm_lab6.jpg>
+Package pdftex.def Info: immagini/fsm_lab6.jpg  used on input line 78.
+(pdftex.def)             Requested size: 406.15794pt x 224.0373pt.
+
+Overfull \hbox (46.15794pt too wide) in paragraph at lines 78--79
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--120
+
+ []
+
+[86 <./immagini/sim1.jpg>] [87 <./immagini/fsm_lab6.jpg>] [88]
+Underfull \hbox (badness 10000) in paragraph at lines 124--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--148
+
+ []
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Overfull \hbox (103.77884pt too wide) in paragraph at lines 157--247
+\OT1/cmr/m/n/10.95 RandomInputBinary = ('0:0lb'.format((RandomInputInteger),l=G
+enericsAssignedValue[i])) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Overfull \hbox (6.09485pt too wide) in paragraph at lines 157--247
+\OT1/cmr/m/n/10.95 sultati, sono stati con-front-ati in modo or-dinato i valori
+ \OT1/cmr/m/it/10.95 Out-puts-Decimal[]
+ []
+
+
+Overfull \hbox (18.00249pt too wide) in paragraph at lines 157--247
+\OT1/cmr/m/n/10.95 proveni-enti dalla sim-ulazione con quelli di rifer-i-mento 
+sal-vati in \OT1/cmr/m/it/10.95 Py[]results[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--247
+
+ []
+
+[90] [91] [92] [93]
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--279
+
+ []
+
+[94]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.283 L
+       e parti 2 e 3 sono già state fornite, il file completo è comunque d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
+
+ []
+
+[95]) [96]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 40.
 See the caption package documentation for explanation.
+
+
+! LaTeX Error: \begin{itemize} on input line 152 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
@@ -2076,7 +2293,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0C094C83A6A8D74EF848E8458D510A33;2798.
+(rerunfilecheck)             Checksum: 59DFA397A3233A4C8CFB6A13B247C99F;3111.
 
 
 LaTeX Warning: There were undefined references.
@@ -2084,49 +2301,49 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  )
-(\end occurred inside a group at level 1)
+(\end occurred inside a group at level 2)
 
+### semi simple group (level 2) entered at line 152 (\begingroup)
 ### semi simple group (level 1) entered at line 62 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24497 strings out of 492970
- 447302 string characters out of 3123041
- 692769 words of memory out of 3000000
- 27690 multiletter control sequences out of 15000+200000
+ 24490 strings out of 492946
+ 447817 string characters out of 3126266
+ 683977 words of memory out of 3000000
+ 27694 multiletter control sequences out of 15000+200000
  550939 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,63p,799b,1118s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Luigi Massari/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Luigi Massa
-ri/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Luigi Massari/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Luigi Ma
-ssari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pf
-b><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi9.pfb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Luigi Massari/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Luigi M
-assari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
-b><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Luigi Massari/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/Luigi Ma
-ssari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy6.pfb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Luigi Massari/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Luigi 
-Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
-.pfb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmti12.pfb><C:/Users/Luigi Massari/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on main.pdf (89 pages, 11694030 bytes).
+ 42i,12n,63p,707b,1250s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmbx10.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Raffo/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Raffo/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ra
+ffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Raffo/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Raffo/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Raffo/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Use
+rs/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmss17.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Raffo/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Raffo/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Raff
+o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C
+:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmti10.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmti12.pfb><C:/Users/Raffo/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on main.pdf (99 pages, 11759311 bytes).
 PDF statistics:
- 1061 PDF objects out of 1200 (max. 8388607)
- 265 named destinations out of 1000 (max. 500000)
- 658 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1127 PDF objects out of 1200 (max. 8388607)
+ 280 named destinations out of 1000 (max. 500000)
+ 695 words of extra memory for PDF output out of 10000 (max. 10000000)
 
