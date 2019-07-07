@@ -121,7 +121,7 @@ echo "end v1"\\
 	\item {generare il segnale di clock e i gli ingressi generati in modo pseudo-casuale.}
 	\item {confrontare le uscite dei due dispositivi per rilevare possibili errori e segnalarli con un apposito messaggio.}
 \end{itemize}
-Di seguito sono riportate le parti più significative del file di testbench, disponibile         integralmente in appendice.\\
+Di seguito sono riportate le parti più significative del file di testbench, disponibile integralmente in appendice.\\
 \\
 .......\\
 .......\\
@@ -147,8 +147,8 @@ wait;\\
 E' evidente come testare una macchina a stati sia più complicato e dispendioso dal punto di vista del testing rispetto all'analisi di un circuito combinatorio, visto che si devono tenere in considerazione anche gli stati precedenti.\\ 
 \section{Scripting in Python}
 \subsection{Automatic verification through a script}
-Un modo per automatizzare il processo di verificare è realizzare uno script python che consente una verifica più veloce ed efficace. Lo scopo della prima parte è quella di completare il template del file testing\_script.py, per testare il circuito del RCA utilizzato nella prima parte del laboratorio.
-il file testing\_script.py  si compone di 5 parti:
+Un modo per automatizzare il processo di verificare è realizzare uno script python che consente una verifica più veloce ed efficace. Lo scopo della prima parte è quella di completare il template del file testing\_script.py, per testare il circuito del RCA utilizzato nella prima parte del laboratorio.\\
+il file testing\_script.py  si compone di 5 parti:\\
 \begin{itemize}
 	\item{generazione degli input file in formato .txt da mandare poi al DUT}
 	\item{lancio della simulazione Modelsim tramite comandi bash}
