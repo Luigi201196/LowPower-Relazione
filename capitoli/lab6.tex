@@ -60,3 +60,44 @@ Per trovare quest'errore sono state necessarie 500000000 iterazioni, un numero g
 	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
 	\label{sim1}
 \end{figure}
+\subsection{Finite State Machine}
+Questa parte prevede di testare il  funzionamento di una FSM (Macchina a stati finiti), disponibile in 4 versioni differenti, contenenti dei bug.  
+La FSM da testare è, un contatore up/down a 3 bit, la FSM è la seguente:
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.3]{immagini/fsm_lab6}
+	\caption{\textit{Macchina a stati da testare}}
+	\label{Fsm, up-down counter}
+\end{figure}
+Prendendo spunto dal punto precedente il test è stato realizzato mediante i seguenti file:
+counter_ref.vhd -> è il file del contatore dal corretto funzionamento, utilizzato per calcolare le uscite corrette da confrontare successivamente.
+\\
+counter.vhd -> è il dispositivo da testare, disponibile in 4 versioni, site in diverse cartelle, poi estratte da modelsim volta per volta durante la simulazione
+\\
+counter_tb.do  -> è lo script che si occupa di dirigere la compilazione e simulazione dei 4 files da testare su Modelsim, in cui è impostata anche la durata della simulazione e la visualizzazione delle forme d’onda dei segnali rilevanti ai fini della verifica, per consentire una comoda visione dell’andamento temporale dei segnali.
+Di seguito un estratto del file disponibile in appendice.
+\\
+.......\\
+.......\\
+echo "testing v1..."\\
+\\
+vcom -reportprogress 300 -work work\\ /home/lp19.12/repository/lab6/ese6/3/counter_tb.vhd\\ /home/lp19.12/repository/lab6/ese6/3/vREF/counter_ref.vhd\\ /home/lp19.12/repository/lab6/ese6/3/v1/counter.vhd\\
+\\
+vsim -t ns -novopt work.counter_tb\\
+\\
+set NumericStdNoWarnings 1\\
+run 0 ps\\
+set NumericStdNoWarnings 0\\
+\\
+add wave -radix binary   -color BLUE\\      sim:/counter_tb/DATA_OUT_tb\\
+add wave -radix binary   -color GREEN\\    sim:/counter_tb/DATA_OUT_ref\\
+add wave -radix binary   -color BLUE\\     sim:/counter_tb/UP_DN_tb\\
+add wave -radix binary   -color GREEN \\   sim:/counter_tb/UP_DN_ref\\
+run 30000000 ns\\
+\\
+echo "end v1"\\
+.......\\
+.......\\
+\\
+
+
