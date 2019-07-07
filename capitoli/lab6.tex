@@ -129,15 +129,15 @@ for I in 1 to 50000 loop\\
 -- Random number generation\\
 UNIFORM(seed1, seed2, rand);\\
 \\
-std_rand:=std_logic_vector(to_unsigned(integer(rand), 2));\\
+std\_rand:=std\_logic\_vector(to\_unsigned(integer(rand), 2));\\
 \\
-COUNT_TB    <= std_rand(0);\\
-RST_TB    <= std_rand(1); \\
+COUNT\_TB    <= std\_rand(0);\\
+RST\_TB    <= std\_rand(1); \\
 \\
 -- Assert\\
 wait for 2 ns;\\
-assert (DATA_OUT_TB=DATA_OUT_REF) report "There is a bug in result." severity warning;\\
-assert (UP_DN_TB=UP_DN_REF) report "There is a bug in UP_DN signal" severity warning;\\
+assert (DATA\_OUT\_TB=DATA\_OUT\_REF) report "There is a bug in result." severity warning;\\
+assert (UP\_DN\_TB=UP\_DN\_REF) report "There is a bug in UP\_DN signal" severity warning;\\
 wait for 10 ns;\\
 end loop;\\
 wait;\\
