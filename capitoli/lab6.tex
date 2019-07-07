@@ -27,9 +27,10 @@ Dopo aver letto il funzionamento del Pentium 4 tramite l'appendice si è iniziat
 Il VHDL implementato per questo scopo è presente in appendice, \ref{testbench_vhdl1} e \ref{testbench_vhdl2}.
 \newpage
 \noindent La struttura del Testbench è simile a quella fornita nell'esercizio precedente.\\
-Ho una prima parte di generazione di numeri casuali, nello specifico genero in modo assolutamente randomico gli ingressi A e B, i selettori dei multiplexer EXTA e EXTB e gli ingressi di incremento INCA e INCB.\\
-In realtà simulando attentamente il circuito ci si è resi conto di come la soluzione con numeri random non sia sempre ottimale per la ricerca di un bug, in quanto, specialmente nel caso di un ingresso con un numero di bit molto elevato, sono necessarie numerose iterazioni per provare tutte le possibili combinazioni. Questo sta alla base della mancato ritrovo del bug nella quarta versione, in quanto tramite un Testbench con numeri random non siamo riusciti a "sollecitare" l'errore: probabilmente si sarebbe dovuto studiare degli ingressi opportuni per sollecitare il sommatore in modo più specifico.\\
-La seconda parte del TestBench prende gli ingressi sviluppati nella parte prima e genera le uscite sia dell'architettura di riferimento che della versione da analizzare.\\
+Si ha una prima parte di generazione di numeri casuali, nello specifico si generano in modo random gli ingressi A e B, i selettori dei multiplexer EXTA e EXTB e gli ingressi di incremento INCA e INCB.\\
+In realtà, simulando il circuito ci si è resi conto di come la soluzione con numeri casuali non sia sempre ottimale per la ricerca di un bug, in quanto, specialmente nel caso di un ingresso con un numero di bit molto elevato, sono necessarie numerose iterazioni per provare tutte le possibili combinazioni. Questo sta alla base della mancato ritrovo del bug nella quarta versione, in quanto tramite un Testbench con numeri random non siamo riusciti a "sollecitare" l'errore: probabilmente si sarebbe dovuto studiare degli ingressi opportuni per sollecitare il sommatore in modo più specifico.\\
+\\
+La seconda parte del Testbench prende gli ingressi sviluppati nella parte prima e genera le uscite sia dell'architettura di riferimento che della versione da analizzare.\\
 Infine viene effettuato il confronto tra le due uscite e viene definita una funzione di \textit{assert} che fornisce sul \textit{Transcript} di Modelsim un messaggio di errore nel caso in cui venga rilevato un bug.
 Nella prima versione del circuito risulta un errore all'interno di un multiplexer presente nel selettore di riporto del sommatore, in quanto l'ingresso riferito all' '1' e allo '0' risultavano invertiti. Questa prima versione ha un errore molto "visibile" e facile da trovare, sono state necessarie quindi pochissime iterazioni.\\
 Nella seconda versione del circuito invece, risulta un errore nel selettore del multiplexer del sommatore, in quanto invece di assegnare
@@ -43,7 +44,7 @@ assegna
 Per trovare quest'errore sono state necessarie 500000000 iterazioni, un numero già ritenuto eccessivo. Si riporta in allegato in Figura \ref{sim1} la simulazione Modelsim contenente l'errore.
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.6]{immagini/sim1}
+	\includegraphics[scale=0.3]{immagini/sim1}
 	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
 	\label{sim1}
 \end{figure}
