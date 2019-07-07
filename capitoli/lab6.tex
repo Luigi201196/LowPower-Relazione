@@ -155,7 +155,7 @@ Il metodo \textit{format()} permette di convertire l’intero in binario in base
 Per quanto riguarda il lancio della simulazione Modelsim, il codice è già stato fornito e si compone di istruzioni bash richiamate tramite il modulo \textit{os} contenente la funzione \textit{system()}.
 \\
 Lo script si occupa di eliminare eventuali working directories ed input file, impostare le environment variables, e far partire la compilazione e simulazione di Modelsim.
-Il testo è disponibile in appendice alla sezione “run modelsim simulation” del file \textit{testing\_script.py}.
+Il testo è disponibile in appendice fig \ref alla sezione “run modelsim simulation” del file \textit{testing\_script.py}.
 \\
 Per il calcolo delle uscite con python si è utilizzato il seguente algoritmo:\\
 ……...\\
@@ -216,7 +216,6 @@ for i in range(0, NumberOfSteps):\\
 print("The number of wrong steps is: "+str(tot\_err))\\
 ………….\\
 …………}\\
-\\
 \\
 \subsection{Further Generalization}
 L’ultima parte prevede di creare uno script che sia in grado di generare un file di testbench a partire dal file .vhd del device under test. Il file contente il codice di generazione del testbench è \textit{tb\_generation.py} file già in parte fornito, che si occupa di:
