@@ -105,8 +105,8 @@ UNIFORM(seed1, seed2, rand);\\
 \\
 std\_rand:=std\_logic\_vector(to\_unsigned(integer(rand), 2));\\
 \\
-COUNT\_TB <= std\_rand(0);\\
-RST\_TB <= std\_rand(1); \\
+COUNT\_TB \<= std\_rand(0);\\
+RST\_TB \<= std\_rand(1); \\
 \\
 -- Assert\\
 wait for 2 ns;\\
