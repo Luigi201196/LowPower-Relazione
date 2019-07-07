@@ -251,14 +251,14 @@ L’ultima parte prevede di creare uno script che sia in grado di generare un fi
 	…….\\
 	…...\\    
 	with open(FileName, "r") as fp:\\
-	#save rows\\
+	\#save rows\\
 	for line in fp:\\
-	#divide the line in words\\
+	\#divide the line in words\\
 	words=line.strip().split()\\
-	#save words in a list\\
+	\#save words in a list\\
 	for w in words:\\
 	word.append(w)\\
-	#scanning words to take datas for testbench\\
+	\#scanning words to take datas for testbench\\
 	while word[i]!="architecture":\\
 	if word[i]=="entity":\\
 	EntityName=word[i+1]\\
