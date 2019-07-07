@@ -84,12 +84,12 @@ La FSM da testare è, un contatore up/down a 3 bit, la FSM è la seguente:
 \\
 \\
 Prendendo spunto dal punto precedente il test è stato realizzato mediante i seguenti file:\\
-counter\_ref.vhd, è il file del contatore dal corretto funzionamento, utilizzato per calcolare le uscite corrette da confrontare successivamente.
+\textit{counter\_ref.vhd}, è il file del contatore dal corretto funzionamento, utilizzato per calcolare le uscite corrette da confrontare successivamente.
 \\
-counter.vhd, è il dispositivo da testare, disponibile in 4 versioni, site in diverse cartelle, poi estratte da modelsim volta per volta durante la simulazione
+\textit{counter.vhd}, è il dispositivo da testare, disponibile in 4 versioni, site in diverse cartelle, poi estratte da modelsim volta per volta durante la simulazione
 \\
-counter\_tb.do, è lo script che si occupa di dirigere la compilazione e simulazione dei 4 files da testare su Modelsim, in cui è impostata anche la durata della simulazione e la visualizzazione delle forme d’onda dei segnali rilevanti ai fini della verifica, per consentire una comoda visione dell’andamento temporale dei segnali.
-Di seguito un estratto del file disponibile in appendice.
+\textit{counter\_tb.do}, è lo script che si occupa di dirigere la compilazione e simulazione dei 4 files da testare su Modelsim, in cui è impostata anche la durata della simulazione e la visualizzazione delle forme d’onda dei segnali rilevanti ai fini della verifica, per consentire una comoda visione dell’andamento temporale dei segnali.
+Di seguito un estratto del file disponibile in appendice.\\
 \\
 .......\\
 .......\\
@@ -113,5 +113,35 @@ echo "end v1"\\
 .......\\
 .......\\
 \\
-
-
+\\
+\\
+\textit{counter_tb.vhd}, ile di testbench che si occupa di:\\
+\begin{itemize}
+\item {generare gli ingressi e definire i componenti: il REF, dispositivo di riferimento utilizzato per calcolare le uscite corrette a partire dagli ingressi generati; il DUT (device under test), il contatore da verificare che sarà rappresentato di volta in volta nella simulazione da uno dei quattro circuiti da testare.}\\
+\item {generare il segnale di clock e i gli ingressi generati in modo pseudo-casuale.}\\
+\item {confrontare le uscite dei due dispositivi per rilevare possibili errori e segnalarli con un apposito messaggio.}
+\end{itemize}
+Di seguito sono riportate le parti più significative del file di testbench, disponibile         integralmente in appendice.\\
+\\
+.......\\
+.......\\
+for I in 1 to 50000 loop\\
+-- Random number generation\\
+UNIFORM(seed1, seed2, rand);\\
+\\
+std_rand:=std_logic_vector(to_unsigned(integer(rand), 2));\\
+\\
+COUNT_TB    <= std_rand(0);\\
+RST_TB    <= std_rand(1); \\
+\\
+-- Assert\\
+wait for 2 ns;\\
+assert (DATA_OUT_TB=DATA_OUT_REF) report "There is a bug in result." severity warning;\\
+assert (UP_DN_TB=UP_DN_REF) report "There is a bug in UP_DN signal" severity warning;\\
+wait for 10 ns;\\
+end loop;\\
+wait;\\
+…………………\\
+…………………\\
+\\
+\\
