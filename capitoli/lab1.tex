@@ -344,7 +344,8 @@ Si vuole ora confrontare i risultati analitici ricavati in precedenza ed i risul
 	\caption{\textit{Power report}}
 	\label{report_counter}
 \end{figure}
-Viene chiesto di confrontare i valori analitici calcolati e riportati nella Tabella \ref{trans_uscita}, con quelli derivanti da una simulazione \textit{Synopsis}. Si simula il comportamento del circuito utilizzando un $T_{CLK}=2 ns$, per un periodo pari a 260 colpi di clock. Il report risultante è presente in Figura \ref{report_counter}.
-Andando a studiare i file di testbench riportati, si può notare come vengano introdotti dei ritardi di 0.2 ns nelle uscite dell'Half Adder: questo provoca dei glitch che si andranno a propagare lungo la rete ed avranno effetti sul segnale OWFL, che invece di andare ad '1' solo una volta a fine conteggio, andrà ad '1' per tre volte (DA VERIFICARE!!!).\\
+Viene chiesto di confrontare i valori analitici calcolati e riportati nella Tabella \ref{trans_uscita}, con quelli derivanti da una simulazione \textit{Synopsis}. Si simula il comportamento del circuito utilizzando un $T_{CLK}=2 ns$, per un periodo pari a 260 colpi di clock. Il report risultante è presente in Figura \ref{report_counter}.\\
+\\
+Andando a studiare i file di testbench riportati, si può notare come vengano introdotti dei ritardi di 0.2 ns nelle uscite dell'Half Adder: questo provoca dei glitch che si andranno a propagare lungo la rete ed avranno effetti sul segnale OWFL, che invece di andare ad '1' solo una volta a fine conteggio, andrà ad '1' per tre volte.\\
 Tramite il power report si può notare come, in generale, il numero di commutazioni della simulazione sia superiore a quello ottenuto analiticamente: si può notare questo fenomeno nei segnali \textit{stmp(n)}, ossia le uscite non sincrone dei Flip Flop, e nei segnali di Carry Out. Il tutto è dovuto ai glitch che si propagano interamente al contatore a causa del ritardo di 0.2 ns di ciascun Half Adder. \\
 Fortunatamente, questi glitch vengono filtrati dai Flip-FLop, in quanto il $T_{CLK}$ è superiore al ritardo introdotto dalla rete combinatoria.
