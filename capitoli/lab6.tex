@@ -56,7 +56,7 @@ assegna
 Per trovare quest'errore sono state necessarie 500000000 iterazioni, un numero già ritenuto eccessivo. Si riporta in allegato in Figura \ref{sim1} la simulazione Modelsim contenente l'errore.
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.3]{immagini/sim1}
+	\includegraphics[scale=0.6]{immagini/sim1}
 	\caption{\textit{Probabilità e Switching Activity stimati manualmente}}
 	\label{sim1}
 \end{figure}
@@ -70,11 +70,11 @@ La FSM da testare è, un contatore up/down a 3 bit, la FSM è la seguente:
 	\label{Fsm, up-down counter}
 \end{figure}
 Prendendo spunto dal punto precedente il test è stato realizzato mediante i seguenti file:
-counter_ref.vhd -> è il file del contatore dal corretto funzionamento, utilizzato per calcolare le uscite corrette da confrontare successivamente.
+counter_ref.vhd, è il file del contatore dal corretto funzionamento, utilizzato per calcolare le uscite corrette da confrontare successivamente.
 \\
-counter.vhd -> è il dispositivo da testare, disponibile in 4 versioni, site in diverse cartelle, poi estratte da modelsim volta per volta durante la simulazione
+counter.vhd, è il dispositivo da testare, disponibile in 4 versioni, site in diverse cartelle, poi estratte da modelsim volta per volta durante la simulazione
 \\
-counter_tb.do  -> è lo script che si occupa di dirigere la compilazione e simulazione dei 4 files da testare su Modelsim, in cui è impostata anche la durata della simulazione e la visualizzazione delle forme d’onda dei segnali rilevanti ai fini della verifica, per consentire una comoda visione dell’andamento temporale dei segnali.
+counter_tb.do, è lo script che si occupa di dirigere la compilazione e simulazione dei 4 files da testare su Modelsim, in cui è impostata anche la durata della simulazione e la visualizzazione delle forme d’onda dei segnali rilevanti ai fini della verifica, per consentire una comoda visione dell’andamento temporale dei segnali.
 Di seguito un estratto del file disponibile in appendice.
 \\
 .......\\
