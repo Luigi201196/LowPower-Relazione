@@ -215,5 +215,72 @@ Py\_results[i][0]=int(SumStr, 2)\\
 Al momento della generazione, gli ingressi sono stati salvati nella lista \textit{Inputs[][]}, formata da tutti gli ingressi  generati, raggruppati a gruppi di 3, ogni gruppo corrisponde a uno step di ingressi da calcolare. Si sono sommati gli ingressi e si è poi convertita la somma in binario grazie al metodo \textit{format()}. Per gestire gli overflow e mantenere il parallelismo della somma a 32 bit, si è preferito convertire la somma binaria in stringa in modo da gestire più comodamente il dato nel caso in cui il parallelismo sia variato.
 I risultati corretti sono stati salvati nella lista \textit{Py\_results[][]} contenente i gruppi di risultati in intero a coppie di 2 (somma e carry-out), per ogni step di ingressi. I risultati inoltre sono stati salvati nel file \textit{python\_results.txt}\\
 \\
+Per il prelievo dei risultati della simulazione i dati sono stati prelevati dal file output_data.txt nel quale modelsim ha salvato i valori di uscita. Si è utilizzato lo script già fornito leggendo ogni riga contenente le uscite di ogni step di calcolo tramite un ciclo for.\\ 
+……\\
+…..\\
+\# Open file and acquire data\\
+with open(Filename, "r") as f:\\
+OutputsBinary = [x.strip().split() for x in f]\\
+……..\\
+……..\\
+\\
+Per l’ultima parte, quella che si occupa della comparazione dei risultati, sono stati confrontati in modo ordinato i valori \textit{OutputsDecimal[]} provenienti dalla simulazione con quelli di riferimento salvati in \textit{Py\_results[]} con un ciclo for. Per ogni step, in caso di valori diversi viene stampato un messaggio con l’avviso di errore e lo step i-esimo dell’errore. Inoltre alla fine del confronto viene anche riportato il numero totale di errori riscontrati. Di seguito il codice:\\
+\\
+……..\\
+……..\\
+tot\_err=0\\
+\#for each results’step\\
+for i in range(0, NumberOfSteps):\\
+\#comparison the outputs\\
+if str(InputsDecimal[i])!=str(Py\_results[i]):\\
+\#error message for step “i”    \\
+print("found an error in step "+str(i)+"\\n")\\
+print(str(InputsDecimal[i]), str(Py\_results[i]))\\
+\\
+tot\_err=tot\_err+1\\
+\#message for total number of errors\\
+print("The number of wrong steps is: "+str(tot\_err))\\
+………….\\
+…………\\
+\\
+\\
+\subsection{Further Generalization}
+L’ultima parte prevede di creare uno script che sia in grado di generare un file di testbench a partire dal file .vhd del device under test. Il file contente il codice di generazione del testbench è \textit{tb\_generation.py} file già in parte fornito, che si occupa di:\\
+\begin{itemize}
+	\item{leggere il file del dut e salvare tutti i valori utili al testbench, ovvero i generics e gli ingressi e uscite del device. Di seguito un estratto del codice:\\
+	…….\\
+	…...\\    
+	with open(FileName, "r") as fp:\\
+	#save rows\\
+	for line in fp:\\
+	#divide the line in words\\
+	words=line.strip().split()\\
+	#save words in a list\\
+	for w in words:\\
+	word.append(w)\\
+	#scanning words to take datas for testbench\\
+	while word[i]!="architecture":\\
+	if word[i]=="entity":\\
+	EntityName=word[i+1]\\
+	print EntityName\\
+	i=i+3\\
+	if word[i]=="generic":\\
+	GenericFlag=1\\
+	print GenericFlag\\
+	i=i+2\\
+	while word[i]!=");":\\
+	GenericsList.append(word[i])\\
+	print GenericsList\\
+	i=i+2\\
+	GenericsType.append(word[i])\\
+	i=i+2\\
+	………\\
+	……\\}
+	\item{creare il file di testbench, eliminando eventuali file con lo stesso nome}
+	\item{definire il file di testbench in formato .vhd, utilizzando i dati estratti al punto 1}
+\end{itemize}
+\\
+Le parti 2 e 3 sono già state fornite, il file completo è comunque disponibile in appendice.
+La generalizzazione della creazione del testbench consente di automatizzare ulteriormente il processo di testing del DUT, rendendo lo script più flessibile e adatto a simulazioni future, che grazie a questo file saranno rese più veloci ed efficienti. 
 
 
