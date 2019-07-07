@@ -335,7 +335,7 @@ In Tabella \ref{trans_uscita}, vengono ora riportati il numero di commutazioni d
 Il segnale \textit{CEN}, rappresenta l'enable del contatore, mentre il segnale \textit{OWFL} va ad 1 in presenza di overflow, dunque quando si supera la massima dinamica del contatore. Il segnale CEN è l'ingresso B0 del primo Half-Adder, mentre il segnale OWFL è il carry out dell'ultimo Half-Adder. \\
 Il Segnale OWFL farà solo una transizione per ogni ciclo di conta, dunque andrà ad '1', solo quando le uscite S7-S0 andranno dal valore '11111111' al valore '00000000'. Di conseguenza avrò che la Switching Activity sarà:
 \begin{center}
-	$E_{SW}=\frac{1}{2^{8}-1}=$
+	$E_{SW}=\frac{1}{2^{8}-1}=0.00392$
 \end{center}
 Si vuole ora confrontare i risultati analitici ricavati in precedenza ed i risultati ottenuti sfruttando le simulazione di \textit{Synopsis}. In Figura \ref{report_counter}, viene riportata la simulazione ottenuta.\\
 \begin{figure}[!htb]
