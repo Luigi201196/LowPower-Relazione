@@ -179,7 +179,7 @@ I risultati sono riportati nella Tabella \ref{Tab1_3}.\\
 \noindent Se invece si considerano gli ingressi non equiprobabili, ma comunque scorrelati, con probabilità rispettivamente $P(A='1')=0.4$ e $P(B='1')=0.6 $, ci si aspetta un risultato differente, infatti le probabilità dei nodi di uscita trovate sono: $P(S ='1')=0.52$ e $P(Co ='1')=0.24$ \\
 In seguito, tramite il programma \textit{ModelSim} è stato simulato il Ripple Carry Adder utilizzando un testbench sviluppato appositamente dai docenti e utilizzando le procedure viste nel paragrafo 1.1.\\
 La simulazione viene fatta andando ad inserire dei ritardi sulle uscite $S$ e $C_{OUT}$ dei singoli Full-Adder. Inizialmente si setta esclusivamente un ritardo di 25 ps esclusivamente sul segnale $S$, mentre in secondo luogo si introduce un ritardo uguale anche sul segnale di $C_{OUT}$.\\
-Il testbench è stato costruito appositamente per assegnare ritardi diversi al bit di somma, DRCAS, e al bit di carry, DRCAC. Inoltre per garantire una simulazione generale si è utilizzato l'LFSR per generare ingressi randomici.Per una corretta visualizzazione dei risultati si è impostata una risoluzione di 1ps. Dopo aver visualizzato il power report, come fatto già in precedenza, si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente, seguendo lo stesso ragionamento del punto precedente.\\
+Il testbench è stato costruito appositamente per assegnare ritardi diversi al bit di somma, DRCAS, e al bit di carry, DRCAC. Inoltre per garantire una simulazione generale si è utilizzato l'LFSR per generare ingressi randomici. Per una corretta visualizzazione dei risultati si è impostata una risoluzione di 1ps. Dopo aver visualizzato il power report, come fatto già in precedenza, si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente, seguendo lo stesso ragionamento del punto precedente.\\
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[scale=1]{immagini/gate}
@@ -228,6 +228,7 @@ Il passo successivo è comprendere come avvenga la stima della potenza dinamica 
 	\caption{\textit{Power report}}
 	\label{verbose1}
 \end{figure}
+\\
 Si può notare come la potenza dinamica consumata dal nodo di uscita S sia praticamente nulla, in quanto essa non deve pilotare alcun carico, a meno della potenza che il software considera per le varie capacità parassite. \\
 Con questa analisi, il software si preoccupa anche di fare un'analisi probabilistica delle varie attività dei nodi. Dal report si può notare come siano assolutamenti concordi con i valori teorici trovati in precedenza.\\
 Si ritorna ora al circuito complessivo, salendo di livello logico e si analizzano i nodi anche in questa situazione utilizzando lo stesso comando utilizzato in precedenza. Il report viene raffigurato in Figura \ref{verbose2}.
