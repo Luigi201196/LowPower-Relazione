@@ -160,17 +160,17 @@ Per la generazione pseudo-casuale degli input si è utilizzata la struttura, gi�
 \\
 ………\\
 ......\\
-# Loop for all steps\\
+\# Loop for all steps\\
 for i in range(0,NumberOfSteps):\\
-# Loop for all signals\\
+\# Loop for all signals\\
 for i in range (0, SignalsNumber):\\
-# Generate integer number\\
+\# Generate integer number\\
 RandomInputInteger = randint(1,2**GenericsAssignedValue[i]-1)\\
-# Convert number to binary\\
+\# Convert number to binary\\
 RandomInputBinary = ('{0:0{l}b}'.format((RandomInputInteger),l=GenericsAssignedValue[i]))\\
-# Write file\\
+\# Write file\\
 Filepointer.write(RandomInputBinary + " ")\\
-# Write line termination\\
+\# Write line termination\\
 Filepointer.write("\\n")\\
 ………\\
 ……\\
