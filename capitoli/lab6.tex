@@ -158,7 +158,7 @@ Lo script si occupa di eliminare eventuali working directories ed input file, im
 Il testo è disponibile in appendice fig. \ref{testing1} \ref{testing2} alla sezione “run modelsim simulation” del file \textit{testing\_script.py}.
 \\
 Per il calcolo delle uscite con python si è utilizzato il seguente algoritmo:\\
-……...\\
+\textit{……...\\
 ……...\\
 \#calculate the output values from the inputs generated\\
 \#repeat for each set of in's\\
@@ -184,7 +184,7 @@ for i in range(0, NumberOfSteps):\\
 \hspace*{1cm}\#re-conversion to successive comparison of the values\\
 \hspace*{1cm}Py\_results[i][0]=int(SumStr, 2)\\  
 ………\\
-………\\
+………}\\
 \\
 Al momento della generazione, gli ingressi sono stati salvati nella lista \textit{Inputs[][]}, formata da tutti gli ingressi  generati, raggruppati a gruppi di 3, ogni gruppo corrisponde a uno step di ingressi da calcolare. Si sono sommati gli ingressi e si è poi convertita la somma in binario grazie al metodo \textit{format()}. Per gestire gli overflow e mantenere il parallelismo della somma a 32 bit, si è preferito convertire la somma binaria in stringa in modo da gestire più comodamente il dato nel caso in cui il parallelismo sia variato.
 I risultati corretti sono stati salvati nella lista \textit{Py\_results[][]} contenente i gruppi di risultati in intero a coppie di 2 (somma e carry-out), per ogni step di ingressi. I risultati inoltre sono stati salvati nel file \textit{python\_results.txt}\\
@@ -221,7 +221,7 @@ print("The number of wrong steps is: "+str(tot\_err))\\
 L’ultima parte prevede di creare uno script che sia in grado di generare un file di testbench a partire dal file .vhd del device under test. Il file contente il codice di generazione del testbench è \textit{tb\_generation.py} file già in parte fornito, che si occupa di:
 \begin{itemize}
 	\item{leggere il file del dut e salvare tutti i valori utili al testbench, ovvero i generics e gli ingressi e uscite del device. Di seguito un estratto del codice:\\
-	…….\\
+	\textit{…….\\
 	…...\\    
 	with open(FileName, "r") as fp:\\
 	\#save rows\\
@@ -248,7 +248,7 @@ L’ultima parte prevede di creare uno script che sia in grado di generare un fi
 	GenericsType.append(word[i])\\
 	i=i+2\\
 	………\\
-	……\\}
+	……\\}}
 	\item{creare il file di testbench, eliminando eventuali file con lo stesso nome}
 	\item{definire il file di testbench in formato .vhd, utilizzando i dati estratti}
 \end{itemize}
