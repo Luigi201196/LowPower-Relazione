@@ -190,17 +190,17 @@ Al momento della generazione, gli ingressi sono stati salvati nella lista \texti
 I risultati corretti sono stati salvati nella lista \textit{Py\_results[][]} contenente i gruppi di risultati in intero a coppie di 2 (somma e carry-out), per ogni step di ingressi. I risultati inoltre sono stati salvati nel file \textit{python\_results.txt}\\
 \\
 Per il prelievo dei risultati della simulazione i dati sono stati prelevati dal file \textit{output\_data.txt} nel quale modelsim ha salvato i valori di uscita. Si è utilizzato lo script già fornito leggendo ogni riga contenente le uscite di ogni step di calcolo tramite un ciclo for.\\ 
-……\\
+\textit{……\\
 …..\\
 \# Open file and acquire data\\
 with open(Filename, "r") as f:\\
 \hspace*{1cm}OutputsBinary = [x.strip().split() for x in f]\\
 ……..\\
-……..\\
+……..}\\
 \\
 Per l’ultima parte, quella che si occupa della comparazione dei risultati, sono stati confrontati in modo ordinato i valori \textit{OutputsDecimal[]} provenienti dalla simulazione con quelli di riferimento salvati in \textit{Py\_results[]} con un ciclo for. Per ogni step, in caso di valori diversi viene stampato un messaggio con l’avviso di errore e lo step i-esimo dell’errore. Inoltre alla fine del confronto viene anche riportato il numero totale di errori riscontrati. Di seguito un estratto del codice:\\
 \\
-……..\\
+\textit{……..\\
 ……..\\
 tot\_err=0\\
 \#for each results’ step\\
@@ -215,7 +215,7 @@ for i in range(0, NumberOfSteps):\\
 \#message for total number of errors\\
 print("The number of wrong steps is: "+str(tot\_err))\\
 ………….\\
-…………\\
+…………}\\
 \\
 \\
 \subsection{Further Generalization}
