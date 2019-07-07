@@ -115,7 +115,7 @@ echo "end v1"\\
 \\
 \\
 \\
-\textit{counter_tb.vhd}, ile di testbench che si occupa di:\\
+\textit{counter\_tb.vhd}, ile di testbench che si occupa di:
 \begin{itemize}
 	\item {generare gli ingressi e definire i componenti: il REF, dispositivo di riferimento utilizzato per calcolare le uscite corrette a partire dagli ingressi generati; il DUT (device under test), il contatore da verificare che sarà rappresentato di volta in volta nella simulazione da uno dei quattro circuiti da testare.}
 	\item {generare il segnale di clock e i gli ingressi generati in modo pseudo-casuale.}
@@ -141,7 +141,79 @@ assert (UP\_DN\_TB=UP\_DN\_REF) report "There is a bug in UP\_DN signal" severit
 wait for 10 ns;\\
 end loop;\\
 wait;\\
-…………………\\
-…………………\\
+………\\
+………\\
 \\
 \\
+\section{Scripting in Python}
+\subsection{Automatic verification through a script}
+Un modo per automatizzare il processo di verificare è realizzare uno script python che consente una verifica più veloce ed efficace. Lo scopo della prima parte è quella di completare il template del file testing\_script.py, per testare il circuito del RCA utilizzato nella prima parte del laboratorio.
+il file testing\_script.py  si compone di 5 parti:
+\begin{itemize}
+	\item{1. generazione degli input file in formato .txt da mandare poi al DUT}
+	\item{2. lancio della simulazione Modelsim tramite comandi bash}
+	\item{3. calcolo dei risultati tramite algoritmo di python che servirà a fornire i valori di riferimento per il confronto con i valori  di uscita del dut}
+	\item{4. prelievo dei risultati della simulazione modelsim salvati su file \textit{output\_data.txt}}
+	\item{comparazione dei risultati ottenuti da modelsim con quelli di riferimento calcolati da python}
+\\
+Per la generazione pseudo-casuale degli input si è utilizzata la struttura, già fornita nel file \textit{generate\_inputs.py}:\\
+\\
+………\\
+......\\
+# Loop for all steps\\
+for i in range(0,NumberOfSteps):\\
+# Loop for all signals\\
+for i in range (0, SignalsNumber):\\
+# Generate integer number\\
+RandomInputInteger = randint(1,2**GenericsAssignedValue[i]-1)\\
+# Convert number to binary\\
+RandomInputBinary = ('{0:0{l}b}'.format((RandomInputInteger),l=GenericsAssignedValue[i]))\\
+# Write file\\
+Filepointer.write(RandomInputBinary + " ")\\
+# Write line termination\\
+Filepointer.write("\\n")\\
+………\\
+……\\
+\\
+La funzione \textit{randint()} permette di generare un intero pseudocasuale entro il range fornito.
+Il metodo \textit{format()} permette di convertire l’intero in binario in base al parallelismo degli ingressi definito nella lista \textit{GenericsAssignedValue}.\\
+\\
+Per quanto riguarda il lancio della simulazione Modelsim, il codice è già stato fornito e si compone di istruzioni bash richiamate tramite il modulo \textit{os} contenente la funzione \textit{system()}.
+\\
+Lo script si occupa di eliminare eventuali working directories ed input file, impostare le environment variables, e far partire la compilazione e simulazione di Modelsim.
+Il testo è disponibile in appendice alla sezione “run modelsim simulation” del file \textit{testing\_script.py}.
+\\
+Per il calcolo delle uscite con python si è utilizzato il seguente algoritmo:\\
+……...\\
+……...\\
+#calculate the output values from the inputs generated\\
+#repeat for each set of in's\\
+for i in range(0, NumberOfSteps):\\  
+#sum in's\\
+Sum=Inputs[i][0]+Inputs[i][1]+Inputs[i][2]\\
+#conversion of the sum in binary\\
+SumBin=('{0:b}'.format(Sum))\\
+#conversion in string \\
+SumStr=str(SumBin)\\
+#overflow bit preset to '0'\\
+Py_results[i][1]=0 \\
+if len(SumStr)!=32:\\
+#management of the overflow\\
+if len(SumStr)>32:    \\
+SumStr=SumStr[1:]\\
+#overflow bit to '1'\\
+Py\_results[i][1]=1\\
+else:\\
+#adding zeros to get the value on 32 bit\\
+while len(SumStr)<32:  \\
+SumStr='0'+SumStr\\
+#re-conversion to successive comparison of the values\\
+Py\_results[i][0]=int(SumStr, 2)\\  
+………..\\
+………..\\
+\\
+Al momento della generazione, gli ingressi sono stati salvati nella lista \textit{Inputs[][]}, formata da tutti gli ingressi  generati, raggruppati a gruppi di 3, ogni gruppo corrisponde a uno step di ingressi da calcolare. Si sono sommati gli ingressi e si è poi convertita la somma in binario grazie al metodo \textit{format()}. Per gestire gli overflow e mantenere il parallelismo della somma a 32 bit, si è preferito convertire la somma binaria in stringa in modo da gestire più comodamente il dato nel caso in cui il parallelismo sia variato.
+I risultati corretti sono stati salvati nella lista \textit{Py\_results[][]} contenente i gruppi di risultati in intero a coppie di 2 (somma e carry-out), per ogni step di ingressi. I risultati inoltre sono stati salvati nel file \textit{python\_results.txt}\\
+\\
+
+
