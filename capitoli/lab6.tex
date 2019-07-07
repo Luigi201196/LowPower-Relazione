@@ -72,6 +72,10 @@ La FSM da testare è, un contatore up/down a 3 bit, la FSM è la seguente:
 \\
 \\
 \\
+\\
+\\
+\\
+\\
 Prendendo spunto dal punto precedente il test è stato realizzato mediante i seguenti file:\\
 counter\_ref.vhd, è il file del contatore dal corretto funzionamento, utilizzato per calcolare le uscite corrette da confrontare successivamente.
 \\
@@ -84,18 +88,18 @@ Di seguito un estratto del file disponibile in appendice.
 .......\\
 echo "testing v1..."\\
 \\
-vcom -reportprogress 300 -work work\\ /home/lp19.12/repository/lab6/ese6/3/counter_tb.vhd\\ /home/lp19.12/repository/lab6/ese6/3/vREF/counter_ref.vhd\\ /home/lp19.12/repository/lab6/ese6/3/v1/counter.vhd\\
+vcom -reportprogress 300 -work work\\ /home/lp19.12/repository/lab6/ese6/3/counter\_tb.vhd\\ /home/lp19.12/repository/lab6/ese6/3/vREF/counter\_ref.vhd\\ /home/lp19.12/repository/lab6/ese6/3/v1/counter.vhd\\
 \\
-vsim -t ns -novopt work.counter_tb\\
+vsim -t ns -novopt work.counter\_tb\\
 \\
 set NumericStdNoWarnings 1\\
 run 0 ps\\
 set NumericStdNoWarnings 0\\
 \\
-add wave -radix binary   -color BLUE\\      sim:/counter_tb/DATA_OUT_tb\\
-add wave -radix binary   -color GREEN\\    sim:/counter_tb/DATA_OUT_ref\\
-add wave -radix binary   -color BLUE\\     sim:/counter_tb/UP_DN_tb\\
-add wave -radix binary   -color GREEN \\   sim:/counter_tb/UP_DN_ref\\
+add wave -radix binary   -color BLUE\\      sim:/counter\_tb/DATA\_OUT\_tb\\
+add wave -radix binary   -color GREEN\\    sim:/counter\_tb/DATA\_OUT\_ref\\
+add wave -radix binary   -color BLUE\\     sim:/counter\_tb/UP\_DN\_tb\\
+add wave -radix binary   -color GREEN \\   sim:/counter\_tb/UP\_DN\_ref\\
 run 30000000 ns\\
 \\
 echo "end v1"\\
