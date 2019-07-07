@@ -215,7 +215,7 @@ Py\_results[i][0]=int(SumStr, 2)\\
 Al momento della generazione, gli ingressi sono stati salvati nella lista \textit{Inputs[][]}, formata da tutti gli ingressi  generati, raggruppati a gruppi di 3, ogni gruppo corrisponde a uno step di ingressi da calcolare. Si sono sommati gli ingressi e si è poi convertita la somma in binario grazie al metodo \textit{format()}. Per gestire gli overflow e mantenere il parallelismo della somma a 32 bit, si è preferito convertire la somma binaria in stringa in modo da gestire più comodamente il dato nel caso in cui il parallelismo sia variato.
 I risultati corretti sono stati salvati nella lista \textit{Py\_results[][]} contenente i gruppi di risultati in intero a coppie di 2 (somma e carry-out), per ogni step di ingressi. I risultati inoltre sono stati salvati nel file \textit{python\_results.txt}\\
 \\
-Per il prelievo dei risultati della simulazione i dati sono stati prelevati dal file output_data.txt nel quale modelsim ha salvato i valori di uscita. Si è utilizzato lo script già fornito leggendo ogni riga contenente le uscite di ogni step di calcolo tramite un ciclo for.\\ 
+Per il prelievo dei risultati della simulazione i dati sono stati prelevati dal file \textit{output\_data.txt} nel quale modelsim ha salvato i valori di uscita. Si è utilizzato lo script già fornito leggendo ogni riga contenente le uscite di ogni step di calcolo tramite un ciclo for.\\ 
 ……\\
 …..\\
 \# Open file and acquire data\\
