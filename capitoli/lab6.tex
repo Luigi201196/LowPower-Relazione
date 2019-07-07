@@ -136,16 +136,16 @@ Per la generazione pseudo-casuale degli input si è utilizzata la struttura, gi�
 ......\\
 \# Loop for all steps\\
 for i in range(0,NumberOfSteps):\\
-\hspace{1cm}\# Loop for all signals\\
-\hspace{1cm}for i in range (0, SignalsNumber):\\
-\hspace{2cm}\# Generate integer number\\
-\hspace{2cm}RandomInputInteger = randint(1,2**GenericsAssignedValue[i]-1)\\
-\hspace{2cm}\# Convert number to binary\\
-\hspace{2cm}RandomInputBinary = ('{0:0{l}b}'.format((RandomInputInteger),l=GenericsAssignedValue[i]))\\
-\hspace{2cm}\# Write file\\
-\hspace{2cm}Filepointer.write(RandomInputBinary + " ")\\
-\hspace{2cm}\# Write line termination\\
-\hspace{2cm}Filepointer.write("\\n")\\
+\hspace*{1cm}\# Loop for all signals\\
+\hspace*{1cm}for i in range (0, SignalsNumber):\\
+\hspace*{2cm}\# Generate integer number\\
+\hspace*{2cm}RandomInputInteger = randint(1,2**GenericsAssignedValue[i]-1)\\
+\hspace*{2cm}\# Convert number to binary\\
+\hspace*{2cm}RandomInputBinary = ('{0:0\{l\}b}'.format((RandomInputInteger),l=GenericsAssignedValue[i]))\\
+\hspace*{2cm}\# Write file\\
+\hspace*{2cm}Filepointer.write(RandomInputBinary + " ")\\
+\hspace*{2cm}\# Write line termination\\
+\hspace*{2cm}Filepointer.write("\\n")\\
 ……\\
 ……}\\
 \\
