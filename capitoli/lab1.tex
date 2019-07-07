@@ -246,14 +246,14 @@ Si ritorna ora al circuito complessivo, salendo di livello logico e si analizzan
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/mux}
-	\caption{\textit{Power report}}
+	\caption{\textit{Mux}}
 	\label{mux}
 \end{figure}
 \noindent Durante questa sezione, viene chiesto di analizzare il comportamento di un Multiplexer, riportato in Figura \ref{mux}, dove si assume che i ritardi delle varie porte elementari siano nulli, ad eccezione dell'Inverter che presenta un ritardo pari a 0,1 ns. Inizialmente si simula il circuito utilizzando \textit{ModelSim} e si riportano le one in Figura \ref{model_mux}.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.25]{immagini/model_mux}
-	\caption{\textit{Mux}}
+	\caption{\textit{Mux's waves}}
 	\label{model_mux}
 \end{figure}
 Si può notare benissimo come l'uscita Y abbia un glitch tra 1000 ps e 1100 ps, in quanto effettua una transizione 0-1 non voluta. Il tutto è causato dal ritardo introdotto dall'Inverter, che si può notare dal segnale 'n', che commuta al suo valore corretto dopo un ritardo di 0,1 ns, rispetto all'istante in cui cambiano tutti i restanti gate del circuito, ossia 1000 ps. Si verifica dunque un intervallo di tempo, ossia quello compreso tra 1000 ps e 1100 ps in cui la porta OR ha entrambi gli ingressi bassi e dunque produce un'uscita Y errata. \\
@@ -267,7 +267,7 @@ considerando $C_{L}$ come il carico che viene pilotato e $V_{DD}$ la tensione di
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/counter}
-	\caption{\textit{Mux's waves}}
+	\caption{\textit{Counter 1 bit}}
 	\label{counter}
 \end{figure}
 \noindent Si analizza in questa sezione un \textit{Syncronous Counter} ad 1 bit, realizzato con una Half Adder e un D-FlipFlop, riportato in Figura \ref{counter}. Il primo ingresso \textit{A0} dell'Half Adder è l'uscita del D-FlipFlop, mentre il secondo ingresso \textit{B0} viene collegato fisso ad 1. Si riporta il timing diagram del circuito in Figura \ref{timing_counter1}.
@@ -276,7 +276,7 @@ Si può dedurre dal timing, che il segnale \textit{S} ha una transizione per ogn
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/counter2}
-	\caption{\textit{Counter}}
+	\caption{\textit{Counter 8 bit}}
 	\label{counter2}
 \end{figure}
 In seguito viene chiesto di analizzare la struttura presente in Figura \ref{counter2}. Questo circuito permette di ottenere un contatore sincrono ad 8 bit, utilizzando in cascata 8 celle del circuito precedente. Anche in questo si riporta, in Figura \ref{timing_counter2}, il timing diagram del funzionamento del circuito.
