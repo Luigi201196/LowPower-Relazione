@@ -244,10 +244,10 @@ Si può notare come la tecnica che risulta meno performante è la \textbf{Transi
 \section{Synthesis}
 Una volta aver stimato il consumo di potenza per la tecnica di bus non-encoded si può adesso calcolare i consumi per le quattro diverse tecniche di bus encoding, in presenza di due ingressi con diversa probabilità statistica: Address e Data.  
 Per rendere più comoda e veloce la procedura sono stati utilizzati degli script, organizzati in modo da:
-sintetizzare le architetture e salvarne il design (i file SDF e la netlist) tramite Synopsys;
-leggere i file SDF e simularli salvando i risultati in file VCD, poi convertiti in file SAIF
-per la backannotation, tramite il programma Modelsim.
-calcolare a partire dai file SAIF la sintesi del design e il consumo di potenza, tramite Synopsys;
+\begin{itemize}
+\item{sintetizzare le architetture e salvarne il design (i file SDF e la netlist) tramite Synopsys}
+\item{leggere i file SDF e simularli salvando i risultati in file VCD, poi convertiti in file SAIF per la backannotation, tramite il programma Modelsim}
+\item{calcolare a partire dai file SAIF la sintesi del design e il consumo di potenza, tramite Synopsys}
 Inoltre sono presenti dei file di configurazione contenenti variabili e opzioni per impostare lo script in base al tipo di simulazione richiesta.
 Per entrambi i bus sono stati calcolati i consumi in  base a diversi carichi capacitivi alle linee di bus.
 \\
