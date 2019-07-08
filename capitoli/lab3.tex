@@ -235,7 +235,6 @@ Come ultima analisi si esegue il \textit{report cell} di quest'ultimo caso, ripo
 	\caption{\textit{Power cell con clock gating}}
 	\label{elsif10}
 \end{figure}
-\newpage
 Per sintetizzare si confronta la potenza dinamica totale prima e dopo l'introduzione del Clock Gating nel registro di uscita e si riportano i valori nella Tabella \ref{Tab3_1}. Si può ben notare come la potenza nel secondo caso sia leggermente aumentata in quanto si introduce una logica di controllo più complessa che impatta sulla switching activity della macchina.
 \begin{table}[!h]\footnotesize
 	\centering
@@ -250,6 +249,7 @@ Per sintetizzare si confronta la potenza dinamica totale prima e dopo l'introduz
 	\caption{\textit{Potenza dinamica con e senza clock gating}}
 	\label{Tab3_1}
 \end{table}
+\newpage
 \section{Pipelining and parallelizing}
 Nella terza sezione dell'esercitazione si vede come si riesce a ridurre la potenza utilizzando la parallelizzazione e/o il pipelining. Si considera nuovamente il datapath del punto precedente, in Figura \ref{circuito_3_2}, di cui le caratteristiche di ritardo, potenza e occupazione di area sono riportate nella Tabella \ref{Tab33_1} nel caso in cui $V_{DD}=1 V$ e $f_{CLK}=5 MHz$.
 \begin{table}[!h]\footnotesize
