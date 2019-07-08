@@ -140,13 +140,7 @@ Rispetto al caso senza Clock Gating ho ora un'area pari a $238.0700005 \mu m^{2}
 \end{figure}
 
 \subsection{Some more clock gating?}
-Il codice VHDL fornito è scritto in modo tale che il sintetizzatore non applichi la tecnica del Clock Gating sul registro di uscita: la motivazione risiede nell'utilizzo del costrutto \textit{if-else}, in quando nel codice iniziale non veniva dichiarati tutti i possibili casi tramite \textit{elsif}. Modificando opportunamente il codice VHDL,  riportato per interezza in Figura \ref{3_vhdl}, e inserendo le linee di codice riportate in Figura \ref{3_vhdl_2}, il sintetizzatore inserisce un blocco di clock gating sul regitro di uscita perchè interpreta che potrebbero esserci condizioni in cui non si andrà a scrivere sul registro di uscita.
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=1]{immagini/3_vhdl}
-	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
-	\label{3_vhdl}
-\end{figure}
+Il codice VHDL fornito è scritto in modo tale che il sintetizzatore non applichi la tecnica del Clock Gating sul registro di uscita: la motivazione risiede nell'utilizzo del costrutto \textit{if-else}, in quando nel codice iniziale non veniva dichiarati tutti i possibili casi tramite \textit{elsif}. Modificando opportunamente il codice VHDL,  riportato per interezza in appendice Figura \ref{3_vhdl}, e inserendo le linee di codice riportate in Figura \ref{3_vhdl_2}, il sintetizzatore inserisce un blocco di clock gating sul regitro di uscita perchè interpreta che potrebbero esserci condizioni in cui non si andrà a scrivere sul registro di uscita.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=1.5]{immagini/3_vhdl_2}
