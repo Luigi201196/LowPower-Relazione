@@ -195,7 +195,7 @@ Inoltre si è  analizzata l’attività delle singole celle in modo da studiare 
 	\caption{\textit{Attività delle singole celle}}
 \label{cellpot}
 \end{table} \\
-E’ utile inoltre valutare il numero di commutazioni delle singole uscite valutando sia la capacità del carico che il tasso di commutazioni. In accordo con i risultati precedenti si denota un’attività più intensa per i registri per hanno un carico capacitivo molto più alto delle altre uscite anche se il toggle rate è praticamente equivalente per tutte le uscite e la probabilità statistica è comunque minore. 
+E’ utile inoltre valutare il numero di commutazioni delle singole uscite valutando sia la capacità del carico che il tasso di commutazioni fig. \ref{attload}. In accordo con i risultati precedenti si denota un’attività più intensa per i registri per hanno un carico capacitivo molto più alto delle altre uscite anche se il toggle rate è praticamente equivalente per tutte le uscite e la probabilità statistica è comunque minore. 
 \\
 \begin{table}[!h]\footnotesize
 	\centering
@@ -212,8 +212,8 @@ E’ utile inoltre valutare il numero di commutazioni delle singole uscite valut
 		fsm & 1.012 & 2.911 & 425.171 & 4.349 & 9.5\\
 		\hline
 	\end{tabular}
-	\caption{\textit{Numero componenti per tipologia}}
-\label{potcell}
+	\caption{\textit{Consumi dei vari blocchi}}
+\label{potblocchi}
 \end{table} \\
 \\
 \\
@@ -256,6 +256,8 @@ Inoltre si è  analizzata l’attività delle singole celle in modo da studiare 
 		tot (13 nets) &  &  &  & 1.0125 uW\\
 		\hline 
 	\end{tabular}
+	\caption{\textit{Carico, toggle rate e consumo dei vari nodi}}
+\label{attload}
 \end{table} \\
 Si è adesso focalizzata l’attenzione sui consumi della Macchina a Stati. La FSM è caratterizzata da una leakage current di 418 nW a fronte dei 434 nW totali e anche per gli altri contributi di consumo di potenza dinamica i dati tendono ad evidenziare il ruolo preponderante del componente sul totale consumo del circuito. 
 \\
