@@ -636,7 +636,7 @@ In questa sezione si è andato a studiare l'andamento della potenza e della tens
 		180°C&36.351 nW\\
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Potenza a diversa temperatura}}
 	\label{Tab5_23}
 \end{table}
 \\
@@ -644,7 +644,7 @@ Infine, tramite il programma \textbf{gnuplot} ed uno script appositamente realiz
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.55]{immagini/TEMP}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Grafico potenza in funzione della temperatura}}
 	\label{TEMP}
 \end{figure}
 \\
@@ -672,12 +672,9 @@ Allo stesso modo si è andato a simulare il comportamento della Tensione di Sogl
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.55]{immagini/TEMPVT}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Grafico tensione di soglia in funzione della temperatura}}
 	\label{TEMPVT}
 \end{figure}
-
-SERVONO DEI COMMENTI??????? PORCA TROIA I COMMENTI
-
 \section{Analysis of a memory power components}
 Lo scopo di quest’ultimo punto dell’esercitazione è  analizzare i datasheet delle varie versioni di memoria fornite e scegliere la migliore struttura di memoria che ottimizzi i consumi di potenza. Infatti dal punto di vista dei consumi è molto più conveniente dividere la struttura della memoria in banchi in modo da ridurre il numero di celle coinvolte nell’operazione di accesso alla memoria. 
 La memoria da progettare deve avere la stessa capienza di una SRAM\_8192\_16\_16, con varie possibilità di scelta del parallelismo e delle dimensioni.
