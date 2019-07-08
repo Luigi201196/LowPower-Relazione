@@ -40,16 +40,16 @@ Nella seguente sezione viene chiesto di analizzare il funzionamento e in seguito
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/circuito_3_2}
-	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\caption{\textit{Schema circuito}}
 	\label{circuito_3_2}
 \end{figure}
 \\
-Si prova, esclusivamente a livello cartaceo ad applicare la tecnica del Clock Gating al circuito in figura, ottenendo il circuito in Figura \ref{circuito_3_3}.\\
+Si prova, esclusivamente a livello cartaceo ad applicare la tecnica del Clock Gating al circuito in figura, ottenendo il circuito in Figura \ref{clkgating}.\\
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.8]{immagini/circuito_3_2}
-	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
-	\label{circuito_3_3}
+	\includegraphics[scale=0.8]{immagini/clkgating}
+	\caption{\textit{Schema circuito con clock gating}}
+	\label{clkgating}
 \end{figure}
 \\
 Si è proceduto dunque alla sintesi del circuito, sempre tramite \textit{Synopsis}, creando un clock con periodo pari a 5 s. Tramite il comando \textit{report\_power -include\_input\_nets} si è potuto ricavare un resoconto dei contributi di potenza dissipata, che vengono riportati in Figura \ref{3_1}. \\
