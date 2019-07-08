@@ -263,10 +263,8 @@ Dopodiché si è provato a variare la frequenza di lavoro del circuito, provando
 	\caption{\textit{Tabella consumi}}
 \label{conslack}
 \end{table} \\
- Dalla fig. \ref{conslack} si nota come sia aumentata la Total Dynamic Power, questo poiché aumentando la frequenza operativa aumentano anche il numero di commutazioni interne e quindi viene dissipata maggiore potenza dinamica. Resta invece invariata la corrente di leakage che infatti dipende solo dalla tecnologia usata.
-
-Infine è stato posto al sintetizzatore un ulteriore vincolo sulla massima potenza dinamica dissipabile a 200 uW, considerando che nell’ultimo report la potenza totale dissipata ammonta a 200.2958 uW.
-\\
+ Dalla fig. \ref{conslack} si nota come sia aumentata la Total Dynamic Power, questo poiché aumentando la frequenza operativa aumentano anche il numero di commutazioni interne e quindi viene dissipata maggiore potenza dinamica. Resta invece invariata la corrente di leakage che infatti dipende solo dalla tecnologia usata.\\
+ Infine è stato posto al sintetizzatore un ulteriore vincolo sulla massima potenza dinamica dissipabile a 200 uW, considerando che nell’ultimo report la potenza totale dissipata ammonta a 200.2958 uW fig.  \ref{potadesso}\\
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -281,7 +279,10 @@ Infine è stato posto al sintetizzatore un ulteriore vincolo sulla massima poten
 		cell leakage power & 5.5832 uW\\
 		\hline
 	\end{tabular}
-\end{table} \\
+	\caption{\textit{Numero componenti per tipologia}}
+\label{potadesso}
+\end{table}
+\newpage
 Adesso la potenza dinamica totale dissipata è di 199.3944 uW e rispetta il vincolo.
 Inoltre, si nota che stavolta il parametro della leakage power è leggermente variato, questo poichè stavolta per rispettare il vincolo sul consumo di potenza è stata variata la topologia del circuito usando differenti porte logiche.
 \\
