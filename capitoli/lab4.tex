@@ -192,7 +192,7 @@ La codifica del Bus-invert consiste nel verificare che il dato successivo compor
 		countbusgray(0) & 0.500\\
 		\hline
 	\end{tabular}
-	\caption{\textit{Switching Activity, tecnica Transition Based, caso 'address'}}
+	\caption{\textit{Switching Activity, tecnica Codifica di Gray, caso 'address'}}
 	\label{Tab8}
 \end{table}
 \newpage
@@ -221,9 +221,8 @@ L'ultima tecnica richiesta è di implementare un codice per realizzare la tecnic
 	\label{formula_t0}
 \end{figure}
 \\
-\noindent La codifica T0 consiste nell'inserire un bit in più, denominato \textit{INC}. Ogni volta che si va in sequenza, si forza questo segnale a '0' in modo tale che il ricevitore capisca di dover andare semplicemente in sequenza e si preoccupi lui di incrementare il dato. In caso di brach, salito o subroutine, forzo il segnale ad '1' e trasmetto sul bus il nuovo dato. Si riporta in seguito il \textit{Codice VHDL} dell'implementazione della codifica.
-%%MANCA CODICE VHDL
-%MANCA SIMULAZIONE ADDRESS
+\noindent La codifica T0 consiste nell'inserire un bit in più, denominato \textit{INC}. Ogni volta che si va in sequenza, si forza questo segnale a '0' in modo tale che il ricevitore capisca di dover andare semplicemente in sequenza e si preoccupi lui di incrementare il dato. In caso di brach, salito o subroutine, forzo il segnale ad '1' e trasmetto sul bus il nuovo dato. Si riporta in appendice fig. \ref{t0} il \textit{Codice VHDL} dell'implementazione della codifica.
+
 
 \subsection{Confronto tra le tecniche}
 Confrontando i risultati tra le varie tecniche, si può notare come l'unica tecnica che porta ad una riduzione dei consumi nel caso dei dati, risulta essere la \textbf{Bus-Invert} con la quale si ottiene un risparmio sulle commutazioni pari a circa il 20\%. \\ %DATO DA VERIFICARE
