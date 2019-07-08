@@ -4,7 +4,7 @@ Durante la prima parte dell'esercitazione di laboratorio, viene richiesto di imp
 \begin{center}
 	$s=a+b+c+d+e+f $
 \end{center}
-utilizzando un unico sommatore, due multiplexer e un registro. Viene richiesto di valutare e minimizzare il consumo di potenza, andando a modificare la connessione degli input A-H, considerando esclusivamente l'attività della FSM e i bit di selezione del MUX S0-S3.\\
+utilizzando un unico sommatore, due multiplexer e un registro. Viene richiesto di valutare e minimizzare il consumo di potenza, andando a modificare la connessione degli input A-H considerando esclusivamente l'attività della FSM e i bit di selezione del MUX S0-S3.\\
 Il circuito completo è riportato in Figura \ref{circuito}, mentre la FSM è presente in appendice, Figura \ref{fsm}.
 \begin{figure}[!htb]
 	\centering
@@ -12,7 +12,7 @@ Il circuito completo è riportato in Figura \ref{circuito}, mentre la FSM è pre
 	\caption{\textit{Datapath}}
 	\label{circuito}
 \end{figure} 
-Dopo varie ottimizzazioni, si è arrivati ad avere un'attività totale pari a 8 per il multiplexer e 6 per la State transition della macchina a stati, andando a considerare che la macchina a stati e il multiplexer ricomincino le operazioni una volta terminate. Nella tabella \ref{tab2} viene riportata la configurazione degli stati e dei bit del multiplexer scelta:
+Dopo varie ottimizzazioni, si è arrivati ad avere un'attività totale pari a 8 per il multiplexer e a 6 per la State transition della macchina a stati, andando a considerare che la macchina a stati e il multiplexer ricomincino le operazioni una volta terminate. Nella tabella \ref{tab2} viene riportata la configurazione degli stati e dei bit del multiplexer scelta:
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -58,7 +58,7 @@ Di seguito è riportato lo schema generato da synopsys:
 \\
 \\
 \\
-Dal report sull area si sono ottenute informazioni riguardanti la quantità di componenti, le connessioni, l’area relativa occupata dalla logica combinatoria, circa il doppio rispetto a quella non combinatoria e quindi dell’area totale.
+Dal report sull'area si sono ottenute informazioni riguardanti la quantità di componenti e connessioni fig. \ref{numcomp}, l’area relativa occupata dalla logica combinatoria fig. \ref{areatype}, circa il doppio rispetto a quella non combinatoria e quindi dell’area totale.
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -74,6 +74,8 @@ Dal report sull area si sono ottenute informazioni riguardanti la quantità di c
 		references & 2\\
 		\hline
 	\end{tabular}
+	\caption{\textit{Numero componenti per tipologia}}
+\label{numcomp}
 \end{table} \\
 \begin{table}[!h]\footnotesize
 	\centering
@@ -88,8 +90,10 @@ Dal report sull area si sono ottenute informazioni riguardanti la quantità di c
 		total cell & 296.324006\\
 		\hline
 	\end{tabular}
+	\caption{\textit{Area occupata dalla logica}}
+\label{areatype}
 \end{table} \\
-Successivamente, dopo aver verificato la corretta codifica degli stati della FSM  si è analizzato il timing del circuito, dal quale si sono ottenute importanti informazioni riguardo ai ritardi delle varie porte e allo Slack time nel caso del percorso peggiore che è di 8.03 ns, parametro che consente di ottimizzare frequenza di funzionamento del circuito, visto che la condizione necessaria è che lo slack time sia positivo. Inoltre si è eseguito il timing per  i peggiori 10 percorsi e si sono ricavati i valori di slack.
+Successivamente, dopo aver verificato la corretta codifica degli stati della FSM  si è analizzato il timing del circuito, dal quale si sono ottenute importanti informazioni riguardo ai ritardi delle varie porte e allo Slack time nel caso del percorso peggiore che è di 8.03 ns, parametro che consente di ottimizzare frequenza di funzionamento del circuito, visto che la condizione necessaria è che lo slack time sia positivo. Inoltre si è eseguito il timing per  i peggiori 10 percorsi e si sono ricavati i valori di slack fig. \ref{slack1}.
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -117,18 +121,20 @@ Successivamente, dopo aver verificato la corretta codifica degli stati della FSM
 		10 & 8.05\\
 		\hline
 	\end{tabular}
+	\caption{\textit{I dieci percorsi con timing peggiore}}
+\label{slack1}
 \end{table} \\
 \\
 Non si evidenziano rilevanti differenze tra i diversi slack, ciò è dovuto alla simmetria dei percorsi critici che presentano la stessa struttura. 
-Ecco come sono distribuiti i peggiori slack:
+Ecco come sono distribuiti i peggiori slack fig. \ref{slackgrafico}:
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/slacks}
 	\caption{\textit{Grafico distribuzione slacks}}
-	\label{datapath}
+	\label{slackgrafico}
 \end{figure} \\
 Dunque si è analizzata la potenza dissipata sia dall’intera logica che da ogni singola cella.
-Il report sulla potenza distingue la potenza dissipata dinamicamente, staticamente e quella dovuta alle correnti di leakage, fornendo la percentuale rispetto alla potenza dissipata totale e analizzando il circuito a livello gerarchico. In questo modo è possibile capire quanto influiscono i diversi contributi di potenza dissipata e se necessario intervenire opportunamente per consumare meno. 
+Il report sulla potenza distingue la potenza dissipata dinamicamente, staticamente e quella dovuta alle correnti di leakage, fornendo la percentuale rispetto alla potenza dissipata totale e analizzando il circuito a livello gerarchico fig. \ref{pot}. In questo modo è possibile capire quanto influiscono i diversi contributi di potenza dissipata e se necessario intervenire opportunamente per consumare meno. 
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|}
@@ -144,12 +150,14 @@ Il report sulla potenza distingue la potenza dissipata dinamicamente, staticamen
 		fsm & 1.012 & 2.911 & 425.171 & 4.349 & 9.5\\
 		\hline
 	\end{tabular}
+	\caption{\textit{Consumi dei vari blocchi}}
+\label{pot}
 \end{table} \\
 \\
 \\
 \\
 \\
-Inoltre si è  analizzata l’attività delle singole celle in modo da studiare i consumi di ogni singola cella. Da quest’ultimo report si è ricavato che le celle corrispondenti ai registri hanno dei consumi più elevati di potenza statica e consumano più del doppio della corrente di leakage rispetto alle altre celle del circuito.
+Inoltre si è  analizzata l’attività delle singole celle in modo da studiare i consumi di ogni singola cella fig. \ref{cellpot}. Da quest’ultimo report si è ricavato che le celle corrispondenti ai registri hanno dei consumi più elevati di potenza statica e consumano più del doppio della corrente di leakage rispetto alle altre celle del circuito.
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|c|c|}
@@ -184,6 +192,8 @@ Inoltre si è  analizzata l’attività delle singole celle in modo da studiare 
 		tot (12 cells) & 2.894 uW & 984.349 nW & 3.878 uW (75\%) & 434.107 nW\\
 		\hline 
 	\end{tabular}
+	\caption{\textit{Attività delle singole celle}}
+\label{cellpot}
 \end{table} \\
 E’ utile inoltre valutare il numero di commutazioni delle singole uscite valutando sia la capacità del carico che il tasso di commutazioni. In accordo con i risultati precedenti si denota un’attività più intensa per i registri per hanno un carico capacitivo molto più alto delle altre uscite anche se il toggle rate è praticamente equivalente per tutte le uscite e la probabilità statistica è comunque minore. 
 \\
@@ -202,6 +212,8 @@ E’ utile inoltre valutare il numero di commutazioni delle singole uscite valut
 		fsm & 1.012 & 2.911 & 425.171 & 4.349 & 9.5\\
 		\hline
 	\end{tabular}
+	\caption{\textit{Numero componenti per tipologia}}
+\label{potcell}
 \end{table} \\
 \\
 \\
