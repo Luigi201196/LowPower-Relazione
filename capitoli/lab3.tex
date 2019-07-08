@@ -178,17 +178,17 @@ Le prima analisi viene svolta senza la tecnica del Clock Gating e vengono lascia
 \end{figure}
 \\
 Si può ben notare come rispetto al caso precedente, la potenza sia leggermente aumentata in quanto, avendo aggiunto un blocco di Clock Gating prima del registro di uscita, sono aumentati i gate totali che quindi portano ad una maggiore dissipazione di potenza. \\
-Viene ora modificato il Toggle Rate del clock, del reset e degli ingressi, ottenendo i report in Figura \ref{elsif3} e \ref{elsif4}. L'aggiunta del blocco in uscita porta ad un primo risparmio di potenza pari a XX\% rispetto al caso analizzato al punto precedente. \\
+Viene ora modificato il Toggle Rate del clock, del reset e degli ingressi, ottenendo i report in Figura \ref{elsif3} e \ref{elsif4}. Come ci si aspettava l'aggiunta del blocco in uscita ha portato a una diminuzione della potenza. \\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.65]{immagini/elsif1}
-	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\caption{\textit{Power report circuito senza clock gating con toggle rates modificati}}
 	\label{elsif3}
 \end{figure}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.65]{immagini/elsif2}
-	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\caption{\textit{Power report input nets senza clock gating}}
 	\label{elsif4}
 \end{figure}
 \\
