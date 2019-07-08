@@ -222,7 +222,7 @@ L'ultima tecnica richiesta è di implementare un codice per realizzare la tecnic
 \end{figure}
 \\
 \noindent La codifica T0 consiste nell'inserire un bit in più, denominato \textit{INC}. Ogni volta che si va in sequenza, si forza questo segnale a '0' in modo tale che il ricevitore capisca di dover andare semplicemente in sequenza e si preoccupi lui di incrementare il dato. In caso di brach, salito o subroutine, forzo il segnale ad '1' e trasmetto sul bus il nuovo dato. Si riporta in appendice fig. \ref{t0} il \textit{Codice VHDL} dell'implementazione della codifica.
-Sono state effettuate con modelsim le simulazioni di consumo di potenza e riportate di seguito rispettivamente per address fig   e data fig. . 
+Sono state effettuate con modelsim le simulazioni di consumo di potenza e riportate di seguito rispettivamente per address fig. \ref{T0_address_power}   e data fig. \ref{T0_data_power} . 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/T0_address_power}
