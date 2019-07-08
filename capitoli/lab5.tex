@@ -107,7 +107,7 @@ A tale scopo si analizzata, sempre tramite l'ambiente di simulazione \textit{ELD
 		
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati tempi NANd simulazione ELDO}}
 	\label{Tab5_4}
 \end{table}
 \begin{table}[!h]\footnotesize
@@ -129,7 +129,7 @@ A tale scopo si analizzata, sempre tramite l'ambiente di simulazione \textit{ELD
 		$I_{Load, r}^{max}$ &-5.6590 nA &-5.690 nA &-5.6590 nA &-5.6734 nA &-12.547 nA \\
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati simulazione ELDO delle correnti}}
 	\label{Tab5_5}
 \end{table}
 \\
@@ -137,16 +137,16 @@ Analogamente al punto precedente, si è sfruttato \textit{ezwave} per andare a p
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.09]{immagini/onde_5_2current}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{confronto delle correnti}}
 	\label{onde_5_2current}
 \end{figure}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.09]{immagini/onde_5_2voltage}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Confronto delle tensioni}}
 	\label{onde_5_2voltage}
 \end{figure}
-MANCANO I COMMENTI RELATIVI A QUESTI RISULTATI\\
+Si nota che all’aumentare del carico aumentano anche le transizioni in salita e discesa del segnale di uscita. Inoltre, si nota che avendo le variazioni del segnale di uscita più lente di quelle del segnale di ingresso, l’intervallo di tempo in cui le reti di pull-up e pull-down sono entrambe attive è minore: di conseguenza si avranno minori correnti di cortocircuito che causerebbero un significativo consumo di potenza. Dalla teoria si sa infatti che per avere consumi causati dalle correnti di cortocircuito bassi, gli slope del segnale di ingresso e di uscita devono essere quanto più simili possibili.
 In modo analogo al caso precedente, si sono andate a calcolare le varie Tensioni di Soglia dei MOS. I risultati sono riportati nella Tabella \ref{Tab5_6}. \\
 \begin{table}[!h]\footnotesize
 	\centering
@@ -192,14 +192,14 @@ Tutte le simulazioni vengono ora fatte utilizzando due carichi capacitivi divers
 		
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati tempi simulazione ELDO, NAND X1}}
 	\label{Tab5_7}
 \end{table}
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
-\textbf{NAND X8} & &\\
+\textbf{NAND X1} & &\\
 \textbf{$C_{Load}$} & \textbf{0.06 fF} & \textbf{60 fF}\\
 \hline
 		$I_{GND, f}^{max}$ &77.172 $\mu$A &245.47 $\mu$A\\
@@ -215,7 +215,7 @@ Tutte le simulazioni vengono ora fatte utilizzando due carichi capacitivi divers
 		$I_{Load, r}^{max}$ &-5.6590 nA &-19.994 nA  \\
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati simulazione ELDO delle correnti, NAND X1}}
 	\label{Tab5_8}
 \end{table}
 \begin{table}[!h]\footnotesize
@@ -235,7 +235,7 @@ Tutte le simulazioni vengono ora fatte utilizzando due carichi capacitivi divers
 		
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati tempi simulazione ELDO, NAND X8}}
 	\label{Tab5_9}
 \end{table}
 \begin{table}[!h]\footnotesize
@@ -258,7 +258,7 @@ Tutte le simulazioni vengono ora fatte utilizzando due carichi capacitivi divers
 		$I_{Load, r}^{max}$ &-41.224 nA &-41.503 nA  \\
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati simulazione ELDO delle correnti, NAND X8}}
 	\label{Tab5_10}
 \end{table}
 \newpage
@@ -269,31 +269,31 @@ Andando poi ad analizzare il consumo complessivo di potenza risulta che:
 	$Total Power Dissipation X8 = 49.469 nW $ \\
 	$Total Power Dissipation X1 = 6.7908 nW $
 \end{center}
-Come ci si aspettava, la NAND X1 consuma circa l'86\% in meno della NAND X8. Questo è sicuramente dovuto alle correnti di leakage superiori, che si posso anche apprezzare nella Tabella precedente. (FRASE DA CONTROLLARE).\\
+Come ci si aspettava, la NAND X1 consuma circa l'86\% in meno della NAND X8. Questo è sicuramente dovuto alle correnti di leakage maggiori, che si posso anche apprezzare nella Tabella precedente.\\
 \newpage
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.09]{immagini/onde_5_3_voltage1}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Confronto delle tensioni}}
 	\label{onde_5_3_voltage1}
 \end{figure}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.12]{immagini/onde_5_3_current1}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Confronto delle correnti load}}
 	\label{onde_5_3_current1}
 \end{figure}
 \newpage
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.12]{immagini/onde_5_3_current2}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Confronto delle correnti ground}}
 	\label{onde_5_3_current2}
 \end{figure}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.12]{immagini/onde_5_3_current3}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Confronto delle correnti vdd}}
 	\label{onde_5_3_current3}
 \end{figure}
 \newpage
@@ -377,7 +377,7 @@ I dati raccolti dalla simulazione ELDO sono riportati:
 		
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati tempi simulazione ELDO, NAND LL X1}}
 	\label{Tab5_13}
 \end{table}
 \begin{table}[!h]\footnotesize
@@ -400,7 +400,7 @@ I dati raccolti dalla simulazione ELDO sono riportati:
 		$I_{Load, r}^{max}$ &-2.4740 nA &-3.2278 nA  \\
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati delle correnti simulazione ELDO, NAND LL X1}}
 	\label{Tab5_14}
 \end{table}
 \begin{table}[!h]\footnotesize
@@ -419,7 +419,7 @@ I dati raccolti dalla simulazione ELDO sono riportati:
 		$t_{pdLH}$ &44.524 ps&102.77 ps  \\
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati tempi simulazione ELDO, NAND LL X8}}
 	\label{Tab5_15}
 \end{table}
 \begin{table}[!h]\footnotesize
@@ -442,7 +442,7 @@ I dati raccolti dalla simulazione ELDO sono riportati:
 		$I_{Load, r}^{max}$ &-0.37117 nA &-36.882 nA  \\
 		\hline
 	\end{tabular}
-	\caption{\textit{Tensioni di soglia}}
+	\caption{\textit{Risultati delle correnti simulazione ELDO, NAND LL X1}}
 	\label{Tab5_16}
 \end{table}
 Si può ben notare come, tutti i tempi si siano dilatati per le porte \textit{Low Leakage} rispetto a quelle \textit{High Speed}. Si può analizzare l'incremento percentuale del caso LL rispetto al caso HS nella Tabella \ref{Tab5_17} per il gate X1 e nella Tabella \ref{Tab5_18} per il gate X8.
@@ -526,9 +526,9 @@ Al contrario, si può ben notare come le varie correnti si riducano dal caso LL 
 		
 		$I_{Vdd, f}^{max}$&58.52\% &73.83\% \\
 		
-		$I_{Load, f}^{max}$ &95.19\% &?????\\
+		$I_{Load, f}^{max}$ &95.19\% &-\\
 		
-		$I_{Load, r}^{max}$ &93.44\% &????  \\
+		$I_{Load, r}^{max}$ &93.44\% &-\\
 		\hline
 	\end{tabular}
 	\caption{\textit{Riduzione percentuale delle correnti NAND X8}}
@@ -568,8 +568,8 @@ Al contrario, si può ben notare come le varie correnti si riducano dal caso LL 
 		\textbf{XMN5.M1} &0.41333&0.41333\\
 		\textbf{XMN6.M1} &0.38062&0.38062 \\
 		\textbf{XMN7.M1} &0.41333&0.41333\\
-		\textbf{XMP0.M1}&?????&?????? \\
-		\textbf{XMP1.M1}&?????&??????\\
+		\textbf{XMP0.M1}&-&- \\
+		\textbf{XMP1.M1}&-&-\\
 		\textbf{XMP6.M1}&-0.36764&-0.36764 \\
 		\textbf{XMP7.M1}&-0.36764&-0.36764\\
 		
