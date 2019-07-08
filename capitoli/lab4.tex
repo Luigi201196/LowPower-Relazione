@@ -1,15 +1,15 @@
 \chapter{Laboratorio 4: \\Bus Encoding}
-Durante questa esperienza di laboratorio, viene chiesto di analizzare e di valutare alcune tecniche di bus encoding. Nella prima parte dell'esperienza viene chiesto di valutare le performance delle varie tecniche in termini di transizioni e poi --------- %%da aggiungere appena si fa
+Durante questa esperienza di laboratorio, viene chiesto di analizzare e di valutare alcune tecniche di bus encoding. Nella prima parte dell'esperienza viene chiesto di valutare le performance delle varie tecniche in termini di transizioni e poi sintetizzare il sistema e verificare il consumo di potenza
 \section{Simulation}
-Durante la prima parte dell'esperienza viene chiesto di valutare, in termini di commutazioni, diverse tecniche di bus-encoding. Il tutto viene simulato grazie ad un testbench fornite e tramite i \textit{power report} generati da \textit{ModelSim}.
+Durante la prima parte dell'esperienza viene chiesto di valutare, in termini di commutazioni, diverse tecniche di bus-encoding. Il tutto viene simulato grazie ad un testbench fornito e tramite i \textit{power report} generati da \textit{ModelSim}.
 \subsection{Non-encoded}
 Inizialmente si è simulato il caso in cui utilizzi un bus non codificato, andando a vedere l'evoluzione dei toogle in 10000 colpi di clock in modo tale da avere un punto di riferimento nel confronto con le altre varie tecniche. All'interno del testbench da simulare sono distinti due processi:
 \begin{itemize}
 	\item processo per gli indirizzi
 	\item processo per i dati
 \end{itemize}
-i quali prendono come input i dati contenuti nel file \textit{rndin.txt}, che, come sottolineato nella traccia, contiene delle stringe ad 8 bit con un a probabilità bassa di 1 logico. Questo fa già prevedere che la tecnica \textit{Transition-Based} risulterà la meno performante, in quanto questa tipologia di codifica porta ad riduzione delle commutazioni, solo nel caso in cui le probabilità di '1' logico e di '0' logico siano equiprobabili.
-risulterà meno efficiente. Nelle Figure \ref{report_address_41} e \ref{report_dati_41}, sono riportati i \textit{power report} rispettivamente nel caso di dati e di indirizzi.Infine, nelle Tabelle \ref{Tab1} e \ref{Tab2} si riportano le switching activity rispettivamente nel caso di indirizzi e dati.
+i quali prendono come input i dati contenuti nel file \textit{rndin.txt} che, come sottolineato nella traccia, contiene delle stringe da 8 bit con una bassa probabilità di 1 logico. Questo fa già prevedere che la tecnica \textit{Transition-Based} risulterà più performante, in quanto questa tipologia di codifica porta ad una riduzione delle commutazioni, solo nel caso in cui le probabilità di '1' logico e di '0' logico siano fortemente non equiprobabili.
+Nelle Figure \ref{report_address_41} e \ref{report_dati_41}, sono riportati i \textit{power report} rispettivamente nel caso di dati e di indirizzi. Infine, nelle Tabelle \ref{Tab1} e \ref{Tab2} si riportano le switching activity rispettivamente nel caso di indirizzi e dati.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.65]{immagini/4_1_data_report}
