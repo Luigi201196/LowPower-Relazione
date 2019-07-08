@@ -8,7 +8,7 @@ Inizialmente si è simulato il caso in cui utilizzi un bus non codificato, andan
 	\item processo per gli indirizzi
 	\item processo per i dati
 \end{itemize}
-i quali prendono come input i dati contenuti nel file \textit{rndin.txt} che, come sottolineato nella traccia, contiene delle stringe da 8 bit con una bassa probabilità di 1 logico. Questo fa già prevedere che la tecnica \textit{Transition-Based} risulterà più performante, in quanto questa tipologia di codifica porta ad una riduzione delle commutazioni, solo nel caso in cui le probabilità di '1' logico e di '0' logico siano fortemente non equiprobabili.
+i quali prendono come input i dati contenuti nel file \textit{rndin.txt} che, come sottolineato nella traccia, contiene delle stringe da 8 bit con un'alta probabilità di 1 logico. Questo fa già prevedere che la tecnica \textit{Transition-Based} risulterà meno performante, in quanto questa tipologia di codifica porta ad una riduzione delle commutazioni, solo nel caso in cui le probabilità di '1' logico siano molto più basse rispetto allo '0' logico.
 Nelle Figure \ref{report_address_41} e \ref{report_dati_41}, sono riportati i \textit{power report} rispettivamente nel caso di dati e di indirizzi. Infine, nelle Tabelle \ref{Tab1} e \ref{Tab2} si riportano le switching activities rispettivamente nel caso di indirizzi e dati.
 \begin{figure}[!htb]
 	\centering
@@ -237,9 +237,9 @@ Sono state effettuate con modelsim le simulazioni di consumo di potenza e riport
 \end{figure}
 \newpage
 \subsection{Confronto tra le tecniche}
-Confrontando i risultati tra le varie tecniche, si può notare come l'unica tecnica che porta ad una riduzione dei consumi nel caso dei dati, risulta essere la \textbf{Bus-Invert} con la quale si ottiene un risparmio sulle commutazioni pari a circa il 20\%. \\ %DATO DA VERIFICARE
-Per quanto concerne la tramissione di indirizzi, le codifiche più perfomanti risultano la \textbf{Codifica di Gray}, che porta ad un risparmio sulle commutazioni del 50\%, e la \textbf{Codifica T0}, che porta ad un risparmio del XX\%.\\
-Si può notare come la tecnica che risulta meno performante è la \textbf{Transition Based}, che porta ad un incremento del 93\% nel caso di dati e ad un incremento circa del 0,1\% nel caso di indirizzi. Ovviamente questo è concorde con quanto ci si aspettava, in quanto, come già detto prima, questa tipologia di decofica funziona efficentemente solo nel caso in cui le probabilità di '1' e di '0' logico non risultino sbilanciate.
+Confrontando i risultati tra le varie tecniche, si può notare come l'unica tecnica che porta ad una riduzione dei consumi nel caso dei dati, risulta essere la \textbf{Bus-Invert} con la quale si ottiene un risparmio sulle commutazioni pari a circa il 20\%. 
+Per quanto concerne la tramissione di indirizzi, le codifiche più perfomanti risultano la \textbf{Codifica di Gray}, che porta ad un risparmio sulle commutazioni del 50\%, e la \textbf{Codifica T0}.
+Si può notare come la tecnica che risulta meno performante è la \textbf{Transition Based}, che porta ad un incremento del 93\% nel caso di dati e ad un incremento circa del 0,1\% nel caso di indirizzi. Ovviamente questo è concorde con quanto ci si aspettava, in quanto, come già detto prima, questa tipologia di decofica funziona efficentemente solo nel caso in cui le probabilità di '1' e di '0' logico risultino sbilanciate.
 
 \section{Synthesis}
 Una volta aver stimato il consumo di potenza per la tecnica di bus non-encoded si può adesso calcolare i consumi per le quattro diverse tecniche di bus encoding, in presenza di due ingressi con diversa probabilità statistica: Address e Data.  
