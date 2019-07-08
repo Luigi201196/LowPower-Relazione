@@ -43,7 +43,7 @@ Per maggiore chiarezza, i risultati sono raccolti nella Tabella \ref{Tab1_1}. \\
 	\caption{\textit{Risultati ottenuti manualmente}}
 	\label{Tab1_1}
 \end{table}\\
-In seguito, tramite il programma \textit{ModelSim} è stato analizzato il numero di toogle delle varie porte utilizzando un testbench sviluppato appositamente dai docenti. Si è andato a variare il numero di colpi di clock, come richiesto dalla traccia ed in seguito si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente.\\
+In seguito, tramite il programma \textit{ModelSim} è stato analizzato il numero di toggle delle varie porte utilizzando un testbench sviluppato appositamente dai docenti. Si è andato a variare il numero di colpi di clock, come richiesto dalla traccia ed in seguito si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente.\\
 Tramite appositi comandi di Modelsim (\textbf{-power report}), sono stati stilati dei report relativi ad una stima delle commutazioni delle varie porte, della quale se ne riporta un esempio in Figura \ref{fig1_2}. Questi report consentono di stimare l'attività delle porte come verrà descritto in seguito.\\
 \begin{figure}[!htb]
 	\centering
@@ -74,7 +74,7 @@ Dai seguenti valori è facile ricavare i valori di Switching Activity simulate, 
 \begin{center}
 	$ A=E_{SW}=\frac{Tc(PORT)}{T_{CLK}} $
 \end{center}
-Come ci si aspettava, essendo la Switching Activity il numero di toggle avvenuti in un periodo, i valori delle simulazioni vengono molto simili ai valori calcolati analiticamente. Aumentando il tempo di simulazione, i valori di Switching Activity diventano sempre più precisi, arrivando ad avere un errore tra 0.01-0.5. I vari valori sono stati calcolati e raccolti nella Tabella \ref{Tab1_2}
+Come ci si aspettava, essendo la Switching Activity il numero di toggle avvenuti in un periodo, i valori delle simulazioni vengono molto simili ai valori calcolati analiticamente. Aumentando il tempo di simulazione, i valori di Switching Activity diventano sempre più precisi, arrivando ad avere un errore tra 0.01-0.5. I valori sono stati calcolati e raccolti nella Tabella \ref{Tab1_2}
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|c|c|}
@@ -108,7 +108,7 @@ Nella seconda parte dell'esercitazione viene richiesto di analizzare le probabil
 	\caption{\textit{Schema circuitale Full Adder}}
 	\label{full_adder}
 \end{figure} \\
-Il calcolo è stato effettuato in entrambi in casi, analizzando il blocco come un unico gate e andando a studiare la rispettiva Tavola di Verità. Anche in questa sezione, si considerano gli ingressi equiprobabili e scorrelati, con probabilità $P('input')=0.5$ Il risultato è stato il seguente:\\
+Il calcolo è stato effettuato in entrambi i casi, analizzando il blocco come un unico gate e andando a studiare la rispettiva Tavola di Verità. Anche in questa sezione, si considerano gli ingressi equiprobabili e scorrelati, con probabilità $P('input')=0.5$ Il risultato è stato il seguente:\\
 \begin{itemize}
 	\item \textit{Half-Adder} \\
 	$P_{1}(S)=P_{1}(A)P_{0}(B)+P_{0}(A)P_{1}(B)=\frac{1}{2}\frac{1}{2}+\frac{1}{2}\frac{1}{2}=\frac{1}{2}$ \\
