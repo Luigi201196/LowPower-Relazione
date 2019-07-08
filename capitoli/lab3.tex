@@ -10,12 +10,12 @@ Un prima tecnica utilizzata per ridurre i consumi andando a lavorare sull'archit
 \end{figure}
 \newpage
 \noindent Nella prima parte dell'esperienza viene chiesto di analizzare il file \textit{ckgbug.vhd} che contiene la descrizione VHDL di una struttura composta da due registri in cascata, denominati L1 ed L2. La tecnica del clock gating viene applicata al secondo registro, mediante una AND tra il clock e un segnale di ENABLE. \\
-Bisogna prestare attenzione al fatto che i segnali di ingresso dei due registri (D1 e D2) siano rispettivamente \textit{std\_logic\_vector (7 downto 0)} e \textit{std\_logic\_vector (0 to 7}. \\
-In una prima simulazione, si forza il segnale D1 al valore '01111111' e, attivando il segnale di ENABLE, ci si aspetterebbe che D2, al colpo di clock successivo, vada al valore '111111101' e che l'uscita di L2, denominata D3, vada al valore '01111111' al colpo di clock ancora successivo. In realtà la simulazione porta al risultato in Figura \ref{clock_gat1}.
+Bisogna prestare attenzione al fatto che i segnali di ingresso dei due registri (D1 e D2) siano rispettivamente \textit{std\_logic\_vector (7 downto 0)} e \textit{std\_logic\_vector (0 to 7). \\
+In una prima simulazione, si forza il segnale D1 al valore '01111111' e, attivando il segnale di ENABLE, ci si aspetterebbe che D2, al colpo di clock successivo, vada al valore '111111110' e che l'uscita di L2, denominata D3, vada al valore '01111111' al colpo di clock ancora successivo. In realtà la simulazione porta al risultato in Figura \ref{clock_gat1}.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/clock_gating1}
-	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
+	\caption{\textit{Timing simulazione}}
 	\label{clock_gat1}
 \end{figure}
 Si può ben notare come l'uscita D3 dopi esattamente D1 dopo un solo colpo di clock. Questo è dovuto al fatto che il clock gated arriva a L2 un "passo di simulazione" dopo L1, perchè il simulatore programma il calcolo dell'uscita AND dopo l'assegnazione del clock. Quindi accade come se l'AND avesse un ritardo interno. \\
@@ -69,15 +69,14 @@ Si è poi andato ad eseguire un'analisi più dettagliata dei contributi tramite 
 \end{figure}
 \\
 Come si può ben notare dalla quarta colonna, il toogle rate dei vari ingressi presenta una \textit{static probability} pari a 0.5, che non risulta essere un valore sempre ragionevole. \\
-Questo valore viene assegnato di default dal software, che però, tramite degli appositi comandi, permette di settare valori diversi di Toogle Rate a determinati segnali. Si è allora modificato il toogle rate del clock e del reset portandoli rispettivamente a 2 e a 0. Queste modifiche portano ad un risparmio di potenza del 20\% rispetto al caso precedente. Il report di potenza risultante viene raffigurato in Figura \ref{3_3}. \\
+Questo valore viene assegnato di default dal software, che però, tramite degli appositi comandi, permette di settare valori diversi di Toogle Rate a determinati segnali. Si è allora modificato il toogle rate del clock e del reset portandoli rispettivamente a 2 e a 0. Queste modifiche portano ad un risparmio di potenza del 20\% rispetto al caso precedente. Il report di potenza risultante viene raffigurato in Figura \ref{3_3}.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/3_3}
 	\caption{\textit{Schema implementativo della tecnica del Clock Gating}}
 	\label{3_3}
 \end{figure}
-\\
-Si va ora a modificare anche la probabilità degli input, portando sia INCA che INCB ad un Toogle Rate pari a 0.12. Si ottiene allora un risparmio ulteriore di potenza, come testimoniato da Power Report riportati in Figura \ref{3_4} e \ref{3_5}. \\
+Si va ora a modificare anche la probabilità degli input, portando sia INCA che INCB ad un Toogle Rate pari a 0.12. Si ottiene allora un risparmio ulteriore di potenza, come testimoniato da Power Report riportati in Figura \ref{3_4} e \ref{3_5}.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/3_4}
