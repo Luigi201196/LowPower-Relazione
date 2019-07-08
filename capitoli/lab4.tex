@@ -222,8 +222,19 @@ L'ultima tecnica richiesta è di implementare un codice per realizzare la tecnic
 \end{figure}
 \\
 \noindent La codifica T0 consiste nell'inserire un bit in più, denominato \textit{INC}. Ogni volta che si va in sequenza, si forza questo segnale a '0' in modo tale che il ricevitore capisca di dover andare semplicemente in sequenza e si preoccupi lui di incrementare il dato. In caso di brach, salito o subroutine, forzo il segnale ad '1' e trasmetto sul bus il nuovo dato. Si riporta in appendice fig. \ref{t0} il \textit{Codice VHDL} dell'implementazione della codifica.
-
-
+Sono state effettuate con modelsim le simulazioni di consumo di potenza e riportate di seguito rispettivamente per address fig   e data fig. . 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/T0_address_power}
+	\caption{\textit{Power report T0, address}}
+	\label{T0_address_power}
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.8]{immagini/T0_data_power}
+	\caption{\textit{Power report T0, data}}
+	\label{T0_data_power}
+\end{figure}
 \subsection{Confronto tra le tecniche}
 Confrontando i risultati tra le varie tecniche, si può notare come l'unica tecnica che porta ad una riduzione dei consumi nel caso dei dati, risulta essere la \textbf{Bus-Invert} con la quale si ottiene un risparmio sulle commutazioni pari a circa il 20\%. \\ %DATO DA VERIFICARE
 Per quanto concerne la tramissione di indirizzi, le codifiche più perfomanti risultano la \textbf{Codifica di Gray}, che porta ad un risparmio sulle commutazioni del 50\%, e la \textbf{Codifica T0}, che porta ad un risparmio del XX\%.\\
