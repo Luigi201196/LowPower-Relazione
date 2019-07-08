@@ -6,17 +6,17 @@ In questa prima parte dell'esercitazione viene richiesto di analizzare le perfor
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.3]{immagini/nand_circuit}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Schema interno porta NAND}}
 	\label{nand_circuit}
 \end{figure}
 La definizione del pMOS e dell'nMOS avviene tramite una piccola libreria \textit{'CMOS2013'}, all'interno della quale sono definiti i modelli che verranno analizzati (nel nostro caso si tratta del \textbf{EPHSGP\_BS2JU} per il pMOS e \textbf{ENHSGP\_BS2JU} per l'nMOS). All'interno di questa libreria ogni transistore viene identificato tramite alcuni parametri, quali la lunghezza e la larghezza del MOS e perimetri e aree di draine source.
 L'analisi avviene tramite uno script \textit{'nandHS.sp'} che contiene una netlist dove vengono fissati i valori dei parametri di larghezza e lunghezza dei transitori.\\
-Inoltre lo script contiene il alcuni comandi .measure tramite il quale vengono stimati i tempi di salita, di discesa e di propagazione della porta in questione. Viene richiesto di completare questi comandi andando a scrivere un comando per la misura tel tempo di propagazione basso-alto. Il comando aggiunto in questione è il seguente:
+Inoltre lo script contiene anche il comando .measure tramite il quale vengono stimati i tempi di salita, di discesa e di propagazione della porta in questione. Viene richiesto di completare questi comandi andando a scrivere un comando per la misura tel tempo di propagazione basso-alto. Il comando aggiunto in questione è il seguente:
 \begin{center}
 \textit{.measure tran nanddelayHL TRIG V(inB) VAL='alim*0.5' RISE=1 
 + TARG V(out) VAL='alim*0.5' FALL=1}
 \end{center}
-Settando l'ambiente di simulazione \textbf{ELDO}, si può procedere con la simulazione della NAND in questione andando a riportare i parametri richiesti dalla traccia. Tra tutti i parametri viene richiesto ai annatore la potenza totale dissipata, che risulta essere pari a 6.7908 nW. I risultati temporali invece sono riportati in Tabella \ref{Tab5_1}.\\
+Settando l'ambiente di simulazione \textbf{ELDO}, si può procedere con la simulazione della NAND in questione andando a riportare i parametri richiesti dalla traccia. Tra tutti i parametri viene richiesto di annotare la potenza totale dissipata, che risulta essere pari a 6.7908 nW. I risultati temporali invece sono riportati in Tabella \ref{Tab5_1}.\\
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -33,7 +33,7 @@ Settando l'ambiente di simulazione \textbf{ELDO}, si può procedere con la simul
 	\label{Tab5_1}
 \end{table}
 \\
-Si possono confrontare questi valori andando ad avviare una simulazione grafica tramite \textbf{ezwave}. Le onde risultati sono riportate in Figura \ref{onde_5_1}, dove sono riportati i valori della due tensioni di ingresso che, come visto dalla netlist, risultano essere:
+Si possono confrontare questi valori andando ad avviare una simulazione grafica tramite \textbf{ezwave}. Le onde risultati sono riportate in Figura \ref{onde_5_1}, dove sono riportati i valori delle due tensioni di ingresso che, come visto dalla netlist, risultano essere:
 \begin{itemize}
 	\item INA: costante al valore 1.2 V, assimilato come '1' logico
 	\item INB: 0 V fino ad 1 ns, 1.2 V fino a 2 ns, 0 V fino al termine della simulazione
@@ -41,7 +41,7 @@ Si possono confrontare questi valori andando ad avviare una simulazione grafica 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.35]{immagini/onde_5_1}
-	\caption{\textit{Schema circuitale porta NAND}}
+	\caption{\textit{Onde delle tensioni di ingresso}}
 	\label{onde_5_1}
 \end{figure}
 Tramite gli appositi cursori del programma sono stati ricavati i tempi calcolati in precedenza con ELDO. Tutti i tempo sono riportati i Tabella \ref{Tab5_2}. 
@@ -62,7 +62,7 @@ Tramite gli appositi cursori del programma sono stati ricavati i tempi calcolati
 \end{table}
 \\
 Si può ben notare come i risultati siano assolutamente confrontabili.\\
-In seguito viene chiesto di fare un analisi i continua, andando a decommentare alcune linee dello script, per andare a valutare le tensioni di soglia dei diversi MOS. I risultati sono riportati in Tabella \ref{Tab5_3}. 
+In seguito viene chiesto di fare un'analisi in continua, andando a decommentare alcune linee dello script, per andare a valutare le tensioni di soglia dei diversi MOS. I risultati sono riportati in Tabella \ref{Tab5_3}. 
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -109,7 +109,7 @@ A tale scopo si analizzata, sempre tramite l'ambiente di simulazione \textit{ELD
 	\end{tabular}
 	\caption{\textit{Tensioni di soglia}}
 	\label{Tab5_4}
-\end{table}.
+\end{table}
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|}
@@ -131,7 +131,7 @@ A tale scopo si analizzata, sempre tramite l'ambiente di simulazione \textit{ELD
 	\end{tabular}
 	\caption{\textit{Tensioni di soglia}}
 	\label{Tab5_5}
-\end{table}.
+\end{table}
 \\
 Analogamente al punto precedente, si è sfruttato \textit{ezwave} per andare a plottare gli andamenti delle tensioni e delle correnti al variare del carico. I risultati sono riportati in Figura \ref{onde_5_2current} per il caso delle correnti e in Figura \ref{onde_5_2voltage} per il caso delle tensioni.\\
 \begin{figure}[!htb]
