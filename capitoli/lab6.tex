@@ -1,13 +1,31 @@
 \chapter{Laboratorio 6: \\Functional Verification}
 \section{VHDL Testing}
 \subsection{A given RCA}
-Nella prima parte dell'esperienza di laboratorio viene fornito il \textit{Testbench} di un \textit{Ripple Carry Adder}, contenente un errore.\\
+Nella prima parte dell'esperienza di laboratorio viene fornito il \textit{Testbench} di un \textit{Ripple Carry Adder} a 32 bit, contenente un errore.\\
 Il Test Bench era diviso sostanzialmente in tre parti:
 \begin{itemize}
-	\item{Random Input Values}
-	\item{Reference Architecture}
-	\item{Assert Instructions}
+	\item{Random Input Values}: si preoccupa di generare una serie di input casuali
+	\item{Reference Architecture}: architettura di riferimento, della quale si conosce il corretto funzionamento
+	\item{Assert Instructions}: indica se l'architettura di riferimento e quella da analizzare producono o meno gli stessi risultati
 \end{itemize}
+Inizialmente si è simulato il Test Bench con 5 iterazioni: Modelsim riportava la presenza di un warning, ma non era ancora apprezzabile in quanto non si era verificata l'esatta fine della simulazione.\\
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.2]{immagini/5_1_1}
+	\caption{\textit{Simulazione con 5 iterazioni}}
+	\label{5_1_1}
+\end{figure}
+\newpage
+\noindent Si è aumentato allora il numero di iterazioni a 100, notando come ora il numero di errori sia aumentato e diventi più facile scoprire dove sia l'errore.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.2]{immagini/5_1_2}
+	\caption{\textit{Simulazione con 100 iterazioni}}
+	\label{5_1_2}
+\end{figure}
+L'errore era presente nel port-map dell'ultimo full-adder: infati in ingresso al $C_{IN}$ non c'era il $C_{OUT}$ del penultimo full-adder, ma del terzultimo.
+Dopo aver corretto l'errore, la simulazione risultava ora corretta.\\
+In seguito veniva richiesto di cambiare il parallelismo testando un caso a 64 bit e un caso a 128 bit, mantenendo l'errore nel codice. Ma non è stato possibile cambiare il generatore di Input Random perchè la funzione VHDL \textit{INTEGER} non supporta una dinamica da 64 bit e 128 bit. 
 \subsection{A more complex case}
 Nella seconda parte di questo primo esercizio viene richiesto di verificare la correttezza di quattro versioni di un circuito \textit{incrementer$\&$comparator} presente in Figura \ref{pentium}.
 \begin{figure}[!htb]
@@ -24,9 +42,8 @@ La struttura presenta 4 blocchi diversi, replicati due volte, e un compatore:
 	\item un comparatore che manda in uscita il valore maggiore tra A e B
 \end{itemize}
 Dopo aver letto il funzionamento del Pentium 4 tramite l'appendice si è iniziata la realizzazione del TestBench per scoprire quali fossero i bug presenti. Veniva fornita una versione di riferimento del circuito, priva di bug in modo da avere un'architettura di riferimento con la quale confrontare le 4 versioni del circuito.\\
-Il VHDL implementato per questo scopo è presente in appendice, fig. \ref{testbench_vhdl2}.
-\newpage
-\noindent La struttura del Testbench è simile a quella fornita nell'esercizio precedente.\\
+Il VHDL implementato per questo scopo è presente in appendice, fig. \ref{testbench_vhdl2}.\\
+La struttura del Testbench è simile a quella fornita nell'esercizio precedente.\\
 Si ha una prima parte di generazione di numeri casuali, nello specifico si generano in modo random gli ingressi A e B, i selettori dei multiplexer EXTA e EXTB e gli ingressi di incremento INCA e INCB.\\
 In realtà, simulando il circuito ci si è resi conto di come la soluzione con numeri casuali non sia sempre ottimale per la ricerca di un bug, in quanto, specialmente nel caso di un ingresso con un numero di bit molto elevato, sono necessarie numerose iterazioni per provare tutte le possibili combinazioni. Questo sta alla base della mancato ritrovo del bug nella quarta versione, in quanto tramite un Testbench con numeri random non siamo riusciti a "sollecitare" l'errore: probabilmente si sarebbe dovuto studiare degli ingressi opportuni per sollecitare il sommatore in modo più specifico.\\
 \\

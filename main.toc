@@ -31,21 +31,21 @@
 \contentsline {chapter}{\numberline {6}Laboratorio 6: \\Functional Verification}{85}{chapter.6}
 \contentsline {section}{\numberline {6.1}VHDL Testing}{85}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}A given RCA}{85}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}A more complex case}{85}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Finite State Machine}{88}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Scripting in Python}{91}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Automatic verification through a script}{91}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Further Generalization}{95}{subsection.6.2.2}
-\contentsline {chapter}{\numberline {7}Appendice}{97}{chapter.7}
-\contentsline {section}{\numberline {7.1}Laboratorio 2}{98}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}FSM VHDL}{98}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Laboratorio 3}{99}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}CLOCK GATING VHDL}{99}{subsection.7.2.1}
-\contentsline {section}{\numberline {7.3}Laboratorio 4}{100}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}T0 VHDL}{100}{subsection.7.3.1}
-\contentsline {section}{\numberline {7.4}Laboratorio 6}{101}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}INCOMP VHDL}{101}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}COUNTER TB VHDL}{103}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}COUNTER TB DO}{105}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}TESTING SCRIPT PY}{107}{subsection.7.4.4}
-\contentsline {subsection}{\numberline {7.4.5}TB GENERATOR PY}{109}{subsection.7.4.5}
+\contentsline {subsection}{\numberline {6.1.2}A more complex case}{87}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Finite State Machine}{89}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Scripting in Python}{93}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Automatic verification through a script}{93}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Further Generalization}{97}{subsection.6.2.2}
+\contentsline {chapter}{\numberline {7}Appendice}{99}{chapter.7}
+\contentsline {section}{\numberline {7.1}Laboratorio 2}{100}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}FSM VHDL}{100}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Laboratorio 3}{101}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}CLOCK GATING VHDL}{101}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Laboratorio 4}{102}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}T0 VHDL}{102}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}Laboratorio 6}{103}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}INCOMP VHDL}{103}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}COUNTER TB VHDL}{105}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}COUNTER TB DO}{107}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.4.4}TESTING SCRIPT PY}{109}{subsection.7.4.4}
+\contentsline {subsection}{\numberline {7.4.5}TB GENERATOR PY}{111}{subsection.7.4.5}

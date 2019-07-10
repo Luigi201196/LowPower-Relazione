@@ -183,7 +183,7 @@ Nello specifico sono state svolte due simulazioni: la prima (segnale $S1$) viene
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.8]{immagini/report_1_2}
-	\caption{\textit{Ripple Carry Adder}}
+	\caption{\textit{Power report}}
 	\label{report_1_2}
 \end{figure}
 \begin{table}[!h]\footnotesize
@@ -195,7 +195,7 @@ Nello specifico sono state svolte due simulazioni: la prima (segnale $S1$) viene
 		$E_{SW}(S=1)$&0.49&0.49&0.5&0.48&0.49&0.5&0.5&0.49\\
 		\hline
 	\end{tabular}
-	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
+	\caption{\textit{Switching Activity senza considerare il delay Carry Our}}
 	\label{Tab1_5}
 \end{table}
 \begin{table}[!h]\footnotesize
@@ -207,7 +207,7 @@ Nello specifico sono state svolte due simulazioni: la prima (segnale $S1$) viene
 		$E_{SW}(S=1)$&1.18&1.15&1.05&1.09&1.08&1.04&0.85&0.48\\
 		\hline
 	\end{tabular}
-	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
+	\caption{\textit{Switching Activity considerando il delay Carry Out}}
 	\label{Tab1_6}
 \end{table}
 \noindent Si può notare come nel caso della Tabella \ref{Tab1_5}, essendo le uscite $S$ non collegate a nessuna altra porta, il ritardo inserito non si propaga e di conseguenza non influenza l'attività dei segnali a valle. Infatti dal \textit{power report} ottenuto si può notare come la switching activity corrisponda a quella calcolata analiticamente.\\
@@ -216,14 +216,14 @@ Per ottenere l'attività totale del RCA nei due casi analizzati si utilizza la f
 \begin{center}
 	$E_{SW}(S)=\sum\limits_{k=0}^7 E_{SW}(S_{i})$
 \end{center}
-Utilizzando i valori delle due tabelle si ottiene che nel primo caso, quindi senza considerare il ritardo sul \textit{Carry Out}, l'attività totale risulti pari a $E_{SW}(S1)=3.94$; mentre nel secondo caso, considerando il ritardo sul \textit{Carry Out}, l'attività totale risulti pari a $E_{SW}(S2)=7.42$.
+Utilizzando i valori delle due tabelle si ottiene che nel primo caso, quindi senza considerare il ritardo sul \textit{Carry Out}, l'attività totale risulti pari a $E_{SW}(S1)=3.94$; mentre nel secondo caso, considerando il ritardo sul \textit{Carry Out}, l'attività totale risulti pari a $E_{SW}(S2)=7.42$
 \newpage
 \section{RCA synthesis and power analysis}
 Nella seguente sezione dell'esercitazione è stata analizzata la potenza del sommatore RCA già analizzato in precedenza, tramite il software \textit{Synopsys}. Dopo aver analizzato ed elaborato i file che descrivono la struttura dell'RCA, il tutto è stato sintetizzato e sono stati raccolti i vari report relativi alla potenza.
-Un primo report di potenza, riportato in Figura \ref{report_power1}, descrive i contributi di potenza relativi alle 8 istanze dei Full-Adder che compongono il somamtore RCA. \\
+Un primo report di potenza, riportato in Figura \ref{report_power1}, descrive i contributi di potenza relativi alle 8 istanze dei Full-Adder che compongono il sommatore RCA. \\
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.7]{immagini/report_power1}
+	\includegraphics[scale=0.65]{immagini/report_power1}
 	\caption{\textit{Power report}}
 	\label{report_power1}
 \end{figure}
@@ -237,8 +237,6 @@ Diventa ora interessante andare ad analizzare la singola istanza, per andare a v
 	\label{reportFA1}
 \end{figure}
 \\
-\\
-\\
 Come ci si aspettava i valori di potenza risultano assolutamente identici al report trovato in precendenza e riportato in Figura \ref{report_power1}.
 Il passo successivo è comprendere come avvenga la stima della potenza dinamica (\textit{switching power}) dei singoli nodi del FA, dato che la potenza interna e quella di leakage dipendono solo dal gate e non dal circuito. Si utilizza a questo scopo il comando \textit{report\_power -net -verbose} e si riporta il report risultante in Figura \ref{verbose1}.
 \begin{figure}[!htb]
@@ -250,7 +248,7 @@ Il passo successivo è comprendere come avvenga la stima della potenza dinamica 
 \\
 Si può notare come la potenza dinamica consumata dal nodo di uscita S sia praticamente nulla, in quanto essa non deve pilotare alcun carico, a meno della potenza che il software considera per le varie capacità parassite. \\
 Con questa analisi, il software si preoccupa anche di fare un'analisi probabilistica delle varie attività dei nodi. Dal report si può notare come siano assolutamenti concordi con i valori teorici trovati in precedenza.\\
-Si ritorna ora al circuito complessivo, salendo di livello logico e si analizzano i nodi anche in questa situazione utilizzando lo stesso comando utilizzato in precedenza. Il report viene raffigurato in Figura 1.11.
+Si ritorna ora al circuito complessivo, salendo di livello logico e si analizzano i nodi anche in questa situazione utilizzando lo stesso comando utilizzato in precedenza. Il report viene raffigurato in Figura \ref{verbose_2}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/verbose_2}
@@ -273,9 +271,6 @@ Si ritorna ora al circuito complessivo, salendo di livello logico e si analizzan
 	\label{model_mux}
 \end{figure}
 \\
-\\
-\\
-\\
 Si può notare benissimo come l'uscita Y abbia un glitch tra 1000 ps e 1100 ps, in quanto effettua una transizione 0-1 non voluta. Il tutto è causato dal ritardo introdotto dall'Inverter, che si può notare dal segnale 'n', che commuta al suo valore corretto dopo un ritardo di 0,1 ns, rispetto all'istante in cui cambiano tutti i restanti gate del circuito, ossia 1000 ps. Si verifica dunque un intervallo di tempo, ossia quello compreso tra 1000 ps e 1100 ps in cui la porta OR ha entrambi gli ingressi bassi e dunque produce un'uscita Y errata. \\
 Questo produce quindi un glitch in uscita: in generale i glitch sono problematici a livello di potenza, in quanto si tratta di commutazioni spurie all'interno del mio circuito, che causano uno spreco di potenza. L'energia consumata per ogni doppia commutazione indesiderata è
 \begin{center}
@@ -296,11 +291,6 @@ considerando $C_{L}$ come il carico che viene pilotato e $V_{DD}$ la tensione di
 	\label{counter}
 \end{figure}
 \noindent Si analizza in questa sezione un \textit{Syncronous Counter} ad 1 bit, realizzato con una Half Adder e un D-FlipFlop, riportato in Figura \ref{counter}. Il primo ingresso \textit{A0} dell'Half Adder è l'uscita del D-FlipFlop, mentre il secondo ingresso \textit{B0} viene collegato fisso ad 1.\\
-\\
-\\
-\\
-\\
-\\
 Si riporta il timing diagram del circuito in Figura \ref{timing_counter1}.
 %%MANCA TIMING DA FARE
 \begin{figure}[!htb]
@@ -309,8 +299,8 @@ Si riporta il timing diagram del circuito in Figura \ref{timing_counter1}.
 	\caption{\textit{Timing counter 1 bit}}
 	\label{timing_counter1}
 \end{figure}
-\\
-Si può dedurre dal timing, che il segnale \textit{S} ha una transizione per ogni colpo di clock, di conseguenza la sua Switching Activity sarà metà dell'attività del segnale di clock. Nel caso in cui il segnale B0 vada a 0, il valore del nodo S dipenderà esclusivamente dall'ultimo valore presente all'uscita del Flip-Flop, in quanto l'Half Adder sommerà l'ultimo valore presente nel Flip Flop con uno '0'. Quindi non si verificheranno più transizioni sul nodo S e di conseguenza neanche sul nodo $C_{OUT}$.
+\newpage
+\noindent Si può dedurre dal timing, che il segnale \textit{S} ha una transizione per ogni colpo di clock, di conseguenza la sua Switching Activity sarà metà dell'attività del segnale di clock. Nel caso in cui il segnale B0 vada a 0, il valore del nodo S dipenderà esclusivamente dall'ultimo valore presente all'uscita del Flip-Flop, in quanto l'Half Adder sommerà l'ultimo valore presente nel Flip Flop con uno '0'. Quindi non si verificheranno più transizioni sul nodo S e di conseguenza neanche sul nodo $C_{OUT}$.\\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/counter2}
@@ -318,7 +308,7 @@ Si può dedurre dal timing, che il segnale \textit{S} ha una transizione per ogn
 	\label{counter2}
 \end{figure}
 \\
-In seguito viene chiesto di analizzare la struttura presente in Figura \ref{counter2}. Questo circuito permette di ottenere un contatore sincrono ad 8 bit, utilizzando in cascata 8 celle del circuito precedente. Anche in questo si riporta, in Figura \ref{timing_counter2}, il timing diagram del funzionamento del circuito.
+In seguito viene chiesto di analizzare la struttura presente in Figura \ref{counter2}. Questo circuito permette di ottenere un contatore sincrono ad 8 bit, utilizzando in cascata 8 celle del circuito precedente. Anche in questo si riporta, in Figura \ref{timing_counter2}, il timing diagram del funzionamento del circuito.\\
 %MANCA TIMING
 \begin{figure}[!htb]
 	\centering
@@ -326,7 +316,8 @@ In seguito viene chiesto di analizzare la struttura presente in Figura \ref{coun
 	\caption{\textit{Timing counter 8 bit}}
 	\label{timing_counter2}
 \end{figure}
-In Tabella \ref{trans_uscita}, vengono ora riportati il numero di commutazioni di tutti i segnali di uscita ricavati in modo analitico, considerando un intervallo di tempo compreso da quando il circuito parte dal valore '00000000', fino a quando non arriva al valore '11111111'.
+\newpage
+\noindent In Tabella \ref{trans_uscita}, vengono ora riportati il numero di commutazioni di tutti i segnali di uscita ricavati in modo analitico, considerando un intervallo di tempo compreso da quando il circuito parte dal valore '00000000', fino a quando non arriva al valore '11111111'.
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -347,7 +338,6 @@ In Tabella \ref{trans_uscita}, vengono ora riportati il numero di commutazioni d
 	\caption{\textit{Risultati simulazione}}
 	\label{trans_uscita}
 \end{table}\\
-
 Il segnale \textit{CEN}, rappresenta l'enable del contatore, mentre il segnale \textit{OWFL} va ad 1 in presenza di overflow, dunque quando si supera la massima dinamica del contatore. Il segnale CEN è l'ingresso B0 del primo Half-Adder, mentre il segnale OWFL è il carry out dell'ultimo Half-Adder. \\
 Il Segnale OWFL farà solo una transizione per ogni ciclo di conta, dunque andrà ad '1', solo quando le uscite S7-S0 andranno dal valore '11111111' al valore '00000000'. Di conseguenza avrò che la Switching Activity sarà:
 \begin{center}
@@ -360,6 +350,7 @@ Si vuole ora confrontare i risultati analitici ricavati in precedenza ed i risul
 	\caption{\textit{Power report}}
 	\label{report_counter}
 \end{figure}
+\\
 Viene chiesto di confrontare i valori analitici calcolati e riportati nella Tabella \ref{trans_uscita}, con quelli derivanti da una simulazione \textit{Synopsis}. Si simula il comportamento del circuito utilizzando un $T_{CLK}=2 ns$, per un periodo pari a 260 colpi di clock. Il report risultante è presente in Figura \ref{report_counter}.\\
 \\
 Andando a studiare i file di testbench riportati, si può notare come vengano introdotti dei ritardi di 0.2 ns nelle uscite dell'Half Adder: questo provoca dei glitch che si andranno a propagare lungo la rete ed avranno effetti sul segnale OWFL, che invece di andare ad '1' solo una volta a fine conteggio, andrà ad '1' per tre volte.\\
