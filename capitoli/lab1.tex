@@ -176,32 +176,48 @@ I risultati sono riportati nella Tabella \ref{Tab1_3}.\\
 	\label{Tab1_3}
 \end{table}
 \\
-\noindent Se invece si considerano gli ingressi non equiprobabili, ma comunque scorrelati, con probabilità rispettivamente $P(A='1')=0.4$ e $P(B='1')=0.6 $, ci si aspetta un risultato differente, infatti le probabilità dei nodi di uscita trovate sono: $P(S ='1')=0.52$ e $P(Co ='1')=0.24$ \\
+\noindent Se invece si considerano gli ingressi non equiprobabili, ma comunque scorrelati, con probabilità rispettivamente $P(A='1')=0.4$ e $P(B='1')=0.6 $, ci si aspetta un risultato differente. Infatti le probabilità dei nodi di uscita trovate sono: $P(S ='1')=0.52$ e $P(Co ='1')=0.24$ \\
 In seguito, tramite il programma \textit{ModelSim} è stato simulato il Ripple Carry Adder utilizzando un testbench sviluppato appositamente dai docenti e utilizzando le procedure viste nel paragrafo 1.1.\\
-La simulazione viene fatta andando ad inserire dei ritardi sulle uscite $S$ e $C_{OUT}$ dei singoli Full-Adder. Inizialmente si setta esclusivamente un ritardo di 25 ps esclusivamente sul segnale $S$, mentre in secondo luogo si introduce un ritardo uguale anche sul segnale di $C_{OUT}$.\\
-Il testbench è stato costruito appositamente per assegnare ritardi diversi al bit di somma, DRCAS, e al bit di carry, DRCAC. Inoltre per garantire una simulazione generale si è utilizzato l'LFSR per generare ingressi randomici. Per una corretta visualizzazione dei risultati si è impostata una risoluzione di 1ps. Dopo aver visualizzato il power report, come fatto già in precedenza, si sono comparati i valori ottenuti dalla simulazione con ciò che si era calcolato manualmente, seguendo lo stesso ragionamento del punto precedente.\\
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[scale=1]{immagini/gate}
-		\caption{\textit{Power report}}
-		\label{fig1_3}
-	\end{figure} \\
-	(cosa noto?) e bisogna mettere le waveforms?\\                                <- ATTENZIONE
-Si è poi simulato il caso in cui i due ritardi riguardanti il bit di somma e il bit di carry fossero uguali, e anche per questo è stato visualizzato il power report.   
+Nello specifico sono state svolte due simulazioni: la prima (segnale $S1$) viene eseguita con solo il ritardo di 25 ps sul segnale $S$; la seconda (segnale $S2$) vengono ritardati di una quantità pari a 25 ps sia il segnale $S$ che il segnale $C_{OUT}$. Il risultati sono riportati nella Figura \ref{report_1_2}\\
+\newpage
 \begin{figure}[!htb]
-		\centering
-		\includegraphics[scale=1]{immagini/gate}
-		\caption{\textit{Power report con ritardi uguali}}
-		\label{fig1_4}
-	\end{figure} \\
-	Da un'analisi e confronto tra i risultati ottenuti manualmente e quelli ottenuti con le simulazioni, si nota come questi coincidano dato che avendo uguali ritardi, non riesco a simulare la presenza di eventuali glitch.\\
-	In seguito si è calcolata la switching activity totale dei due sommatori, utilizzanso la seguente formula:
-	\begin{center}
-		$ A=\sum_{i=1}^{N-1}{A(S_i)} $  %<- risultato??
-	\end{center}
-What is the overhead computation of the second adder?  $<$- cioè? \\
-Come ultima cosa è stato simulato il secondo testbench che ci è stato fornito, dove si simulava sempre un Ripple carry adder, ma questa volta in maniera puramente combinatoria.Analizzando i risultati, si può concludere come non avendo un segnale di temporizzazione, lavoro alla massima velocità ma ho la presenza di glitch.
-
+	\centering
+	\includegraphics[scale=0.8]{immagini/report_1_2}
+	\caption{\textit{Ripple Carry Adder}}
+	\label{report_1_2}
+\end{figure}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+		\hline
+		&\textbf{S1(7)}& \textbf{S1(6)}& \textbf{S1(5)} &\textbf{S1(4)}&\textbf{S1(3)}&\textbf{S1(2)}&\textbf{S1(1)}&\textbf{S1(0)}\\
+		\hline
+		$E_{SW}(S=1)$&0.49&0.49&0.5&0.48&0.49&0.5&0.5&0.49\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
+	\label{Tab1_5}
+\end{table}
+\begin{table}[!h]\footnotesize
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+		\hline
+		&\textbf{S2(7)}& \textbf{S2(6)}& \textbf{S2(5)} &\textbf{S2(4)}&\textbf{S2(3)}&\textbf{S2(2)}&\textbf{S2(1)}&\textbf{S2(0)}\\
+		\hline
+		$E_{SW}(S=1)$&1.18&1.15&1.05&1.09&1.08&1.04&0.85&0.48\\
+		\hline
+	\end{tabular}
+	\caption{\textit{Probabilità e Switching Activity stimati manualmente con ingressi equiprobabili}}
+	\label{Tab1_6}
+\end{table}
+\noindent Si può notare come nel caso della Tabella \ref{Tab1_5}, essendo le uscite $S$ non collegate a nessuna altra porta, il ritardo inserito non si propaga e di conseguenza non influenza l'attività dei segnali a valle. Infatti dal \textit{power report} ottenuto si può notare come la switching activity corrisponda a quella calcolata analiticamente.\\
+Nel secondo caso, dove i dati sono stati sintetizzati nella Tabella \ref{Tab1_6}, si può notare che aggiungendo anche un ritardo sul \textit{Carry Out}, questo si propaghi causando delle commutazioni indesiderate: questo giustifica i valori di Switching Activity della seconda tabella, dove per ogni uscita del Full-Adder, il valore tende a raddoppiare.\\
+Per ottenere l'attività totale del RCA nei due casi analizzati si utilizza la formula:
+\begin{center}
+	$E_{SW}(S)=\sum\limits_{k=0}^7 E_{SW}(S_{i})$
+\end{center}
+Utilizzando i valori delle due tabelle si ottiene che nel primo caso, quindi senza considerare il ritardo sul \textit{Carry Out}, l'attività totale risulti pari a $E_{SW}(S1)=3.94$; mentre nel secondo caso, considerando il ritardo sul \textit{Carry Out}, l'attività totale risulti pari a $E_{SW}(S2)=7.42$.
+\newpage
 \section{RCA synthesis and power analysis}
 Nella seguente sezione dell'esercitazione è stata analizzata la potenza del sommatore RCA già analizzato in precedenza, tramite il software \textit{Synopsys}. Dopo aver analizzato ed elaborato i file che descrivono la struttura dell'RCA, il tutto è stato sintetizzato e sono stati raccolti i vari report relativi alla potenza.
 Un primo report di potenza, riportato in Figura \ref{report_power1}, descrive i contributi di potenza relativi alle 8 istanze dei Full-Adder che compongono il somamtore RCA. \\

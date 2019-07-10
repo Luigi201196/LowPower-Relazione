@@ -146,6 +146,7 @@ Analogamente al punto precedente, si è sfruttato \textit{ezwave} per andare a p
 	\caption{\textit{Confronto delle tensioni}}
 	\label{onde_5_2voltage}
 \end{figure}
+\\
 Si nota che all’aumentare del carico aumentano anche le transizioni in salita e discesa del segnale di uscita. Inoltre, si nota che avendo le variazioni del segnale di uscita più lente di quelle del segnale di ingresso, l’intervallo di tempo in cui le reti di pull-up e pull-down sono entrambe attive è minore: di conseguenza si avranno minori correnti di cortocircuito che causerebbero un significativo consumo di potenza. Dalla teoria si sa infatti che per avere consumi causati dalle correnti di cortocircuito bassi, gli slope del segnale di ingresso e di uscita devono essere quanto più simili possibili.
 In modo analogo al caso precedente, si sono andate a calcolare le varie Tensioni di Soglia dei MOS. I risultati sono riportati nella Tabella \ref{Tab5_6}. \\
 \begin{table}[!h]\footnotesize
@@ -270,7 +271,6 @@ Andando poi ad analizzare il consumo complessivo di potenza risulta che:
 	$Total Power Dissipation X1 = 6.7908 nW $
 \end{center}
 Come ci si aspettava, la NAND X1 consuma circa l'86\% in meno della NAND X8. Questo è sicuramente dovuto alle correnti di leakage maggiori, che si posso anche apprezzare nella Tabella precedente.\\
-\newpage
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.09]{immagini/onde_5_3_voltage1}
@@ -352,15 +352,15 @@ Come ci si aspettava, la NAND X1 consuma circa l'86\% in meno della NAND X8. Que
 	\caption{\textit{Tensioni di soglia}}
 	\label{Tab5_12}
 \end{table}
-
+\newpage
 \section{Comparing high speed and low leakage optimization}
-Viene ora richiesto di fare le medesime analisi svolte nei punti precedenti, ma utilizzando delle tipologie di gate ottimizzati per una bassa corrente sottosoglia. I modelli utilizzati sono precisamente: \textbf{ND2LL} e \textbf{ND2LLX8}. \\
+Viene ora richiesto di fare le medesime analisi svolte nei punti precedenti, ma utilizzando delle tipologie di gate ottimizzati per una bassa corrente sottosoglia. I modelli utilizzati sono precisamente: \textbf{ND2LL} e \textbf{ND2LLX8}.\\
 I dati raccolti dalla simulazione ELDO sono riportati:
 \begin{itemize}
 	\item per quanto riguarda il transistore X1, nella Tabella \ref{Tab5_13} per i tempi, mentre nella Tabella \ref{Tab5_14} per le correnti.
 	\item per quanto riguarda il transistore X8, nella Tabella \ref{Tab5_15} per i tempi, mentre nella Tabella \ref{Tab5_16} per le correnti.
 \end{itemize}
-\begin{table}[!h]\footnotesize
+\begin{table}[!htb]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
@@ -445,7 +445,8 @@ I dati raccolti dalla simulazione ELDO sono riportati:
 	\caption{\textit{Risultati delle correnti simulazione ELDO, NAND LL X1}}
 	\label{Tab5_16}
 \end{table}
-Si può ben notare come, tutti i tempi si siano dilatati per le porte \textit{Low Leakage} rispetto a quelle \textit{High Speed}. Si può analizzare l'incremento percentuale del caso LL rispetto al caso HS nella Tabella \ref{Tab5_17} per il gate X1 e nella Tabella \ref{Tab5_18} per il gate X8.
+\newpage
+\noindent Si può ben notare come, tutti i tempi si siano dilatati per le porte \textit{Low Leakage} rispetto a quelle \textit{High Speed}. Si può analizzare l'incremento percentuale del caso LL rispetto al caso HS nella Tabella \ref{Tab5_17} per il gate X1 e nella Tabella \ref{Tab5_18} per il gate X8.
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|}
@@ -503,9 +504,9 @@ Al contrario, si può ben notare come le varie correnti si riducano dal caso LL 
 		
 		$I_{Vdd, f}^{max}$&58.52\% &73.83\% \\
 		
-		$I_{Load, f}^{max}$ &95.19\% &?????\\
+		$I_{Load, f}^{max}$ &95.19\% &--\\
 		
-		$I_{Load, r}^{max}$ &93.44\% &????  \\
+		$I_{Load, r}^{max}$ &93.44\% &--  \\
 		\hline
 	\end{tabular}
 	\caption{\textit{Riduzione percentuale delle correnti NAND X1}}
@@ -580,6 +581,7 @@ Al contrario, si può ben notare come le varie correnti si riducano dal caso LL 
 \end{table}
 \\
 Vengono confrontate, tramite \textit{ezwave}, le tensioni e le correnti nei casi \textit{High Speed} e \textit{Low Leakage}. Tutti i grafici risultanti sono riportati nelle Figure \ref{onde_5_4_voltage1},\ref{onde_5_4_voltage2},\ref{onde_5_4_current1},\ref{onde_5_4_current2} ,\ref{onde_5_4_current3}.
+\newpage
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.1]{immagini/onde_5_4_voltage1}
@@ -605,13 +607,13 @@ Vengono confrontate, tramite \textit{ezwave}, le tensioni e le correnti nei casi
 	\caption{\textit{Confronto correnti}}
 	\label{onde_5_4_current2}
 \end{figure}
-\newpage
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.12]{immagini/onde_5_4_current3}
 	\caption{\textit{Confronto correnti}}
 	\label{onde_5_4_current3}
 \end{figure}
+\newpage
 \noindent Infine, sempre tramite la simulazione ELDO, si è andata a stimare la potenza totale dissipata che è risultata essere pari a:
 \begin{center}
 	$Total Power Dissipation X8 = 2.9686 nW $ \\
@@ -718,6 +720,5 @@ Sono quindi state analizzate tutte le memorie con parallelismo a 16 bit così da
 	\caption{\textit{Caratteristiche delle SRAM analizzate.}}
 	\label{Tab5_25}
 \end{table}
-\\
-\\
-Dalla tabella si evince che la formula più conveniente con questo parallelismo è una memoria formata da 16 blocchi di  SRAM 512\_16\_4, formata da 512  words  di 16 bit con profondità dei multiplexer uguale a 4, che consuma una corrente totale di circa 184 uA.
+\newpage
+\noindent Dalla tabella si evince che la formula più conveniente con questo parallelismo è una memoria formata da 16 blocchi di  SRAM 512\_16\_4, formata da 512  words  di 16 bit con profondità dei multiplexer uguale a 4, che consuma una corrente totale di circa 184 uA.

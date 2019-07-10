@@ -4,14 +4,16 @@ Durante la prima parte dell'esercitazione di laboratorio, viene richiesto di imp
 \begin{center}
 	$s=a+b+c+d+e+f $
 \end{center}
-utilizzando un unico sommatore, due multiplexer e un registro. Viene richiesto di valutare e minimizzare il consumo di potenza, andando a modificare la connessione degli input A-H considerando esclusivamente l'attività della FSM e i bit di selezione del MUX S0-S3.\\
-Il circuito completo è riportato in Figura \ref{circuito}, mentre la FSM è presente in appendice, Figura \ref{fsm}.
+utilizzando un unico sommatore, due multiplexer e un registro.
+Il circuito completo è riportato in Figura \ref{circuito}, mentre la FSM è presente in Appendice, Figura \ref{fsm}. \\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/circuito}
 	\caption{\textit{Datapath}}
 	\label{circuito}
-\end{figure} 
+\end{figure}
+\\
+Viene richiesto di valutare e minimizzare il consumo di potenza, andando a modificare la connessione degli input A-H considerando esclusivamente l'attività della FSM e i bit di selezione del MUX S0-S3.\\
 Dopo varie ottimizzazioni, si è arrivati ad avere un'attività totale pari a 8 per il multiplexer e a 6 per la State transition della macchina a stati, andando a considerare che la macchina a stati e il multiplexer ricomincino le operazioni una volta terminate. Nella tabella \ref{tab2} viene riportata la configurazione degli stati e dei bit del multiplexer scelta:
 \begin{table}[!h]\footnotesize
 	\centering
@@ -34,7 +36,7 @@ Dopo varie ottimizzazioni, si è arrivati ad avere un'attività totale pari a 8 
 	\label{tab2}
 \end{table} \\
 \section{VHDL synthesis}
-Il secondo punto del laboratorio prevede di sintetizzare l’FSM tramite synopsys e studiarne le caratteristiche in termini di area, potenza e timing in modo da ricercare possibili ottimizzazioni. Si è utilizzata la libreria a 45 nm, definito un segnale di clock di periodo corrispondente a 10 ns, si è verificato il corretto inserimento tramite il comando \emph{$report\_clock$} e si è sintetizzato il circuito.\\
+Il secondo punto del laboratorio prevede di sintetizzare l’FSM tramite \textit{Synopsys} e studiarne le caratteristiche in termini di area, potenza e timing in modo da ricercare possibili ottimizzazioni. Si è utilizzata la libreria a 45 nm, definito un segnale di clock di periodo corrispondente a 10 ns e si è verificato il corretto inserimento tramite il comando \emph{$report\_clock$}. In seguito si è sintetizzato il circuito
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|}
@@ -47,18 +49,15 @@ Il secondo punto del laboratorio prevede di sintetizzare l’FSM tramite synopsy
 	\caption{\textit{Report clock}}
 \label{clock_report}
 \end{table} \\
-Di seguito è riportato lo schema generato da synopsys:
+Di seguito è riportato lo schema generato da Synopsys:\\
+\newpage
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/schemlab2_2}
 	\caption{\textit{Schematico del circuito sintetizzato}}
 	\label{datapath}
-\end{figure} \\
-\\
-\\
-\\
-\\
-Dal report sull'area si sono ottenute informazioni riguardanti la quantità di componenti e connessioni fig. \ref{numcomp}, l’area relativa occupata dalla logica combinatoria fig. \ref{areatype}, circa il doppio rispetto a quella non combinatoria e quindi dell’area totale.
+\end{figure} 
+\noindent Si è poi andato ad analizzare il report relativo all'area, dove si sono ottenuti informazioni riguardanti la quantità di componenti e connessioni, raccolte in Tabella \ref{numcomp} e riguardanti l'area occupata dalla logica, raccolte in Tabella \ref{areatype}. Si può ben notare come l'area relativa alla logica combinatoria sia circa il doppio di quella della logica non combinatoria e che dunque pesi per circa $\frac{2}{3}$ sull'area totale.
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -93,7 +92,7 @@ Dal report sull'area si sono ottenute informazioni riguardanti la quantità di c
 	\caption{\textit{Area occupata dalla logica}}
 \label{areatype}
 \end{table} \\
-Successivamente, dopo aver verificato la corretta codifica degli stati della FSM  si è analizzato il timing del circuito, dal quale si sono ottenute importanti informazioni riguardo ai ritardi delle varie porte e allo Slack time nel caso del percorso peggiore che è di 8.03 ns, parametro che consente di ottimizzare frequenza di funzionamento del circuito, visto che la condizione necessaria è che lo slack time sia positivo. Inoltre si è eseguito il timing per  i peggiori 10 percorsi e si sono ricavati i valori di slack fig. \ref{slack1}.
+Successivamente, dopo aver verificato la correttezza della codifica degli stati della FSM, si è analizzato il timing del circuito, dal quale si sono ottenute importanti informazioni riguardo ai ritardi delle varie porte e soprattutto riguardo lo \textit{Slack Time}, parametro che consente di ottimizzare frequenza di funzionamento del circuito. Nel caso preso in considerazione lo Slack Time peggiore risulta pari a 8.03 ns. Ciò si evince analizzando il timing per i 10 peggiori percorsi critici e raccogliendo informazioni sullo Slack Time che sono sintetizzate nella Tabella \ref{slack1}
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -124,17 +123,16 @@ Successivamente, dopo aver verificato la corretta codifica degli stati della FSM
 	\caption{\textit{I dieci percorsi con timing peggiore}}
 \label{slack1}
 \end{table} \\
-\\
-Non si evidenziano rilevanti differenze tra i diversi slack, ciò è dovuto alla simmetria dei percorsi critici che presentano la stessa struttura. 
-Ecco come sono distribuiti i peggiori slack fig. \ref{slackgrafico}:
+Non si evidenziano rilevanti differenze tra i diversi Slack, ciò è sicuramente dovuto alla simmetria dei percorsi critici che presentano la stessa struttura. 
+Nel grafico in Figura \ref{slackgrafico} si può notare la distribuzione dei peggiori Slack:
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/slacks}
 	\caption{\textit{Grafico distribuzione slacks}}
 	\label{slackgrafico}
 \end{figure} \\
-Dunque si è analizzata la potenza dissipata sia dall’intera logica che da ogni singola cella.
-Il report sulla potenza distingue la potenza dissipata dinamicamente, staticamente e quella dovuta alle correnti di leakage, fornendo la percentuale rispetto alla potenza dissipata totale e analizzando il circuito a livello gerarchico fig. \ref{pot}. In questo modo è possibile capire quanto influiscono i diversi contributi di potenza dissipata e se necessario intervenire opportunamente per consumare meno. 
+Dunque si è analizzata la potenza dissipata sia dall’intera logica sia da ogni singola cella.
+Il report sulla potenza distingue la potenza dissipata \textit{dinamicamente}, \textit{staticamente} e quella dovuta alle \textit{correnti di leakage}, fornendo la percentuale rispetto alla potenza dissipata totale e analizzando il circuito a livello gerarchico. Il report è sintetizzato nella Tabella \ref{pot}. In questo modo è possibile capire quanto influiscono i diversi contributi di potenza e nel caso intervenire in modo specifico per ridurre opportunamente i consumi.
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|}
@@ -153,11 +151,7 @@ Il report sulla potenza distingue la potenza dissipata dinamicamente, staticamen
 	\caption{\textit{Consumi dei vari blocchi}}
 \label{pot}
 \end{table} \\
-\\
-\\
-\\
-\\
-Inoltre si è  analizzata l’attività delle singole celle in modo da studiare i consumi di ogni singola cella fig. \ref{cellpot}. Da quest’ultimo report si è ricavato che le celle corrispondenti ai registri hanno dei consumi più elevati di potenza statica e consumano più del doppio della corrente di leakage rispetto alle altre celle del circuito.
+Inoltre si è  analizzata l’attività delle singole celle in modo da studiare i consumi di ogni singola cella  e se ne riporta il report in Tabella \ref{cellpot}. Da quest'ultimo si può notare come la cella che consuma di più, sia a livello di leakage che a livello di potenza dinamica sia il \textit{Register}.
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|c|c|}
@@ -195,7 +189,8 @@ Inoltre si è  analizzata l’attività delle singole celle in modo da studiare 
 	\caption{\textit{Attività delle singole celle}}
 \label{cellpot}
 \end{table} \\
-E’ utile inoltre valutare il numero di commutazioni delle singole uscite valutando sia la capacità del carico che il tasso di commutazioni fig. \ref{attload}. In accordo con i risultati precedenti si denota un’attività più intensa per i registri per hanno un carico capacitivo molto più alto delle altre uscite anche se il toggle rate è praticamente equivalente per tutte le uscite e la probabilità statistica è comunque minore.\\ 
+Si può anche valutare il numero di commutazioni delle singole uscite valutando sia la capacità del carico che il tasso di commutazioni, raccolto il tutto in Figura \ref{attload}. In accordo con i risultati precedenti si denota un'attività più intensa per i registri in quanto risultano avere un carico capacitivo molto più alto delle altre uscite.
+\newpage 
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|c|c|c|}
@@ -234,17 +229,15 @@ E’ utile inoltre valutare il numero di commutazioni delle singole uscite valut
 	\end{tabular}
 	\caption{\textit{Carico, toggle rate e consumo dei vari nodi}}
 \label{attload}
-\end{table} \\
-Si è adesso focalizzata l’attenzione sui consumi della Macchina a Stati. La FSM è caratterizzata da una leakage current di 418 nW a fronte dei 434 nW totali e anche per gli altri contributi di consumo di potenza dinamica i dati tendono ad evidenziare il ruolo preponderante del componente sul totale consumo del circuito fig. \ref{fsm_power_cell}.
-\\
+\end{table}
+\noindent Adesso si focalizza l’attenzione sui consumi della Macchina a Stati. La FSM è caratterizzata da una Potenza dovuta alla \textit{Corrente di Leakage} di 418 nW a fronte dei 434 nW totali, ma si può notare come anche per gli altri contributi di potenza i dati tendono ad evidenziare il ruolo preponderante della macchina a stati sui consumi complessivi. Il tutto è raccolto in Figura \ref{fsm_power_cell}.\\
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{immagini/fsm_power_cell}
 	\caption{\textit{Potenza dissipata dalla FSM}}
 	\label{fsm_power_cell}
-\end{figure} \\
-\newpage
-Dopodiché si è provato a variare la frequenza di lavoro del circuito, provando a sintetizzare il circuito in modo da lavorare alla massima frequenza di funzionamento consentita dal percorso critico. Dall’analisi sul timing si è trovato lo slack peggiore di circa 8.02 ns  lavorando a 10 ns di periodo di clock. Si può allora decrementare il periodo di clock fino a 10-8.02=1.98 ns. Difatti si è scelto un periodo di clock di 2 ns.
+\end{figure}
+Dopodiché si è provato a variare la frequenza di lavoro del circuito, provando a sintetizzare il circuito in modo da lavorare alla massima frequenza di funzionamento consentita dal percorso critico. Dall’analisi sul timing si era trovato che lo Slack Time peggiore era di circa 8.02 ns lavorando con un periodo di clock pari a 10 ns. Di conseguenza si deduce che si può decrementare il periodo di clock fino a $10 ns-8.02 ns=1.98 ns$. Si è scelto così un periodo di Clock pari a 2 ns.
 \\
 \begin{table}[!h]\footnotesize
 	\centering
@@ -263,8 +256,8 @@ Dopodiché si è provato a variare la frequenza di lavoro del circuito, provando
 	\caption{\textit{Tabella consumi}}
 \label{conslack}
 \end{table} \\
- Dalla fig. \ref{conslack} si nota come sia aumentata la Total Dynamic Power, questo poiché aumentando la frequenza operativa aumentano anche il numero di commutazioni interne e quindi viene dissipata maggiore potenza dinamica. Resta invece invariata la corrente di leakage che infatti dipende solo dalla tecnologia usata.\\
- Infine è stato posto al sintetizzatore un ulteriore vincolo sulla massima potenza dinamica dissipabile a 200 uW, considerando che nell’ultimo report la potenza totale dissipata ammonta a 200.2958 uW fig.  \ref{potadesso}\\
+Dalla Tabella \ref{conslack} si nota come sia aumentata la Total Dynamic Power, in quanto aumentando la frequenza operativa aumentano anche il numero di commutazioni interne e quindi viene dissipata maggiore potenza dinamica. Resta invece invariata la corrente di leakage che infatti dipende solo dalla tecnologia usata.\\
+Infine è stato posto al sintetizzatore un ulteriore vincolo sulla massima potenza dinamica dissipabile, fissandola a $200 \mu W$, considerando che nell’ultimo report la potenza totale dissipata ammonta a $200.2958 \mu W$. Viene riportato il report in Tabella \ref{potadesso}\\
 \begin{table}[!h]\footnotesize
 	\centering
 	\begin{tabular}{|c|c|}
@@ -283,7 +276,6 @@ Dopodiché si è provato a variare la frequenza di lavoro del circuito, provando
 \label{potadesso}
 \end{table}
 \\
-Adesso la potenza dinamica totale dissipata è di 199.3944 uW e rispetta il vincolo.
-Inoltre, si nota che stavolta il parametro della leakage power è leggermente variato, questo poichè stavolta per rispettare il vincolo sul consumo di potenza è stata variata la topologia del circuito usando differenti porte logiche.
-\\
+Adesso la potenza dinamica totale dissipata è di $199.3944 \mu W$ e rispetta il vincolo.
+Inoltre, si nota che stavolta il parametro della potenza di leakage è leggermente variato, poichè stavolta per rispettare il vincolo sul consumo di potenza è stata variata la topologia del circuito usando differenti porte logiche.
 
